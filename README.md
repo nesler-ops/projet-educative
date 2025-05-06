@@ -71,13 +71,6 @@ Utilisez Postman ou curl pour tester les endpoints.
 
 ---
 
-## 📌 À faire ensuite
 
-- Ajouter le système d’authentification complet (JWT)
-- Intégrer le moteur de recommandation IA dans `recommender.py`
-- Ajouter l’enregistrement des progrès des utilisateurs
-- Améliorer l’interface utilisateur
 
----
-
-Steve Ataky, PhD
+Nesler Torres
