@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La nourriture et les repas - Cours de français</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+      }
+      header {
+        background-color: #4f86c6;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+      .subtitle {
+        font-style: italic;
+        margin-top: 10px;
+      }
+      section {
+        background-color: white;
+        padding: 25px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #4f86c6;
+        border-bottom: 2px solid #4f86c6;
+        padding-bottom: 10px;
+      }
+      h3 {
+        color: #5d8aa8;
+      }
+      .vocab-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .vocab-item {
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+        background-color: #f9f9f9;
+      }
+      .meal-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      .meal-box {
+        flex: 1;
+        min-width: 250px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #f9f9f9;
+      }
+      .image-placeholder {
+        background-color: #e9ecef;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+        border-radius: 5px;
+      }
+      .exercise {
+        background-color: #f0f7ff;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border-left: 5px solid #4f86c6;
+      }
+      .dialogue {
+        background-color: #f0f7ff;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .person1 {
+        color: #4f86c6;
+        font-weight: bold;
+      }
+      .person2 {
+        color: #5d8aa8;
+        font-weight: bold;
+      }
+      .quiz-container {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .quiz-question {
+        margin-bottom: 15px;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #4f86c6;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+      .btn:hover {
+        background-color: #3a6ea5;
+      }
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #4f86c6;
+        color: white;
+        border-radius: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+      }
+      th,
+      td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      th {
+        background-color: #4f86c6;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      .pronunciation {
+        font-style: italic;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La nourriture et les repas</h1>
+      <p class="subtitle">Un voyage culinaire à travers la langue française</p>
+    </header>
+
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        Bienvenue dans notre leçon sur la nourriture et les repas en français !
+        La cuisine est au cœur de la culture française et constitue un excellent
+        moyen d'enrichir votre vocabulaire. Dans cette leçon, nous allons
+        découvrir le vocabulaire essentiel, les expressions courantes et les
+        traditions culinaires françaises.
+      </p>
+
+      <div class="image-placeholder">
+        <img
+          src="/api/placeholder/400/200"
+          alt="Assortiment de plats français"
+        />
+      </div>
+    </section>
+
+    <section id="vocabulaire">
+      <h2>Vocabulaire de base</h2>
+
+      <h3>Les aliments principaux</h3>
+      <div class="vocab-grid">
+        <div class="vocab-item">
+          <p>Le pain <span class="pronunciation">[pɛ̃]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Pain" />
+          </div>
+        </div>
+        <div class="vocab-item">
+          <p>Le fromage <span class="pronunciation">[fʁɔmaʒ]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Fromage" />
+          </div>
+        </div>
+        <div class="vocab-item">
+          <p>Les légumes <span class="pronunciation">[legym]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Légumes" />
+          </div>
+        </div>
+        <div class="vocab-item">
+          <p>Les fruits <span class="pronunciation">[fʁɥi]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Fruits" />
+          </div>
+        </div>
+        <div class="vocab-item">
+          <p>La viande <span class="pronunciation">[vjɑ̃d]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Viande" />
+          </div>
+        </div>
+        <div class="vocab-item">
+          <p>Le poisson <span class="pronunciation">[pwasɔ̃]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Poisson" />
+          </div>
+        </div>
+      </div>
+
+      <h3>Les boissons</h3>
+      <div class="vocab-grid">
+        <div class="vocab-item">
+          <p>L'eau <span class="pronunciation">[o]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Eau" />
+          </div>
+        </div>
+        <div class="vocab-item">
+          <p>Le vin <span class="pronunciation">[vɛ̃]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Vin" />
+          </div>
+        </div>
+        <div class="vocab-item">
+          <p>Le café <span class="pronunciation">[kafe]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Café" />
+          </div>
+        </div>
+        <div class="vocab-item">
+          <p>Le thé <span class="pronunciation">[te]</span></p>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/150/100" alt="Thé" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="repas">
+      <h2>Les repas de la journée</h2>
+
+      <div class="meal-container">
+        <div class="meal-box">
+          <h3>Le petit déjeuner</h3>
+          <p>
+            Les Français prennent généralement un petit déjeuner léger composé
+            de :
+          </p>
+          <ul>
+            <li>Des tartines (pain avec du beurre et de la confiture)</li>
+            <li>Un bol de café au lait</li>
+            <li>Des croissants ou des pains au chocolat (le week-end)</li>
+          </ul>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/200/150" alt="Petit déjeuner français" />
+          </div>
+        </div>
+
+        <div class="meal-box">
+          <h3>Le déjeuner</h3>
+          <p>C'est souvent le repas principal de la journée, composé de :</p>
+          <ul>
+            <li>Une entrée (salade, soupe, charcuterie)</li>
+            <li>Un plat principal (viande ou poisson avec accompagnement)</li>
+            <li>Un fromage</li>
+            <li>Un dessert</li>
+          </ul>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/200/150" alt="Déjeuner français" />
+          </div>
+        </div>
+
+        <div class="meal-box">
+          <h3>Le dîner</h3>
+          <p>
+            Généralement pris vers 19h30-20h, il est semblable au déjeuner mais
+            souvent plus léger :
+          </p>
+          <ul>
+            <li>Une entrée légère</li>
+            <li>Un plat principal</li>
+            <li>Un dessert ou un yaourt</li>
+          </ul>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/200/150" alt="Dîner français" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="expressions">
+      <h2>Expressions utiles</h2>
+
+      <table>
+        <tr>
+          <th>Français</th>
+          <th>Traduction</th>
+          <th>Contexte d'utilisation</th>
+        </tr>
+        <tr>
+          <td>J'ai faim</td>
+          <td>I'm hungry</td>
+          <td>Exprimer sa faim</td>
+        </tr>
+        <tr>
+          <td>J'ai soif</td>
+          <td>I'm thirsty</td>
+          <td>Exprimer sa soif</td>
+        </tr>
+        <tr>
+          <td>Bon appétit !</td>
+          <td>Enjoy your meal!</td>
+          <td>Avant de commencer à manger</td>
+        </tr>
+        <tr>
+          <td>À votre santé !</td>
+          <td>Cheers!</td>
+          <td>Pour porter un toast</td>
+        </tr>
+        <tr>
+          <td>C'est délicieux !</td>
+          <td>It's delicious!</td>
+          <td>Pour complimenter le repas</td>
+        </tr>
+        <tr>
+          <td>Je suis rassasié(e)</td>
+          <td>I'm full</td>
+          <td>Après avoir bien mangé</td>
+        </tr>
+        <tr>
+          <td>L'addition, s'il vous plaît</td>
+          <td>The bill, please</td>
+          <td>Pour demander la facture au restaurant</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="dialogue">
+      <h2>Dialogue au restaurant</h2>
+
+      <div class="dialogue">
+        <p>
+          <span class="person1">Le serveur :</span> Bonjour, bienvenue au
+          restaurant "Le Petit Bistrot". Voici la carte.
+        </p>
+        <p>
+          <span class="person2">Le client :</span> Merci. Qu'est-ce que vous
+          recommandez aujourd'hui ?
+        </p>
+        <p>
+          <span class="person1">Le serveur :</span> Notre plat du jour est un
+          filet de poisson avec une sauce au beurre blanc et des légumes de
+          saison.
+        </p>
+        <p>
+          <span class="person2">Le client :</span> Ça a l'air délicieux. Je vais
+          prendre ça. Et comme entrée, une salade verte.
+        </p>
+        <p>
+          <span class="person1">Le serveur :</span> Très bon choix. Et comme
+          boisson ?
+        </p>
+        <p>
+          <span class="person2">Le client :</span> Une carafe d'eau et un verre
+          de vin blanc, s'il vous plaît.
+        </p>
+        <p>
+          <span class="person1">Le serveur :</span> Parfait. Je vous apporte ça
+          tout de suite.
+        </p>
+        <p><em>Plus tard...</em></p>
+        <p>
+          <span class="person1">Le serveur :</span> Voilà votre salade. Bon
+          appétit !
+        </p>
+        <p><span class="person2">Le client :</span> Merci beaucoup.</p>
+        <p><em>Après le repas...</em></p>
+        <p>
+          <span class="person2">Le client :</span> C'était excellent !
+          L'addition, s'il vous plaît.
+        </p>
+        <p>
+          <span class="person1">Le serveur :</span> Tout de suite. Je suis ravi
+          que vous ayez apprécié votre repas.
+        </p>
+      </div>
+    </section>
+
+    <section id="exercices">
+      <h2>Exercices</h2>
+
+      <div class="exercise">
+        <h3>Exercice 1: Classez les aliments</h3>
+        <p>
+          Classez les aliments suivants dans les catégories appropriées :
+          fruits, légumes, produits laitiers, viandes.
+        </p>
+        <ul>
+          <li>La pomme</li>
+          <li>Le yaourt</li>
+          <li>La carotte</li>
+          <li>Le poulet</li>
+          <li>La banane</li>
+          <li>Le fromage</li>
+          <li>La tomate</li>
+          <li>Le bœuf</li>
+          <li>Le raisin</li>
+          <li>Le brocoli</li>
+        </ul>
+      </div>
+
+      <div class="exercise">
+        <h3>Exercice 2: Complétez le dialogue</h3>
+        <p>Complétez le dialogue suivant avec les mots manquants :</p>
+        <p>— Bonjour, je voudrais _______ une table pour deux personnes.</p>
+        <p>
+          — Bien sûr. Préférez-vous être près de la _______ ou à l'intérieur ?
+        </p>
+        <p>— À l'intérieur, s'il vous plaît. Avez-vous un _______ ?</p>
+        <p>
+          — Oui, voici la _______. Le plat du jour est un _______ de bœuf aux
+          champignons.
+        </p>
+        <p>
+          — Parfait, nous allons _______ ce plat. Et comme _______, une
+          bouteille de vin rouge.
+        </p>
+        <p>
+          <br />Mots à utiliser : réserver, terrasse, menu, carte, steak,
+          prendre, boisson
+        </p>
+      </div>
+
+      <div class="exercise">
+        <h3>Exercice 3: Quiz sur les repas français</h3>
+        <div class="quiz-container">
+          <div class="quiz-question">
+            <p>1. Quel est le repas principal en France ?</p>
+            <input type="radio" name="q1" id="q1a" />
+            <label for="q1a">Le petit déjeuner</label><br />
+            <input type="radio" name="q1" id="q1b" />
+            <label for="q1b">Le déjeuner</label><br />
+            <input type="radio" name="q1" id="q1c" />
+            <label for="q1c">Le goûter</label><br />
+            <input type="radio" name="q1" id="q1d" />
+            <label for="q1d">Le dîner</label>
+          </div>
+
+          <div class="quiz-question">
+            <p>
+              2. Que mange-t-on traditionnellement au petit déjeuner en France ?
+            </p>
+            <input type="radio" name="q2" id="q2a" />
+            <label for="q2a">Des œufs et du bacon</label><br />
+            <input type="radio" name="q2" id="q2b" />
+            <label for="q2b"
+              >Des tartines avec du beurre et de la confiture</label
+            ><br />
+            <input type="radio" name="q2" id="q2c" />
+            <label for="q2c">Un sandwich</label><br />
+            <input type="radio" name="q2" id="q2d" />
+            <label for="q2d">De la soupe</label>
+          </div>
+
+          <div class="quiz-question">
+            <p>3. À quelle heure les Français dînent-ils généralement ?</p>
+            <input type="radio" name="q3" id="q3a" />
+            <label for="q3a">17h - 18h</label><br />
+            <input type="radio" name="q3" id="q3b" />
+            <label for="q3b">18h - 19h</label><br />
+            <input type="radio" name="q3" id="q3c" />
+            <label for="q3c">19h30 - 21h</label><br />
+            <input type="radio" name="q3" id="q3d" />
+            <label for="q3d">21h30 - 22h30</label>
+          </div>
+
+          <button class="btn">Vérifier mes réponses</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="culture">
+      <h2>Culture culinaire française</h2>
+
+      <p>
+        La gastronomie française est inscrite au patrimoine culturel immatériel
+        de l'UNESCO depuis 2010. Elle se caractérise par sa diversité régionale,
+        sa richesse et son raffinement.
+      </p>
+
+      <h3>Quelques spécialités régionales</h3>
+      <div class="meal-container">
+        <div class="meal-box">
+          <h4>Bretagne</h4>
+          <ul>
+            <li>Les crêpes et les galettes</li>
+            <li>Le kouign-amann</li>
+            <li>Les fruits de mer</li>
+          </ul>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/200/150" alt="Crêpes bretonnes" />
+          </div>
+        </div>
+
+        <div class="meal-box">
+          <h4>Alsace</h4>
+          <ul>
+            <li>La choucroute</li>
+            <li>Le baeckeoffe</li>
+            <li>Les bretzels</li>
+          </ul>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/200/150" alt="Choucroute alsacienne" />
+          </div>
+        </div>
+
+        <div class="meal-box">
+          <h4>Provence</h4>
+          <ul>
+            <li>La ratatouille</li>
+            <li>La bouillabaisse</li>
+            <li>Le pastis</li>
+          </ul>
+          <div class="image-placeholder">
+            <img src="/api/placeholder/200/150" alt="Ratatouille provençale" />
+          </div>
+        </div>
+      </div>
+
+      <h3>L'art de la table à la française</h3>
+      <p>
+        Le repas gastronomique français n'est pas seulement une question de
+        nourriture, mais aussi de présentation, de convivialité et de partage.
+        Les Français accordent une grande importance à :
+      </p>
+      <ul>
+        <li>La présentation des plats</li>
+        <li>L'ordre des services (entrée, plat, fromage, dessert)</li>
+        <li>L'accord des vins avec les plats</li>
+        <li>La conversation pendant le repas</li>
+      </ul>
+    </section>
+
+    <section id="activite">
+      <h2>Activité : Créez votre menu</h2>
+
+      <p>
+        Imaginez que vous êtes le chef d'un restaurant français. Créez un menu
+        complet pour votre restaurant en incluant :
+      </p>
+      <ul>
+        <li>Trois entrées</li>
+        <li>Trois plats principaux</li>
+        <li>Trois desserts</li>
+        <li>Une sélection de vins</li>
+      </ul>
+      <p>
+        N'oubliez pas d'utiliser le vocabulaire approprié et d'inclure une brève
+        description de chaque plat !
+      </p>
+
+      <textarea
+        rows="10"
+        style="width: 100%; padding: 10px; margin-top: 15px"
+        placeholder="Écrivez votre menu ici..."
+      ></textarea>
+      <button class="btn">Enregistrer mon menu</button>
+    </section>
+
+    <section id="project">
+      <h2>Projet : Journal alimentaire</h2>
+
+      <p>
+        Pendant une semaine, tenez un journal de vos repas en français. Notez :
+      </p>
+      <ul>
+        <li>Ce que vous mangez à chaque repas</li>
+        <li>À quelle heure vous mangez</li>
+        <li>Vos impressions sur les repas (délicieux, trop salé, etc.)</li>
+      </ul>
+      <p>
+        Ce projet vous aidera à pratiquer le vocabulaire de la nourriture tout
+        en réfléchissant à vos habitudes alimentaires.
+      </p>
+
+      <div class="image-placeholder">
+        <img src="/api/placeholder/400/200" alt="Journal alimentaire" />
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 - Cours de français : La nourriture et les repas</p>
+      <p>Pour plus de ressources pédagogiques, visitez notre site principal.</p>
+    </footer>
+
+    <script>
+      // Script pour la vérification des réponses du quiz
+      document.querySelector(".btn").addEventListener("click", function () {
+        alert("Fonctionnalité à venir bientôt!");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Famille - Cours de Français</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      header {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+        margin-top: 2rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        margin-top: 0;
+      }
+
+      .section {
+        margin-bottom: 2.5rem;
+      }
+
+      .vocabulary-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .vocabulary-item {
+        background-color: #f1f9ff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .vocabulary-item strong {
+        color: #3498db;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .img-container {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .img-placeholder {
+        background-color: #ecf0f1;
+        width: 100%;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #7f8c8d;
+        font-style: italic;
+        border-radius: 8px;
+      }
+
+      .family-tree {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #e8f4fc;
+        border-radius: 8px;
+      }
+
+      .exercise {
+        background-color: #e8f8f5;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 30px 0;
+        border-left: 5px solid #2ecc71;
+      }
+
+      .exercise-title {
+        font-weight: bold;
+        color: #27ae60;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+      }
+
+      .question {
+        margin-bottom: 15px;
+        padding-left: 20px;
+      }
+
+      .audio-section {
+        background-color: #f0e6fd;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 30px 0;
+        text-align: center;
+      }
+
+      .dialogue {
+        background-color: #fff5e6;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+
+      .dialogue-speaker {
+        font-weight: bold;
+        color: #e67e22;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #2c3e50;
+        color: white;
+        margin-top: 40px;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #2980b9;
+      }
+
+      .tip-box {
+        background-color: #fffaed;
+        border-left: 5px solid #f1c40f;
+        padding: 15px;
+        margin: 20px 0;
+      }
+
+      .additional-resources {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La Famille</h1>
+      <p class="subtitle">
+        Vocabulaire, expressions et activités pour parler de la famille en
+        français
+      </p>
+    </header>
+
+    <div class="container">
+      <div class="section">
+        <h2>Introduction</h2>
+        <p>
+          Bienvenue à notre leçon sur la famille en français ! La famille est un
+          sujet fondamental pour les apprenants de français. Dans cette leçon,
+          nous allons découvrir le vocabulaire essentiel pour parler des membres
+          de la famille, explorer les expressions courantes liées à la famille,
+          et pratiquer avec des exercices interactifs.
+        </p>
+
+        <div class="img-container">
+          <img
+            src="/api/placeholder/600/320"
+            alt="Une famille heureuse"
+            class="img-placeholder"
+          />
+          <p><em>Une famille heureuse</em></p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Vocabulaire de la famille</h2>
+        <p>
+          Voici les termes essentiels pour décrire les membres de la famille en
+          français:
+        </p>
+
+        <div class="vocabulary-list">
+          <div class="vocabulary-item">
+            <strong>La famille proche</strong>
+            <ul>
+              <li>le père - father</li>
+              <li>la mère - mother</li>
+              <li>le frère - brother</li>
+              <li>la sœur - sister</li>
+              <li>les parents - parents</li>
+              <li>l'enfant (m/f) - child</li>
+              <li>le fils - son</li>
+              <li>la fille - daughter</li>
+            </ul>
+          </div>
+
+          <div class="vocabulary-item">
+            <strong>Les grands-parents</strong>
+            <ul>
+              <li>le grand-père - grandfather</li>
+              <li>la grand-mère - grandmother</li>
+              <li>les grands-parents - grandparents</li>
+            </ul>
+          </div>
+
+          <div class="vocabulary-item">
+            <strong>La famille étendue</strong>
+            <ul>
+              <li>l'oncle (m) - uncle</li>
+              <li>la tante - aunt</li>
+              <li>le cousin/la cousine - cousin</li>
+              <li>le neveu/la nièce - nephew/niece</li>
+            </ul>
+          </div>
+
+          <div class="vocabulary-item">
+            <strong>Belle-famille</strong>
+            <ul>
+              <li>le beau-père - father-in-law/stepfather</li>
+              <li>la belle-mère - mother-in-law/stepmother</li>
+              <li>le beau-frère - brother-in-law/stepbrother</li>
+              <li>la belle-sœur - sister-in-law/stepsister</li>
+              <li>le gendre - son-in-law</li>
+              <li>la belle-fille - daughter-in-law/stepdaughter</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <h3>Le saviez-vous?</h3>
+          <p>
+            En français, le terme "belle-famille" peut désigner à la fois la
+            famille du conjoint et une famille recomposée (avec des
+            beaux-parents et demi-frères/sœurs).
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>L'arbre généalogique</h2>
+        <p>
+          Un arbre généalogique (family tree) est un excellent moyen de
+          visualiser les relations familiales.
+        </p>
+
+        <div class="family-tree">
+          <img
+            src="/api/placeholder/600/320"
+            alt="Arbre généalogique"
+            class="img-placeholder"
+          />
+          <p><em>Un exemple d'arbre généalogique</em></p>
+        </div>
+
+        <h3>Vocabulaire supplémentaire</h3>
+        <div class="vocabulary-list">
+          <div class="vocabulary-item">
+            <strong>Relations familiales</strong>
+            <ul>
+              <li>les ancêtres - ancestors</li>
+              <li>les descendants - descendants</li>
+              <li>un/une aîné(e) - eldest</li>
+              <li>un/une cadet(te) - youngest</li>
+              <li>le jumeau/la jumelle - twin</li>
+              <li>le demi-frère/la demi-sœur - half-brother/half-sister</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Expressions courantes</h2>
+        <p>
+          Voici quelques expressions courantes liées à la famille en français:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Avoir une grande famille</strong> - To have a big family
+          </li>
+          <li>
+            <strong>Être proche de sa famille</strong> - To be close to one's
+            family
+          </li>
+          <li><strong>Se réunir en famille</strong> - To gather as a family</li>
+          <li>
+            <strong>Ressembler à son père/sa mère</strong> - To look like one's
+            father/mother
+          </li>
+          <li>
+            <strong>Avoir un air de famille</strong> - To have a family
+            resemblance
+          </li>
+          <li><strong>Fonder une famille</strong> - To start a family</li>
+          <li><strong>Une réunion de famille</strong> - A family gathering</li>
+          <li>
+            <strong>De génération en génération</strong> - From generation to
+            generation
+          </li>
+        </ul>
+
+        <div class="dialogue">
+          <h3>Dialogue: Présenter sa famille</h3>
+          <p>
+            <span class="dialogue-speaker">Sophie:</span> Bonjour Thomas! Je te
+            présente ma cousine, Claire.
+          </p>
+          <p>
+            <span class="dialogue-speaker">Thomas:</span> Enchanté, Claire! Tu
+            habites aussi à Lyon?
+          </p>
+          <p>
+            <span class="dialogue-speaker">Claire:</span> Non, j'habite à Paris.
+            Je suis venue rendre visite à ma famille pour le weekend.
+          </p>
+          <p>
+            <span class="dialogue-speaker">Sophie:</span> Claire est la fille de
+            mon oncle Pierre, le frère de mon père.
+          </p>
+          <p>
+            <span class="dialogue-speaker">Thomas:</span> Ah, je vois! Et tu as
+            des frères et sœurs, Claire?
+          </p>
+          <p>
+            <span class="dialogue-speaker">Claire:</span> Oui, j'ai un grand
+            frère qui s'appelle Nicolas et une petite sœur qui s'appelle Marie.
+          </p>
+          <p>
+            <span class="dialogue-speaker">Thomas:</span> Sophie m'a dit que
+            votre grand-mère va fêter ses 80 ans ce weekend?
+          </p>
+          <p>
+            <span class="dialogue-speaker">Claire:</span> Exactement! Toute la
+            famille sera réunie pour célébrer son anniversaire.
+          </p>
+        </div>
+
+        <div class="audio-section">
+          <h3>Écoutez la prononciation</h3>
+          <p>
+            Cliquez sur les boutons ci-dessous pour écouter la prononciation
+            correcte des termes de famille.
+          </p>
+          <button class="btn">Famille proche</button>
+          <button class="btn">Grands-parents</button>
+          <button class="btn">Famille étendue</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Exercices</h2>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercice 1: Complétez les phrases</div>
+          <p>
+            Complétez les phrases suivantes avec le terme familial approprié:
+          </p>
+
+          <div class="question">
+            1. La mère de ma mère est ma _____________. (grand-mère)
+          </div>
+          <div class="question">
+            2. Le fils de mon oncle est mon _____________. (cousin)
+          </div>
+          <div class="question">
+            3. La sœur de mon père est ma _____________. (tante)
+          </div>
+          <div class="question">
+            4. Les parents de mes parents sont mes _____________.
+            (grands-parents)
+          </div>
+          <div class="question">
+            5. Le mari de ma sœur est mon _____________. (beau-frère)
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercice 2: Vrai ou Faux</div>
+          <p>
+            Déterminez si les affirmations suivantes sont vraies ou fausses:
+          </p>
+
+          <div class="question">
+            1. Le fils de ma tante est mon neveu. (Faux - c'est mon cousin)
+          </div>
+          <div class="question">
+            2. La mère de mon père est ma grand-mère. (Vrai)
+          </div>
+          <div class="question">
+            3. Le frère de mon mari est mon beau-frère. (Vrai)
+          </div>
+          <div class="question">
+            4. La fille de ma sœur est ma nièce. (Vrai)
+          </div>
+          <div class="question">
+            5. Le père de ma femme est mon oncle. (Faux - c'est mon beau-père)
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercice 3: Décrivez votre famille</div>
+          <p>
+            En utilisant le vocabulaire que nous avons appris, écrivez un court
+            paragraphe (5-7 phrases) décrivant votre famille ou une famille
+            imaginaire. Incluez au moins sept termes de famille différents.
+          </p>
+
+          <p>
+            <strong>Exemple:</strong>
+            <em
+              >Ma famille est assez grande. J'ai deux frères et une sœur. Mes
+              parents habitent à la campagne avec ma grand-mère paternelle. Mon
+              oncle et ma tante vivent près de chez nous avec leurs trois
+              enfants, mes cousins. Nous nous réunissons souvent le dimanche
+              pour déjeuner ensemble. Ma sœur est mariée et son mari, mon
+              beau-frère, est très sympathique.</em
+            >
+          </p>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercice 4: Associez les images</div>
+          <p>
+            Regardez les images et associez-les avec le terme familial correct:
+          </p>
+
+          <div class="img-container">
+            <img
+              src="/api/placeholder/600/200"
+              alt="Images de famille à associer"
+              class="img-placeholder"
+            />
+            <p>
+              <em
+                >Images à associer avec les termes: grand-père, tante, frère et
+                sœur, bébé, oncle, grands-parents</em
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Activité créative</h2>
+        <p>
+          Créez votre propre arbre généalogique! Suivez les étapes ci-dessous:
+        </p>
+
+        <ol>
+          <li>
+            Dessinez un arbre généalogique de votre famille (réelle ou
+            imaginaire)
+          </li>
+          <li>
+            Identifiez chaque personne par son nom et sa relation avec vous
+          </li>
+          <li>
+            Ajoutez une brève description de chaque membre (âge, profession,
+            lieu de résidence)
+          </li>
+          <li>Présentez votre arbre généalogique à la classe</li>
+        </ol>
+
+        <div class="img-container">
+          <img
+            src="/api/placeholder/600/250"
+            alt="Exemple d'arbre généalogique à compléter"
+            class="img-placeholder"
+          />
+          <p><em>Modèle d'arbre généalogique à compléter</em></p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>La famille dans la culture française</h2>
+        <p>
+          La famille occupe une place importante dans la culture française.
+          Voici quelques traditions familiales en France:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Le repas dominical</strong>: De nombreuses familles
+            françaises se réunissent le dimanche pour un long déjeuner qui peut
+            durer plusieurs heures.
+          </li>
+          <li>
+            <strong>Les vacances en famille</strong>: Les Français privilégient
+            souvent les vacances en famille, notamment pendant les vacances
+            scolaires.
+          </li>
+          <li>
+            <strong>Les fêtes familiales</strong>: Noël, Pâques et d'autres
+            fêtes sont des moments importants de réunion familiale.
+          </li>
+          <li>
+            <strong>Les anniversaires et célébrations</strong>: Les
+            anniversaires, baptêmes, mariages sont des occasions de rassembler
+            la famille élargie.
+          </li>
+        </ul>
+
+        <div class="img-container">
+          <img
+            src="/api/placeholder/600/320"
+            alt="Repas de famille français"
+            class="img-placeholder"
+          />
+          <p><em>Un repas de famille typiquement français</em></p>
+        </div>
+      </div>
+
+      <div class="additional-resources">
+        <h2>Ressources supplémentaires</h2>
+        <p>
+          Pour approfondir votre apprentissage sur le thème de la famille en
+          français:
+        </p>
+
+        <ul>
+          <li>Livre: "Le français en famille" - exercices pratiques</li>
+          <li>
+            App: "French Family Vocabulary" - disponible sur iOS et Android
+          </li>
+          <li>Vidéo: "Ma famille et moi" - série éducative française</li>
+          <li>Podcast: "Histoires de familles françaises"</li>
+        </ul>
+
+        <p>
+          N'hésitez pas à explorer ces ressources pour enrichir votre
+          vocabulaire et votre compréhension!
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 - Cours de Français: La Famille</p>
+      <p>Pour plus de ressources pédagogiques, visitez notre site web</p>
+    </footer>
+  </body>
+</html>

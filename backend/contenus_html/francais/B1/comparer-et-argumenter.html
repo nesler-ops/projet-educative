@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparer et Argumenter - Cours de Français</title>
+    <style>
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --accent-color: #e74c3c;
+        --background-color: #f9f9f9;
+        --text-color: #333;
+        --light-gray: #ecf0f1;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        margin-top: 0.5rem;
+      }
+
+      nav {
+        background-color: #2980b9;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav li {
+        margin: 0 1rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      section {
+        margin-bottom: 3rem;
+        padding: 1.5rem;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--light-gray);
+        padding-bottom: 0.5rem;
+        margin-top: 0;
+      }
+
+      h3 {
+        color: var(--secondary-color);
+      }
+
+      .important-note {
+        background-color: #ffe9e3;
+        border-left: 4px solid var(--accent-color);
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      .example {
+        background-color: #e3f2fd;
+        border-left: 4px solid var(--primary-color);
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      .exercise {
+        background-color: #e8f5e9;
+        border-radius: 5px;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        border: 1px solid #c8e6c9;
+      }
+
+      .exercise h4 {
+        color: var(--secondary-color);
+        margin-top: 0;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0;
+      }
+
+      .table-container {
+        overflow-x: auto;
+        margin: 1.5rem 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid var(--light-gray);
+      }
+
+      th {
+        background-color: var(--light-gray);
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .btn:hover {
+        background-color: #2980b9;
+      }
+
+      .btn-secondary {
+        background-color: var(--secondary-color);
+      }
+
+      .btn-secondary:hover {
+        background-color: #27ae60;
+      }
+
+      footer {
+        background-color: #34495e;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .show-answer {
+        margin-top: 1rem;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav li {
+          margin: 0.5rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Comparer et Argumenter</h1>
+      <p class="subtitle">Techniques et stratégies pour structurer sa pensée</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#comparaison">La Comparaison</a></li>
+        <li><a href="#argumentation">L'Argumentation</a></li>
+        <li><a href="#exercices">Exercices</a></li>
+        <li><a href="#ressources">Ressources</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Savoir comparer et argumenter sont deux compétences essentielles, tant
+          dans le cadre académique que dans la vie quotidienne. Ces compétences
+          nous permettent d'analyser des situations, de défendre nos opinions et
+          de prendre des décisions éclairées.
+        </p>
+
+        <div class="image-container">
+          <img
+            src="/api/placeholder/500/300"
+            alt="Illustration montrant la comparaison et l'argumentation"
+          />
+        </div>
+
+        <p>Dans ce cours, nous allons explorer :</p>
+        <ul>
+          <li>
+            Les techniques pour établir des comparaisons pertinentes et
+            équilibrées
+          </li>
+          <li>Les stratégies d'argumentation efficaces</li>
+          <li>Comment structurer ses idées pour convaincre</li>
+          <li>Les pièges à éviter lors de l'élaboration d'un argument</li>
+        </ul>
+      </section>
+
+      <section id="comparaison">
+        <h2>La Comparaison</h2>
+
+        <h3>Qu'est-ce que comparer ?</h3>
+        <p>
+          Comparer consiste à examiner deux ou plusieurs éléments pour
+          identifier leurs ressemblances et leurs différences. Une comparaison
+          efficace permet de mieux comprendre chacun des éléments comparés et
+          d'en tirer des conclusions pertinentes.
+        </p>
+
+        <div class="important-note">
+          <p>
+            <strong>Important :</strong> Une bonne comparaison repose sur des
+            critères précis et cohérents. Il ne s'agit pas simplement de
+            juxtaposer des informations, mais d'organiser la réflexion autour
+            d'axes de comparaison.
+          </p>
+        </div>
+
+        <h3>Les structures grammaticales de la comparaison</h3>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Structure</th>
+                <th>Exemple</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Comparatif de supériorité</td>
+                <td>plus + adjectif/adverbe + que</td>
+                <td>
+                  La lecture est <strong>plus enrichissante que</strong> les
+                  réseaux sociaux.
+                </td>
+              </tr>
+              <tr>
+                <td>Comparatif d'infériorité</td>
+                <td>moins + adjectif/adverbe + que</td>
+                <td>
+                  Le train est <strong>moins polluant que</strong> l'avion.
+                </td>
+              </tr>
+              <tr>
+                <td>Comparatif d'égalité</td>
+                <td>aussi + adjectif/adverbe + que</td>
+                <td>
+                  Le vélo est <strong>aussi efficace que</strong> la voiture en
+                  ville.
+                </td>
+              </tr>
+              <tr>
+                <td>Superlatif relatif</td>
+                <td>le/la/les plus/moins + adjectif</td>
+                <td>
+                  C'est <strong>le plus intéressant</strong> des livres que j'ai
+                  lus.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Méthodes de comparaison</h3>
+        <p>
+          Il existe deux principales méthodes pour organiser une comparaison :
+        </p>
+
+        <h4>1. La méthode par critères</h4>
+        <div class="example">
+          <p>
+            <strong
+              >Exemple : Comparaison entre l'éducation en ligne et en
+              présentiel</strong
+            >
+          </p>
+          <p>
+            <u>Critère 1 : L'interaction sociale</u><br />
+            - En présentiel : interactions directes et spontanées<br />
+            - En ligne : interactions médiatisées et parfois limitées
+          </p>
+
+          <p>
+            <u>Critère 2 : La flexibilité</u><br />
+            - En présentiel : horaires fixes et déplacements nécessaires<br />
+            - En ligne : horaires flexibles et accès depuis n'importe où
+          </p>
+        </div>
+
+        <h4>2. La méthode par objets</h4>
+        <div class="example">
+          <p>
+            <strong
+              >Exemple : Comparaison entre l'éducation en ligne et en
+              présentiel</strong
+            >
+          </p>
+          <p>
+            <u>Éducation en présentiel :</u><br />
+            - Interactions sociales directes<br />
+            - Horaires fixes<br />
+            - Environnement structuré
+          </p>
+
+          <p>
+            <u>Éducation en ligne :</u><br />
+            - Interactions médiatisées<br />
+            - Flexibilité horaire<br />
+            - Environnement d'apprentissage personnalisable
+          </p>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercice de comparaison</h4>
+          <p>
+            Comparez les avantages et les inconvénients de vivre en ville ou à
+            la campagne en utilisant la méthode de votre choix.
+          </p>
+          <button
+            class="btn show-answer"
+            onclick="document.getElementById('comparaison-answer').classList.toggle('hidden')"
+          >
+            Voir un exemple de réponse
+          </button>
+          <div id="comparaison-answer" class="hidden">
+            <h5>Exemple de réponse (méthode par critères)</h5>
+            <p>
+              <u>Critère 1 : Qualité de vie</u><br />
+              - En ville : pollution, stress, mais accès rapide aux services<br />
+              - À la campagne : air pur, tranquillité, mais éloignement des
+              services
+            </p>
+
+            <p>
+              <u>Critère 2 : Opportunités professionnelles</u><br />
+              - En ville : nombreuses opportunités d'emploi, diversité des
+              secteurs<br />
+              - À la campagne : moins d'offres, secteurs plus spécifiques
+              (agriculture, tourisme)
+            </p>
+
+            <p>
+              <u>Critère 3 : Coût de la vie</u><br />
+              - En ville : logements plus chers, dépenses quotidiennes
+              élevées<br />
+              - À la campagne : logements plus abordables, possibilité
+              d'autosuffisance
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="argumentation">
+        <h2>L'Argumentation</h2>
+
+        <h3>Principes fondamentaux</h3>
+        <p>
+          Argumenter, c'est développer un raisonnement pour convaincre ou
+          persuader son interlocuteur. Une argumentation efficace s'appuie sur
+          des preuves, des exemples et une structure logique.
+        </p>
+
+        <div class="image-container">
+          <img
+            src="/api/placeholder/500/300"
+            alt="Schéma d'une argumentation structurée"
+          />
+        </div>
+
+        <h3>Structure d'un argument</h3>
+        <p>Un argument complet comprend trois éléments :</p>
+        <ol>
+          <li><strong>La thèse</strong> : l'idée que l'on souhaite défendre</li>
+          <li><strong>L'argument</strong> : la raison qui justifie la thèse</li>
+          <li>
+            <strong>L'exemple</strong> : l'illustration concrète qui renforce
+            l'argument
+          </li>
+        </ol>
+
+        <div class="example">
+          <p><strong>Exemple d'argument complet :</strong></p>
+          <p>
+            <u>Thèse</u> : La lecture régulière est bénéfique pour le
+            développement intellectuel.
+          </p>
+          <p>
+            <u>Argument</u> : Elle permet de développer le vocabulaire et
+            d'améliorer la compréhension de concepts complexes.
+          </p>
+          <p>
+            <u>Exemple</u> : Une étude de l'université de Stanford a démontré
+            que les élèves qui lisent au moins 30 minutes par jour obtiennent de
+            meilleurs résultats dans toutes les matières scolaires.
+          </p>
+        </div>
+
+        <h3>Les connecteurs logiques</h3>
+        <p>
+          Les connecteurs logiques sont essentiels pour articuler les idées et
+          construire un raisonnement cohérent.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Fonction</th>
+                <th>Connecteurs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cause</td>
+                <td>car, parce que, puisque, étant donné que, comme</td>
+              </tr>
+              <tr>
+                <td>Conséquence</td>
+                <td>donc, alors, ainsi, par conséquent, c'est pourquoi</td>
+              </tr>
+              <tr>
+                <td>Opposition</td>
+                <td>mais, cependant, toutefois, néanmoins, en revanche</td>
+              </tr>
+              <tr>
+                <td>Addition</td>
+                <td>de plus, en outre, par ailleurs, également, aussi</td>
+              </tr>
+              <tr>
+                <td>Concession</td>
+                <td>certes, bien que, même si, malgré, en dépit de</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Types d'arguments</h3>
+        <ul>
+          <li>
+            <strong>Arguments d'autorité</strong> : s'appuyer sur des experts ou
+            des autorités reconnues
+          </li>
+          <li>
+            <strong>Arguments par l'exemple</strong> : illustrer par des cas
+            concrets
+          </li>
+          <li>
+            <strong>Arguments par analogie</strong> : établir un parallèle avec
+            une situation similaire
+          </li>
+          <li>
+            <strong>Arguments logiques</strong> : s'appuyer sur un raisonnement
+            déductif ou inductif
+          </li>
+          <li>
+            <strong>Arguments affectifs</strong> : faire appel aux émotions
+          </li>
+        </ul>
+
+        <div class="important-note">
+          <p>
+            <strong>Attention aux sophismes !</strong> Un sophisme est un
+            raisonnement qui semble logique mais qui contient une erreur de
+            raisonnement. Exemples : généralisation abusive, argument ad
+            hominem, faux dilemme.
+          </p>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercice d'argumentation</h4>
+          <p>
+            Rédigez un paragraphe argumentatif sur le thème suivant : "Les
+            réseaux sociaux ont-ils un impact positif ou négatif sur les
+            relations humaines ?"
+          </p>
+          <p>Votre paragraphe doit contenir :</p>
+          <ul>
+            <li>Une thèse claire</li>
+            <li>Au moins deux arguments</li>
+            <li>Un exemple concret</li>
+            <li>Des connecteurs logiques appropriés</li>
+          </ul>
+          <button
+            class="btn show-answer"
+            onclick="document.getElementById('argumentation-answer').classList.toggle('hidden')"
+          >
+            Voir un exemple de réponse
+          </button>
+          <div id="argumentation-answer" class="hidden">
+            <h5>Exemple de réponse</h5>
+            <p>
+              Les réseaux sociaux exercent globalement un impact négatif sur les
+              relations humaines. <strong>En effet</strong>, ils créent une
+              illusion de connexion qui peut se substituer aux interactions
+              réelles. <strong>De plus</strong>, la communication en ligne
+              favorise les malentendus en raison de l'absence des signaux non
+              verbaux essentiels à la compréhension.
+              <strong>Par exemple</strong>, une étude menée par l'université de
+              Pennsylvanie a révélé que les utilisateurs fréquents de réseaux
+              sociaux rapportent paradoxalement un sentiment de solitude plus
+              important que ceux qui limitent leur utilisation.
+              <strong>Certes</strong>, ces plateformes permettent de maintenir
+              des liens avec des personnes géographiquement éloignées,
+              <strong>mais</strong> ce bénéfice ne compense pas
+              l'appauvrissement général des interactions sociales qu'elles
+              engendrent.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>Exercices pratiques</h2>
+
+        <div class="exercise">
+          <h4>Exercice 1 : Identifier les structures comparatives</h4>
+          <p>
+            Soulignez les structures comparatives dans les phrases suivantes et
+            identifiez s'il s'agit de comparatifs de supériorité, d'infériorité,
+            d'égalité ou de superlatifs.
+          </p>
+          <ol>
+            <li>
+              La littérature classique est aussi pertinente aujourd'hui qu'elle
+              l'était au siècle dernier.
+            </li>
+            <li>
+              Les énergies renouvelables sont moins coûteuses maintenant qu'il y
+              a dix ans.
+            </li>
+            <li>
+              Internet est le plus grand changement technologique de notre
+              époque.
+            </li>
+            <li>
+              Les voyages en train sont plus écologiques que les voyages en
+              avion.
+            </li>
+            <li>
+              Ce film est le moins intéressant de tous ceux que j'ai vus cette
+              année.
+            </li>
+          </ol>
+          <button
+            class="btn show-answer"
+            onclick="document.getElementById('exercice1-answer').classList.toggle('hidden')"
+          >
+            Voir les réponses
+          </button>
+          <div id="exercice1-answer" class="hidden">
+            <ol>
+              <li>"aussi pertinente... que" - comparatif d'égalité</li>
+              <li>"moins coûteuses... que" - comparatif d'infériorité</li>
+              <li>"le plus grand" - superlatif relatif de supériorité</li>
+              <li>"plus écologiques que" - comparatif de supériorité</li>
+              <li>"le moins intéressant" - superlatif relatif d'infériorité</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercice 2 : Tableau de comparaison</h4>
+          <p>
+            Complétez le tableau suivant pour comparer l'apprentissage d'une
+            langue étrangère en autonomie ou avec un professeur.
+          </p>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Critères</th>
+                  <th>Apprentissage en autonomie</th>
+                  <th>Apprentissage avec un professeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rythme d'apprentissage</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Correction des erreurs</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Motivation</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Coût</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button
+            class="btn show-answer"
+            onclick="document.getElementById('exercice2-answer').classList.toggle('hidden')"
+          >
+            Voir un exemple de réponse
+          </button>
+          <div id="exercice2-answer" class="hidden">
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Critères</th>
+                    <th>Apprentissage en autonomie</th>
+                    <th>Apprentissage avec un professeur</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Rythme d'apprentissage</td>
+                    <td>
+                      Personnalisable selon ses disponibilités et capacités
+                    </td>
+                    <td>
+                      Cadencé par les séances de cours et le programme établi
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Correction des erreurs</td>
+                    <td>
+                      Autodidacte, risque de ne pas identifier ses propres
+                      erreurs
+                    </td>
+                    <td>Feedback immédiat et personnalisé par un expert</td>
+                  </tr>
+                  <tr>
+                    <td>Motivation</td>
+                    <td>Nécessite une forte discipline personnelle</td>
+                    <td>
+                      Soutenue par l'engagement envers le professeur et le
+                      groupe
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Coût</td>
+                    <td>
+                      Généralement moins coûteux (ressources gratuites en ligne)
+                    </td>
+                    <td>Plus onéreux (frais de scolarité ou tarif horaire)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercice 3 : Rédaction argumentative</h4>
+          <p>
+            Choisissez l'un des sujets suivants et rédigez un texte argumentatif
+            de 150-200 mots :
+          </p>
+          <ul>
+            <li>
+              Faut-il interdire l'usage des téléphones portables dans les écoles
+              ?
+            </li>
+            <li>
+              Le télétravail représente-t-il l'avenir du monde professionnel ?
+            </li>
+            <li>
+              Les livres papier sont-ils menacés par les livres numériques ?
+            </li>
+          </ul>
+          <p>
+            Utilisez au moins trois types d'arguments différents et structurez
+            votre texte avec une introduction, un développement et une
+            conclusion.
+          </p>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercice 4 : Identification de sophismes</h4>
+          <p>Identifiez les sophismes dans les arguments suivants :</p>
+          <ol>
+            <li>
+              "Tous les politiciens sont corrompus, donc il ne faut pas aller
+              voter."
+            </li>
+            <li>
+              "Mon grand-père a fumé toute sa vie et il a vécu jusqu'à 95 ans,
+              donc fumer n'est pas dangereux pour la santé."
+            </li>
+            <li>
+              "Soit on accepte cette proposition de loi, soit on laisse le pays
+              sombrer dans le chaos."
+            </li>
+            <li>
+              "Comment cet expert peut-il parler d'écologie alors qu'il prend
+              l'avion régulièrement ?"
+            </li>
+            <li>
+              "La plupart des criminels jouent aux jeux vidéo violents, donc les
+              jeux vidéo violents créent des criminels."
+            </li>
+          </ol>
+          <button
+            class="btn show-answer"
+            onclick="document.getElementById('exercice4-answer').classList.toggle('hidden')"
+          >
+            Voir les réponses
+          </button>
+          <div id="exercice4-answer" class="hidden">
+            <ol>
+              <li>
+                Généralisation abusive (tous les politiciens) et conclusion non
+                justifiée
+              </li>
+              <li>
+                Anecdote personnelle présentée comme preuve générale (cas
+                particulier)
+              </li>
+              <li>
+                Faux dilemme (présentation de deux options extrêmes comme les
+                seules possibles)
+              </li>
+              <li>
+                Argument ad hominem (attaque de la personne plutôt que ses
+                idées)
+              </li>
+              <li>Confusion entre corrélation et causalité</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="ressources">
+        <h2>Ressources complémentaires</h2>
+
+        <h3>Ouvrages recommandés</h3>
+        <ul>
+          <li><strong>L'argumentation écrite</strong> par Claude Thomasset</li>
+          <li><strong>L'art de convaincre</strong> par Philippe Breton</li>
+          <li>
+            <strong>La comparaison et ses expressions</strong> par Michel
+            Charolles
+          </li>
+        </ul>
+
+        <h3>Vidéos pédagogiques</h3>
+        <div class="image-container">
+          <img
+            src="/api/placeholder/500/300"
+            alt="Écran de vidéo pédagogique"
+          />
+        </div>
+        <ul>
+          <li>
+            Série "Les techniques d'argumentation" sur la chaîne YouTube
+            "Français avec Pierre"
+          </li>
+          <li>MOOC "Argumenter pour convaincre" sur la plateforme FUN</li>
+        </ul>
+
+        <h3>Activités interactives</h3>
+        <p>Pour tester vos connaissances et vous entraîner davantage :</p>
+        <div class="btn-container">
+          <a href="#" class="btn">Quiz interactif</a>
+          <a href="#" class="btn btn-secondary">Générateur d'exercices</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 - Cours de Français - Comparer et Argumenter</p>
+      <p>Développé pour l'apprentissage du français comme langue étrangère</p>
+    </footer>
+
+    <script>
+      // Script pour la navigation fluide
+      document.querySelectorAll("nav a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

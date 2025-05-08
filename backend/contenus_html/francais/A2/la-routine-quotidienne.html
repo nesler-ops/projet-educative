@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La routine quotidienne - Cours de français</title>
+    <style>
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #f39c12;
+        --accent-color: #e74c3c;
+        --bg-color: #f5f5f5;
+        --text-color: #333;
+        --light-gray: #ddd;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-style: italic;
+        margin-top: 0.5rem;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      section {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--light-gray);
+        padding-bottom: 0.5rem;
+        margin-top: 0;
+      }
+
+      h3 {
+        color: var(--secondary-color);
+      }
+
+      .vocabulary-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+      }
+
+      .vocabulary-item {
+        background-color: #f9f9f9;
+        border-left: 4px solid var(--primary-color);
+        padding: 1rem;
+        border-radius: 4px;
+      }
+
+      .vocabulary-item strong {
+        color: var(--primary-color);
+      }
+
+      .time-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+      }
+
+      .time-table th,
+      .time-table td {
+        border: 1px solid var(--light-gray);
+        padding: 0.75rem;
+        text-align: left;
+      }
+
+      .time-table th {
+        background-color: var(--primary-color);
+        color: white;
+      }
+
+      .time-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .example {
+        background-color: #e8f4f8;
+        border-left: 4px solid var(--secondary-color);
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 4px;
+      }
+
+      .exercise {
+        background-color: #fff8e1;
+        border: 1px solid #ffecb3;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .exercise h3 {
+        margin-top: 0;
+        color: var(--secondary-color);
+      }
+
+      .exercise-question {
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+
+      .answer-box {
+        background-color: white;
+        border: 1px dashed var(--light-gray);
+        padding: 0.5rem;
+        min-height: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #2980b9;
+      }
+
+      .btn-secondary {
+        background-color: var(--secondary-color);
+      }
+
+      .btn-secondary:hover {
+        background-color: #e67e22;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0;
+      }
+
+      .timeline {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+        position: relative;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background-color: var(--primary-color);
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      .timeline-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        width: 100px;
+      }
+
+      .timeline-time {
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .timeline-label {
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      .grammar-box {
+        background-color: #e3f2fd;
+        border-left: 4px solid #2196f3;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+      }
+
+      .tip {
+        background-color: #e8f5e9;
+        border-left: 4px solid #4caf50;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .vocabulary-list {
+          grid-template-columns: 1fr;
+        }
+
+        .timeline {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .timeline::before {
+          top: 0;
+          bottom: 0;
+          left: 30px;
+          right: auto;
+          width: 4px;
+          height: auto;
+          transform: none;
+        }
+
+        .timeline-item {
+          flex-direction: row;
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+
+        .timeline-time {
+          margin-right: 1rem;
+          margin-bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La routine quotidienne</h1>
+      <p class="subtitle">Apprenez à parler de votre journée en français</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Bienvenue à notre leçon sur <strong>la routine quotidienne</strong> en
+          français ! Dans cette leçon, vous apprendrez le vocabulaire et les
+          expressions pour décrire votre journée typique, de l'heure du réveil
+          jusqu'au coucher.
+        </p>
+        <p>Nous étudierons :</p>
+        <ul>
+          <li>Le vocabulaire des activités quotidiennes</li>
+          <li>Comment parler des heures et des moments de la journée</li>
+          <li>Les verbes pronominaux utilisés pour parler de la routine</li>
+          <li>Comment structurer votre journée en français</li>
+        </ul>
+
+        <div class="image-container">
+          <img
+            src="/api/placeholder/600/300"
+            alt="Une journée typique en images"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2>Vocabulaire essentiel</h2>
+        <p>
+          Voici les mots et expressions clés pour parler de votre routine
+          quotidienne :
+        </p>
+
+        <div class="vocabulary-list">
+          <div class="vocabulary-item">
+            <strong>se réveiller</strong> - to wake up
+          </div>
+          <div class="vocabulary-item">
+            <strong>se lever</strong> - to get up
+          </div>
+          <div class="vocabulary-item">
+            <strong>prendre une douche</strong> - to take a shower
+          </div>
+          <div class="vocabulary-item">
+            <strong>se brosser les dents</strong> - to brush one's teeth
+          </div>
+          <div class="vocabulary-item">
+            <strong>s'habiller</strong> - to get dressed
+          </div>
+          <div class="vocabulary-item">
+            <strong>prendre le petit-déjeuner</strong> - to have breakfast
+          </div>
+          <div class="vocabulary-item">
+            <strong>aller au travail/à l'école</strong> - to go to work/school
+          </div>
+          <div class="vocabulary-item">
+            <strong>déjeuner</strong> - to have lunch
+          </div>
+          <div class="vocabulary-item">
+            <strong>travailler</strong> - to work
+          </div>
+          <div class="vocabulary-item">
+            <strong>rentrer à la maison</strong> - to return home
+          </div>
+          <div class="vocabulary-item">
+            <strong>préparer le dîner</strong> - to prepare dinner
+          </div>
+          <div class="vocabulary-item">
+            <strong>dîner</strong> - to have dinner
+          </div>
+          <div class="vocabulary-item">
+            <strong>se détendre</strong> - to relax
+          </div>
+          <div class="vocabulary-item">
+            <strong>regarder la télé</strong> - to watch TV
+          </div>
+          <div class="vocabulary-item">
+            <strong>se coucher</strong> - to go to bed
+          </div>
+          <div class="vocabulary-item">
+            <strong>s'endormir</strong> - to fall asleep
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Les moments de la journée</h2>
+        <p>
+          Pour parler de votre routine, il est important de connaître les
+          différents moments de la journée :
+        </p>
+
+        <table class="time-table">
+          <thead>
+            <tr>
+              <th>Français</th>
+              <th>English</th>
+              <th>Heures approximatives</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>le matin</td>
+              <td>morning</td>
+              <td>6h - 12h</td>
+            </tr>
+            <tr>
+              <td>midi</td>
+              <td>noon</td>
+              <td>12h</td>
+            </tr>
+            <tr>
+              <td>l'après-midi</td>
+              <td>afternoon</td>
+              <td>12h - 18h</td>
+            </tr>
+            <tr>
+              <td>le soir</td>
+              <td>evening</td>
+              <td>18h - 22h</td>
+            </tr>
+            <tr>
+              <td>la nuit</td>
+              <td>night</td>
+              <td>22h - 6h</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">6h</div>
+            <div class="timeline-label">Le réveil</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">8h</div>
+            <div class="timeline-label">Le départ</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">12h</div>
+            <div class="timeline-label">Le déjeuner</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">18h</div>
+            <div class="timeline-label">Le retour</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">20h</div>
+            <div class="timeline-label">Le dîner</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">23h</div>
+            <div class="timeline-label">Le coucher</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Les verbes pronominaux</h2>
+        <div class="grammar-box">
+          <h3>Qu'est-ce qu'un verbe pronominal ?</h3>
+          <p>
+            Les verbes pronominaux sont des verbes qui se conjuguent avec un
+            pronom réfléchi (me, te, se, nous, vous, se). Ils sont très utilisés
+            pour parler de la routine quotidienne.
+          </p>
+          <p>Exemple : <strong>se lever</strong> (to get up)</p>
+          <ul>
+            <li>Je <strong>me</strong> lève à 7h.</li>
+            <li>Tu <strong>te</strong> lèves à quelle heure ?</li>
+            <li>Il/Elle <strong>se</strong> lève tôt.</li>
+            <li>Nous <strong>nous</strong> levons ensemble.</li>
+            <li>Vous <strong>vous</strong> levez tard le weekend.</li>
+            <li>Ils/Elles <strong>se</strong> lèvent à 6h30.</li>
+          </ul>
+        </div>
+
+        <div class="tip">
+          <h3>Astuce</h3>
+          <p>
+            Au passé composé, les verbes pronominaux utilisent toujours
+            l'auxiliaire "être" et s'accordent avec le sujet.
+          </p>
+          <p>Exemple : <strong>Je me suis levé(e) à 8h ce matin.</strong></p>
+        </div>
+
+        <h3>Verbes pronominaux courants de la routine quotidienne</h3>
+        <div class="vocabulary-list">
+          <div class="vocabulary-item">
+            <strong>se réveiller</strong> - Je me réveille tôt.
+          </div>
+          <div class="vocabulary-item">
+            <strong>se lever</strong> - Elle se lève à 7h.
+          </div>
+          <div class="vocabulary-item">
+            <strong>se laver</strong> - Nous nous lavons le matin.
+          </div>
+          <div class="vocabulary-item">
+            <strong>se brosser</strong> - Tu te brosses les dents.
+          </div>
+          <div class="vocabulary-item">
+            <strong>s'habiller</strong> - Vous vous habillez rapidement.
+          </div>
+          <div class="vocabulary-item">
+            <strong>se maquiller</strong> - Elle se maquille avant de sortir.
+          </div>
+          <div class="vocabulary-item">
+            <strong>se dépêcher</strong> - Je me dépêche pour ne pas être en
+            retard.
+          </div>
+          <div class="vocabulary-item">
+            <strong>se reposer</strong> - Ils se reposent l'après-midi.
+          </div>
+          <div class="vocabulary-item">
+            <strong>se détendre</strong> - Nous nous détendons après le travail.
+          </div>
+          <div class="vocabulary-item">
+            <strong>se coucher</strong> - Tu te couches tard.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exemple d'une routine quotidienne</h2>
+        <div class="example">
+          <p><strong>Ma journée typique</strong></p>
+          <p>
+            Je me réveille à 6h30 et je me lève tout de suite. Je prends une
+            douche, puis je m'habille. Je me brosse les dents et je prends mon
+            petit-déjeuner vers 7h15. Je pars de chez moi à 8h pour aller au
+            travail. J'arrive au bureau à 8h30 et je travaille jusqu'à midi.
+          </p>
+          <p>
+            À midi, je déjeune avec mes collègues à la cantine. L'après-midi, je
+            continue à travailler jusqu'à 17h30. Après le travail, je rentre
+            chez moi et j'arrive vers 18h. Je prépare le dîner et je mange vers
+            19h30. Ensuite, je me détends un peu : je regarde la télé ou je lis
+            un livre. À 22h, je me brosse les dents et je me couche. Je m'endors
+            généralement vers 22h30.
+          </p>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="/api/placeholder/800/200"
+            alt="Une journée typique en images"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2>Expressions de temps et connecteurs</h2>
+        <p>
+          Pour structurer votre description d'une journée typique, utilisez ces
+          expressions :
+        </p>
+
+        <div class="vocabulary-list">
+          <div class="vocabulary-item"><strong>d'abord</strong> - first</div>
+          <div class="vocabulary-item"><strong>puis</strong> - then</div>
+          <div class="vocabulary-item">
+            <strong>ensuite</strong> - next, afterwards
+          </div>
+          <div class="vocabulary-item"><strong>après</strong> - after</div>
+          <div class="vocabulary-item"><strong>plus tard</strong> - later</div>
+          <div class="vocabulary-item"><strong>enfin</strong> - finally</div>
+          <div class="vocabulary-item">
+            <strong>vers</strong> - around (time)
+          </div>
+          <div class="vocabulary-item"><strong>à</strong> - at (time)</div>
+          <div class="vocabulary-item"><strong>pendant</strong> - during</div>
+          <div class="vocabulary-item">
+            <strong>avant de</strong> - before (doing something)
+          </div>
+          <div class="vocabulary-item">
+            <strong>après avoir</strong> - after having (done something)
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exercices</h2>
+
+        <div class="exercise">
+          <h3>Exercice 1 : Complétez avec le verbe pronominal correct</h3>
+          <div class="exercise-question">
+            1. Le matin, je __________ (se réveiller) à 7h.
+          </div>
+          <div class="answer-box"></div>
+
+          <div class="exercise-question">
+            2. Ensuite, je __________ (se lever) et je __________ (se doucher).
+          </div>
+          <div class="answer-box"></div>
+
+          <div class="exercise-question">
+            3. Après la douche, je __________ (s'habiller) rapidement.
+          </div>
+          <div class="answer-box"></div>
+
+          <div class="exercise-question">
+            4. Le soir, nous __________ (se détendre) en famille.
+          </div>
+          <div class="answer-box"></div>
+
+          <div class="exercise-question">
+            5. À quelle heure __________ -vous (se coucher) habituellement ?
+          </div>
+          <div class="answer-box"></div>
+
+          <button
+            class="btn"
+            onclick="alert('Réponses:\n1. me réveille\n2. me lève, me douche\n3. m\'habille\n4. nous détendons\n5. vous couchez-vous')"
+          >
+            Voir les réponses
+          </button>
+        </div>
+
+        <div class="exercise">
+          <h3>Exercice 2 : Remettez ces activités dans l'ordre logique</h3>
+          <p>
+            Numérotez ces activités de 1 à 8 dans l'ordre d'une journée typique
+            :
+          </p>
+
+          <div class="exercise-question">____ dîner</div>
+          <div class="exercise-question">____ se lever</div>
+          <div class="exercise-question">____ travailler</div>
+          <div class="exercise-question">____ se coucher</div>
+          <div class="exercise-question">____ déjeuner</div>
+          <div class="exercise-question">____ prendre le petit-déjeuner</div>
+          <div class="exercise-question">____ se réveiller</div>
+          <div class="exercise-question">____ rentrer à la maison</div>
+
+          <button
+            class="btn"
+            onclick="alert('Ordre logique possible:\n1. se réveiller\n2. se lever\n3. prendre le petit-déjeuner\n4. travailler\n5. déjeuner\n6. rentrer à la maison\n7. dîner\n8. se coucher')"
+          >
+            Voir une réponse possible
+          </button>
+        </div>
+
+        <div class="exercise">
+          <h3>Exercice 3 : Écrivez votre routine quotidienne</h3>
+          <p>
+            Décrivez votre journée typique en utilisant au moins 8 verbes de la
+            routine quotidienne et 4 expressions de temps.
+          </p>
+          <textarea
+            rows="10"
+            style="
+              width: 100%;
+              padding: 0.5rem;
+              border: 1px solid #ddd;
+              border-radius: 4px;
+            "
+          ></textarea>
+          <button class="btn btn-secondary" style="margin-top: 1rem">
+            Enregistrer ma réponse
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Dialogue : Une journée typique</h2>
+        <div class="example">
+          <p>
+            <strong>Marie :</strong> Salut Thomas ! À quelle heure est-ce que tu
+            te réveilles le matin ?
+          </p>
+          <p>
+            <strong>Thomas :</strong> Je me réveille à 6h30 en semaine. Et toi ?
+          </p>
+          <p>
+            <strong>Marie :</strong> Moi, je me lève plus tard, vers 7h15.
+            Comment se passe ta matinée ?
+          </p>
+          <p>
+            <strong>Thomas :</strong> D'abord, je prends une douche, puis je
+            m'habille. Ensuite, je prends un café et des céréales pour le
+            petit-déjeuner.
+          </p>
+          <p>
+            <strong>Marie :</strong> Tu pars à quelle heure pour aller au
+            travail ?
+          </p>
+          <p>
+            <strong>Thomas :</strong> Je quitte la maison à 8h pour arriver au
+            bureau vers 8h30. Et toi, comment se passe ton après-midi ?
+          </p>
+          <p>
+            <strong>Marie :</strong> Je travaille jusqu'à 17h, puis je fais
+            souvent du sport avant de rentrer. Le soir, je prépare le dîner et
+            je regarde un peu la télé.
+          </p>
+          <p>
+            <strong>Thomas :</strong> À quelle heure est-ce que tu te couches ?
+          </p>
+          <p>
+            <strong>Marie :</strong> Je me couche vers 22h30, mais le weekend je
+            me couche plus tard.
+          </p>
+        </div>
+
+        <div class="exercise">
+          <h3>Exercice 4 : Questions sur le dialogue</h3>
+          <div class="exercise-question">
+            1. À quelle heure Thomas se réveille-t-il ?
+          </div>
+          <div class="answer-box"></div>
+
+          <div class="exercise-question">
+            2. Qu'est-ce que Thomas prend au petit-déjeuner ?
+          </div>
+          <div class="answer-box"></div>
+
+          <div class="exercise-question">
+            3. À quelle heure Marie se lève-t-elle ?
+          </div>
+          <div class="answer-box"></div>
+
+          <div class="exercise-question">
+            4. Que fait Marie après le travail ?
+          </div>
+          <div class="answer-box"></div>
+
+          <div class="exercise-question">
+            5. À quelle heure Marie se couche-t-elle ?
+          </div>
+          <div class="answer-box"></div>
+
+          <button
+            class="btn"
+            onclick="alert('Réponses:\n1. Il se réveille à 6h30 en semaine.\n2. Il prend un café et des céréales.\n3. Elle se lève vers 7h15.\n4. Elle fait souvent du sport avant de rentrer.\n5. Elle se couche vers 22h30.')"
+          >
+            Voir les réponses
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Activité créative</h2>
+        <div class="exercise">
+          <h3>Créez votre routine idéale</h3>
+          <p>
+            Imaginez que vous pouvez organiser votre journée comme vous le
+            souhaitez, sans contraintes. Décrivez cette journée idéale en
+            français.
+          </p>
+          <p>Utilisez au moins :</p>
+          <ul>
+            <li>5 verbes pronominaux</li>
+            <li>7 activités de la routine quotidienne</li>
+            <li>4 expressions de temps</li>
+          </ul>
+          <textarea
+            rows="12"
+            style="
+              width: 100%;
+              padding: 0.5rem;
+              border: 1px solid #ddd;
+              border-radius: 4px;
+            "
+          ></textarea>
+          <button class="btn btn-secondary" style="margin-top: 1rem">
+            Enregistrer ma journée idéale
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Résumé de la leçon</h2>
+        <p>Dans cette leçon, nous avons appris :</p>
+        <ul>
+          <li>
+            Le vocabulaire essentiel pour parler de la routine quotidienne
+          </li>
+          <li>Les différents moments de la journée en français</li>
+          <li>
+            Comment utiliser les verbes pronominaux pour décrire nos actions
+            quotidiennes
+          </li>
+          <li>
+            Les expressions de temps pour structurer le récit d'une journée
+          </li>
+        </ul>
+
+        <div class="tip">
+          <h3>Pour aller plus loin</h3>
+          <p>
+            Essayez de tenir un journal en français pendant une semaine, en
+            décrivant chaque jour votre routine. C'est un excellent exercice
+            pour pratiquer le vocabulaire et les structures appris dans cette
+            leçon !
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 - Cours de français - La routine quotidienne</p>
+      <p>Une ressource pédagogique pour les apprenants du français</p>
+    </footer>
+
+    <script>
+      // Simple script to make the exercises interactive
+      document.querySelectorAll(".btn-secondary").forEach((button) => {
+        button.addEventListener("click", function () {
+          alert("Votre réponse a été enregistrée ! Beau travail !");
+        });
+      });
+    </script>
+  </body>
+</html>

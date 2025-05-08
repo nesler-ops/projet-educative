@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-jose[cryptography]
+pymongo
+psycopg2-binary
+
+
+
+#npm install bootstrap

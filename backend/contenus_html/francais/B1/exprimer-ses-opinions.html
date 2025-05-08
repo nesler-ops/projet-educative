@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exprimer ses opinions en français</title>
+    <style>
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #2980b9;
+        --accent-color: #e74c3c;
+        --light-color: #ecf0f1;
+        --dark-color: #2c3e50;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f5f7fa;
+      }
+
+      header {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .intro {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      section {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--light-color);
+      }
+
+      h3 {
+        color: var(--secondary-color);
+        margin: 1.5rem 0 0.5rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      .example {
+        background-color: var(--light-color);
+        padding: 1rem;
+        border-left: 4px solid var(--primary-color);
+        margin: 1rem 0;
+        border-radius: 0 4px 4px 0;
+      }
+
+      .highlight {
+        font-weight: bold;
+        color: var(--accent-color);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+      }
+
+      th,
+      td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid var(--light-color);
+      }
+
+      th {
+        background-color: var(--primary-color);
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .exercise {
+        background-color: #e8f4fc;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin: 1.5rem 0;
+      }
+
+      .exercise-title {
+        color: var(--secondary-color);
+        font-weight: bold;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .exercise-title::before {
+        content: "✏️";
+        margin-right: 0.5rem;
+      }
+
+      .exercise-question {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: var(--secondary-color);
+      }
+
+      .solution {
+        display: none;
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 4px;
+        margin-top: 1rem;
+      }
+
+      .tip-box {
+        background-color: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0 4px 4px 0;
+      }
+
+      .tip-box::before {
+        content: "💡 Conseil";
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .intonation-box {
+        background-color: #d1ecf1;
+        border-left: 4px solid #17a2b8;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0 4px 4px 0;
+      }
+
+      .intonation-box::before {
+        content: "🔊 Intonation";
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .vocabulary-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+        transition: transform 0.3s;
+      }
+
+      .vocabulary-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .vocabulary-term {
+        font-weight: bold;
+        color: var(--secondary-color);
+      }
+
+      .vocabulary-definition {
+        color: #666;
+      }
+
+      .image-container {
+        text-align: center;
+        margin: 1.5rem 0;
+      }
+
+      .image-container img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .image-caption {
+        font-style: italic;
+        color: #666;
+        margin-top: 0.5rem;
+      }
+
+      footer {
+        background-color: var(--dark-color);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 2rem;
+      }
+
+      .language-level {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 0 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+
+      .situation-card {
+        background-color: #f0f8ff;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        border: 1px dashed var(--primary-color);
+      }
+
+      .situation-title {
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .tabs {
+        display: flex;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 1rem;
+      }
+
+      .tab {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        border-bottom: none;
+        border-radius: 4px 4px 0 0;
+        margin-right: 0.5rem;
+      }
+
+      .tab.active {
+        background-color: white;
+        border-bottom: 1px solid white;
+        margin-bottom: -1px;
+        color: var(--primary-color);
+        font-weight: bold;
+      }
+
+      .tab-content {
+        display: none;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      .dialogue-box {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+      }
+
+      .dialogue-speaker {
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      .cultural-note {
+        background-color: #e6f7ff;
+        border-left: 4px solid #1890ff;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0 4px 4px 0;
+      }
+
+      .cultural-note::before {
+        content: "🌍 Note culturelle";
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Exprimer ses opinions en français</h1>
+        <p class="subtitle">
+          Apprenez à donner votre avis et à argumenter en français
+        </p>
+        <span class="language-level">Niveau B1-B2</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="intro">
+        <h2>Introduction</h2>
+        <p>
+          Savoir exprimer son opinion est une compétence essentielle pour
+          communiquer efficacement en français. Que ce soit pour participer à
+          une discussion, donner votre avis sur un sujet d'actualité ou
+          simplement partager vos préférences, cette leçon vous aidera à
+          maîtriser les expressions et structures nécessaires pour formuler
+          clairement vos pensées.
+        </p>
+
+        <div class="image-container">
+          <img
+            src="/api/placeholder/600/300"
+            alt="Personnes discutant et partageant leurs opinions"
+          />
+          <p class="image-caption">
+            Savoir exprimer son opinion est essentiel dans les discussions
+            quotidiennes
+          </p>
+        </div>
+      </div>
+
+      <section id="expressions-base">
+        <h2>Expressions de base pour donner son opinion</h2>
+
+        <p>
+          Voici quelques expressions courantes pour introduire votre opinion en
+          français :
+        </p>
+
+        <table>
+          <tr>
+            <th>Niveau de certitude</th>
+            <th>Expressions</th>
+          </tr>
+          <tr>
+            <td>Opinion forte</td>
+            <td>
+              - Je suis convaincu(e) que...<br />
+              - Je suis certain(e) que...<br />
+              - Il est évident que...<br />
+              - Je n'ai aucun doute que...
+            </td>
+          </tr>
+          <tr>
+            <td>Opinion modérée</td>
+            <td>
+              - Je pense que...<br />
+              - Je crois que...<br />
+              - À mon avis...<br />
+              - Selon moi...
+            </td>
+          </tr>
+          <tr>
+            <td>Opinion réservée</td>
+            <td>
+              - J'ai l'impression que...<br />
+              - Il me semble que...<br />
+              - Je dirais que...<br />
+              - Je suppose que...
+            </td>
+          </tr>
+        </table>
+
+        <div class="example">
+          <p>
+            <span class="highlight">Je pense que</span> l'apprentissage d'une
+            langue étrangère est essentiel de nos jours.
+          </p>
+          <p>
+            <span class="highlight">À mon avis</span>, le cinéma français est
+            très diversifié et intéressant.
+          </p>
+          <p>
+            <span class="highlight">Je suis convaincu(e) que</span> les voyages
+            sont la meilleure façon d'apprendre une langue.
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <p>
+            Pour nuancer votre opinion, vous pouvez utiliser des adverbes comme
+            : personnellement, franchement, sincèrement, honnêtement.
+          </p>
+          <p>
+            Exemple :
+            <span class="highlight">Personnellement, je trouve que</span> cette
+            méthode est efficace.
+          </p>
+        </div>
+      </section>
+
+      <section id="structures-grammaticales">
+        <h2>Structures grammaticales utiles</h2>
+
+        <h3>Utiliser le subjonctif</h3>
+        <p>Après certaines expressions d'opinion, on utilise le subjonctif :</p>
+
+        <div class="example">
+          <p>
+            Je doute que ce film
+            <span class="highlight">soit</span> intéressant. (subjonctif du
+            verbe "être")
+          </p>
+          <p>
+            Je ne pense pas qu'il <span class="highlight">ait</span> raison.
+            (subjonctif du verbe "avoir")
+          </p>
+        </div>
+
+        <h3>Utiliser l'indicatif</h3>
+        <p>Après d'autres expressions d'opinion, on utilise l'indicatif :</p>
+
+        <div class="example">
+          <p>
+            Je pense que ce film <span class="highlight">est</span> intéressant.
+            (indicatif du verbe "être")
+          </p>
+          <p>
+            Je suis sûr(e) qu'il <span class="highlight">a</span> raison.
+            (indicatif du verbe "avoir")
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <p>
+            En général, les expressions qui expriment une certitude utilisent
+            l'indicatif, tandis que celles qui expriment un doute ou une
+            incertitude utilisent le subjonctif.
+          </p>
+        </div>
+
+        <h3>Formules conditionnelles</h3>
+        <p>Pour exprimer une opinion hypothétique :</p>
+
+        <div class="example">
+          <p>
+            <span class="highlight">Si j'étais à votre place</span>, je
+            choisirais l'option B.
+          </p>
+          <p>
+            <span class="highlight">À votre place</span>, j'aurais fait
+            autrement.
+          </p>
+        </div>
+      </section>
+
+      <section id="accord-desaccord">
+        <h2>Exprimer son accord ou son désaccord</h2>
+
+        <div class="tabs">
+          <div class="tab active" onclick="openTab(event, 'accord')">
+            Expressions d'accord
+          </div>
+          <div class="tab" onclick="openTab(event, 'desaccord')">
+            Expressions de désaccord
+          </div>
+          <div class="tab" onclick="openTab(event, 'nuance')">
+            Opinions nuancées
+          </div>
+        </div>
+
+        <div id="accord" class="tab-content active">
+          <ul>
+            <li>Je suis d'accord avec vous/toi.</li>
+            <li>Je partage votre/ton avis.</li>
+            <li>Tout à fait !</li>
+            <li>Absolument !</li>
+            <li>C'est exactement ce que je pense.</li>
+            <li>Je ne pourrais pas être plus d'accord.</li>
+          </ul>
+
+          <div class="example">
+            <p>
+              - Je trouve que l'éducation est la clé du développement d'un
+              pays.<br />
+              - <span class="highlight">Je suis tout à fait d'accord</span>.
+              L'accès à l'éducation devrait être une priorité.
+            </p>
+          </div>
+        </div>
+
+        <div id="desaccord" class="tab-content">
+          <ul>
+            <li>Je ne suis pas d'accord.</li>
+            <li>Je ne partage pas votre/ton avis.</li>
+            <li>Je ne crois pas, non.</li>
+            <li>Pas du tout !</li>
+            <li>Au contraire !</li>
+            <li>Permettez-moi/Permets-moi de vous/te contredire.</li>
+          </ul>
+
+          <div class="example">
+            <p>
+              - Le travail à distance n'est pas efficace pour la collaboration
+              d'équipe.<br />
+              - <span class="highlight">Je ne suis pas d'accord</span>. Avec les
+              bons outils, la collaboration peut être très efficace même à
+              distance.
+            </p>
+          </div>
+        </div>
+
+        <div id="nuance" class="tab-content">
+          <ul>
+            <li>Je suis d'accord, mais...</li>
+            <li>Oui, en partie, cependant...</li>
+            <li>Je comprends votre/ton point de vue, néanmoins...</li>
+            <li>Dans une certaine mesure, oui, toutefois...</li>
+            <li>C'est vrai, bien que...</li>
+          </ul>
+
+          <div class="example">
+            <p>
+              - Les réseaux sociaux ont un impact négatif sur la société.<br />
+              -
+              <span class="highlight"
+                >Je suis d'accord dans une certaine mesure, toutefois</span
+              >
+              ils permettent aussi de maintenir des liens sociaux importants.
+            </p>
+          </div>
+        </div>
+
+        <div class="cultural-note">
+          <p>
+            En France, la culture du débat est très valorisée. Il est tout à
+            fait acceptable d'exprimer poliment son désaccord, même dans des
+            contextes formels. C'est souvent perçu comme un signe d'engagement
+            intellectuel plutôt que comme une confrontation.
+          </p>
+        </div>
+      </section>
+
+      <section id="argumenter">
+        <h2>Comment argumenter efficacement</h2>
+
+        <h3>Structure d'un argument</h3>
+        <p>Un argument bien construit comprend généralement :</p>
+        <ol>
+          <li>Une idée principale ou une thèse</li>
+          <li>Des preuves ou des exemples pour soutenir cette idée</li>
+          <li>Une conclusion qui résume votre position</li>
+        </ol>
+
+        <h3>Connecteurs logiques</h3>
+        <p>
+          Pour structurer votre argumentation, utilisez des connecteurs logiques
+          :
+        </p>
+
+        <table>
+          <tr>
+            <th>Fonction</th>
+            <th>Connecteurs</th>
+          </tr>
+          <tr>
+            <td>Addition</td>
+            <td>de plus, en outre, par ailleurs, également</td>
+          </tr>
+          <tr>
+            <td>Opposition</td>
+            <td>mais, cependant, toutefois, néanmoins, en revanche</td>
+          </tr>
+          <tr>
+            <td>Cause</td>
+            <td>car, parce que, puisque, étant donné que</td>
+          </tr>
+          <tr>
+            <td>Conséquence</td>
+            <td>donc, alors, par conséquent, c'est pourquoi</td>
+          </tr>
+          <tr>
+            <td>Conclusion</td>
+            <td>en conclusion, pour conclure, finalement, en résumé</td>
+          </tr>
+        </table>
+
+        <div class="example">
+          <p>
+            Je pense que la lecture est essentielle pour le développement
+            personnel. <span class="highlight">En effet</span>, elle permet
+            d'enrichir son vocabulaire et sa culture générale.
+            <span class="highlight">De plus</span>, c'est une activité qui
+            stimule l'imagination. <span class="highlight">Cependant</span>, de
+            nos jours, beaucoup de jeunes préfèrent les écrans aux livres.
+            <span class="highlight">Par conséquent</span>, il est important
+            d'encourager la lecture dès le plus jeune âge.
+            <span class="highlight">En conclusion</span>, la lecture reste un
+            atout majeur pour la réussite scolaire et professionnelle.
+          </p>
+        </div>
+      </section>
+
+      <section id="situations">
+        <h2>Situations typiques</h2>
+
+        <div class="situation-card">
+          <div class="situation-title">Au café avec des amis</div>
+          <div class="dialogue-box">
+            <p>
+              <span class="dialogue-speaker">Thomas :</span> Qu'est-ce que tu
+              penses du nouveau film de Spielberg ?
+            </p>
+            <p>
+              <span class="dialogue-speaker">Marie :</span>
+              <span class="highlight">À mon avis</span>, c'est l'un de ses
+              meilleurs films. <span class="highlight">Je trouve que</span> les
+              effets spéciaux sont impressionnants.
+            </p>
+            <p>
+              <span class="dialogue-speaker">Lucas :</span>
+              <span class="highlight">Je ne suis pas tout à fait d'accord</span
+              >. <span class="highlight">Certes</span>, les effets sont réussis,
+              <span class="highlight">mais</span> l'histoire manque
+              d'originalité.
+            </p>
+            <p>
+              <span class="dialogue-speaker">Marie :</span>
+              <span class="highlight">Tu as peut-être raison</span>,
+              <span class="highlight">cependant</span> je pense que c'était
+              voulu comme un hommage à ses films précédents.
+            </p>
+          </div>
+        </div>
+
+        <div class="situation-card">
+          <div class="situation-title">Débat en classe</div>
+          <div class="dialogue-box">
+            <p>
+              <span class="dialogue-speaker">Professeur :</span> Pensez-vous que
+              l'uniforme scolaire devrait être obligatoire ?
+            </p>
+            <p>
+              <span class="dialogue-speaker">Emma :</span>
+              <span class="highlight">Je suis convaincue que</span> l'uniforme
+              scolaire est une bonne idée.
+              <span class="highlight">Tout d'abord</span>, il réduit les
+              inégalités sociales visibles entre élèves.
+              <span class="highlight">De plus</span>, il crée un sentiment
+              d'appartenance à l'école.
+            </p>
+            <p>
+              <span class="dialogue-speaker">Antoine :</span>
+              <span class="highlight">Je ne partage pas cet avis</span>.
+              <span class="highlight">À mon sens</span>, l'uniforme limite
+              l'expression personnelle des élèves.
+              <span class="highlight">Par ailleurs</span>, je doute que cela
+              résolve vraiment les problèmes d'inégalité.
+            </p>
+          </div>
+        </div>
+
+        <div class="intonation-box">
+          <p>
+            L'intonation joue un rôle crucial dans l'expression d'une opinion en
+            français. Une intonation montante peut indiquer une question ou une
+            incertitude, tandis qu'une intonation descendante indique
+            généralement une affirmation ou une certitude.
+          </p>
+          <p>
+            Pour exprimer un désaccord poli, essayez d'utiliser une intonation
+            douce et évitez de hausser la voix.
+          </p>
+        </div>
+      </section>
+
+      <section id="vocabulaire">
+        <h2>Vocabulaire thématique</h2>
+
+        <h3>Exprimer différents degrés de certitude</h3>
+
+        <div class="vocabulary-card">
+          <p>
+            <span class="vocabulary-term">Être sûr(e) / certain(e) de</span> :
+            <span class="vocabulary-definition"
+              >être complètement convaincu(e)</span
+            >
+          </p>
+          <p>Ex : Je suis sûr que cette solution fonctionnera.</p>
+        </div>
+
+        <div class="vocabulary-card">
+          <p>
+            <span class="vocabulary-term">Douter de</span> :
+            <span class="vocabulary-definition">ne pas être certain(e)</span>
+          </p>
+          <p>Ex : Je doute que cette approche soit la meilleure.</p>
+        </div>
+
+        <div class="vocabulary-card">
+          <p>
+            <span class="vocabulary-term">Se demander si</span> :
+            <span class="vocabulary-definition"
+              >s'interroger sur la possibilité</span
+            >
+          </p>
+          <p>Ex : Je me demande si nous devrions attendre davantage.</p>
+        </div>
+
+        <h3>Verbes d'opinion</h3>
+
+        <div class="vocabulary-card">
+          <p>
+            <span class="vocabulary-term">Penser</span> :
+            <span class="vocabulary-definition">avoir une opinion</span>
+          </p>
+          <p>Ex : Je pense que c'est une bonne idée.</p>
+        </div>
+
+        <div class="vocabulary-card">
+          <p>
+            <span class="vocabulary-term">Estimer</span> :
+            <span class="vocabulary-definition">considérer, juger</span>
+          </p>
+          <p>Ex : J'estime que cette mesure est nécessaire.</p>
+        </div>
+
+        <div class="vocabulary-card">
+          <p>
+            <span class="vocabulary-term">Considérer</span> :
+            <span class="vocabulary-definition">examiner avec attention</span>
+          </p>
+          <p>Ex : Je considère que cette approche est risquée.</p>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="/api/placeholder/500/300"
+            alt="Nuage de mots d'expressions d'opinion en français"
+          />
+          <p class="image-caption">
+            Nuage de mots : expressions pour donner son opinion
+          </p>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>Exercices pratiques</h2>
+
+        <div class="exercise">
+          <div class="exercise-title">
+            Exercice 1 : Compléter avec l'expression appropriée
+          </div>
+          <p>
+            Complétez les phrases suivantes avec une expression d'opinion
+            appropriée.
+          </p>
+
+          <div class="exercise-question">
+            1. __________, la musique classique est plus relaxante que le rock.
+          </div>
+          <div class="exercise-question">
+            2. __________ que cette décision aura des conséquences importantes.
+          </div>
+          <div class="exercise-question">
+            3. __________ il faudrait investir davantage dans l'éducation.
+          </div>
+          <div class="exercise-question">
+            4. Ce n'est pas une bonne idée, __________.
+          </div>
+          <div class="exercise-question">
+            5. __________ nous devrions reporter la réunion.
+          </div>
+
+          <button class="btn" onclick="toggleSolution('solution1')">
+            Voir la solution
+          </button>
+          <div id="solution1" class="solution">
+            <p>
+              1. À mon avis / Selon moi / Je pense que, la musique classique est
+              plus relaxante que le rock.
+            </p>
+            <p>
+              2. Je suis certain(e) / Je suis convaincu(e) / Il est évident que
+              cette décision aura des conséquences importantes.
+            </p>
+            <p>
+              3. Je crois que / Je pense que / À mon sens, il faudrait investir
+              davantage dans l'éducation.
+            </p>
+            <p>
+              4. Ce n'est pas une bonne idée, à mon avis / selon moi / je
+              trouve.
+            </p>
+            <p>
+              5. Je pense que / J'ai l'impression que / Il me semble que nous
+              devrions reporter la réunion.
+            </p>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">
+            Exercice 2 : Exprimer son accord ou son désaccord
+          </div>
+          <p>
+            Comment réagiriez-vous aux opinions suivantes ? Exprimez votre
+            accord ou désaccord et justifiez votre position.
+          </p>
+
+          <div class="exercise-question">
+            1. "Les réseaux sociaux ont un impact positif sur la société."
+          </div>
+          <div class="exercise-question">
+            2. "L'apprentissage d'une langue étrangère devrait être obligatoire
+            dès l'école primaire."
+          </div>
+          <div class="exercise-question">
+            3. "Le télétravail est plus productif que le travail au bureau."
+          </div>
+
+          <button class="btn" onclick="toggleSolution('solution2')">
+            Voir un exemple de réponse
+          </button>
+          <div id="solution2" class="solution">
+            <p>
+              1. Je ne suis pas tout à fait d'accord. Bien que les réseaux
+              sociaux facilitent la communication, ils peuvent aussi créer de
+              l'isolement et des problèmes de santé mentale. De plus, ils posent
+              des questions de confidentialité et de protection des données.
+            </p>
+            <p>
+              2. Je suis totalement d'accord. En effet, les enfants apprennent
+              plus facilement les langues à un jeune âge. Par ailleurs,
+              connaître plusieurs langues est un atout important dans notre
+              monde globalisé.
+            </p>
+            <p>
+              3. Je suis d'accord dans une certaine mesure. Le télétravail offre
+              plus de flexibilité et élimine le temps de trajet, ce qui peut
+              augmenter la productivité. Cependant, il peut aussi créer des
+              problèmes de communication et d'isolement social.
+            </p>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercice 3 : Jeu de rôle</div>
+          <p>
+            Imaginez un dialogue entre deux personnes qui discutent d'un des
+            sujets suivants. Utilisez les expressions d'opinion, d'accord et de
+            désaccord que vous avez apprises.
+          </p>
+
+          <ul></ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salutations et Présentations en Français</title>
+    <style>
+      :root {
+        --primary-color: #3f51b5;
+        --secondary-color: #ff4081;
+        --background-color: #f5f5f7;
+        --text-color: #333;
+        --light-accent: #e8eaf6;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        background-color: #303f9f;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav li {
+        margin: 0 15px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffc107;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+
+      section {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        border-radius: 8px;
+        background-color: white;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--primary-color);
+      }
+
+      h2 {
+        border-bottom: 2px solid var(--light-accent);
+        padding-bottom: 0.5rem;
+      }
+
+      .vocab-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+      }
+
+      .vocab-table th,
+      .vocab-table td {
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      .vocab-table th {
+        background-color: var(--light-accent);
+      }
+
+      .vocab-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      .example {
+        background-color: #e8f5e9;
+        padding: 1rem;
+        border-left: 4px solid #4caf50;
+        margin: 1rem 0;
+      }
+
+      .exercise {
+        background-color: #e3f2fd;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-top: 2rem;
+        position: relative;
+      }
+
+      .exercise h3 {
+        margin-top: 0;
+        color: #1976d2;
+      }
+
+      .exercise-label {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        background-color: #2196f3;
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+
+      .culture-note {
+        background-color: #fff8e1;
+        padding: 1rem;
+        border-left: 4px solid #ffc107;
+        margin: 1rem 0;
+      }
+
+      .pronunciation {
+        color: #9c27b0;
+        font-style: italic;
+      }
+
+      button {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #303f9f;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .image-container {
+        text-align: center;
+        margin: 1.5rem 0;
+      }
+
+      .language-tip {
+        background-color: #f3e5f5;
+        padding: 1rem;
+        border-left: 4px solid #9c27b0;
+        margin: 1rem 0;
+      }
+
+      .dialog {
+        background-color: #f5f5f5;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+      }
+
+      .dialog p {
+        margin: 0.5rem 0;
+      }
+
+      .person1 {
+        color: #e91e63;
+      }
+
+      .person2 {
+        color: #2196f3;
+      }
+
+      .audio-btn {
+        background-color: #4caf50;
+        margin-left: 10px;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        background-color: var(--primary-color);
+        color: white;
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav li {
+          margin: 5px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Salutations et Présentations en Français</h1>
+      <p>Apprenez à vous présenter et à saluer les autres en français</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#salutations">Salutations</a></li>
+        <li><a href="#presentations">Présentations</a></li>
+        <li><a href="#questions">Questions de base</a></li>
+        <li><a href="#exercices">Exercices</a></li>
+        <li><a href="#culture">Notes culturelles</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Bienvenue à cette leçon sur les salutations et présentations en
+          français ! Savoir se présenter et saluer les autres est essentiel pour
+          communiquer dans une nouvelle langue. Dans cette leçon, vous
+          apprendrez :
+        </p>
+        <ul>
+          <li>Comment saluer quelqu'un en français</li>
+          <li>Comment vous présenter</li>
+          <li>Comment poser des questions simples</li>
+          <li>Les différences culturelles dans les salutations françaises</li>
+        </ul>
+
+        <div class="image-container">
+          <img
+            src="http://localhost:8000/static/images/zorin5.png"
+            alt="Des personnes qui se saluent en France"
+            width="200"
+            height="200"
+          />
+          <p>
+            <em
+              >Les salutations sont une partie importante de la culture
+              française</em
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="salutations">
+        <h2>Les Salutations</h2>
+        <p>
+          En français, il existe différentes façons de saluer quelqu'un selon le
+          moment de la journée et le niveau de formalité.
+        </p>
+
+        <h3>Salutations formelles</h3>
+        <table class="vocab-table">
+          <tr>
+            <th>Français</th>
+            <th>Prononciation</th>
+            <th>Utilisation</th>
+          </tr>
+          <tr>
+            <td>Bonjour</td>
+            <td class="pronunciation">[bɔ̃.ʒuʁ]</td>
+            <td>
+              Salutation formelle utilisée pendant la journée jusqu'au soir
+            </td>
+          </tr>
+          <tr>
+            <td>Bonsoir</td>
+            <td class="pronunciation">[bɔ̃.swaʁ]</td>
+            <td>Salutation formelle utilisée le soir</td>
+          </tr>
+          <tr>
+            <td>Enchanté(e)</td>
+            <td class="pronunciation">[ɑ̃.ʃɑ̃.te]</td>
+            <td>Ravi(e) de vous rencontrer (après une présentation)</td>
+          </tr>
+          <tr>
+            <td>Au revoir</td>
+            <td class="pronunciation">[o.ʁə.vwaʁ]</td>
+            <td>Pour dire au revoir dans un contexte formel</td>
+          </tr>
+        </table>
+
+        <h3>Salutations informelles</h3>
+        <table class="vocab-table">
+          <tr>
+            <th>Français</th>
+            <th>Prononciation</th>
+            <th>Utilisation</th>
+          </tr>
+          <tr>
+            <td>Salut</td>
+            <td class="pronunciation">[sa.ly]</td>
+            <td>Salutation informelle (bonjour ou au revoir)</td>
+          </tr>
+          <tr>
+            <td>Coucou</td>
+            <td class="pronunciation">[ku.ku]</td>
+            <td>Salutation très informelle entre amis proches</td>
+          </tr>
+          <tr>
+            <td>Ça va ?</td>
+            <td class="pronunciation">[sa.va]</td>
+            <td>Comment ça va ? (informel)</td>
+          </tr>
+          <tr>
+            <td>À plus tard</td>
+            <td class="pronunciation">[a.ply.taʁ]</td>
+            <td>À plus tard (informel)</td>
+          </tr>
+          <tr>
+            <td>À bientôt</td>
+            <td class="pronunciation">[a.bjɛ̃.to]</td>
+            <td>À bientôt (peut être formel ou informel)</td>
+          </tr>
+        </table>
+
+        <div class="culture-note">
+          <h3>Note culturelle</h3>
+          <p>
+            En France, il est très important de saluer les autres lorsque vous
+            entrez dans un magasin, un restaurant ou lorsque vous rencontrez
+            quelqu'un. Ne pas dire "Bonjour" peut être considéré comme impoli.
+          </p>
+        </div>
+
+        <div class="example">
+          <h3>Dialogue : Rencontre formelle</h3>
+          <div class="dialog">
+            <p class="person1">
+              <strong>Madame Dupont</strong> : Bonjour, Monsieur.
+            </p>
+            <p class="person2">
+              <strong>Monsieur Martin</strong> : Bonjour, Madame. Comment
+              allez-vous ?
+            </p>
+            <p class="person1">
+              <strong>Madame Dupont</strong> : Je vais bien, merci. Et vous ?
+            </p>
+            <p class="person2">
+              <strong>Monsieur Martin</strong> : Très bien, merci.
+            </p>
+          </div>
+        </div>
+
+        <div class="example">
+          <h3>Dialogue : Rencontre informelle</h3>
+          <div class="dialog">
+            <p class="person1">
+              <strong>Julie</strong> : Salut Thomas ! Ça va ?
+            </p>
+            <p class="person2">
+              <strong>Thomas</strong> : Salut Julie ! Oui, ça va bien, et toi ?
+            </p>
+            <p class="person1"><strong>Julie</strong> : Ça va super, merci !</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="presentations">
+        <h2>Les Présentations</h2>
+        <p>
+          Voici comment vous présenter et demander des informations de base aux
+          autres.
+        </p>
+
+        <h3>Se présenter</h3>
+        <table class="vocab-table">
+          <tr>
+            <th>Français</th>
+            <th>Traduction</th>
+          </tr>
+          <tr>
+            <td>Je m'appelle...</td>
+            <td>Je m'appelle...</td>
+          </tr>
+          <tr>
+            <td>Mon nom est...</td>
+            <td>Mon nom est...</td>
+          </tr>
+          <tr>
+            <td>Je suis...</td>
+            <td>Je suis...</td>
+          </tr>
+          <tr>
+            <td>J'ai ... ans</td>
+            <td>J'ai ... ans</td>
+          </tr>
+          <tr>
+            <td>Je viens de...</td>
+            <td>Je viens de...</td>
+          </tr>
+          <tr>
+            <td>J'habite à...</td>
+            <td>J'habite à...</td>
+          </tr>
+          <tr>
+            <td>Je suis étudiant(e)/professeur/médecin...</td>
+            <td>Je suis étudiant(e)/professeur/médecin...</td>
+          </tr>
+        </table>
+
+        <div class="language-tip">
+          <h3>Astuce linguistique</h3>
+          <p>
+            En français, de nombreux noms de profession changent de forme selon
+            qu'ils désignent un homme ou une femme. Par exemple :
+          </p>
+          <ul>
+            <li>Un étudiant (homme) → Une étudiante (femme)</li>
+            <li>Un professeur (homme) → Une professeure (femme)</li>
+            <li>Un médecin (homme) → Une médecin (femme)</li>
+          </ul>
+        </div>
+
+        <h3>Présenter quelqu'un d'autre</h3>
+        <table class="vocab-table">
+          <tr>
+            <th>Français</th>
+            <th>Utilisation</th>
+          </tr>
+          <tr>
+            <td>Je vous présente...</td>
+            <td>Formel : Je vous présente mon collègue, Pierre.</td>
+          </tr>
+          <tr>
+            <td>Je te présente...</td>
+            <td>Informel : Je te présente mon ami, Marc.</td>
+          </tr>
+          <tr>
+            <td>Voici...</td>
+            <td>Formel ou informel : Voici ma sœur, Sophie.</td>
+          </tr>
+        </table>
+
+        <div class="example">
+          <h3>Exemple de présentation complète</h3>
+          <div class="dialog">
+            <p>
+              <strong>Marie</strong> : Bonjour, je m'appelle Marie Dubois. J'ai
+              28 ans. Je suis française et j'habite à Lyon. Je suis professeure
+              de mathématiques. Et vous, comment vous appelez-vous ?
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="http://localhost:8000/static/images/zorin6.png"
+            alt="Personnes se présentant"
+            width="200"
+            height="200"
+          />
+          <p>
+            <em
+              >Les présentations sont souvent accompagnées d'une poignée de main
+              en France</em
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="questions">
+        <h2>Questions de base pour faire connaissance</h2>
+        <p>
+          Voici quelques questions que vous pouvez poser pour apprendre à
+          connaître quelqu'un :
+        </p>
+
+        <table class="vocab-table">
+          <tr>
+            <th>Questions formelles</th>
+            <th>Questions informelles</th>
+          </tr>
+          <tr>
+            <td>Comment vous appelez-vous ?</td>
+            <td>Comment tu t'appelles ?</td>
+          </tr>
+          <tr>
+            <td>D'où venez-vous ?</td>
+            <td>Tu viens d'où ?</td>
+          </tr>
+          <tr>
+            <td>Quel âge avez-vous ?</td>
+            <td>Tu as quel âge ?</td>
+          </tr>
+          <tr>
+            <td>Où habitez-vous ?</td>
+            <td>Tu habites où ?</td>
+          </tr>
+          <tr>
+            <td>Quelle est votre profession ?</td>
+            <td>Tu fais quoi dans la vie ?</td>
+          </tr>
+          <tr>
+            <td>Comment allez-vous ?</td>
+            <td>Ça va ? / Comment ça va ?</td>
+          </tr>
+        </table>
+
+        <div class="culture-note">
+          <h3>Note culturelle : Tutoiement vs Vouvoiement</h3>
+          <p>En français, il existe deux façons de dire "tu/vous" :</p>
+          <ul>
+            <li>
+              <strong>Tu</strong> (tutoiement) : utilisé avec les amis, la
+              famille, les enfants et dans des situations informelles.
+            </li>
+            <li>
+              <strong>Vous</strong> (vouvoiement) : utilisé avec les personnes
+              que vous ne connaissez pas, les personnes plus âgées, dans des
+              contextes professionnels et formels.
+            </li>
+          </ul>
+          <p>
+            Utilisez toujours "vous" lorsque vous rencontrez quelqu'un pour la
+            première fois, sauf s'il s'agit d'un enfant. La personne vous
+            invitera à utiliser "tu" si elle le souhaite.
+          </p>
+        </div>
+
+        <div class="example">
+          <h3>Dialogue : Faire connaissance</h3>
+          <div class="dialog">
+            <p class="person1">
+              <strong>Philippe</strong> : Bonjour, je m'appelle Philippe. Et
+              vous ?
+            </p>
+            <p class="person2">
+              <strong>Claire</strong> : Bonjour Philippe, je suis Claire.
+              Enchantée.
+            </p>
+            <p class="person1">
+              <strong>Philippe</strong> : Enchanté également. Vous venez d'où,
+              Claire ?
+            </p>
+            <p class="person2">
+              <strong>Claire</strong> : Je viens de Belgique, mais j'habite à
+              Paris depuis 5 ans. Et vous ?
+            </p>
+            <p class="person1">
+              <strong>Philippe</strong> : Je suis né à Marseille, mais j'habite
+              aussi à Paris maintenant. Quelle est votre profession ?
+            </p>
+            <p class="person2">
+              <strong>Claire</strong> : Je suis architecte. Et vous, que
+              faites-vous dans la vie ?
+            </p>
+            <p class="person1">
+              <strong>Philippe</strong> : Je suis journaliste. Au fait, on peut
+              se tutoyer si vous voulez.
+            </p>
+            <p class="person2">
+              <strong>Claire</strong> : Oui, bien sûr ! Tu travailles pour quel
+              journal ?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>Exercices</h2>
+
+        <div class="exercise">
+          <span class="exercise-label">Exercice 1</span>
+          <h3>Complétez les dialogues</h3>
+          <p>Remplissez les blancs avec les expressions appropriées :</p>
+
+          <div class="dialog">
+            <p>A : ________, je m'appelle Laura.</p>
+            <p>B : Bonjour Laura, je ________ Marc. ________ ?</p>
+            <p>A : Je vais bien, merci. Et toi ?</p>
+            <p>B : ________, merci. Tu ________ d'où ?</p>
+            <p>A : Je viens du Canada, mais ________ à Paris maintenant.</p>
+          </div>
+
+          <button onclick="toggleElement('solution1')">Voir la solution</button>
+          <div id="solution1" class="hide">
+            <p><strong>Solution :</strong></p>
+            <p>A : <strong>Salut</strong>, je m'appelle Laura.</p>
+            <p>
+              B : Bonjour Laura, je <strong>suis</strong> Marc.
+              <strong>Ça va</strong> ?
+            </p>
+            <p>A : Je vais bien, merci. Et toi ?</p>
+            <p>
+              B : <strong>Ça va bien</strong>, merci. Tu
+              <strong>viens</strong> d'où ?
+            </p>
+            <p>
+              A : Je viens du Canada, mais <strong>j'habite</strong> à Paris
+              maintenant.
+            </p>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <span class="exercise-label">Exercice 2</span>
+          <h3>Formel ou informel ?</h3>
+          <p>
+            Indiquez si les expressions suivantes sont formelles (F) ou
+            informelles (I) :
+          </p>
+
+          <ol>
+            <li>Salut ! _____</li>
+            <li>Comment allez-vous ? _____</li>
+            <li>Tu viens d'où ? _____</li>
+            <li>Enchanté de faire votre connaissance. _____</li>
+            <li>À plus tard ! _____</li>
+            <li>Ça va ? _____</li>
+            <li>Au revoir, Madame. _____</li>
+            <li>Je te présente mon ami. _____</li>
+          </ol>
+
+          <button onclick="toggleElement('solution2')">Voir la solution</button>
+          <div id="solution2" class="hide">
+            <p><strong>Solution :</strong></p>
+            <ol>
+              <li>Salut ! <strong>(I)</strong></li>
+              <li>Comment allez-vous ? <strong>(F)</strong></li>
+              <li>Tu viens d'où ? <strong>(I)</strong></li>
+              <li>
+                Enchanté de faire votre connaissance. <strong>(F)</strong>
+              </li>
+              <li>À plus tard ! <strong>(I)</strong></li>
+              <li>Ça va ? <strong>(I)</strong></li>
+              <li>Au revoir, Madame. <strong>(F)</strong></li>
+              <li>Je te présente mon ami. <strong>(I)</strong></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <span class="exercise-label">Exercice 3</span>
+          <h3>Jeu de rôle</h3>
+          <p>Imaginez les dialogues pour les situations suivantes :</p>
+
+          <ol>
+            <li>
+              Vous rencontrez le nouveau professeur de votre école. (Dialogue
+              formel)
+            </li>
+            <li>
+              Vous présentez votre ami français à votre frère. (Dialogue
+              informel)
+            </li>
+            <li>
+              Vous vous présentez à un entretien d'embauche. (Dialogue formel)
+            </li>
+          </ol>
+
+          <p>
+            Écrivez vos dialogues et pratiquez-les avec un(e) partenaire si
+            possible.
+          </p>
+        </div>
+
+        <div class="exercise">
+          <span class="exercise-label">Exercice 4</span>
+          <h3>Présentez-vous !</h3>
+          <p>
+            Écrivez un paragraphe de présentation en utilisant les expressions
+            apprises. Incluez :
+          </p>
+          <ul>
+            <li>Votre nom</li>
+            <li>Votre âge</li>
+            <li>Votre nationalité</li>
+            <li>Votre lieu de résidence</li>
+            <li>Votre profession ou études</li>
+            <li>Vos hobbies (facultatif)</li>
+          </ul>
+
+          <div class="example">
+            <p>
+              <strong>Exemple :</strong> Bonjour ! Je m'appelle Thomas. J'ai 25
+              ans et je suis canadien. J'habite à Montréal. Je suis étudiant en
+              informatique à l'Université de Montréal. Pendant mon temps libre,
+              j'aime faire du vélo et jouer de la guitare.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="culture">
+        <h2>Notes Culturelles</h2>
+
+        <div class="culture-note">
+          <h3>La Bise</h3>
+          <p>
+            "La bise" est une salutation typiquement française qui consiste à
+            s'embrasser sur les joues. Voici quelques informations importantes :
+          </p>
+          <ul>
+            <li>
+              Le nombre de bises varie selon les régions (généralement entre 1
+              et 4).
+            </li>
+            <li>
+              On fait la bise entre amis, en famille et parfois entre collègues.
+            </li>
+            <li>
+              Dans un contexte professionnel formel, une poignée de main est
+              préférable.
+            </li>
+            <li>
+              Les hommes se serrent généralement la main entre eux, sauf s'ils
+              sont de la même famille ou très proches.
+            </li>
+          </ul>
+          <div class="image-container">
+            <img
+              src="http://localhost:8000/static/images/zorin.png"
+              alt="La bise en France"
+              width="300"
+              height="200"
+            />
+            <p><em>La bise, une tradition française</em></p>
+          </div>
+        </div>
+
+        <div class="culture-note">
+          <h3>L'importance des salutations</h3>
+          <p>En France, les salutations sont très importantes :</p>
+          <ul>
+            <li>
+              Dire "Bonjour" en entrant dans un magasin, un restaurant ou un
+              lieu public est considéré comme une marque de politesse
+              essentielle.
+            </li>
+            <li>Ne pas saluer peut être perçu comme impoli ou arrogant.</li>
+            <li>
+              On salue généralement les voisins que l'on croise dans l'immeuble
+              ou dans la rue.
+            </li>
+          </ul>
+        </div>
+
+        <div class="culture-note">
+          <h3>Questions personnelles</h3>
+          <p>
+            Certaines questions considérées comme normales dans d'autres
+            cultures peuvent être perçues comme trop personnelles en France,
+            surtout lors d'une première rencontre :
+          </p>
+          <ul>
+            <li>Les questions sur le salaire ou l'argent</li>
+            <li>Les questions sur les opinions politiques</li>
+            <li>Les questions très personnelles sur la famille</li>
+          </ul>
+          <p>
+            Il est préférable d'attendre de mieux connaître la personne avant
+            d'aborder ces sujets.
+          </p>
+        </div>
+      </section>
+
+      <section id="conclusion">
+        <h2>Pour aller plus loin</h2>
+        <p>
+          Maintenant que vous connaissez les bases des salutations et
+          présentations en français, voici quelques ressources pour continuer
+          votre apprentissage :
+        </p>
+        <ul>
+          <li>Pratiquez ces expressions avec des amis francophones</li>
+          <li>
+            Regardez des vidéos ou des films français en prêtant attention aux
+            salutations
+          </li>
+          <li>
+            Écoutez des podcasts en français pour améliorer votre prononciation
+          </li>
+          <li>Rejoignez un groupe de conversation en français</li>
+        </ul>
+
+        <p>
+          N'oubliez pas : la pratique régulière est la clé pour maîtriser une
+          langue étrangère !
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 - Cours de Français - Salutations et Présentations</p>
+    </footer>
+
+    <script>
+      function toggleElement(id) {
+        const element = document.getElementById(id);
+        if (element.classList.contains("hide")) {
+          element.classList.remove("hide");
+        } else {
+          element.classList.add("hide");
+        }
+      }
+    </script>
+  </body>
+</html>

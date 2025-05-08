@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Passé Composé vs Imparfait - Cours de Français</title>
+    <style>
+      :root {
+        --primary-color: #3f51b5;
+        --secondary-color: #ff5722;
+        --background-color: #f5f5f5;
+        --text-color: #333;
+        --accent-color: #e91e63;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--primary-color);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 0.5rem;
+        margin-top: 2.5rem;
+      }
+
+      h3 {
+        margin-top: 1.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        font-weight: 300;
+      }
+
+      .example {
+        background-color: white;
+        border-left: 4px solid var(--secondary-color);
+        padding: 1rem;
+        margin: 1rem 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .highlight {
+        font-weight: bold;
+        color: var(--secondary-color);
+      }
+
+      .comparison {
+        display: flex;
+        margin: 2rem 0;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .comparison-column {
+        flex: 1;
+        min-width: 300px;
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .passe-compose {
+        border-top: 5px solid var(--secondary-color);
+      }
+
+      .imparfait {
+        border-top: 5px solid var(--accent-color);
+      }
+
+      .exercise {
+        background-color: white;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .exercise-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .exercise-number {
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        font-weight: bold;
+      }
+
+      .question {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1rem;
+      }
+
+      .question input {
+        border: 1px solid #ddd;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        width: 100%;
+        border-radius: 3px;
+      }
+
+      button {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #303f9f;
+      }
+
+      .timeline {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+        overflow-x: auto;
+        padding: 1rem 0;
+      }
+
+      .timeline-event {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 180px;
+      }
+
+      .timeline-line {
+        height: 4px;
+        background-color: var(--primary-color);
+        width: 100%;
+        position: relative;
+        margin: 0 10px;
+      }
+
+      .timeline-dot {
+        width: 12px;
+        height: 12px;
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+        border: 3px solid var(--primary-color);
+        position: absolute;
+      }
+
+      .dot-start {
+        left: 0;
+      }
+
+      .dot-end {
+        right: 0;
+      }
+
+      .timeline-text {
+        padding: 0.5rem;
+        text-align: center;
+        max-width: 150px;
+        font-size: 0.9rem;
+      }
+
+      .text-top {
+        margin-bottom: 1rem;
+      }
+
+      .text-bottom {
+        margin-top: 1rem;
+      }
+
+      .img-container {
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2rem 0;
+      }
+
+      th,
+      td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: var(--primary-color);
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted var(--primary-color);
+        cursor: help;
+      }
+
+      .tooltip .tooltip-text {
+        visibility: hidden;
+        width: 200px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -100px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .tooltip:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 3rem;
+      }
+
+      @media (max-width: 768px) {
+        .comparison {
+          flex-direction: column;
+        }
+
+        .comparison-column {
+          min-width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Le Passé Composé vs L'Imparfait</h1>
+      <div class="subtitle">
+        Comprendre et maîtriser les temps du passé en français
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          En français, il existe plusieurs façons d'exprimer des actions
+          passées. Parmi les temps du passé les plus utilisés, on trouve
+          <span class="highlight">le passé composé</span> et
+          <span class="highlight">l'imparfait</span>. Comprendre la différence
+          entre ces deux temps est essentiel pour s'exprimer correctement en
+          français.
+        </p>
+
+        <p>Dans cette leçon, nous allons explorer:</p>
+        <ul>
+          <li>La formation du passé composé et de l'imparfait</li>
+          <li>Les usages spécifiques de chaque temps</li>
+          <li>Comment choisir entre les deux</li>
+          <li>Des exercices pratiques pour maîtriser leur utilisation</li>
+        </ul>
+
+        <div class="img-container">
+          <img
+            src="/api/placeholder/600/400"
+            alt="Un livre d'histoire ouvert avec une chronologie des événements passés"
+          />
+        </div>
+      </section>
+
+      <section id="formation">
+        <h2>Formation des Temps</h2>
+
+        <div class="comparison">
+          <div class="comparison-column passe-compose">
+            <h3>Passé Composé</h3>
+            <p>Le passé composé est formé avec:</p>
+            <p>
+              <strong
+                >Auxiliaire (avoir/être au présent) + participe passé</strong
+              >
+            </p>
+
+            <h4>Avec l'auxiliaire AVOIR</h4>
+            <p>La plupart des verbes utilisent <strong>avoir</strong>:</p>
+            <div class="example">
+              J'<span class="highlight">ai mangé</span> une pomme.<br />
+              Tu <span class="highlight">as visité</span> le musée.<br />
+              Il <span class="highlight">a parlé</span> français.<br />
+              Nous <span class="highlight">avons regardé</span> un film.<br />
+              Vous <span class="highlight">avez fini</span> votre travail.<br />
+              Ils <span class="highlight">ont écrit</span> une lettre.
+            </div>
+
+            <h4>Avec l'auxiliaire ÊTRE</h4>
+            <p>
+              Les verbes de mouvement et les verbes pronominaux utilisent
+              <strong>être</strong>:
+            </p>
+            <div class="example">
+              Je <span class="highlight">suis allé(e)</span> au parc.<br />
+              Tu <span class="highlight">es venu(e)</span> à la fête.<br />
+              Elle <span class="highlight">est arrivée</span> hier.<br />
+              Nous <span class="highlight">sommes partis</span> tôt.<br />
+              Vous <span class="highlight">êtes montés</span> au sommet.<br />
+              Ils <span class="highlight">sont tombés</span>.
+            </div>
+            <p>
+              <em
+                >Note: Avec l'auxiliaire être, le participe passé s'accorde en
+                genre et en nombre avec le sujet.</em
+              >
+            </p>
+          </div>
+
+          <div class="comparison-column imparfait">
+            <h3>Imparfait</h3>
+            <p>
+              L'imparfait est formé à partir du radical de la 1ère personne du
+              pluriel au présent (nous) + les terminaisons:
+            </p>
+            <p><strong>-ais, -ais, -ait, -ions, -iez, -aient</strong></p>
+
+            <div class="example">
+              Je <span class="highlight">parlais</span> français.<br />
+              Tu <span class="highlight">finissais</span> ton travail.<br />
+              Il <span class="highlight">vendait</span> des fruits.<br />
+              Nous <span class="highlight">dormions</span> profondément.<br />
+              Vous <span class="highlight">lisiez</span> un roman.<br />
+              Elles <span class="highlight">écrivaient</span> des poèmes.
+            </div>
+
+            <h4>Le verbe être à l'imparfait</h4>
+            <div class="example">
+              J'<span class="highlight">étais</span><br />
+              Tu <span class="highlight">étais</span><br />
+              Il/Elle <span class="highlight">était</span><br />
+              Nous <span class="highlight">étions</span><br />
+              Vous <span class="highlight">étiez</span><br />
+              Ils/Elles <span class="highlight">étaient</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <img
+            src="/api/placeholder/800/300"
+            alt="Un tableau comparatif montrant la conjugaison des verbes au passé composé et à l'imparfait"
+          />
+        </div>
+      </section>
+
+      <section id="usages">
+        <h2>Quand Utiliser Chaque Temps?</h2>
+
+        <table>
+          <tr>
+            <th>Passé Composé</th>
+            <th>Imparfait</th>
+          </tr>
+          <tr>
+            <td>Actions ponctuelles, événements précis</td>
+            <td>Actions habituelles, répétitives dans le passé</td>
+          </tr>
+          <tr>
+            <td>Actions achevées avec un début et une fin</td>
+            <td>Actions en cours, situations qui durent</td>
+          </tr>
+          <tr>
+            <td>Succession d'événements</td>
+            <td>Description du contexte, du décor</td>
+          </tr>
+          <tr>
+            <td>Changements ou interruptions</td>
+            <td>États physiques ou émotionnels</td>
+          </tr>
+          <tr>
+            <td>Le "quoi" d'une histoire</td>
+            <td>Le "comment" d'une histoire</td>
+          </tr>
+        </table>
+
+        <h3>Le Passé Composé</h3>
+        <p>Utilisez le passé composé pour:</p>
+        <ul>
+          <li>
+            <strong>Actions ponctuelles et terminées</strong> dans le passé
+          </li>
+          <li>
+            Événements qui se sont produits <strong>à un moment précis</strong>
+          </li>
+          <li>Actions ayant un <strong>début et une fin clairs</strong></li>
+          <li>
+            Une <strong>succession d'événements</strong> (comme dans un récit)
+          </li>
+        </ul>
+
+        <div class="example">
+          Hier, j'<span class="highlight">ai visité</span> le Louvre. J'<span
+            class="highlight"
+            >ai vu</span
+          >
+          la Joconde et j'<span class="highlight">ai pris</span> beaucoup de
+          photos. Ensuite, j'<span class="highlight">ai mangé</span> dans un
+          restaurant près du musée.
+        </div>
+
+        <h3>L'Imparfait</h3>
+        <p>Utilisez l'imparfait pour:</p>
+        <ul>
+          <li>
+            <strong>Descriptions</strong> de personnes, lieux, temps, émotions
+          </li>
+          <li>
+            Actions <strong>habituelles</strong> ou répétitives dans le passé
+          </li>
+          <li>Actions en cours ou <strong>situations continues</strong></li>
+          <li>Le <strong>contexte</strong> d'une histoire</li>
+        </ul>
+
+        <div class="example">
+          Quand j'<span class="highlight">étais</span> enfant, j'<span
+            class="highlight"
+            >allais</span
+          >
+          souvent au parc. Il <span class="highlight">faisait</span> beau et les
+          oiseaux <span class="highlight">chantaient</span>. Je
+          <span class="highlight">jouais</span> avec mes amis pendant des
+          heures.
+        </div>
+      </section>
+
+      <section id="comparison">
+        <h2>Passé Composé et Imparfait Ensemble</h2>
+        <p>
+          Très souvent, ces deux temps sont utilisés ensemble dans un même
+          récit:
+        </p>
+        <ul>
+          <li>L'<strong>imparfait</strong> établit le contexte, le décor</li>
+          <li>
+            Le <strong>passé composé</strong> relate les événements principaux
+          </li>
+        </ul>
+
+        <div class="example">
+          Il <span class="highlight">était</span> 20h et je
+          <span class="highlight">regardais</span> la télévision quand soudain
+          quelqu'un <span class="highlight">a frappé</span> à la porte. J'<span
+            class="highlight"
+            >ai ouvert</span
+          >
+          et j'<span class="highlight">ai vu</span> mon ami qui
+          <span class="highlight">tenait</span> un cadeau. Il
+          <span class="highlight">souriait</span> et m'<span class="highlight"
+            >a annoncé</span
+          >
+          une bonne nouvelle.
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="timeline-text text-top">Je regardais la télévision</div>
+            <div class="timeline-line">
+              <div class="timeline-dot dot-start"></div>
+              <div class="timeline-dot dot-end"></div>
+            </div>
+            <div class="timeline-text text-bottom">IMPARFAIT (contexte)</div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-text text-top">Quelqu'un a frappé</div>
+            <div class="timeline-line">
+              <div class="timeline-dot" style="left: 50%"></div>
+            </div>
+            <div class="timeline-text text-bottom">
+              PASSÉ COMPOSÉ (événement)
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-text text-top">J'ai ouvert la porte</div>
+            <div class="timeline-line">
+              <div class="timeline-dot" style="left: 50%"></div>
+            </div>
+            <div class="timeline-text text-bottom">
+              PASSÉ COMPOSÉ (événement)
+            </div>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <img
+            src="/api/placeholder/600/350"
+            alt="Une illustration montrant une personne regardant la TV (imparfait) et quelqu'un frappant à la porte (passé composé)"
+          />
+        </div>
+      </section>
+
+      <section id="exercises">
+        <h2>Exercices Pratiques</h2>
+
+        <div class="exercise">
+          <div class="exercise-title">
+            <div class="exercise-number">1</div>
+            <h3>Complétez avec le passé composé ou l'imparfait</h3>
+          </div>
+
+          <div class="question">
+            <p>
+              1. Pendant que je (dormir) ____________, quelqu'un (entrer)
+              ____________ dans ma chambre.
+            </p>
+            <input type="text" placeholder="Écrivez votre réponse ici..." />
+          </div>
+
+          <div class="question">
+            <p>
+              2. Hier, nous (aller) ____________ au cinéma et nous (voir)
+              ____________ un film français.
+            </p>
+            <input type="text" placeholder="Écrivez votre réponse ici..." />
+          </div>
+
+          <div class="question">
+            <p>
+              3. Quand j'(être) ____________ petit, je (jouer) ____________
+              souvent au football.
+            </p>
+            <input type="text" placeholder="Écrivez votre réponse ici..." />
+          </div>
+
+          <div class="question">
+            <p>
+              4. Marie (lire) ____________ un livre quand son téléphone (sonner)
+              ____________.
+            </p>
+            <input type="text" placeholder="Écrivez votre réponse ici..." />
+          </div>
+
+          <div class="question">
+            <p>
+              5. L'année dernière, je (partir) ____________ en vacances en
+              Espagne et j'(rencontrer) ____________ des gens formidables.
+            </p>
+            <input type="text" placeholder="Écrivez votre réponse ici..." />
+          </div>
+
+          <button
+            onclick="alert('Les réponses correctes sont:\n1. dormais, est entré\n2. sommes allés, avons vu\n3. étais, jouais\n4. lisait, a sonné\n5. suis parti(e), ai rencontré')"
+          >
+            Vérifier les réponses
+          </button>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">
+            <div class="exercise-number">2</div>
+            <h3>Choisissez le temps correct</h3>
+          </div>
+
+          <div class="question">
+            <p>1. Il faisait beau et les oiseaux _______________.</p>
+            <label
+              ><input type="radio" name="q1" value="a" /> a) ont chanté</label
+            ><br />
+            <label
+              ><input type="radio" name="q1" value="b" /> b) chantaient</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              2. Dès qu'elle _______________ la nouvelle, elle _______________
+              son ami.
+            </p>
+            <label
+              ><input type="radio" name="q2" value="a" /> a) a appris, a
+              appelé</label
+            ><br />
+            <label
+              ><input type="radio" name="q2" value="b" /> b) apprenait,
+              appelait</label
+            >
+          </div>
+
+          <div class="question">
+            <p>3. Autrefois, les gens _______________ davantage de lettres.</p>
+            <label
+              ><input type="radio" name="q3" value="a" /> a) ont écrit</label
+            ><br />
+            <label
+              ><input type="radio" name="q3" value="b" /> b) écrivaient</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              4. Je _______________ mes clés, mais heureusement je les
+              _______________ dans ma poche.
+            </p>
+            <label
+              ><input type="radio" name="q4" value="a" /> a) cherchais, ai
+              trouvées</label
+            ><br />
+            <label
+              ><input type="radio" name="q4" value="b" /> b) ai cherché,
+              trouvais</label
+            >
+          </div>
+
+          <button
+            onclick="alert('Les réponses correctes sont:\n1. b) chantaient\n2. a) a appris, a appelé\n3. b) écrivaient\n4. a) cherchais, ai trouvées')"
+          >
+            Vérifier les réponses
+          </button>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">
+            <div class="exercise-number">3</div>
+            <h3>Racontez une histoire</h3>
+          </div>
+
+          <p>
+            Écrivez un court récit au passé en utilisant correctement le passé
+            composé et l'imparfait. Utilisez les indices suivants:
+          </p>
+
+          <ul>
+            <li>un dimanche matin</li>
+            <li>faire beau</li>
+            <li>décider d'aller au parc</li>
+            <li>rencontrer un ami</li>
+            <li>prendre un café ensemble</li>
+          </ul>
+
+          <textarea
+            rows="6"
+            style="
+              width: 100%;
+              padding: 0.5rem;
+              border: 1px solid #ddd;
+              border-radius: 3px;
+            "
+          ></textarea>
+
+          <button style="margin-top: 1rem">Vérifier mon histoire</button>
+        </div>
+      </section>
+
+      <section id="tips">
+        <h2>Astuces et Conseils</h2>
+
+        <div class="comparison">
+          <div class="comparison-column">
+            <h3>Indicateurs de Temps</h3>
+            <p>
+              Certaines expressions de temps peuvent vous aider à choisir entre
+              le passé composé et l'imparfait:
+            </p>
+
+            <h4>Souvent avec le passé composé:</h4>
+            <ul>
+              <li>hier</li>
+              <li>la semaine dernière</li>
+              <li>à ce moment-là</li>
+              <li>soudain / tout à coup</li>
+              <li>un jour</li>
+            </ul>
+
+            <h4>Souvent avec l'imparfait:</h4>
+            <ul>
+              <li>d'habitude / normalement</li>
+              <li>souvent / toujours</li>
+              <li>chaque jour / tous les jours</li>
+              <li>pendant que / tandis que</li>
+              <li>autrefois / à cette époque</li>
+            </ul>
+          </div>
+
+          <div class="comparison-column">
+            <h3>Questions à se poser</h3>
+            <p>
+              Pour choisir entre passé composé et imparfait, posez-vous ces
+              questions:
+            </p>
+
+            <ul>
+              <li>
+                <strong>Est-ce une action ponctuelle ou habituelle?</strong
+                ><br />
+                Ponctuelle → Passé composé<br />
+                Habituelle → Imparfait
+              </li>
+              <br />
+              <li>
+                <strong>S'agit-il d'une description ou d'un événement?</strong
+                ><br />
+                Description → Imparfait<br />
+                Événement → Passé composé
+              </li>
+              <br />
+              <li>
+                <strong>L'action est-elle terminée ou en cours?</strong><br />
+                Terminée → Passé composé<br />
+                En cours → Imparfait
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <img
+            src="/api/placeholder/700/400"
+            alt="Une infographie montrant quand utiliser le passé composé vs l'imparfait"
+          />
+        </div>
+      </section>
+
+      <section id="common-errors">
+        <h2>Erreurs Fréquentes</h2>
+
+        <div class="example">
+          <p>
+            <span class="highlight">Incorrect:</span> Hier, j'allais au cinéma.
+          </p>
+          <p>
+            <span class="highlight">Correct:</span> Hier, je suis allé(e) au
+            cinéma.
+          </p>
+          <p>
+            <em
+              >Explication: "Hier" indique un moment précis dans le passé, donc
+              on utilise le passé composé.</em
+            >
+          </p>
+        </div>
+
+        <div class="example">
+          <p>
+            <span class="highlight">Incorrect:</span> Quand j'étais enfant, j'ai
+            souvent joué au football.
+          </p>
+          <p>
+            <span class="highlight">Correct:</span> Quand j'étais enfant, je
+            jouais souvent au football.
+          </p>
+          <p>
+            <em
+              >Explication: "Souvent" indique une habitude dans le passé, donc
+              on utilise l'imparfait.</em
+            >
+          </p>
+        </div>
+
+        <div class="example">
+          <p>
+            <span class="highlight">Incorrect:</span> Il pleuvait quand je
+            sortais de la maison.
+          </p>
+          <p>
+            <span class="highlight">Correct:</span> Il pleuvait quand je suis
+            sorti(e) de la maison.
+          </p>
+          <p>
+            <em
+              >Explication: "Sortir" est une action ponctuelle qui interrompt
+              l'action en cours ("pleuvoir"), donc on utilise le passé composé
+              pour "sortir" et l'imparfait pour "pleuvoir".</em
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="interactive-quiz">
+        <h2>Quiz Interactif</h2>
+
+        <div class="exercise">
+          <p>
+            Testez vos connaissances! Choisissez la forme correcte du verbe.
+          </p>
+
+          <div id="quiz-container">
+            <div id="question" class="question">
+              <p>
+                Julie ______________ (arriver) quand nous ______________
+                (manger).
+              </p>
+              <div class="options">
+                <label
+                  ><input type="radio" name="quiz" value="a" /> a) est arrivée,
+                  mangions</label
+                ><br />
+                <label
+                  ><input type="radio" name="quiz" value="b" /> b) arrivait,
+                  avons mangé</label
+                ><br />
+                <label
+                  ><input type="radio" name="quiz" value="c" /> c) est arrivée,
+                  avons mangé</label
+                ><br />
+                <label
+                  ><input type="radio" name="quiz" value="d" /> d) arrivait,
+                  mangions</label
+                >
+              </div>
+            </div>
+
+            <button
+              onclick="alert('La réponse correcte est: a) est arrivée, mangions')"
+            >
+              Vérifier
+            </button>
+            <button onclick="alert('Nouveau quiz chargé!')">
+              Question suivante
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="conclusions">
+        <h2>Conclusion</h2>
+        <p>
+          La maîtrise du passé composé et de l'imparfait est essentielle pour
+          bien s'exprimer en français. Pour résumer:
+        </p>
+
+        <ul>
+          <li>
+            Le <strong>passé composé</strong> raconte ce qui s'est passé, les
+            événements, les actions achevées.
+          </li>
+          <li>
+            L'<strong>imparfait</strong> décrit les situations, les habitudes,
+            les contextes dans le passé.
+          </li>
+        </ul>
+
+        <p>
+          La pratique régulière est la clé pour maîtriser ces deux temps.
+          Continuez à vous exercer en lisant des textes en français et en
+          écrivant vos propres histoires!
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
