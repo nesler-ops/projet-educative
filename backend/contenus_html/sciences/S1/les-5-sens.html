@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les 5 Sens - Page Pédagogique</title>
+
+    <link rel="stylesheet" href="/contenus_css/sciences/S1/les-5-sens.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Les 5 Sens</h1>
+      <p>Découvrons comment nous percevons le monde qui nous entoure</p>
+    </header>
+
+    <div class="introduction">
+      <h2>Introduction</h2>
+      <p>
+        Bonjour les amis ! Aujourd'hui, nous allons explorer les 5 sens qui nous
+        permettent de découvrir et d'interagir avec notre environnement. Grâce à
+        nos sens, nous pouvons voir, entendre, sentir, goûter et toucher le
+        monde qui nous entoure.
+      </p>
+
+      <img
+        src="http://localhost:8000/static/images/contenus_images/sciences/S1/sens/sens.png"
+        width="700"
+        height="500"
+        style="display: block; margin: 0 auto"
+      />
+
+      <p>Nos 5 sens sont :</p>
+      <ul>
+        <li><strong>La vue</strong> - grâce à nos yeux</li>
+        <li><strong>L'ouïe</strong> - grâce à nos oreilles</li>
+        <li><strong>L'odorat</strong> - grâce à notre nez</li>
+        <li><strong>Le goût</strong> - grâce à notre langue</li>
+        <li><strong>Le toucher</strong> - grâce à notre peau</li>
+      </ul>
+    </div>
+
+    <!-- LA VUE -->
+    <div class="sense-section">
+      <div class="sense-title">
+        <div class="sense-icon">👁️</div>
+        <h2>La Vue</h2>
+      </div>
+
+      <p>
+        La vue est peut-être notre sens le plus utilisé. Nos yeux captent la
+        lumière et envoient des signaux à notre cerveau, qui les transforme en
+        images. Grâce à la vue, nous pouvons :
+      </p>
+
+      <ul>
+        <li>Reconnaître les formes et les couleurs</li>
+        <li>Lire et écrire</li>
+        <li>Nous orienter dans l'espace</li>
+        <li>Apprécier l'art et la beauté</li>
+      </ul>
+
+      <img
+        src="http://localhost:8000/static/images/contenus_images/sciences/S1/sens/oeil.jpg"
+        width="700"
+        height="500"
+        style="display: block; margin: 0 auto"
+      />
+
+      <div class="vocabulary">
+        <h4>Vocabulaire de la Vue</h4>
+        <ul>
+          <li><strong>L'œil</strong> - l'organe de la vue</li>
+          <li>
+            <strong>La pupille</strong> - la partie noire au centre de l'œil
+          </li>
+          <li><strong>L'iris</strong> - la partie colorée de l'œil</li>
+          <li>
+            <strong>Les couleurs</strong> - rouge, bleu, vert, jaune, etc.
+          </li>
+          <li><strong>Voir</strong> - percevoir par la vue</li>
+          <li><strong>Observer</strong> - regarder attentivement</li>
+          <li><strong>La lumière</strong> - ce qui nous permet de voir</li>
+          <li><strong>Les lunettes</strong> - pour mieux voir</li>
+        </ul>
+      </div>
+
+      <div class="exercise">
+        <h4>Exercice : Les Couleurs</h4>
+        <p>Associe chaque objet à sa couleur habituelle :</p>
+        <table id="colors-exercise">
+          <tr>
+            <th>Objet</th>
+            <th>Couleur</th>
+            <th>Réponse</th>
+          </tr>
+          <tr>
+            <td>Le ciel</td>
+            <td>
+              <input type="text" class="color-answer" data-correct="bleu" />
+            </td>
+            <td class="feedback"></td>
+          </tr>
+          <tr>
+            <td>Une fraise</td>
+            <td>
+              <input type="text" class="color-answer" data-correct="rouge" />
+            </td>
+            <td class="feedback"></td>
+          </tr>
+          <tr>
+            <td>Une banane</td>
+            <td>
+              <input type="text" class="color-answer" data-correct="jaune" />
+            </td>
+            <td class="feedback"></td>
+          </tr>
+          <tr>
+            <td>L'herbe</td>
+            <td>
+              <input type="text" class="color-answer" data-correct="vert" />
+            </td>
+            <td class="feedback"></td>
+          </tr>
+          <tr>
+            <td>Le chocolat</td>
+            <td>
+              <input type="text" class="color-answer" data-correct="marron" />
+            </td>
+            <td class="feedback"></td>
+          </tr>
+        </table>
+        <button class="btn" onclick="checkColorAnswers()">
+          Vérifier les réponses
+        </button>
+      </div>
+    </div>
+
+    <!-- L'OUÏE -->
+    <div class="sense-section">
+      <div class="sense-title">
+        <div class="sense-icon">👂</div>
+        <h2>L'Ouïe</h2>
+      </div>
+
+      <p>
+        L'ouïe nous permet de percevoir les sons. Nos oreilles captent les
+        vibrations sonores qui sont ensuite interprétées par notre cerveau.
+        Grâce à l'ouïe, nous pouvons :
+      </p>
+
+      <ul>
+        <li>Communiquer par la parole</li>
+        <li>Écouter de la musique</li>
+        <li>Être alerté d'un danger</li>
+        <li>Localiser la source d'un son</li>
+      </ul>
+
+      <img
+        src="http://localhost:8000/static/images/contenus_images/sciences/S1/sens/oreille.jpg"
+        width="700"
+        height="500"
+        style="display: block; margin: 0 auto"
+      />
+
+      <div class="vocabulary">
+        <h4>Vocabulaire de l'Ouïe</h4>
+        <ul>
+          <li><strong>L'oreille</strong> - l'organe de l'ouïe</li>
+          <li><strong>Entendre</strong> - percevoir les sons</li>
+          <li><strong>Écouter</strong> - prêter attention aux sons</li>
+          <li><strong>Le son</strong> - ce que nous entendons</li>
+          <li><strong>Le bruit</strong> - son désagréable</li>
+          <li><strong>La musique</strong> - sons harmonieux</li>
+          <li><strong>Fort</strong> - volume élevé</li>
+          <li><strong>Faible</strong> - petit volume</li>
+        </ul>
+      </div>
+
+      <div class="activity">
+        <h4>Activité : Devine le Son</h4>
+        <p>Écoute attentivement les sons et note ce que tu penses entendre :</p>
+        <ol>
+          <li>Son d'un animal : <input type="text" id="sound1" /></li>
+          <li>
+            Son d'un instrument de musique : <input type="text" id="sound2" />
+          </li>
+          <li>Son de la nature : <input type="text" id="sound3" /></li>
+          <li>Son de la ville : <input type="text" id="sound4" /></li>
+        </ol>
+        <button class="btn" onclick="playSound('animal')">
+          Jouer son d'animal
+        </button>
+        <button class="btn" onclick="playSound('instrument')">
+          Jouer instrument
+        </button>
+        <button class="btn" onclick="playSound('nature')">Jouer nature</button>
+        <button class="btn" onclick="playSound('city')">Jouer ville</button>
+        <div
+          id="sound-result"
+          style="
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-radius: 5px;
+          "
+        ></div>
+
+        <p>
+          <em
+            >Note pour l'enseignant : Préparer des enregistrements audio ou
+            utiliser des applications de sons pour cette activité.</em
+          >
+        </p>
+      </div>
+    </div>
+    <div
+      id="sound-result"
+      style="
+        display: none;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f0f8ff;
+        border-radius: 5px;
+      "
+    ></div>
+
+    <!-- L'ODORAT -->
+    <div class="sense-section">
+      <div class="sense-title">
+        <div class="sense-icon">👃</div>
+        <h2>L'Odorat</h2>
+      </div>
+
+      <p>
+        L'odorat est notre sens qui permet de détecter les odeurs. Notre nez
+        capte les molécules dans l'air et envoie ces informations à notre
+        cerveau. Grâce à l'odorat, nous pouvons :
+      </p>
+
+      <ul>
+        <li>Apprécier la nourriture (l'odorat et le goût sont liés)</li>
+        <li>Détecter des dangers (comme le feu)</li>
+        <li>Reconnaître des personnes ou des lieux</li>
+        <li>Évoquer des souvenirs</li>
+      </ul>
+
+      <img
+        src="http://localhost:8000/static/images/contenus_images/sciences/S1/sens/odorat.jpg"
+        width="700"
+        height="500"
+        style="display: block; margin: 0 auto"
+      />
+
+      <div class="vocabulary">
+        <h4>Vocabulaire de l'Odorat</h4>
+        <ul>
+          <li><strong>Le nez</strong> - l'organe de l'odorat</li>
+          <li><strong>Sentir</strong> - percevoir par l'odorat</li>
+          <li><strong>Une odeur</strong> - ce que l'on sent</li>
+          <li><strong>Un parfum</strong> - odeur agréable</li>
+          <li><strong>Une puanteur</strong> - odeur désagréable</li>
+          <li><strong>Aromatique</strong> - qui a une odeur forte</li>
+          <li><strong>Inodore</strong> - sans odeur</li>
+          <li><strong>Flairer</strong> - sentir avec attention</li>
+        </ul>
+      </div>
+
+      <div class="exercise">
+        <h4>Exercice : Classement des Odeurs</h4>
+        <p>
+          Classe ces odeurs en deux catégories : agréables et désagréables selon
+          ton opinion :
+        </p>
+        <p>
+          <em
+            >Fleur de lavande, poubelle, chocolat chaud, fromage fort, pain
+            frais, ail, parfum, transpiration, essence, fraise</em
+          >
+        </p>
+
+        <table id="smell-table">
+          <tr>
+            <th>Odeurs Agréables</th>
+            <th>Odeurs Désagréables</th>
+          </tr>
+          <tr>
+            <td><input type="text" class="pleasant-smell" /></td>
+            <td><input type="text" class="unpleasant-smell" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="pleasant-smell" /></td>
+            <td><input type="text" class="unpleasant-smell" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="pleasant-smell" /></td>
+            <td><input type="text" class="unpleasant-smell" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="pleasant-smell" /></td>
+            <td><input type="text" class="unpleasant-smell" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="pleasant-smell" /></td>
+            <td><input type="text" class="unpleasant-smell" /></td>
+          </tr>
+        </table>
+        <button class="btn" onclick="saveSmellPreferences()">
+          Enregistrer mes préférences
+        </button>
+      </div>
+    </div>
+
+    <!-- LE GOÛT -->
+    <div class="sense-section">
+      <div class="sense-title">
+        <div class="sense-icon">👅</div>
+        <h2>Le Goût</h2>
+      </div>
+
+      <p>
+        Le goût nous permet de savourer les aliments. Notre langue possède des
+        récepteurs gustatifs qui détectent différentes saveurs. Grâce au goût,
+        nous pouvons :
+      </p>
+
+      <ul>
+        <li>Apprécier différentes saveurs</li>
+        <li>Éviter des aliments potentiellement dangereux</li>
+        <li>Profiter des plaisirs de la gastronomie</li>
+      </ul>
+
+      <img
+        src="http://localhost:8000/static/images/contenus_images/sciences/S1/sens/gout.jpg"
+        width="700"
+        height="500"
+        style="display: block; margin: 0 auto"
+      />
+
+      <p>Notre langue peut détecter principalement 5 saveurs :</p>
+      <ul>
+        <li><strong>Sucré</strong> (comme le miel)</li>
+        <li><strong>Salé</strong> (comme les chips)</li>
+        <li><strong>Acide</strong> (comme le citron)</li>
+        <li><strong>Amer</strong> (comme le café noir)</li>
+        <li><strong>Umami</strong> (comme le fromage et les champignons)</li>
+      </ul>
+
+      <div class="vocabulary">
+        <h4>Vocabulaire du Goût</h4>
+        <ul>
+          <li><strong>La langue</strong> - l'organe principal du goût</li>
+          <li><strong>Les papilles</strong> - récepteurs du goût</li>
+          <li><strong>Goûter</strong> - percevoir par le goût</li>
+          <li><strong>Délicieux</strong> - très bon au goût</li>
+          <li><strong>Savoureux</strong> - plein de saveur</li>
+          <li><strong>Insipide</strong> - sans goût</li>
+          <li><strong>Déguster</strong> - goûter avec attention</li>
+          <li><strong>Une saveur</strong> - un goût particulier</li>
+        </ul>
+      </div>
+
+      <div class="activity">
+        <h4>Activité : Journal des Saveurs</h4>
+        <p>
+          Pendant une journée, note tout ce que tu manges et à quelle saveur
+          principale cela correspond :
+        </p>
+        <table id="taste-journal">
+          <tr>
+            <th>Aliment</th>
+            <th>Saveur(s)</th>
+          </tr>
+          <tr>
+            <td><input type="text" class="food-item" /></td>
+            <td><input type="text" class="taste-item" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="food-item" /></td>
+            <td><input type="text" class="taste-item" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="food-item" /></td>
+            <td><input type="text" class="taste-item" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="food-item" /></td>
+            <td><input type="text" class="taste-item" /></td>
+          </tr>
+        </table>
+        <button class="btn" onclick="addTasteJournalRow()">
+          Ajouter une ligne
+        </button>
+        <button class="btn" onclick="saveTasteJournal()">
+          Enregistrer mon journal
+        </button>
+      </div>
+    </div>
+
+    <!-- LE TOUCHER -->
+    <div class="sense-section">
+      <div class="sense-title">
+        <div class="sense-icon">✋</div>
+        <h2>Le Toucher</h2>
+      </div>
+
+      <p>
+        Le toucher nous permet de sentir ce qui est en contact avec notre peau.
+        Grâce au toucher, nous pouvons :
+      </p>
+
+      <ul>
+        <li>Percevoir les textures (rugueux, lisse)</li>
+        <li>Sentir la température (chaud, froid)</li>
+        <li>Ressentir la pression</li>
+        <li>Détecter la douleur pour nous protéger</li>
+      </ul>
+
+      <img
+        src="http://localhost:8000/static/images/contenus_images/sciences/S1/sens/toucher.jpg"
+        width="700"
+        height="500"
+        style="display: block; margin: 0 auto"
+      />
+
+      <p>
+        Le toucher est présent sur toute notre peau, mais certaines zones sont
+        plus sensibles que d'autres, comme :
+      </p>
+      <ul>
+        <li>Les doigts</li>
+        <li>Les lèvres</li>
+        <li>Le visage</li>
+      </ul>
+
+      <div class="vocabulary">
+        <h4>Vocabulaire du Toucher</h4>
+        <ul>
+          <li><strong>La peau</strong> - l'organe du toucher</li>
+          <li><strong>Toucher</strong> - percevoir par contact</li>
+          <li><strong>Doux</strong> - agréable au toucher</li>
+          <li><strong>Rugueux</strong> - surface non lisse</li>
+          <li><strong>Lisse</strong> - surface uniforme</li>
+          <li><strong>Chaud</strong> - température élevée</li>
+          <li><strong>Froid</strong> - température basse</li>
+          <li><strong>Douloureux</strong> - qui fait mal</li>
+        </ul>
+      </div>
+
+      <div class="exercise">
+        <h4>Exercice : La Boîte Mystère</h4>
+        <p>
+          Sans regarder, touche les objets dans la boîte et décris leurs
+          caractéristiques :
+        </p>
+        <ul>
+          <li>
+            Objet 1 : Est-il doux ou rugueux ? <input type="text" id="touch1" />
+          </li>
+          <li>
+            Objet 2 : Est-il dur ou mou ? <input type="text" id="touch2" />
+          </li>
+          <li>
+            Objet 3 : Est-il lisse ou texturé ?
+            <input type="text" id="touch3" />
+          </li>
+          <li>
+            Objet 4 : Est-il froid ou chaud ? <input type="text" id="touch4" />
+          </li>
+        </ul>
+        <button class="btn" onclick="simulateMysteryBox()">
+          Simuler la boîte mystère
+        </button>
+        <p>
+          <em
+            >Note pour l'enseignant : Préparer une boîte avec une ouverture pour
+            passer la main et y placer divers objets avec différentes
+            textures.</em
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- QUIZ GÉNÉRAL -->
+    <div class="quiz-container">
+      <h3>Quiz sur les 5 Sens</h3>
+
+      <div class="quiz-question">
+        <p><strong>1. Quel organe est associé à la vue ?</strong></p>
+        <div class="answer-options">
+          <input type="radio" name="q1" id="q1a" value="a" />
+          <label for="q1a">Le nez</label><br />
+          <input type="radio" name="q1" id="q1b" value="b" />
+          <label for="q1b">L'œil</label><br />
+          <input type="radio" name="q1" id="q1c" value="c" />
+          <label for="q1c">L'oreille</label><br />
+          <input type="radio" name="q1" id="q1d" value="d" />
+          <label for="q1d">La langue</label>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <p>
+          <strong
+            >2. Avec quel sens peut-on détecter si un aliment est sucré
+            ?</strong
+          >
+        </p>
+        <div class="answer-options">
+          <input type="radio" name="q2" id="q2a" value="a" />
+          <label for="q2a">L'odorat</label><br />
+          <input type="radio" name="q2" id="q2b" value="b" />
+          <label for="q2b">Le toucher</label><br />
+          <input type="radio" name="q2" id="q2c" value="c" />
+          <label for="q2c">Le goût</label><br />
+          <input type="radio" name="q2" id="q2d" value="d" />
+          <label for="q2d">L'ouïe</label>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <p>
+          <strong
+            >3. Quel sens nous permet de savoir si un objet est rugueux
+            ?</strong
+          >
+        </p>
+        <div class="answer-options">
+          <input type="radio" name="q3" id="q3a" value="a" />
+          <label for="q3a">La vue</label><br />
+          <input type="radio" name="q3" id="q3b" value="b" />
+          <label for="q3b">Le toucher</label><br />
+          <input type="radio" name="q3" id="q3c" value="c" />
+          <label for="q3c">L'odorat</label><br />
+          <input type="radio" name="q3" id="q3d" value="d" />
+          <label for="q3d">L'ouïe</label>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <p>
+          <strong
+            >4. Lequel de ces sens est le plus étroitement lié au goût ?</strong
+          >
+        </p>
+        <div class="answer-options">
+          <input type="radio" name="q4" id="q4a" value="a" />
+          <label for="q4a">L'odorat</label><br />
+          <input type="radio" name="q4" id="q4b" value="b" />
+          <label for="q4b">Le toucher</label><br />
+          <input type="radio" name="q4" id="q4c" value="c" />
+          <label for="q4c">La vue</label><br />
+          <input type="radio" name="q4" id="q4d" value="d" />
+          <label for="q4d">L'ouïe</label>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <p>
+          <strong
+            >5. Comment appelle-t-on l'organe qui nous permet d'entendre
+            ?</strong
+          >
+        </p>
+        <div class="answer-options">
+          <input type="radio" name="q5" id="q5a" value="a" />
+          <label for="q5a">Le nez</label><br />
+          <input type="radio" name="q5" id="q5b" value="b" />
+          <label for="q5b">La peau</label><br />
+          <input type="radio" name="q5" id="q5c" value="c" />
+          <label for="q5c">L'oreille</label><br />
+          <input type="radio" name="q5" id="q5d" value="d" />
+          <label for="q5d">L'œil</label>
+        </div>
+      </div>
+
+      <button class="btn" onclick="checkQuizAnswers()">
+        Vérifier mes réponses
+      </button>
+      <div id="quiz-result" style="margin-top: 20px; font-weight: bold"></div>
+    </div>
+
+    <!-- ACTIVITÉ DE SYNTHÈSE -->
+    <div class="sense-section">
+      <h2>Activité de Synthèse : Tableau des 5 Sens</h2>
+
+      <p>
+        Complète ce tableau pour résumer ce que tu as appris sur les 5 sens :
+      </p>
+
+      <table id="senses-summary">
+        <tr>
+          <th>Sens</th>
+          <th>Organe</th>
+          <th>Ce qu'il nous permet de percevoir</th>
+          <th>Adjectifs associés</th>
+        </tr>
+        <tr>
+          <td>La vue</td>
+          <td><input type="text" id="sight-organ" /></td>
+          <td><input type="text" id="sight-perception" /></td>
+          <td><input type="text" id="sight-adjectives" /></td>
+        </tr>
+        <tr>
+          <td>L'ouïe</td>
+          <td><input type="text" id="hearing-organ" /></td>
+          <td><input type="text" id="hearing-perception" /></td>
+          <td><input type="text" id="hearing-adjectives" /></td>
+        </tr>
+        <tr>
+          <td>L'odorat</td>
+          <td><input type="text" id="smell-organ" /></td>
+          <td><input type="text" id="smell-perception" /></td>
+          <td><input type="text" id="smell-adjectives" /></td>
+        </tr>
+        <tr>
+          <td>Le goût</td>
+          <td><input type="text" id="taste-organ" /></td>
+          <td><input type="text" id="taste-perception" /></td>
+          <td><input type="text" id="taste-adjectives" /></td>
+        </tr>
+        <tr>
+          <td>Le toucher</td>
+          <td><input type="text" id="touch-organ" /></td>
+          <td><input type="text" id="touch-perception" /></td>
+          <td><input type="text" id="touch-adjectives" /></td>
+        </tr>
+      </table>
+      <button class="btn" onclick="saveSensesSummary()">
+        Enregistrer mon tableau
+      </button>
+      <button class="btn" onclick="showCorrectSummary()">
+        Voir les réponses suggérées
+      </button>
+      <div id="correct-summary" style="display: none; margin-top: 20px">
+        <h4>Réponses suggérées :</h4>
+        <ul>
+          <li>
+            <strong>Vue</strong>: Organe - les yeux | Perception - les images,
+            les couleurs, la lumière | Adjectifs - visuel, lumineux, coloré
+          </li>
+          <li>
+            <strong>Ouïe</strong>: Organe - les oreilles | Perception - les
+            sons, la musique | Adjectifs - sonore, bruyant, mélodieux
+          </li>
+          <li>
+            <strong>Odorat</strong>: Organe - le nez | Perception - les odeurs,
+            les parfums | Adjectifs - odorant, parfumé, aromatique
+          </li>
+          <li>
+            <strong>Goût</strong>: Organe - la langue | Perception - les saveurs
+            (sucré, salé, etc.) | Adjectifs - savoureux, délicieux, amer
+          </li>
+          <li>
+            <strong>Toucher</strong>: Organe - la peau | Perception - les
+            textures, la température | Adjectifs - doux, rugueux, chaud
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJETS -->
+    <div class="sense-section">
+      <h2>Projets sur les 5 Sens</h2>
+
+      <div class="activity">
+        <h4>Projet 1 : Création d'un Livre Sensoriel</h4>
+        <p>
+          En groupe, créez un livre où chaque page est dédiée à un sens
+          différent. Ajoutez des éléments interactifs :
+        </p>
+        <ul>
+          <li>
+            <strong>La vue</strong> : Images colorées, illusions d'optique
+          </li>
+          <li>
+            <strong>L'ouïe</strong> : Descriptions de sons, mini-enregistreur
+          </li>
+          <li>
+            <strong>L'odorat</strong> : Échantillons d'odeurs (fleurs séchées,
+            épices)
+          </li>
+          <li>
+            <strong>Le goût</strong> : Images d'aliments avec descriptions de
+            saveurs
+          </li>
+          <li>
+            <strong>Le toucher</strong> : Différentes textures à toucher (tissu,
+            papier de verre, coton...)
+          </li>
+        </ul>
+      </div>
+
+      <div class="activity">
+        <h4>Projet 2 : Journal des Expériences Sensorielles</h4>
+        <p>Pendant une semaine, note chaque jour :</p>
+        <ul>
+          <li>Une chose intéressante que tu as vue</li>
+          <li>Un son qui t'a marqué</li>
+          <li>Une odeur que tu as sentie</li>
+          <li>Un aliment que tu as goûté</li>
+          <li>Une texture que tu as touchée</li>
+        </ul>
+        <p>À la fin de la semaine, partage tes découvertes avec la classe.</p>
+      </div>
+    </div>
+
+    <!-- RESSOURCES -->
+    <div class="resources">
+      <h3>Ressources Supplémentaires</h3>
+
+      <h4>Livres recommandés :</h4>
+      <ul>
+        <li>"Mon Corps et Ses Secrets" - Collection Jeunesse</li>
+        <li>"Les Cinq Sens" - Aliki (Éditions Kaléidoscope)</li>
+        <li>"Le Grand Livre des Expériences" - Éditions Usborne</li>
+      </ul>
+
+      <h4>Sites web éducatifs :</h4>
+      <ul>
+        <li>lumni.fr - Section Sciences du Vivant</li>
+        <li>education.francetv.fr - Ressources sur le Corps Humain</li>
+      </ul>
+
+      <h4>Applications recommandées :</h4>
+      <ul>
+        <li>"Corps Humain" - Application interactive sur l'anatomie</li>
+        <li>"Sons et Nature" - Pour explorer différents sons</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>© 2025 - Page Pédagogique sur Les 5 Sens</p>
+      <p>Conçu pour l'enseignement du français et des sciences</p>
+    </footer>
+
+    <script>
+      // Fonction pour vérifier les réponses de l'exercice des couleurs
+      function checkColorAnswers() {
+        const answers = document.querySelectorAll(".color-answer");
+        const feedbacks = document.querySelectorAll(
+          "#colors-exercise .feedback"
+        );
+
+        answers.forEach((answer, index) => {
+          const userAnswer = answer.value.toLowerCase().trim();
+          const correctAnswer = answer.dataset.correct;
+
+          if (userAnswer === correctAnswer) {
+            feedbacks[index].textContent = "✓ Correct";
+            feedbacks[index].className = "feedback correct";
+            answer.className = "color-answer correct";
+          } else if (userAnswer === "") {
+            feedbacks[index].textContent = "Pas de réponse";
+            feedbacks[index].className = "feedback";
+            answer.className = "color-answer";
+          } else {
+            feedbacks[index].textContent =
+              "✗ Essaye encore (Réponse: " + correctAnswer + ")";
+            feedbacks[index].className = "feedback incorrect";
+            answer.className = "color-answer incorrect";
+          }
+        });
+      }
+
+      // Fonction pour simuler la lecture de sons
+      function playSound(type) {
+        const soundResult = document.getElementById("sound-result");
+        let soundName = "";
+        switch (type) {
+          case "animal":
+            soundName = "un son d'animal (ex: aboiement, miaulement)";
+            break;
+          case "instrument":
+            soundName = "un instrument de musique (ex: piano, guitare)";
+            break;
+          case "nature":
+            soundName = "un son de la nature (ex: pluie, vent)";
+            break;
+          case "city":
+            soundName = "un son de la ville (ex: klaxon, moteur)";
+            break;
+        }
+        soundResult.innerHTML =
+          "<strong>Son joué:</strong> " +
+          soundName +
+          "<br><em>Note pour l'enseignant: Jouer un son réel correspondant</em>";
+        soundResult.style.display = "block";
+      }
+
+      // Fonction pour enregistrer les préférences d'odeurs
+      function saveSmellPreferences() {
+        const pleasant = document.querySelectorAll(".pleasant-smell");
+        const unpleasant = document.querySelectorAll(".unpleasant-smell");
+        const smellResult = document.getElementById("smell-result");
+
+        let pleasantSmells = [];
+        let unpleasantSmells = [];
+
+        pleasant.forEach((input) => {
+          if (input.value.trim() !== "") {
+            pleasantSmells.push(input.value.trim());
+          }
+        });
+
+        unpleasant.forEach((input) => {
+          if (input.value.trim() !== "") {
+            unpleasantSmells.push(input.value.trim());
+          }
+        });
+
+        smellResult.innerHTML =
+          "<h4>Vos préférences d'odeurs:</h4>" +
+          "<p><strong>Odeurs agréables:</strong> " +
+          (pleasantSmells.length > 0 ? pleasantSmells.join(", ") : "Aucune") +
+          "</p>" +
+          "<p><strong>Odeurs désagréables:</strong> " +
+          (unpleasantSmells.length > 0
+            ? unpleasantSmells.join(", ")
+            : "Aucune") +
+          "</p>";
+        smellResult.style.display = "block";
+      }
+
+      // Fonction pour ajouter une ligne au journal des saveurs
+      function addTasteJournalRow() {
+        const table = document.getElementById("taste-journal");
+        const newRow = table.insertRow();
+
+        const cell1 = newRow.insertCell(0);
+        const cell2 = newRow.insertCell(1);
+
+        cell1.innerHTML = '<input type="text" class="food-item">';
+        cell2.innerHTML = '<input type="text" class="taste-item">';
+      }
+
+      // Fonction pour enregistrer le journal des saveurs
+      function saveTasteJournal() {
+        const foods = document.querySelectorAll(".food-item");
+        const tastes = document.querySelectorAll(".taste-item");
+        const tasteResult = document.getElementById("taste-result");
+
+        let journalEntries = [];
+
+        for (let i = 0; i < foods.length; i++) {
+          if (foods[i].value.trim() !== "" || tastes[i].value.trim() !== "") {
+            journalEntries.push({
+              food: foods[i].value.trim(),
+              taste: tastes[i].value.trim(),
+            });
+          }
+        }
+
+        if (journalEntries.length > 0) {
+          let html = "<h4>Votre journal des saveurs:</h4><ul>";
+          journalEntries.forEach((entry) => {
+            html += `<li><strong>${entry.food || "Non spécifié"}</strong>: ${
+              entry.taste || "Non spécifié"
+            }</li>`;
+          });
+          html += "</ul>";
+          tasteResult.innerHTML = html;
+        } else {
+          tasteResult.innerHTML = "<p>Aucune entrée dans le journal.</p>";
+        }
+        tasteResult.style.display = "block";
+      }
+
+      // Fonction pour simuler la boîte mystère
+      function simulateMysteryBox() {
+        const objects = [
+          {
+            texture: "doux",
+            hardness: "mou",
+            surface: "lisse",
+            temperature: "froid",
+          },
+          {
+            texture: "rugueux",
+            hardness: "dur",
+            surface: "texturé",
+            temperature: "ambiante",
+          },
+          {
+            texture: "lisse",
+            hardness: "dur",
+            surface: "lisse",
+            temperature: "froid",
+          },
+          {
+            texture: "doux",
+            hardness: "mou",
+            surface: "texturé",
+            temperature: "chaud",
+          },
+        ];
+
+        const randomObject =
+          objects[Math.floor(Math.random() * objects.length)];
+        const touchResult = document.getElementById("touch-result");
+
+        touchResult.innerHTML =
+          "<h4>Résultats de la boîte mystère:</h4>" +
+          "<ul>" +
+          `<li>Objet 1 (texture): ${randomObject.texture}</li>` +
+          `<li>Objet 2 (dureté): ${randomObject.hardness}</li>` +
+          `<li>Objet 3 (surface): ${randomObject.surface}</li>` +
+          `<li>Objet 4 (température): ${randomObject.temperature}</li>` +
+          "</ul>" +
+          "<p><em>Note pour l'enseignant: Utiliser des objets réels avec ces caractéristiques</em></p>";
+        touchResult.style.display = "block";
+      }
+
+      // Fonction pour vérifier les réponses du quiz
+      function checkQuizAnswers() {
+        const correctAnswers = {
+          q1: "b", // L'œil
+          q2: "c", // Le goût
+          q3: "b", // Le toucher
+          q4: "a", // L'odorat
+          q5: "c", // L'oreille
+        };
+
+        let score = 0;
+        const totalQuestions = Object.keys(correctAnswers).length;
+
+        // Vérifier chaque question
+        for (const question in correctAnswers) {
+          const selectedOption = document.querySelector(
+            `input[name="${question}"]:checked`
+          );
+
+          if (selectedOption) {
+            if (selectedOption.value === correctAnswers[question]) {
+              score++;
+              selectedOption.parentElement.classList.add("correct");
+            } else {
+              selectedOption.parentElement.classList.add("incorrect");
+              // Marquer la bonne réponse
+              const correctOption = document.querySelector(
+                `input[name="${question}"][value="${correctAnswers[question]}"]`
+              );
+              correctOption.parentElement.classList.add("correct-answer");
+            }
+          }
+        }
+
+        // Afficher le résultat
+        const resultElement = document.getElementById("quiz-result");
+        resultElement.innerHTML = `<h4>Résultat du Quiz: ${score} / ${totalQuestions}</h4>`;
+
+        if (score === totalQuestions) {
+          resultElement.innerHTML +=
+            '<p style="color:green;">Excellent! Vous maîtrisez parfaitement les 5 sens!</p>';
+        } else if (score >= totalQuestions / 2) {
+          resultElement.innerHTML +=
+            '<p style="color:orange;">Pas mal! Quelques révisions et vous y serez!</p>';
+        } else {
+          resultElement.innerHTML +=
+            '<p style="color:red;">Essayez encore! Consultez les sections correspondantes.</p>';
+        }
+
+        resultElement.style.display = "block";
+      }
+
+      // Fonction pour enregistrer le tableau de synthèse
+      function saveSensesSummary() {
+        const inputs = document.querySelectorAll("#senses-summary input");
+        const summaryResult = document.getElementById("summary-result");
+        let hasContent = false;
+
+        inputs.forEach((input) => {
+          if (input.value.trim() !== "") {
+            hasContent = true;
+          }
+        });
+
+        if (hasContent) {
+          summaryResult.innerHTML =
+            "<p style='color:green;'>Votre tableau a été enregistré avec succès!</p>";
+        } else {
+          summaryResult.innerHTML =
+            "<p style='color:red;'>Veuillez remplir au moins un champ avant d'enregistrer.</p>";
+        }
+        summaryResult.style.display = "block";
+      }
+
+      // Fonction pour montrer les réponses suggérées
+      function showCorrectSummary() {
+        const summaryDiv = document.getElementById("correct-summary");
+        if (summaryDiv.style.display === "none") {
+          summaryDiv.style.display = "block";
+        } else {
+          summaryDiv.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

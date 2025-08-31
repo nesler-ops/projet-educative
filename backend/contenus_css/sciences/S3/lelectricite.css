@@ -1,0 +1,249 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #f1c40f;
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --accent-color: #e74c3c;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #2980b9;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+.intro-section {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: center;
+}
+
+.sections-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.section-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+}
+
+.section-card h3 {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+.exercise {
+  background-color: #eaf2f8;
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.experiment {
+  background-color: #fef9e7;
+  border-left: 4px solid var(--secondary-color);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.definition {
+  background-color: #e8f8f5;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.definition h4 {
+  color: #16a085;
+  margin-top: 0;
+}
+
+.warning {
+  background-color: #fdedec;
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.interactive {
+  background-color: #f4f6f7;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.quiz-container {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+.quiz-question {
+  margin-bottom: 1.5rem;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.quiz-option {
+  background-color: #f1f1f1;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-option:hover {
+  background-color: #e1e1e1;
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.resource-link {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.resource-link:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.circuit-interactive {
+  position: relative;
+  height: 300px;
+  margin: 2rem 0;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .intro-section,
+  .sections-grid {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .quiz-options {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Fractions - Cours de Mathématiques</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/mathematiques/M2/les-fractions.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Les Fractions</h1>
+      <p class="subtitle">Cours de mathématiques - Niveau collège</p>
+    </header>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#definition">Définition</a></li>
+        <li><a href="#operations">Opérations</a></li>
+        <li><a href="#comparaison">Comparaison</a></li>
+        <li><a href="#exercices">Exercices</a></li>
+        <li><a href="#applications">Applications</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section id="introduction">
+        <h2>Introduction aux fractions</h2>
+        <p>
+          Les fractions sont essentielles dans notre vie quotidienne. Elles nous
+          permettent de représenter des parties d'un tout, de partager
+          équitablement des objets ou des quantités, et sont à la base de
+          nombreux calculs mathématiques.
+        </p>
+
+        <div class="fraction-image">
+          <img
+            src="http://localhost:8000/static/images/contenus_images/mathematiques/M2/fractions/fractions.gif"
+            width="700"
+            height="400"
+            style="display: block; margin: 0 auto"
+          />
+          <p>
+            <em
+              >Représentation visuelle d'une fraction comme partie d'un tout</em
+            >
+          </p>
+        </div>
+
+        <p>
+          Que ce soit pour la cuisine (½ tasse de farine), les mesures (¾ de
+          mètre), ou les statistiques (⅔ des élèves), les fractions sont partout
+          !
+        </p>
+      </section>
+
+      <section id="definition">
+        <h2>Qu'est-ce qu'une fraction ?</h2>
+
+        <div class="fraction-box">
+          <p>
+            Une fraction est une expression mathématique qui représente une
+            partie d'un tout. Elle est composée de deux nombres séparés par une
+            barre de fraction :
+          </p>
+          <div class="fraction-display">
+            <span style="display: inline-block; text-align: center">
+              <span>numérateur</span><br />
+              <span
+                style="
+                  display: inline-block;
+                  border-bottom: 2px solid black;
+                  padding: 0 5px;
+                "
+                >─────────</span
+              ><br />
+              <span>dénominateur</span>
+            </span>
+          </div>
+          <ul>
+            <li>
+              <strong>Le numérateur</strong> (nombre du haut) indique combien de
+              parts on prend.
+            </li>
+            <li>
+              <strong>Le dénominateur</strong> (nombre du bas) indique en
+              combien de parts égales le tout est divisé.
+            </li>
+          </ul>
+        </div>
+
+        <h3>Différents types de fractions</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Type de fraction</th>
+              <th>Description</th>
+              <th>Exemple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fraction propre</td>
+              <td>Le numérateur est plus petit que le dénominateur</td>
+              <td>3/4</td>
+            </tr>
+            <tr>
+              <td>Fraction impropre</td>
+              <td>Le numérateur est plus grand que le dénominateur</td>
+              <td>5/3</td>
+            </tr>
+            <tr>
+              <td>Nombre mixte</td>
+              <td>Combinaison d'un entier et d'une fraction propre</td>
+              <td>1 2/3</td>
+            </tr>
+            <tr>
+              <td>Fraction décimale</td>
+              <td>Le dénominateur est une puissance de 10</td>
+              <td>7/10</td>
+            </tr>
+            <tr>
+              <td>Fraction irréductible</td>
+              <td>
+                Le numérateur et le dénominateur n'ont pas de diviseur commun
+                autre que 1
+              </td>
+              <td>3/5</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="operations">
+        <h2>Les opérations avec les fractions</h2>
+
+        <h3>Addition et soustraction</h3>
+        <div class="fraction-box">
+          <p>
+            Pour additionner ou soustraire des fractions, il faut qu'elles aient
+            le même dénominateur.
+          </p>
+          <p>
+            Si les dénominateurs sont différents, on doit trouver un
+            dénominateur commun, qui est généralement le plus petit commun
+            multiple (PPCM) des dénominateurs.
+          </p>
+
+          <div class="example">
+            <p><strong>Exemple :</strong> Calculer 2/5 + 1/3</p>
+            <p>Le PPCM de 5 et 3 est 15.</p>
+            <p>2/5 = (2×3)/(5×3) = 6/15</p>
+            <p>1/3 = (1×5)/(3×5) = 5/15</p>
+            <p>Donc, 2/5 + 1/3 = 6/15 + 5/15 = 11/15</p>
+          </div>
+        </div>
+
+        <h3>Multiplication</h3>
+        <div class="fraction-box">
+          <p>
+            Pour multiplier deux fractions, on multiplie les numérateurs entre
+            eux et les dénominateurs entre eux.
+          </p>
+
+          <div class="example">
+            <p><strong>Exemple :</strong> Calculer 2/3 × 4/5</p>
+            <p>2/3 × 4/5 = (2×4)/(3×5) = 8/15</p>
+          </div>
+        </div>
+
+        <h3>Division</h3>
+        <div class="fraction-box">
+          <p>Pour diviser par une fraction, on multiplie par son inverse.</p>
+
+          <div class="example">
+            <p><strong>Exemple :</strong> Calculer 3/4 ÷ 2/5</p>
+            <p>3/4 ÷ 2/5 = 3/4 × 5/2 = (3×5)/(4×2) = 15/8 = 1 7/8</p>
+          </div>
+        </div>
+
+        <h3>Simplification des fractions</h3>
+        <div class="fraction-box">
+          <p>
+            Pour simplifier une fraction, on divise le numérateur et le
+            dénominateur par leur plus grand commun diviseur (PGCD).
+          </p>
+
+          <div class="example">
+            <p><strong>Exemple :</strong> Simplifier 12/18</p>
+            <p>Le PGCD de 12 et 18 est 6.</p>
+            <p>12/18 = (12÷6)/(18÷6) = 2/3</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="comparaison">
+        <h2>Comparaison de fractions</h2>
+
+        <div class="fraction-box">
+          <p>Pour comparer deux fractions, on peut :</p>
+          <ol>
+            <li>
+              Les ramener au même dénominateur et comparer les numérateurs.
+            </li>
+            <li>Les convertir en nombres décimaux et comparer ces nombres.</li>
+            <li>
+              Utiliser des produits croisés : a/b < c/d si et seulement si a×d <
+              b×c (quand b et d sont positifs).
+            </li>
+          </ol>
+
+          <div class="example">
+            <p><strong>Exemple :</strong> Comparer 3/4 et 2/3</p>
+            <p>On ramène au même dénominateur :</p>
+            <p>3/4 = (3×3)/(4×3) = 9/12</p>
+            <p>2/3 = (2×4)/(3×4) = 8/12</p>
+            <p>Comme 9 > 8, on a 9/12 > 8/12, donc 3/4 > 2/3</p>
+          </div>
+        </div>
+
+        <div class="fraction-image">
+          <img
+            src="http://localhost:8000/static/images/contenus_images/mathematiques/M2/fractions/bande.png"
+            width="700"
+            height="400"
+            style="display: block; margin: 0 auto"
+          />
+          <p>
+            <em
+              >Visualisation de la comparaison de fractions sur une droite
+              numérique</em
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>Exercices pratiques</h2>
+
+        <!-- Exercice 1 -->
+        <div class="exercise">
+          <span class="exercise-title">Exercice 1</span>
+          <p>Calculez les expressions suivantes :</p>
+          <ol id="ex1-questions">
+            <li>
+              2/5 + 3/10 =
+              <input type="text" data-answer="7/10" />
+              <span class="feedback"></span>
+            </li>
+            <li>
+              4/7 - 1/14 =
+              <input type="text" data-answer="1/2" />
+              <span class="feedback"></span>
+            </li>
+            <li>
+              3/8 × 4/9 =
+              <input type="text" data-answer="1/6" />
+              <span class="feedback"></span>
+            </li>
+            <li>
+              5/6 ÷ 2/3 =
+              <input type="text" data-answer="1 1/4" />
+              <span class="feedback"></span>
+            </li>
+          </ol>
+          <button
+            class="solution-btn"
+            onclick="verifierReponses('ex1-questions')"
+          >
+            Vérifier les réponses
+          </button>
+          <button class="solution-btn" onclick="toggleSolution('solution1')">
+            Voir les réponses
+          </button>
+          <div class="solution" id="solution1">
+            <ol>
+              <li>2/5 + 3/10 = 7/10</li>
+              <li>4/7 - 1/14 = 1/2</li>
+              <li>3/8 × 4/9 = 1/6</li>
+              <li>5/6 ÷ 2/3 = 1 1/4</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Exercice 2 -->
+        <div class="exercise">
+          <span class="exercise-title">Exercice 2</span>
+          <p>Classez les fractions suivantes par ordre croissant :</p>
+          <ol id="ex2-questions">
+            <li>
+              2/3 =
+              <input type="text" data-answer="16/24" />
+              <span class="feedback"></span>
+            </li>
+            <li>
+              5/8 =
+              <input type="text" data-answer="15/24" />
+              <span class="feedback"></span>
+            </li>
+            <li>
+              3/4 =
+              <input type="text" data-answer="18/24" />
+              <span class="feedback"></span>
+            </li>
+            <li>
+              7/12 =
+              <input type="text" data-answer="14/24" />
+              <span class="feedback"></span>
+            </li>
+          </ol>
+          <button
+            class="solution-btn"
+            onclick="verifierReponses('ex2-questions')"
+          >
+            Vérifier les réponses
+          </button>
+          <button class="solution-btn" onclick="toggleSolution('solution2')">
+            Voir les réponses
+          </button>
+          <div class="solution" id="solution2">
+            <p>Ordre croissant : 7/12 &lt; 5/8 &lt; 2/3 &lt; 3/4</p>
+          </div>
+        </div>
+
+        <!-- Exercice 3 -->
+        <div class="exercise">
+          <span class="exercise-title">Exercice 3</span>
+          <p>
+            Un gâteau est divisé en 8 parts. Marie mange 3 parts, Pierre 2
+            parts. Quelle fraction reste-t-il ?
+          </p>
+          <ol id="ex3-questions">
+            <li>
+              Parts mangées =
+              <input type="text" data-answer="5/8" />
+              <span class="feedback"></span>
+            </li>
+            <li>
+              Part restante =
+              <input type="text" data-answer="3/8" />
+              <span class="feedback"></span>
+            </li>
+          </ol>
+          <button
+            class="solution-btn"
+            onclick="verifierReponses('ex3-questions')"
+          >
+            Vérifier les réponses
+          </button>
+          <button class="solution-btn" onclick="toggleSolution('solution3')">
+            Voir les réponses
+          </button>
+          <div class="solution" id="solution3">
+            <ol>
+              <li>Parts mangées = 5/8</li>
+              <li>Part restante = 3/8</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="applications">
+        <h2>Applications dans la vie quotidienne</h2>
+
+        <div class="fraction-box">
+          <h3>En cuisine</h3>
+          <p>
+            Les recettes utilisent souvent des fractions pour indiquer les
+            quantités d'ingrédients :
+          </p>
+          <ul>
+            <li>1/2 tasse de sucre</li>
+            <li>3/4 de cuillère à soupe de sel</li>
+            <li>1/4 de litre de lait</li>
+          </ul>
+        </div>
+
+        <div class="fraction-box">
+          <h3>En construction et bricolage</h3>
+          <p>Les mesures peuvent être exprimées en fractions :</p>
+          <ul>
+            <li>Une planche de 3/4 de pouce d'épaisseur</li>
+            <li>Un tuyau de 1/2 pouce de diamètre</li>
+            <li>Une vis de 5/8 de pouce</li>
+          </ul>
+        </div>
+
+        <div class="fraction-box">
+          <h3>En économie et finances</h3>
+          <p>
+            Les taux d'intérêt, les pourcentages et les statistiques utilisent
+            des fractions :
+          </p>
+          <ul>
+            <li>Un taux d'intérêt de 1/4 de point</li>
+            <li>3/4 des électeurs ont participé au vote</li>
+            <li>2/3 du budget est alloué à l'éducation</li>
+          </ul>
+        </div>
+
+        <div class="fraction-image">
+          <img
+            src="http://localhost:8000/static/images/contenus_images/mathematiques/M2/fractions/fruits.jpg"
+            width="700"
+            height="400"
+            style="display: block; margin: 0 auto"
+          />
+          <p><em>Les fractions sont omniprésentes dans notre quotidien</em></p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2025 - Cours de mathématiques sur les fractions</p>
+      <p>Cette page a été créée à des fins pédagogiques.</p>
+    </footer>
+
+    <script>
+      function toggleSolution(id) {
+        const el = document.getElementById(id);
+        el.style.display = el.style.display === "block" ? "none" : "block";
+      }
+
+      function verifierReponses(containerId) {
+        const container = document.getElementById(containerId);
+        const inputs = container.querySelectorAll("input");
+
+        inputs.forEach((input) => {
+          const expected = input.getAttribute("data-answer").trim();
+          const user = input.value.trim();
+          const feedbackSpan = input.nextElementSibling;
+
+          input.classList.remove("correct", "incorrect", "empty");
+          feedbackSpan.textContent = "";
+
+          if (!user) {
+            input.classList.add("empty");
+            feedbackSpan.textContent = "⛔";
+          } else if (user === expected) {
+            input.classList.add("correct");
+            feedbackSpan.textContent = "✅";
+          } else {
+            input.classList.add("incorrect");
+            feedbackSpan.textContent = "❌";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Résolution d'équations - Méthodes pour résoudre des équations simples
+    </title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/mathematiques/M2/resolution-dequations.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Résolution d'équations</h1>
+        <div class="subtitle">Méthodes pour résoudre des équations simples</div>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          La résolution d'équations est une compétence fondamentale en
+          mathématiques qui nous permet de trouver les valeurs inconnues dans
+          une expression algébrique. Que ce soit pour déterminer le prix d'un
+          produit, calculer le temps nécessaire pour accomplir une tâche, ou
+          résoudre des problèmes plus complexes en sciences, savoir résoudre des
+          équations est essentiel.
+        </p>
+        <p>
+          Dans ce cours, nous allons explorer différentes méthodes pour résoudre
+          des équations simples, en mettant l'accent sur les principes
+          fondamentaux qui vous permettront de développer votre intuition
+          mathématique et d'aborder des problèmes plus complexes avec confiance.
+        </p>
+        <div class="img-container">
+          <img
+            src="http://localhost:8000/static/images/contenus_images/mathematiques/M2/equations/equation2x.jpg"
+            width="700"
+            height="400"
+            style="display: block; margin: 0 auto"
+          />
+          <p><em>Représentation graphique de l'équation y = 2x - 1</em></p>
+        </div>
+      </section>
+
+      <section id="principes-fondamentaux">
+        <h2>Principes fondamentaux</h2>
+        <p>
+          Avant de plonger dans les méthodes spécifiques, il est important de
+          comprendre les principes de base qui gouvernent la résolution
+          d'équations :
+        </p>
+        <div class="note">
+          <strong>Principe d'équivalence :</strong> Lorsque nous effectuons la
+          même opération des deux côtés d'une équation, nous obtenons une
+          nouvelle équation qui a les mêmes solutions que l'équation originale.
+        </div>
+        <p>
+          En d'autres termes, les opérations suivantes préservent l'égalité et
+          nous permettent de manipuler une équation tout en gardant les mêmes
+          solutions :
+        </p>
+        <ul>
+          <li>Ajouter ou soustraire le même nombre des deux côtés</li>
+          <li>
+            Multiplier ou diviser les deux côtés par le même nombre non nul
+          </li>
+          <li>Élever les deux côtés à la même puissance (avec précaution)</li>
+          <li>Prendre la racine carrée des deux côtés (avec précaution)</li>
+        </ul>
+        <p>
+          Notre objectif est toujours d'<strong>isoler la variable</strong>
+          (généralement notée x) d'un côté de l'équation.
+        </p>
+      </section>
+
+      <section id="equations-premier-degre">
+        <h2>Résolution d'équations du premier degré</h2>
+        <p>
+          Les équations du premier degré (ou équations linéaires) sont de la
+          forme ax + b = c, où a, b et c sont des constantes et a ≠ 0.
+        </p>
+        <h3>Méthode de résolution</h3>
+        <ol>
+          <li>Regrouper les termes avec la variable d'un côté de l'équation</li>
+          <li>Regrouper les termes constants de l'autre côté</li>
+          <li>Diviser les deux côtés par le coefficient de la variable</li>
+        </ol>
+
+        <div class="example">
+          <h4>Exemple 1 : Résoudre 3x + 5 = 11</h4>
+          <div class="formula">
+            3x + 5 = 11<br />
+            3x = 11 - 5 &nbsp;&nbsp;&nbsp; (on soustrait 5 des deux côtés)<br />
+            3x = 6<br />
+            x = 6 ÷ 3 &nbsp;&nbsp;&nbsp; (on divise les deux côtés par 3)<br />
+            x = 2
+          </div>
+          <p>Vérification : 3 × 2 + 5 = 6 + 5 = 11 ✓</p>
+        </div>
+
+        <div class="example">
+          <h4>Exemple 2 : Résoudre 4x - 7 = 2x + 3</h4>
+          <div class="formula">
+            4x - 7 = 2x + 3<br />
+            4x - 2x = 3 + 7 &nbsp;&nbsp;&nbsp; (on regroupe les termes avec x à
+            gauche et les constantes à droite)<br />
+            2x = 10<br />
+            x = 10 ÷ 2<br />
+            x = 5
+          </div>
+          <p>
+            Vérification : 4 × 5 - 7 = 20 - 7 = 13 et 2 × 5 + 3 = 10 + 3 = 13 ✓
+          </p>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercice 1</h4>
+          <p>Résoudre les équations suivantes :</p>
+          <ol type="a">
+            <li>5x + 3 = 18</li>
+            <li>2x - 7 = 3x + 4</li>
+            <li>3(x + 2) = 5x - 4</li>
+          </ol>
+          <button class="btn" onclick="toggleSolution('solution1')">
+            Voir la solution
+          </button>
+          <div id="solution1" class="solution">
+            <p><strong>a) 5x + 3 = 18</strong></p>
+            <div class="formula">
+              5x + 3 = 18<br />
+              5x = 18 - 3 = 15<br />
+              x = 15 ÷ 5 = 3
+            </div>
+
+            <p><strong>b) 2x - 7 = 3x + 4</strong></p>
+            <div class="formula">
+              2x - 7 = 3x + 4<br />
+              2x - 3x = 4 + 7<br />
+              -x = 11<br />
+              x = -11
+            </div>
+
+            <p><strong>c) 3(x + 2) = 5x - 4</strong></p>
+            <div class="formula">
+              3(x + 2) = 5x - 4<br />
+              3x + 6 = 5x - 4<br />
+              3x - 5x = -4 - 6<br />
+              -2x = -10<br />
+              x = 5
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="two-columns">
+        <div>
+          <section id="equations-second-degre">
+            <h2>Résolution d'équations du second degré</h2>
+            <p>
+              Les équations du second degré sont de la forme ax² + bx + c = 0,
+              où a, b et c sont des constantes et a ≠ 0.
+            </p>
+            <h3>Méthode de résolution par factorisation</h3>
+            <p>
+              Si nous pouvons factoriser le polynôme, nous pouvons utiliser la
+              propriété du produit nul : si A × B = 0, alors soit A = 0, soit B
+              = 0.
+            </p>
+            <div class="example">
+              <h4>Exemple 3 : Résoudre x² - 4x + 3 = 0</h4>
+              <div class="formula">
+                x² - 4x + 3 = 0<br />
+                (x - 3)(x - 1) = 0<br />
+                x - 3 = 0 &nbsp;ou&nbsp; x - 1 = 0<br />
+                x = 3 &nbsp;ou&nbsp; x = 1
+              </div>
+            </div>
+
+            <h3>Méthode de résolution par la formule quadratique</h3>
+            <p>
+              Pour toute équation de la forme ax² + bx + c = 0, les solutions
+              sont données par la formule :
+            </p>
+            <div class="formula">x = (-b ± √(b² - 4ac)) / (2a)</div>
+            <p>
+              Le discriminant Δ = b² - 4ac détermine le nombre de solutions :
+            </p>
+            <ul>
+              <li>Si Δ > 0 : deux solutions réelles distinctes</li>
+              <li>Si Δ = 0 : une solution réelle (racine double)</li>
+              <li>
+                Si Δ < 0 : pas de solution réelle (mais deux solutions
+                complexes)
+              </li>
+            </ul>
+
+            <div class="example">
+              <h4>Exemple 4 : Résoudre 2x² + 5x - 3 = 0</h4>
+              <div class="formula">
+                a = 2, b = 5, c = -3<br />
+                Δ = b² - 4ac = 5² - 4 × 2 × (-3) = 25 + 24 = 49<br />
+                Δ > 0, donc il y a deux solutions réelles distinctes.<br /><br />
+
+                x = (-b ± √Δ) / (2a)<br />
+                x = (-5 ± √49) / (2 × 2)<br />
+                x = (-5 ± 7) / 4<br /><br />
+
+                x₁ = (-5 + 7) / 4 = 2 / 4 = 0.5<br />
+                x₂ = (-5 - 7) / 4 = -12 / 4 = -3
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <section id="equations-valeur-absolue">
+            <h2>Équations avec valeur absolue</h2>
+            <p>
+              Les équations contenant des valeurs absolues nécessitent une
+              approche spéciale car |x| représente la distance de x à 0 sur la
+              droite numérique.
+            </p>
+            <p>
+              Pour résoudre une équation de la forme |expression| = k (où k >
+              0), nous considérons deux cas :
+            </p>
+            <div class="formula">
+              |expression| = k équivaut à :<br />
+              expression = k &nbsp;ou&nbsp; expression = -k
+            </div>
+
+            <div class="example">
+              <h4>Exemple 5 : Résoudre |2x - 3| = 7</h4>
+              <div class="formula">
+                |2x - 3| = 7<br /><br />
+
+                Cas 1 : 2x - 3 = 7<br />
+                2x = 10<br />
+                x = 5<br /><br />
+
+                Cas 2 : 2x - 3 = -7<br />
+                2x = -4<br />
+                x = -2
+              </div>
+              <p>Les solutions sont x = 5 et x = -2.</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="http://localhost:8000/static/images/contenus_images/mathematiques/M2/equations/equations.png"
+                width="700"
+                height="400"
+                style="display: block; margin: 0 auto"
+              />
+              <p><em>Représentation graphique de |2x - 3| = 7</em></p>
+            </div>
+
+            <div class="exercise">
+              <h4>Exercice 2</h4>
+              <p>Résoudre les équations suivantes :</p>
+              <ol type="a">
+                <li>|x + 2| = 4</li>
+                <li>|3x - 1| = 5</li>
+              </ol>
+              <button class="btn" onclick="toggleSolution('solution2')">
+                Voir la solution
+              </button>
+              <div id="solution2" class="solution">
+                <p><strong>a) |x + 2| = 4</strong></p>
+                <div class="formula">
+                  Cas 1 : x + 2 = 4<br />
+                  x = 2<br /><br />
+
+                  Cas 2 : x + 2 = -4<br />
+                  x = -6
+                </div>
+                <p>Les solutions sont x = 2 et x = -6.</p>
+
+                <p><strong>b) |3x - 1| = 5</strong></p>
+                <div class="formula">
+                  Cas 1 : 3x - 1 = 5<br />
+                  3x = 6<br />
+                  x = 2<br /><br />
+
+                  Cas 2 : 3x - 1 = -5<br />
+                  3x = -4<br />
+                  x = -4/3
+                </div>
+                <p>Les solutions sont x = 2 et x = -4/3.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section id="equations-fractions">
+        <h2>Équations avec fractions</h2>
+        <p>
+          Pour résoudre des équations contenant des fractions, une approche
+          courante consiste à multiplier tous les termes par le plus petit
+          commun multiple (PPCM) des dénominateurs pour éliminer les fractions.
+        </p>
+
+        <div class="example">
+          <h4>Exemple 6 : Résoudre (x/2) + (x/3) = 5</h4>
+          <div class="formula">
+            (x/2) + (x/3) = 5<br /><br />
+
+            Le PPCM de 2 et 3 est 6.<br />
+            Multiplions tous les termes par 6 :<br /><br />
+
+            6 × [(x/2) + (x/3)] = 6 × 5<br />
+            3x + 2x = 30<br />
+            5x = 30<br />
+            x = 6
+          </div>
+          <p>Vérification : (6/2) + (6/3) = 3 + 2 = 5 ✓</p>
+        </div>
+
+        <div class="note">
+          <strong>Attention !</strong> Lorsque vous manipulez des équations avec
+          des fractions, assurez-vous que les valeurs de x pour lesquelles un
+          dénominateur s'annule ne sont pas des solutions de l'équation
+          originale.
+        </div>
+
+        <div class="exercise">
+          <h4>Exercice 3</h4>
+          <p>Résoudre les équations suivantes :</p>
+          <ol type="a">
+            <li>(1/x) + 1 = 3</li>
+            <li>(x/4) - (2/3) = (x/6)</li>
+          </ol>
+          <button class="btn" onclick="toggleSolution('solution3')">
+            Voir la solution
+          </button>
+          <div id="solution3" class="solution">
+            <p><strong>a) (1/x) + 1 = 3</strong></p>
+            <div class="formula">
+              (1/x) + 1 = 3<br />
+              (1/x) = 3 - 1 = 2<br />
+              1 = 2x<br />
+              x = 1/2
+            </div>
+            <p>
+              La solution est x = 1/2. Notez que x ≠ 0 (contrainte due au
+              dénominateur).
+            </p>
+
+            <p><strong>b) (x/4) - (2/3) = (x/6)</strong></p>
+            <div class="formula">
+              (x/4) - (2/3) = (x/6)<br /><br />
+
+              Le PPCM de 4, 3 et 6 est 12.<br />
+              Multiplions tous les termes par 12 :<br /><br />
+
+              12 × [(x/4) - (2/3) - (x/6)]= 0<br />
+              3x - 8 - 2x = 0<br />
+              x - 8 = 0<br />
+              x = 8
+            </div>
+            <p>La solution est x = 8.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="applications">
+        <h2>Applications pratiques</h2>
+        <p>
+          La résolution d'équations est un outil puissant pour résoudre des
+          problèmes de la vie quotidienne. Voici quelques exemples
+          d'applications :
+        </p>
+
+        <div class="two-columns">
+          <div>
+            <h3>Problèmes de géométrie</h3>
+            <div class="example">
+              <h4>Exemple 7 : Calcul de dimensions</h4>
+              <p>
+                Un rectangle a un périmètre de 30 cm. Sa longueur est 2 cm de
+                plus que sa largeur. Quelles sont ses dimensions ?
+              </p>
+              <div class="formula">
+                Soit x = la largeur du rectangle en cm<br />
+                Alors x + 2 = la longueur du rectangle en cm<br /><br />
+
+                Le périmètre est donné par la formule 2 × (longueur + largeur) =
+                30<br />
+                2 × [(x + 2) + x] = 30<br />
+                2 × (2x + 2) = 30<br />
+                4x + 4 = 30<br />
+                4x = 26<br />
+                x = 6.5<br /><br />
+
+                Largeur = 6.5 cm<br />
+                Longueur = 6.5 + 2 = 8.5 cm
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Problèmes financiers</h3>
+            <div class="example">
+              <h4>Exemple 8 : Calcul d'intérêts</h4>
+              <p>
+                Une somme de 1000€ est placée à un taux d'intérêt annuel. Après
+                un an, elle rapporte 50€ d'intérêts. Quel est le taux d'intérêt
+                ?
+              </p>
+              <div class="formula">
+                Soit r = le taux d'intérêt (en décimal)<br /><br />
+
+                Montant des intérêts = Capital × Taux × Temps<br />
+                50 = 1000 × r × 1<br />
+                50 = 1000r<br />
+                r = 50/1000 = 0.05<br /><br />
+
+                Le taux d'intérêt est de 0.05, soit 5%.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercice 4 : Problème pratique</h4>
+          <p>
+            Un cycliste parcourt 60 km en un certain temps. S'il avait augmenté
+            sa vitesse de 5 km/h, il aurait mis une heure de moins pour faire le
+            même trajet. Quelle était sa vitesse initiale ?
+          </p>
+          <button class="btn" onclick="toggleSolution('solution4')">
+            Voir la solution
+          </button>
+          <div id="solution4" class="solution">
+            <p>Soit v = la vitesse initiale du cycliste en km/h</p>
+            <p>Le temps initial est t = distance / vitesse = 60 / v heures</p>
+            <p>
+              Avec la nouvelle vitesse (v + 5), le temps serait t' = 60 / (v +
+              5) heures
+            </p>
+            <p>Selon l'énoncé, t - t' = 1 heure</p>
+
+            <div class="formula">
+              60/v - 60/(v + 5) = 1<br />
+              [60(v + 5) - 60v] / [v(v + 5)] = 1<br />
+              60 × 5 / [v(v + 5)] = 1<br />
+              300 = v(v + 5)<br />
+              300 = v² + 5v<br />
+              v² + 5v - 300 = 0
+            </div>
+
+            <p>Résolvons cette équation du second degré :</p>
+            <div class="formula">
+              a = 1, b = 5, c = -300<br />
+              Δ = b² - 4ac = 5² - 4 × 1 × (-300) = 25 + 1200 = 1225<br />
+              Δ > 0, donc il y a deux solutions réelles distinctes.<br /><br />
+
+              v = (-b ± √Δ) / (2a)<br />
+              v = (-5 ± √1225) / 2<br />
+              v = (-5 ± 35) / 2<br /><br />
+
+              v₁ = (-5 + 35) / 2 = 15<br />
+              v₂ = (-5 - 35) / 2 = -20
+            </div>
+
+            <p>
+              Comme v représente une vitesse, seule la solution positive est
+              valable. La vitesse initiale du cycliste était donc de 15 km/h.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="recapitulatif">
+        <h2>Récapitulatif des méthodes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Type d'équation</th>
+              <th>Méthode de résolution</th>
+              <th>Exemple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Équation du premier degré<br />(ax + b = c)</td>
+              <td>Isoler la variable</td>
+              <td>3x + 5 = 11<br />x = 2</td>
+            </tr>
+            <tr>
+              <td>Équation du second degré<br />(ax² + bx + c = 0)</td>
+              <td>Factorisation ou formule quadratique</td>
+              <td>x² - 4x + 3 = 0<br />x = 1 ou x = 3</td>
+            </tr>
+            <tr>
+              <td>Équation avec valeur absolue<br />(|ax + b| = c)</td>
+              <td>Considérer deux cas : ax + b = c ou ax + b = -c</td>
+              <td>|2x - 3| = 7<br />x = 5 ou x = -2</td>
+            </tr>
+            <tr>
+              <td>Équation avec fractions</td>
+              <td>Multiplier par le PPCM des dénominateurs</td>
+              <td>(x/2) + (x/3) = 5<br />x = 6</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>
+          La résolution d'équations est une compétence fondamentale qui ouvre la
+          porte à de nombreuses applications en mathématiques et dans la vie
+          quotidienne. En maîtrisant les méthodes présentées dans ce cours, vous
+          serez capable de :
+        </p>
+        <ul>
+          <li>
+            Résoudre des problèmes concrets en utilisant les équations comme
+            outil de modélisation
+          </li>
+          <li>Aborder avec confiance des équations de différents types</li>
+          <li>Développer votre intuition mathématique</li>
+        </ul>
+      </section>
+    </div>
+    <script>
+      function toggleSolution(id) {
+        const solution = document.getElementById(id);
+        if (
+          solution.style.display === "none" ||
+          solution.style.display === ""
+        ) {
+          solution.style.display = "block";
+        } else {
+          solution.style.display = "none";
+        }
+      }
+
+      function verifierReponses(exerciseId, reponsesCorrectes) {
+        const inputs = document.querySelectorAll(
+          `#${exerciseId} input[type='text']`
+        );
+        inputs.forEach((input, index) => {
+          const userAnswer = input.value.trim();
+          const correctAnswer = reponsesCorrectes[index];
+          const feedback = input.nextElementSibling;
+
+          input.style.border = "2px solid transparent";
+
+          if (userAnswer === "") {
+            input.style.borderColor = "#f1c40f";
+            feedback.textContent = "⛔ Vide";
+            feedback.style.color = "#f39c12";
+          } else if (userAnswer === correctAnswer) {
+            input.style.borderColor = "#2ecc71";
+            feedback.textContent = "✅ Correct";
+            feedback.style.color = "#27ae60";
+          } else {
+            input.style.borderColor = "#e74c3c";
+            feedback.textContent = "❌ Incorrect";
+            feedback.style.color = "#c0392b";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

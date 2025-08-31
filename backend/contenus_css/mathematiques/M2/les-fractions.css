@@ -1,0 +1,189 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+header {
+  background-color: #4e73df;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.subtitle {
+  font-style: italic;
+  opacity: 0.9;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+section {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+h2 {
+  color: #4e73df;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #4e73df;
+  display: inline-block;
+}
+h3 {
+  color: #2e59d9;
+}
+.fraction-box {
+  background-color: #f8f9fc;
+  border-left: 4px solid #4e73df;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 5px 5px 0;
+}
+.example {
+  background-color: #e8f4f8;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+.exercise {
+  background-color: #fff3cd;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin: 2rem 0;
+  position: relative;
+}
+.exercise-title {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background-color: #ffc107;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.solution-btn {
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.solution {
+  display: none;
+  background-color: #e8f4f8;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.fraction-image {
+  text-align: center;
+  margin: 2rem 0;
+}
+.fraction-image img {
+  max-width: 100%;
+  height: auto;
+}
+.fraction-display {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+th {
+  background-color: #4e73df;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f8f9fc;
+}
+.interactive-zone {
+  background-color: #e8f4f8;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #4e73df;
+  color: white;
+  margin-top: 2rem;
+}
+.nav-menu {
+  background-color: #343a40;
+  padding: 1rem 0;
+}
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-menu li {
+  margin: 0 1rem;
+}
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+.nav-menu a:hover {
+  background-color: #4e73df;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 100px;
+  transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+}
+
+input.correct {
+  border-color: green;
+  background-color: #e8f5e9;
+}
+
+input.incorrect {
+  border-color: red;
+  background-color: #ffebee;
+}
+
+input.empty {
+  border-color: gray;
+  background-color: #f5f5f5;
+}
+
+.feedback {
+  font-size: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}

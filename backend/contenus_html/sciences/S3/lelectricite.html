@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'électricité - Cours et Exercices</title>
+
+    <link rel="stylesheet" href="/contenus_css/sciences/S3/lelectricite.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>L'Électricité</h1>
+        <p>
+          Découvrez les principes fondamentaux de l'électricité et son
+          importance dans notre vie quotidienne
+        </p>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#notions-base">Notions de base</a></li>
+        <li><a href="#circuits">Circuits électriques</a></li>
+        <li><a href="#exercices">Exercices</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section id="introduction" class="intro-section">
+        <div class="intro-text">
+          <h2>Introduction à l'électricité</h2>
+          <p>
+            L'électricité est un phénomène physique fondamental qui se
+            caractérise par la présence et le mouvement de charges électriques.
+            Elle constitue une forme d'énergie qui joue un rôle crucial dans
+            notre société moderne et qui est à la base du fonctionnement de la
+            plupart de nos appareils et technologies.
+          </p>
+          <p>
+            Dans ce cours, nous explorerons les concepts fondamentaux de
+            l'électricité, ses propriétés, et comment elle est générée,
+            transportée et utilisée dans notre quotidien.
+          </p>
+        </div>
+        <img
+          src="http://localhost:8000/static/images/contenus_images/sciences/S3/electricite/electricite.png"
+          width="400"
+          height="400"
+          style="display: block; margin: 0 auto"
+        />
+      </section>
+
+      <section id="notions-base">
+        <h2>Notions de base de l'électricité</h2>
+
+        <div class="sections-grid">
+          <div class="section-card">
+            <h3>Les charges électriques</h3>
+            <p>
+              Tous les objets sont composés d'atomes. Au sein de ces atomes, on
+              trouve des particules élémentaires chargées électriquement :
+            </p>
+            <ul>
+              <li>Les électrons, chargés négativement (-)</li>
+              <li>Les protons, chargés positivement (+)</li>
+              <li>Les neutrons, sans charge électrique</li>
+            </ul>
+            <p>La charge électrique se mesure en coulombs (C).</p>
+
+            <div class="definition">
+              <h4>Définition : Loi de Coulomb</h4>
+              <p>
+                La force électrostatique entre deux charges ponctuelles est
+                proportionnelle au produit des valeurs de ces charges et
+                inversement proportionnelle au carré de la distance qui les
+                sépare.
+              </p>
+              <p><strong>F = k × (q₁ × q₂) / r²</strong></p>
+              <p>Où k est la constante électrostatique (≈ 9 × 10⁹ N·m²/C²).</p>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>Le courant électrique</h3>
+            <p>
+              Le courant électrique correspond au déplacement des charges
+              électriques (généralement des électrons) dans un conducteur. Il se
+              mesure en ampères (A).
+            </p>
+
+            <div class="definition">
+              <h4>Définition : Intensité du courant</h4>
+              <p>
+                L'intensité du courant électrique (I) est définie comme la
+                quantité de charge électrique (Q) qui traverse une section d'un
+                conducteur par unité de temps (t).
+              </p>
+              <p><strong>I = Q / t</strong></p>
+              <p>L'unité de mesure est l'ampère (A).</p>
+            </div>
+
+            <p>Il existe deux types de courant :</p>
+            <ul>
+              <li>
+                <strong>Courant continu (CC)</strong> : le sens du courant ne
+                varie pas dans le temps (piles, batteries).
+              </li>
+              <li>
+                <strong>Courant alternatif (CA)</strong> : le sens du courant
+                change périodiquement (prises électriques domestiques).
+              </li>
+            </ul>
+          </div>
+
+          <div class="section-card">
+            <h3>La tension électrique</h3>
+            <p>
+              La tension électrique, également appelée différence de potentiel,
+              représente le travail nécessaire pour déplacer une charge
+              électrique d'un point à un autre dans un champ électrique. Elle se
+              mesure en volts (V).
+            </p>
+
+            <div class="definition">
+              <h4>Définition : Tension électrique</h4>
+              <p>
+                La tension U entre deux points est égale au travail W nécessaire
+                pour déplacer une charge Q entre ces deux points, divisé par la
+                valeur de cette charge.
+              </p>
+              <p><strong>U = W / Q</strong></p>
+              <p>L'unité de mesure est le volt (V).</p>
+            </div>
+
+            <div class="warning">
+              <h4>Attention à la sécurité !</h4>
+              <p>
+                Une tension supérieure à 50V peut être dangereuse pour l'être
+                humain. Les prises électriques domestiques en France délivrent
+                une tension de 230V, ce qui présente un risque d'électrocution
+                grave.
+              </p>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>La résistance électrique</h3>
+            <p>
+              La résistance électrique caractérise la propriété d'un conducteur
+              à s'opposer au passage du courant électrique. Elle se mesure en
+              ohms (Ω).
+            </p>
+
+            <div class="definition">
+              <h4>Définition : Loi d'Ohm</h4>
+              <p>
+                La loi d'Ohm établit la relation entre la tension U, l'intensité
+                I et la résistance R :
+              </p>
+              <p><strong>U = R × I</strong></p>
+              <p>
+                où R est la résistance en ohms (Ω), U est la tension en volts
+                (V) et I est l'intensité en ampères (A).
+              </p>
+            </div>
+
+            <p>La résistance d'un conducteur dépend de :</p>
+            <ul>
+              <li>La nature du matériau</li>
+              <li>La longueur du conducteur</li>
+              <li>La section du conducteur</li>
+              <li>La température</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="circuits">
+        <h2>Les circuits électriques</h2>
+
+        <div class="section-card">
+          <h3>Composants d'un circuit électrique</h3>
+          <p>
+            Un circuit électrique est un ensemble d'éléments connectés
+            permettant la circulation du courant électrique. Les principaux
+            composants sont :
+          </p>
+          <ul>
+            <li>
+              <strong>Générateur</strong> : fournit l'énergie électrique (pile,
+              batterie, alternateur)
+            </li>
+            <li>
+              <strong>Conducteur</strong> : permet le déplacement des charges
+              (fil métallique)
+            </li>
+            <li>
+              <strong>Récepteur</strong> : utilise l'énergie électrique (lampe,
+              moteur)
+            </li>
+            <li>
+              <strong>Interrupteur</strong> : contrôle le passage du courant
+            </li>
+          </ul>
+
+          <img
+            src="http://localhost:8000/static/images/contenus_images/sciences/S3/electricite/simple.gif"
+            width="400"
+            height="400"
+            style="display: block; margin: 0 auto"
+          />
+
+          <h4>Symboles des composants électriques</h4>
+          <p>
+            Dans un schéma électrique, chaque composant est représenté par un
+            symbole normalisé :
+          </p>
+          <img
+            src="http://localhost:8000/static/images/contenus_images/sciences/S3/electricite/symboles.jpg"
+            width="400"
+            height="400"
+            style="display: block; margin: 0 auto"
+          />
+        </div>
+
+        <div class="sections-grid">
+          <div class="section-card">
+            <h3>Circuit en série</h3>
+            <p>
+              Dans un circuit en série, les composants sont connectés les uns à
+              la suite des autres, formant un seul chemin pour le courant
+              électrique.
+            </p>
+            <img
+              src="http://localhost:8000/static/images/contenus_images/sciences/S3/electricite/serie.png"
+              width="400"
+              height="400"
+              style="display: block; margin: 0 auto"
+            />
+            <div class="definition">
+              <h4>Propriétés du circuit en série</h4>
+              <ul>
+                <li>
+                  L'intensité du courant est identique en tout point du circuit
+                  : I = I₁ = I₂ = I₃
+                </li>
+                <li>
+                  La tension totale est égale à la somme des tensions aux bornes
+                  de chaque composant : U = U₁ + U₂ + U₃
+                </li>
+                <li>
+                  La résistance équivalente est égale à la somme des résistances
+                  : R = R₁ + R₂ + R₃
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>Circuit en parallèle</h3>
+            <p>
+              Dans un circuit en parallèle, les composants sont connectés entre
+              les mêmes points, offrant plusieurs chemins au courant électrique.
+            </p>
+            <img
+              src="http://localhost:8000/static/images/contenus_images/sciences/S3/electricite/parallele.gif"
+              width="400"
+              height="400"
+              style="display: block; margin: 0 auto"
+            />
+            <div class="definition">
+              <h4>Propriétés du circuit en parallèle</h4>
+              <ul>
+                <li>
+                  L'intensité totale est égale à la somme des intensités dans
+                  chaque branche : I = I₁ + I₂ + I₃
+                </li>
+                <li>
+                  La tension est identique aux bornes de chaque composant : U =
+                  U₁ = U₂ = U₃
+                </li>
+                <li>
+                  L'inverse de la résistance équivalente est égal à la somme des
+                  inverses des résistances : 1/R = 1/R₁ + 1/R₂ + 1/R₃
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="experiment">
+          <h3>Expérience : Construire un circuit simple</h3>
+          <h4>Matériel nécessaire :</h4>
+          <ul>
+            <li>Une pile de 4,5V</li>
+            <li>Une ampoule avec support</li>
+            <li>Des fils électriques</li>
+            <li>Un interrupteur</li>
+          </ul>
+
+          <h4>Procédure :</h4>
+          <ol>
+            <li>
+              Connectez un fil électrique à la borne positive (+) de la pile.
+            </li>
+            <li>Reliez ce fil à une borne de l'interrupteur.</li>
+            <li>
+              Connectez l'autre borne de l'interrupteur au support de l'ampoule.
+            </li>
+            <li>
+              Reliez l'autre connexion du support de l'ampoule à la borne
+              négative (-) de la pile.
+            </li>
+            <li>Actionnez l'interrupteur et observez l'ampoule s'allumer.</li>
+          </ol>
+
+          <p>
+            Cette expérience illustre un circuit électrique fermé qui permet le
+            passage du courant de la pile vers l'ampoule lorsque l'interrupteur
+            est fermé.
+          </p>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>Exercices d'application</h2>
+
+        <div class="exercise">
+          <h3>Exercice 1 : Calcul d'intensité</h3>
+          <p>
+            Une lampe est alimentée par une tension de 12V et possède une
+            résistance de 6Ω. Calculez l'intensité du courant qui la traverse.
+          </p>
+
+          <div class="solution" style="display: none">
+            <h4>Solution :</h4>
+            <p>D'après la loi d'Ohm : U = R × I</p>
+            <p>On isole I : I = U / R</p>
+            <p>I = 12V / 6Ω = 2A</p>
+            <p>L'intensité du courant traversant la lampe est de 2 ampères.</p>
+          </div>
+
+          <button
+            onclick="this.nextElementSibling.style.display = 'block'; this.style.display = 'none';"
+          >
+            Afficher la solution
+          </button>
+          <div style="display: none">
+            <h4>Solution :</h4>
+            <p>D'après la loi d'Ohm : U = R × I</p>
+            <p>On isole I : I = U / R</p>
+            <p>I = 12V / 6Ω = 2A</p>
+            <p>L'intensité du courant traversant la lampe est de 2 ampères.</p>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h3>Exercice 2 : Calcul de résistance équivalente</h3>
+          <p>Trois résistances R₁ = 10Ω, R₂ = 20Ω et R₃ = 30Ω sont montées :</p>
+          <ol type="a">
+            <li>En série. Calculez la résistance équivalente.</li>
+            <li>En parallèle. Calculez la résistance équivalente.</li>
+          </ol>
+
+          <button
+            onclick="this.nextElementSibling.style.display = 'block'; this.style.display = 'none';"
+          >
+            Afficher la solution
+          </button>
+          <div style="display: none">
+            <h4>Solution :</h4>
+            <p>a) En série :</p>
+            <p>R<sub>eq</sub> = R₁ + R₂ + R₃ = 10Ω + 20Ω + 30Ω = 60Ω</p>
+
+            <p>b) En parallèle :</p>
+            <p>1/R<sub>eq</sub> = 1/R₁ + 1/R₂ + 1/R₃ = 1/10 + 1/20 + 1/30</p>
+            <p>1/R<sub>eq</sub> = 0,1 + 0,05 + 0,033 ≈ 0,183</p>
+            <p>R<sub>eq</sub> ≈ 1/0,183 ≈ 5,46Ω</p>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h3>Exercice 3 : Puissance électrique</h3>
+          <p>
+            Un grille-pain fonctionne sous une tension de 230V et consomme un
+            courant de 4A.
+          </p>
+          <ol>
+            <li>Calculez sa puissance électrique.</li>
+            <li>
+              Si le grille-pain fonctionne pendant 5 minutes, quelle est
+              l'énergie électrique consommée en kilowattheures (kWh) ?
+            </li>
+          </ol>
+
+          <button
+            onclick="this.nextElementSibling.style.display = 'block'; this.style.display = 'none';"
+          >
+            Afficher la solution
+          </button>
+          <div style="display: none">
+            <h4>Solution :</h4>
+            <p>
+              1) La puissance électrique P est donnée par la formule : P = U × I
+            </p>
+            <p>P = 230V × 4A = 920W = 0,92kW</p>
+
+            <p>2) L'énergie E consommée est : E = P × t</p>
+            <p>t = 5min = 5/60h = 0,083h</p>
+            <p>E = 0,92kW × 0,083h = 0,076kWh</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz" class="quiz-container">
+        <h2>Quiz : Testez vos connaissances</h2>
+
+        <div class="quiz-question">
+          <h3>Question 1 :</h3>
+          <p>
+            Quelle est l'unité de mesure de l'intensité du courant électrique ?
+          </p>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="checkAnswer(1, 'a')">
+              a) Le volt (V)
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(1, 'b')">
+              b) L'ampère (A)
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(1, 'c')">
+              c) L'ohm (Ω)
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(1, 'd')">
+              d) Le watt (W)
+            </div>
+          </div>
+          <p id="answer1" class="answer"></p>
+        </div>
+
+        <div class="quiz-question">
+          <h3>Question 2 :</h3>
+          <p>
+            Dans un circuit en série, comment se comportent les intensités du
+            courant ?
+          </p>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="checkAnswer(2, 'a')">
+              a) L'intensité est différente dans chaque composant
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(2, 'b')">
+              b) L'intensité est identique en tout point du circuit
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(2, 'c')">
+              c) L'intensité augmente progressivement dans le circuit
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(2, 'd')">
+              d) L'intensité diminue progressivement dans le circuit
+            </div>
+          </div>
+          <p id="answer2" class="answer"></p>
+        </div>
+
+        <div class="quiz-question">
+          <h3>Question 3 :</h3>
+          <p>Quelle est la formule de la loi d'Ohm ?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="checkAnswer(3, 'a')">
+              a) U = P × I
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(3, 'b')">
+              b) I = U × R
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(3, 'c')">
+              c) U = R × I
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(3, 'd')">
+              d) R = P / I²
+            </div>
+          </div>
+          <p id="answer3" class="answer"></p>
+        </div>
+
+        <div class="quiz-question">
+          <h3>Question 4 :</h3>
+          <p>Qu'est-ce qui caractérise un courant alternatif ?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="checkAnswer(4, 'a')">
+              a) Son intensité ne varie jamais
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(4, 'b')">
+              b) Sa tension est toujours constante
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(4, 'c')">
+              c) Son sens change périodiquement
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(4, 'd')">
+              d) Il circule uniquement dans les circuits en série
+            </div>
+          </div>
+          <p id="answer4" class="answer"></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Ressources supplémentaires</h2>
+        <div class="resource-links">
+          <a href="#" class="resource-link"
+            >Guide des expériences électriques</a
+          >
+          <a href="#" class="resource-link">Fiches d'exercices à imprimer</a>
+          <a href="#" class="resource-link">Les dangers de l'électricité</a>
+          <a href="#" class="resource-link">Histoire de l'électricité</a>
+          <a href="#" class="resource-link"
+            >L'électricité et le développement durable</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <h3>L'électricité - Cours et Exercices</h3>
+        <p>© 2025 - Ressources pédagogiques en sciences physiques</p>
+        <div class="footer-links">
+          <a href="#">À propos</a>
+          <a href="#">Contact</a>
+          <a href="#">Mentions légales</a>
+          <a href="#">Plan du site</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function checkAnswer(questionNumber, selectedOption) {
+        const correctAnswers = {
+          1: "b",
+          2: "b",
+          3: "c",
+          4: "c",
+        };
+
+        const answerElement = document.getElementById(
+          "answer" + questionNumber
+        );
+
+        if (selectedOption === correctAnswers[questionNumber]) {
+          answerElement.innerHTML = "✅ Correct ! Bonne réponse.";
+          answerElement.style.color = "green";
+        } else {
+          answerElement.innerHTML = "❌ Incorrect. Essayez à nouveau.";
+          answerElement.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

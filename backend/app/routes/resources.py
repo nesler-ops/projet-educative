@@ -24,7 +24,7 @@ def get_resources():
 def get_contenus(matiere: Optional[str] = None, db: Session = Depends(get_db)):
     query = db.query(Contenu)
     if matiere:
-        query = query.filter(Contenu.matiere.ilike(matiere))  # <-- ilike es case-insensitive
+        query = query.filter(Contenu.matiere.ilike(matiere))  
     return query.all()
 
 @router.get("/contenus/{slug}")

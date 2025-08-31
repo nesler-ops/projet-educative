@@ -4,157 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La nourriture et les repas - Cours de français</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f8f9fa;
-      }
-      header {
-        background-color: #4f86c6;
-        color: white;
-        padding: 30px;
-        text-align: center;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        margin: 0;
-        font-size: 2.5em;
-      }
-      .subtitle {
-        font-style: italic;
-        margin-top: 10px;
-      }
-      section {
-        background-color: white;
-        padding: 25px;
-        margin-bottom: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      h2 {
-        color: #4f86c6;
-        border-bottom: 2px solid #4f86c6;
-        padding-bottom: 10px;
-      }
-      h3 {
-        color: #5d8aa8;
-      }
-      .vocab-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
-      }
-      .vocab-item {
-        border: 1px solid #e0e0e0;
-        border-radius: 5px;
-        padding: 15px;
-        text-align: center;
-        background-color: #f9f9f9;
-      }
-      .meal-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-between;
-      }
-      .meal-box {
-        flex: 1;
-        min-width: 250px;
-        border: 1px solid #e0e0e0;
-        border-radius: 5px;
-        padding: 15px;
-        background-color: #f9f9f9;
-      }
-      .image-placeholder {
-        background-color: #e9ecef;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 15px 0;
-        border-radius: 5px;
-      }
-      .exercise {
-        background-color: #f0f7ff;
-        padding: 20px;
-        border-radius: 8px;
-        margin: 20px 0;
-        border-left: 5px solid #4f86c6;
-      }
-      .dialogue {
-        background-color: #f0f7ff;
-        padding: 15px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-      .person1 {
-        color: #4f86c6;
-        font-weight: bold;
-      }
-      .person2 {
-        color: #5d8aa8;
-        font-weight: bold;
-      }
-      .quiz-container {
-        background-color: #f8f9fa;
-        padding: 20px;
-        border-radius: 8px;
-      }
-      .quiz-question {
-        margin-bottom: 15px;
-      }
-      .btn {
-        display: inline-block;
-        background-color: #4f86c6;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        margin-top: 10px;
-      }
-      .btn:hover {
-        background-color: #3a6ea5;
-      }
-      footer {
-        text-align: center;
-        margin-top: 40px;
-        padding: 20px;
-        background-color: #4f86c6;
-        color: white;
-        border-radius: 10px;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-      }
-      th,
-      td {
-        padding: 12px;
-        border: 1px solid #ddd;
-        text-align: left;
-      }
-      th {
-        background-color: #4f86c6;
-        color: white;
-      }
-      tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
-      .pronunciation {
-        font-style: italic;
-        color: #666;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/francais/A2/la-nourriture-et-les-repas.css"
+    />
   </head>
   <body>
     <header>
@@ -174,8 +27,9 @@
 
       <div class="image-placeholder">
         <img
-          src="/api/placeholder/400/200"
-          alt="Assortiment de plats français"
+          src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/nourriture.jpg"
+          width="1500"
+          height="200"
         />
       </div>
     </section>
@@ -188,37 +42,61 @@
         <div class="vocab-item">
           <p>Le pain <span class="pronunciation">[pɛ̃]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Pain" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/pain.jpg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
         <div class="vocab-item">
           <p>Le fromage <span class="pronunciation">[fʁɔmaʒ]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Fromage" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/fromage.jpg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
         <div class="vocab-item">
           <p>Les légumes <span class="pronunciation">[legym]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Légumes" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/legumes.jpg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
         <div class="vocab-item">
           <p>Les fruits <span class="pronunciation">[fʁɥi]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Fruits" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/fruits.jpg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
         <div class="vocab-item">
           <p>La viande <span class="pronunciation">[vjɑ̃d]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Viande" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/viande.jpg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
         <div class="vocab-item">
           <p>Le poisson <span class="pronunciation">[pwasɔ̃]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Poisson" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/poisson.jpg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
       </div>
@@ -228,25 +106,41 @@
         <div class="vocab-item">
           <p>L'eau <span class="pronunciation">[o]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Eau" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/eau.jpg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
         <div class="vocab-item">
           <p>Le vin <span class="pronunciation">[vɛ̃]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Vin" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/vin.jpg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
         <div class="vocab-item">
           <p>Le café <span class="pronunciation">[kafe]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Café" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/cafe.jpeg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
         <div class="vocab-item">
           <p>Le thé <span class="pronunciation">[te]</span></p>
           <div class="image-placeholder">
-            <img src="/api/placeholder/150/100" alt="Thé" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/the.jpeg"
+              width="200"
+              height="200"
+            />
           </div>
         </div>
       </div>
@@ -268,7 +162,11 @@
             <li>Des croissants ou des pains au chocolat (le week-end)</li>
           </ul>
           <div class="image-placeholder">
-            <img src="/api/placeholder/200/150" alt="Petit déjeuner français" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/petitd.jpg"
+              width="300"
+              height="200"
+            />
           </div>
         </div>
 
@@ -282,7 +180,11 @@
             <li>Un dessert</li>
           </ul>
           <div class="image-placeholder">
-            <img src="/api/placeholder/200/150" alt="Déjeuner français" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/dejeuner.jpg"
+              width="300"
+              height="200"
+            />
           </div>
         </div>
 
@@ -298,7 +200,11 @@
             <li>Un dessert ou un yaourt</li>
           </ul>
           <div class="image-placeholder">
-            <img src="/api/placeholder/200/150" alt="Dîner français" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/dinner.jpg"
+              width="400"
+              height="200"
+            />
           </div>
         </div>
       </div>
@@ -408,43 +314,102 @@
       <div class="exercise">
         <h3>Exercice 1: Classez les aliments</h3>
         <p>
-          Classez les aliments suivants dans les catégories appropriées :
-          fruits, légumes, produits laitiers, viandes.
+          Classez les aliments suivants dans les catégories appropriées en
+          écrivant le nom de la catégorie (fruits, légumes, produits laitiers,
+          viandes) à côté de chaque aliment.
         </p>
-        <ul>
-          <li>La pomme</li>
-          <li>Le yaourt</li>
-          <li>La carotte</li>
-          <li>Le poulet</li>
-          <li>La banane</li>
-          <li>Le fromage</li>
-          <li>La tomate</li>
-          <li>Le bœuf</li>
-          <li>Le raisin</li>
-          <li>Le brocoli</li>
-        </ul>
+        <div class="food-classification">
+          <div class="food-item">
+            <label>La pomme:</label>
+            <input type="text" id="food1" class="food-input" />
+          </div>
+          <div class="food-item">
+            <label>Le yaourt:</label>
+            <input type="text" id="food2" class="food-input" />
+          </div>
+          <div class="food-item">
+            <label>La carotte:</label>
+            <input type="text" id="food3" class="food-input" />
+          </div>
+          <div class="food-item">
+            <label>Le poulet:</label>
+            <input type="text" id="food4" class="food-input" />
+          </div>
+          <div class="food-item">
+            <label>La banane:</label>
+            <input type="text" id="food5" class="food-input" />
+          </div>
+          <div class="food-item">
+            <label>Le fromage:</label>
+            <input type="text" id="food6" class="food-input" />
+          </div>
+          <div class="food-item">
+            <label>La tomate:</label>
+            <input type="text" id="food7" class="food-input" />
+          </div>
+          <div class="food-item">
+            <label>Le bœuf:</label>
+            <input type="text" id="food8" class="food-input" />
+          </div>
+          <div class="food-item">
+            <label>Le raisin:</label>
+            <input type="text" id="food9" class="food-input" />
+          </div>
+          <div class="food-item">
+            <label>Le brocoli:</label>
+            <input type="text" id="food10" class="food-input" />
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="btn" id="check-ex1">Vérifier mes réponses</button>
+          <button class="btn btn-secondary" id="show-ex1">
+            Afficher les réponses
+          </button>
+        </div>
+        <div id="result-ex1" class="result-container"></div>
       </div>
 
       <div class="exercise">
         <h3>Exercice 2: Complétez le dialogue</h3>
         <p>Complétez le dialogue suivant avec les mots manquants :</p>
-        <p>— Bonjour, je voudrais _______ une table pour deux personnes.</p>
         <p>
-          — Bien sûr. Préférez-vous être près de la _______ ou à l'intérieur ?
+          — Bonjour, je voudrais
+          <input type="text" class="dialogue-input" id="dialog1" /> une table
+          pour deux personnes.
         </p>
-        <p>— À l'intérieur, s'il vous plaît. Avez-vous un _______ ?</p>
         <p>
-          — Oui, voici la _______. Le plat du jour est un _______ de bœuf aux
+          — Bien sûr. Préférez-vous être près de la
+          <input type="text" class="dialogue-input" id="dialog2" /> ou à
+          l'intérieur ?
+        </p>
+        <p>
+          — À l'intérieur, s'il vous plaît. Avez-vous un
+          <input type="text" class="dialogue-input" id="dialog3" /> ?
+        </p>
+        <p>
+          — Oui, voici la
+          <input type="text" class="dialogue-input" id="dialog4" />. Le plat du
+          jour est un
+          <input type="text" class="dialogue-input" id="dialog5" /> de bœuf aux
           champignons.
         </p>
         <p>
-          — Parfait, nous allons _______ ce plat. Et comme _______, une
+          — Parfait, nous allons
+          <input type="text" class="dialogue-input" id="dialog6" /> ce plat. Et
+          comme <input type="text" class="dialogue-input" id="dialog7" />, une
           bouteille de vin rouge.
         </p>
         <p>
           <br />Mots à utiliser : réserver, terrasse, menu, carte, steak,
           prendre, boisson
         </p>
+        <div class="btn-container">
+          <button class="btn" id="check-ex2">Vérifier mes réponses</button>
+          <button class="btn btn-secondary" id="show-ex2">
+            Afficher les réponses
+          </button>
+        </div>
+        <div id="result-ex2" class="result-container"></div>
       </div>
 
       <div class="exercise">
@@ -452,13 +417,13 @@
         <div class="quiz-container">
           <div class="quiz-question">
             <p>1. Quel est le repas principal en France ?</p>
-            <input type="radio" name="q1" id="q1a" />
+            <input type="radio" name="q1" id="q1a" value="a" />
             <label for="q1a">Le petit déjeuner</label><br />
-            <input type="radio" name="q1" id="q1b" />
+            <input type="radio" name="q1" id="q1b" value="b" />
             <label for="q1b">Le déjeuner</label><br />
-            <input type="radio" name="q1" id="q1c" />
+            <input type="radio" name="q1" id="q1c" value="c" />
             <label for="q1c">Le goûter</label><br />
-            <input type="radio" name="q1" id="q1d" />
+            <input type="radio" name="q1" id="q1d" value="d" />
             <label for="q1d">Le dîner</label>
           </div>
 
@@ -466,31 +431,37 @@
             <p>
               2. Que mange-t-on traditionnellement au petit déjeuner en France ?
             </p>
-            <input type="radio" name="q2" id="q2a" />
+            <input type="radio" name="q2" id="q2a" value="a" />
             <label for="q2a">Des œufs et du bacon</label><br />
-            <input type="radio" name="q2" id="q2b" />
+            <input type="radio" name="q2" id="q2b" value="b" />
             <label for="q2b"
               >Des tartines avec du beurre et de la confiture</label
             ><br />
-            <input type="radio" name="q2" id="q2c" />
+            <input type="radio" name="q2" id="q2c" value="c" />
             <label for="q2c">Un sandwich</label><br />
-            <input type="radio" name="q2" id="q2d" />
+            <input type="radio" name="q2" id="q2d" value="d" />
             <label for="q2d">De la soupe</label>
           </div>
 
           <div class="quiz-question">
             <p>3. À quelle heure les Français dînent-ils généralement ?</p>
-            <input type="radio" name="q3" id="q3a" />
+            <input type="radio" name="q3" id="q3a" value="a" />
             <label for="q3a">17h - 18h</label><br />
-            <input type="radio" name="q3" id="q3b" />
+            <input type="radio" name="q3" id="q3b" value="b" />
             <label for="q3b">18h - 19h</label><br />
-            <input type="radio" name="q3" id="q3c" />
+            <input type="radio" name="q3" id="q3c" value="c" />
             <label for="q3c">19h30 - 21h</label><br />
-            <input type="radio" name="q3" id="q3d" />
+            <input type="radio" name="q3" id="q3d" value="d" />
             <label for="q3d">21h30 - 22h30</label>
           </div>
 
-          <button class="btn">Vérifier mes réponses</button>
+          <div class="btn-container">
+            <button class="btn" id="check-ex3">Vérifier mes réponses</button>
+            <button class="btn btn-secondary" id="show-ex3">
+              Afficher les réponses
+            </button>
+          </div>
+          <div id="result-ex3" class="result-container"></div>
         </div>
       </div>
     </section>
@@ -514,7 +485,11 @@
             <li>Les fruits de mer</li>
           </ul>
           <div class="image-placeholder">
-            <img src="/api/placeholder/200/150" alt="Crêpes bretonnes" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/crepes.jpg"
+              width="210"
+              height="200"
+            />
           </div>
         </div>
 
@@ -526,7 +501,11 @@
             <li>Les bretzels</li>
           </ul>
           <div class="image-placeholder">
-            <img src="/api/placeholder/200/150" alt="Choucroute alsacienne" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/choucroute.jpg"
+              width="210"
+              height="200"
+            />
           </div>
         </div>
 
@@ -538,7 +517,11 @@
             <li>Le pastis</li>
           </ul>
           <div class="image-placeholder">
-            <img src="/api/placeholder/200/150" alt="Ratatouille provençale" />
+            <img
+              src="http://localhost:8000/static/images/contenus_images/francais/A2/nourriture/ratatouille.jpg"
+              width="210"
+              height="200"
+            />
           </div>
         </div>
       </div>
@@ -583,37 +566,229 @@
       <button class="btn">Enregistrer mon menu</button>
     </section>
 
-    <section id="project">
-      <h2>Projet : Journal alimentaire</h2>
-
-      <p>
-        Pendant une semaine, tenez un journal de vos repas en français. Notez :
-      </p>
-      <ul>
-        <li>Ce que vous mangez à chaque repas</li>
-        <li>À quelle heure vous mangez</li>
-        <li>Vos impressions sur les repas (délicieux, trop salé, etc.)</li>
-      </ul>
-      <p>
-        Ce projet vous aidera à pratiquer le vocabulaire de la nourriture tout
-        en réfléchissant à vos habitudes alimentaires.
-      </p>
-
-      <div class="image-placeholder">
-        <img src="/api/placeholder/400/200" alt="Journal alimentaire" />
-      </div>
-    </section>
-
     <footer>
       <p>© 2025 - Cours de français : La nourriture et les repas</p>
       <p>Pour plus de ressources pédagogiques, visitez notre site principal.</p>
     </footer>
 
     <script>
-      // Script pour la vérification des réponses du quiz
-      document.querySelector(".btn").addEventListener("click", function () {
-        alert("Fonctionnalité à venir bientôt!");
-      });
+      // Réponses correctes pour les exercices
+      const foodAnswers = {
+        food1: "fruits",
+        food2: "produits laitiers",
+        food3: "légumes",
+        food4: "viandes",
+        food5: "fruits",
+        food6: "produits laitiers",
+        food7: "légumes",
+        food8: "viandes",
+        food9: "fruits",
+        food10: "légumes",
+      };
+
+      const dialogueAnswers = {
+        dialog1: "réserver",
+        dialog2: "terrasse",
+        dialog3: "menu",
+        dialog4: "carte",
+        dialog5: "steak",
+        dialog6: "prendre",
+        dialog7: "boisson",
+      };
+
+      const quizAnswers = {
+        q1: "b", // Le déjeuner
+        q2: "b", // Des tartines avec du beurre et de la confiture
+        q3: "c", // 19h30 - 21h
+      };
+
+      // Fonction pour vérifier les réponses de l'exercice 1
+      document
+        .getElementById("check-ex1")
+        .addEventListener("click", function () {
+          const resultContainer = document.getElementById("result-ex1");
+          resultContainer.style.display = "block";
+          resultContainer.innerHTML = "";
+
+          let correctCount = 0;
+          for (const [id, correctAnswer] of Object.entries(foodAnswers)) {
+            const userAnswer = document
+              .getElementById(id)
+              .value.trim()
+              .toLowerCase();
+            if (userAnswer === correctAnswer) {
+              correctCount++;
+              document.getElementById(id).style.borderColor = "#28a745";
+            } else {
+              document.getElementById(id).style.borderColor = "#dc3545";
+            }
+          }
+
+          const scoreMessage = `Vous avez ${correctCount} réponses correctes sur ${
+            Object.keys(foodAnswers).length
+          }.`;
+          resultContainer.innerHTML = `<p>${scoreMessage}</p>`;
+          resultContainer.style.backgroundColor =
+            correctCount === Object.keys(foodAnswers).length
+              ? "#d4edda"
+              : "#f8d7da";
+        });
+
+      // Fonction pour montrer les réponses de l'exercice 1
+      document
+        .getElementById("show-ex1")
+        .addEventListener("click", function () {
+          for (const [id, correctAnswer] of Object.entries(foodAnswers)) {
+            document.getElementById(id).value = correctAnswer;
+            document.getElementById(id).style.borderColor = "#28a745";
+          }
+
+          const resultContainer = document.getElementById("result-ex1");
+          resultContainer.style.display = "block";
+          resultContainer.innerHTML = "<p>Voici les réponses correctes.</p>";
+          resultContainer.style.backgroundColor = "#d4edda";
+        });
+
+      // Fonction pour vérifier les réponses de l'exercice 2
+      document
+        .getElementById("check-ex2")
+        .addEventListener("click", function () {
+          const resultContainer = document.getElementById("result-ex2");
+          resultContainer.style.display = "block";
+          resultContainer.innerHTML = "";
+
+          let correctCount = 0;
+          for (const [id, correctAnswer] of Object.entries(dialogueAnswers)) {
+            const userAnswer = document
+              .getElementById(id)
+              .value.trim()
+              .toLowerCase();
+            if (userAnswer === correctAnswer) {
+              correctCount++;
+              document.getElementById(id).style.borderColor = "#28a745";
+            } else {
+              document.getElementById(id).style.borderColor = "#dc3545";
+            }
+          }
+
+          const scoreMessage = `Vous avez ${correctCount} réponses correctes sur ${
+            Object.keys(dialogueAnswers).length
+          }.`;
+          resultContainer.innerHTML = `<p>${scoreMessage}</p>`;
+          resultContainer.style.backgroundColor =
+            correctCount === Object.keys(dialogueAnswers).length
+              ? "#d4edda"
+              : "#f8d7da";
+        });
+
+      // Fonction pour montrer les réponses de l'exercice 2
+      document
+        .getElementById("show-ex2")
+        .addEventListener("click", function () {
+          for (const [id, correctAnswer] of Object.entries(dialogueAnswers)) {
+            document.getElementById(id).value = correctAnswer;
+            document.getElementById(id).style.borderColor = "#28a745";
+          }
+
+          const resultContainer = document.getElementById("result-ex2");
+          resultContainer.style.display = "block";
+          resultContainer.innerHTML = "<p>Voici les réponses correctes.</p>";
+          resultContainer.style.backgroundColor = "#d4edda";
+        });
+
+      // Fonction pour vérifier les réponses de l'exercice 3
+      document
+        .getElementById("check-ex3")
+        .addEventListener("click", function () {
+          const resultContainer = document.getElementById("result-ex3");
+          resultContainer.style.display = "block";
+          resultContainer.innerHTML = "";
+
+          let correctCount = 0;
+
+          // Vérifier question 1
+          const q1Selected = document.querySelector('input[name="q1"]:checked');
+          if (q1Selected && q1Selected.value === quizAnswers.q1) {
+            correctCount++;
+            resultContainer.innerHTML +=
+              '<p><span class="correct">Question 1: Correct!</span> Le déjeuner est traditionnellement le repas principal en France.</p>';
+          } else {
+            resultContainer.innerHTML +=
+              '<p><span class="incorrect">Question 1: Incorrect.</span> Le déjeuner est traditionnellement le repas principal en France.</p>';
+          }
+
+          // Vérifier question 2
+          const q2Selected = document.querySelector('input[name="q2"]:checked');
+          if (q2Selected && q2Selected.value === quizAnswers.q2) {
+            correctCount++;
+            resultContainer.innerHTML +=
+              '<p><span class="correct">Question 2: Correct!</span> Des tartines avec du beurre et de la confiture sont traditionnelles au petit déjeuner français.</p>';
+          } else {
+            resultContainer.innerHTML +=
+              '<p><span class="incorrect">Question 2: Incorrect.</span> Des tartines avec du beurre et de la confiture sont traditionnelles au petit déjeuner français.</p>';
+          }
+
+          // Vérifier question 3
+          const q3Selected = document.querySelector('input[name="q3"]:checked');
+          if (q3Selected && q3Selected.value === quizAnswers.q3) {
+            correctCount++;
+            resultContainer.innerHTML +=
+              '<p><span class="correct">Question 3: Correct!</span> Les Français dînent généralement entre 19h30 et 21h.</p>';
+          } else {
+            resultContainer.innerHTML +=
+              '<p><span class="incorrect">Question 3: Incorrect.</span> Les Français dînent généralement entre 19h30 et 21h.</p>';
+          }
+
+          const scoreMessage = `Vous avez ${correctCount} réponses correctes sur 3.`;
+          resultContainer.innerHTML =
+            `<p>${scoreMessage}</p>` + resultContainer.innerHTML;
+          resultContainer.style.backgroundColor =
+            correctCount === 3 ? "#d4edda" : "#f8d7da";
+        });
+
+      // Fonction pour montrer les réponses de l'exercice 3
+      document
+        .getElementById("show-ex3")
+        .addEventListener("click", function () {
+          // Question 1
+          document.getElementById("q1" + quizAnswers.q1).checked = true;
+
+          // Question 2
+          document.getElementById("q2" + quizAnswers.q2).checked = true;
+
+          // Question 3
+          document.getElementById("q3" + quizAnswers.q3).checked = true;
+
+          const resultContainer = document.getElementById("result-ex3");
+          resultContainer.style.display = "block";
+          resultContainer.innerHTML =
+            "<p>Voici les réponses correctes.</p>" +
+            "<p>1. Le déjeuner (b)</p>" +
+            "<p>2. Des tartines avec du beurre et de la confiture (b)</p>" +
+            "<p>3. 19h30 - 21h (c)</p>";
+          resultContainer.style.backgroundColor = "#d4edda";
+        });
+
+      // Fonction pour le bouton d'enregistrement du menu
+      document
+        .querySelector("#activite .btn")
+        .addEventListener("click", function () {
+          const textarea = document.querySelector("#activite textarea");
+          if (textarea.value.trim() === "") {
+            alert("Veuillez créer votre menu avant de l'enregistrer.");
+          } else {
+            alert(
+              "Votre menu a été enregistré avec succès!\n\n" + textarea.value
+            );
+          }
+        });
+
+      // Fonction pour le bouton du footer
+      document
+        .querySelector("footer .btn")
+        .addEventListener("click", function () {
+          alert("Fonctionnalité à venir bientôt!");
+        });
     </script>
   </body>
 </html>

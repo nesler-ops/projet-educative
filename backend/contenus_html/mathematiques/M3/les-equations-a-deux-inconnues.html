@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les équations à deux inconnues</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/mathematiques/M3/les-equations-a-deux-inconnues.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Les équations à deux inconnues</h1>
+      <p>Comprendre et résoudre les systèmes d'équations linéaires</p>
+    </header>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#definition">Définition</a></li>
+        <li><a href="#methodes">Méthodes de résolution</a></li>
+        <li><a href="#applications">Applications</a></li>
+        <li><a href="#exercices">Exercices</a></li>
+        <li><a href="#exercice-interactif">Exercice interactif</a></li>
+      </ul>
+    </nav>
+
+    <div class="section" id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        En mathématiques, un système d'équations à deux inconnues est un
+        ensemble de deux équations comportant deux variables (généralement
+        notées x et y). Résoudre ce système consiste à trouver les valeurs des
+        inconnues qui satisfont <em>simultanément</em> toutes les équations du
+        système.
+      </p>
+
+      <p>
+        Dans ce cours, nous allons explorer différentes méthodes pour résoudre
+        ces systèmes, comprendre leur signification géométrique et voir diverses
+        applications concrètes.
+      </p>
+
+      <div class="graphique">
+        <img
+          src="http://localhost:8000/static/images/contenus_images/mathematiques/M3/equations2/equations2.jpg"
+          width="700"
+          height="400"
+          style="display: block; margin: 0 auto"
+        />
+        <p>
+          <em
+            >Représentation graphique d'un système d'équations à deux inconnues
+            : le point d'intersection correspond à la solution.</em
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="definition">
+      <h2>Qu'est-ce qu'un système d'équations à deux inconnues ?</h2>
+      <p>
+        Un système d'équations linéaires à deux inconnues se présente
+        généralement sous la forme :
+      </p>
+
+      <div class="formule">
+        {
+        <br />
+        ax + by = c<br />
+        dx + ey = f<br />
+        }
+      </div>
+
+      <p>
+        Où a, b, c, d, e et f sont des constantes réelles et x et y sont les
+        inconnues que nous cherchons à déterminer.
+      </p>
+
+      <p>
+        La résolution d'un tel système consiste à trouver toutes les paires de
+        valeurs (x, y) qui vérifient simultanément les deux équations.
+      </p>
+
+      <h3>Interprétation géométrique</h3>
+      <p>Dans un repère cartésien :</p>
+      <ul>
+        <li>Chaque équation linéaire représente une droite dans le plan.</li>
+        <li>
+          Résoudre le système revient à trouver les points d'intersection de ces
+          droites.
+        </li>
+      </ul>
+
+      <p>Trois situations sont possibles :</p>
+      <ul>
+        <li>
+          <strong>Une solution unique</strong> : les droites se coupent en un
+          seul point.
+        </li>
+        <li>
+          <strong>Une infinité de solutions</strong> : les droites sont
+          confondues (système compatible indéterminé).
+        </li>
+        <li>
+          <strong>Aucune solution</strong> : les droites sont parallèles sans
+          jamais se couper (système incompatible).
+        </li>
+      </ul>
+
+      <div class="graphique">
+        <img
+          src="http://localhost:8000/static/images/contenus_images/mathematiques/M3/equations2/solution.png"
+          width="700"
+          height="400"
+          style="display: block; margin: 0 auto"
+        />
+        <p>
+          <em
+            >De gauche à droite : système avec une solution unique, une infinité
+            de solutions, aucune solution</em
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="methodes">
+      <h2>Méthodes de résolution</h2>
+
+      <div class="methode">
+        <h3>1. Méthode par substitution</h3>
+        <p>Cette méthode consiste à :</p>
+        <ol>
+          <li>Isoler une inconnue dans l'une des équations.</li>
+          <li>Substituer cette expression dans l'autre équation.</li>
+          <li>Résoudre l'équation à une inconnue obtenue.</li>
+          <li>
+            Calculer la valeur de la seconde inconnue en remplaçant dans
+            l'expression isolée à l'étape 1.
+          </li>
+        </ol>
+
+        <div class="example">
+          <h4>Exemple :</h4>
+          <p>Résoudre le système suivant :</p>
+          <div class="formule">
+            {
+            <br />
+            2x + y = 5 &nbsp; (1)<br />
+            x - y = 1 &nbsp; (2)<br />
+            }
+          </div>
+
+          <p><strong>Étape 1 :</strong> Isolons y dans l'équation (1) :</p>
+          <p>y = 5 - 2x</p>
+
+          <p>
+            <strong>Étape 2 :</strong> Substituons cette expression dans
+            l'équation (2) :
+          </p>
+          <p>x - (5 - 2x) = 1</p>
+
+          <p>
+            <strong>Étape 3 :</strong> Résolvons cette équation à une inconnue :
+          </p>
+          <p>x - 5 + 2x = 1</p>
+          <p>3x - 5 = 1</p>
+          <p>3x = 6</p>
+          <p>x = 2</p>
+
+          <p>
+            <strong>Étape 4 :</strong> Calculons y en remplaçant x par 2 dans
+            l'expression y = 5 - 2x :
+          </p>
+          <p>y = 5 - 2(2) = 5 - 4 = 1</p>
+
+          <p>
+            <strong>Solution :</strong> Le système admet une solution unique :
+            (x, y) = (2, 1)
+          </p>
+
+          <div class="tooltip">
+            Astuce
+            <span class="tooltiptext"
+              >Cette méthode est particulièrement efficace quand une des
+              inconnues a un coefficient de 1 ou -1 dans une des
+              équations.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="methode">
+        <h3>2. Méthode par élimination (ou combinaison linéaire)</h3>
+        <p>Cette méthode consiste à :</p>
+        <ol>
+          <li>
+            Multiplier si nécessaire les équations pour que les coefficients
+            d'une des inconnues soient opposés.
+          </li>
+          <li>Additionner les équations pour éliminer cette inconnue.</li>
+          <li>Résoudre l'équation à une inconnue obtenue.</li>
+          <li>
+            Calculer la valeur de la seconde inconnue en la remplaçant dans
+            l'une des équations initiales.
+          </li>
+        </ol>
+
+        <div class="example">
+          <h4>Exemple :</h4>
+          <p>Résoudre le même système :</p>
+          <div class="formule">
+            {
+            <br />
+            2x + y = 5 &nbsp; (1)<br />
+            x - y = 1 &nbsp; (2)<br />
+            }
+          </div>
+
+          <p>
+            <strong>Étape 1 :</strong> Les coefficients de y sont déjà opposés
+            (1 et -1).
+          </p>
+
+          <p>
+            <strong>Étape 2 :</strong> Additionnons les équations (1) et (2) :
+          </p>
+          <p>(2x + y) + (x - y) = 5 + 1</p>
+          <p>3x = 6</p>
+
+          <p><strong>Étape 3 :</strong> Résolvons cette équation :</p>
+          <p>x = 2</p>
+
+          <p>
+            <strong>Étape 4 :</strong> Calculons y en remplaçant x par 2 dans
+            l'équation (1) :
+          </p>
+          <p>2(2) + y = 5</p>
+          <p>4 + y = 5</p>
+          <p>y = 1</p>
+
+          <p><strong>Solution :</strong> (x, y) = (2, 1)</p>
+        </div>
+      </div>
+
+      <div class="methode">
+        <h3>3. Méthode de Cramer</h3>
+        <p>Pour un système sous la forme standard :</p>
+        <div class="formule">
+          {
+          <br />
+          ax + by = c<br />
+          dx + ey = f<br />
+          }
+        </div>
+
+        <p>On définit les déterminants :</p>
+        <div class="formule">
+          D = \begin{vmatrix} a & b \\ d & e \end{vmatrix} = ae - bd
+        </div>
+
+        <div class="formule">
+          D_x = \begin{vmatrix} c & b \\ f & e \end{vmatrix} = ce - bf
+        </div>
+
+        <div class="formule">
+          D_y = \begin{vmatrix} a & c \\ d & f \end{vmatrix} = af - cd
+        </div>
+
+        <p>Si D ≠ 0, alors le système admet une solution unique donnée par :</p>
+        <div class="formule">
+          x = \frac{D_x}{D} \quad et \quad y = \frac{D_y}{D}
+        </div>
+
+        <div class="example">
+          <h4>Exemple :</h4>
+          <p>Résoudre le système suivant avec la méthode de Cramer :</p>
+          <div class="formule">
+            {
+            <br />
+            2x + y = 5<br />
+            x - y = 1<br />
+            }
+          </div>
+
+          <p>Ici, a = 2, b = 1, c = 5, d = 1, e = -1, f = 1</p>
+
+          <p>Calculons les déterminants :</p>
+          <p>D = (2)(-1) - (1)(1) = -2 - 1 = -3</p>
+          <p>D_x = (5)(-1) - (1)(1) = -5 - 1 = -6</p>
+          <p>D_y = (2)(1) - (1)(5) = 2 - 5 = -3</p>
+
+          <p>Donc :</p>
+          <p>x = D_x / D = -6 / -3 = 2</p>
+          <p>y = D_y / D = -3 / -3 = 1</p>
+
+          <p><strong>Solution :</strong> (x, y) = (2, 1)</p>
+        </div>
+      </div>
+
+      <div class="methode">
+        <h3>4. Méthode graphique</h3>
+        <p>Cette méthode consiste à :</p>
+        <ol>
+          <li>
+            Tracer les droites correspondant aux deux équations dans un repère
+            cartésien.
+          </li>
+          <li>
+            Déterminer les coordonnées du point d'intersection (s'il existe).
+          </li>
+        </ol>
+
+        <p>
+          Cette méthode est moins précise mais donne une bonne intuition
+          géométrique.
+        </p>
+
+        <div class="graphique">
+          <img
+            src="http://localhost:8000/static/images/contenus_images/mathematiques/M3/equations2/graphique.png"
+            width="700"
+            height="400"
+            style="display: block; margin: 0 auto"
+          />
+          <p>
+            <em
+              >Représentation graphique de la résolution du système
+              précédent</em
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Applications des systèmes d'équations</h2>
+
+      <h3>Problèmes concrets</h3>
+      <p>
+        Les systèmes d'équations à deux inconnues sont utiles pour résoudre de
+        nombreux problèmes concrets :
+      </p>
+
+      <div class="example">
+        <h4>Exemple : Problème de mélange</h4>
+        <p>
+          Un pharmacien doit préparer 100 ml d'une solution à 30% d'alcool. Il
+          dispose d'une solution à 20% et d'une autre à 50%. Quelles quantités
+          de chaque solution doit-il mélanger ?
+        </p>
+
+        <p><strong>Résolution :</strong></p>
+        <p>
+          Soit x la quantité de solution à 20% et y la quantité de solution à
+          50%.
+        </p>
+
+        <p>Nous avons deux conditions :</p>
+        <ul>
+          <li>Volume total : x + y = 100</li>
+          <li>Quantité d'alcool : 0,2x + 0,5y = 0,3 × 100 = 30</li>
+        </ul>
+
+        <p>On obtient le système :</p>
+        <div class="formule">
+          {
+          <br />
+          x + y = 100<br />
+          0,2x + 0,5y = 30<br />
+          }
+        </div>
+
+        <p>Isolons x dans la première équation : x = 100 - y</p>
+        <p>Substituons dans la seconde : 0,2(100 - y) + 0,5y = 30</p>
+        <p>20 - 0,2y + 0,5y = 30</p>
+        <p>20 + 0,3y = 30</p>
+        <p>0,3y = 10</p>
+        <p>y = 33,33...</p>
+        <p>D'où x = 100 - 33,33... = 66,67...</p>
+
+        <p>
+          <strong>Solution :</strong> Le pharmacien doit mélanger 66,7 ml de
+          solution à 20% et 33,3 ml de solution à 50%.
+        </p>
+      </div>
+
+      <h3>Autres applications</h3>
+      <ul>
+        <li>Problèmes de prix et de quantités</li>
+        <li>Problèmes de mouvement (distance, vitesse, temps)</li>
+        <li>Calculs financiers (intérêts, investissements)</li>
+        <li>Équilibrage d'équations chimiques</li>
+        <li>Analyse de circuits électriques</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Exercices</h2>
+
+      <div class="exercice">
+        <h3>Exercice 1 : Méthode de substitution</h3>
+        <p>Résoudre le système suivant par la méthode de substitution :</p>
+        <div class="formule">
+          {
+          <br />
+          3x + 2y = 7<br />
+          x - y = 2<br />
+          }
+        </div>
+
+        <button
+          class="btn"
+          onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'"
+        >
+          Voir la solution
+        </button>
+        <div class="solution">
+          <p>
+            <strong>Étape 1 :</strong> Isolons x dans la deuxième équation : x =
+            2 + y
+          </p>
+          <p>
+            <strong>Étape 2 :</strong> Substituons dans la première équation :
+            3(2 + y) + 2y = 7
+          </p>
+          <p>6 + 3y + 2y = 7</p>
+          <p>6 + 5y = 7</p>
+          <p>5y = 1</p>
+          <p>y = 0,2</p>
+          <p><strong>Étape 3 :</strong> Calculons x : x = 2 + 0,2 = 2,2</p>
+          <p><strong>Solution :</strong> (x, y) = (2,2; 0,2)</p>
+        </div>
+      </div>
+
+      <div class="exercice">
+        <h3>Exercice 2 : Méthode d'élimination</h3>
+        <p>Résoudre le système suivant par la méthode d'élimination :</p>
+        <div class="formule">
+          {
+          <br />
+          4x + 5y = 13<br />
+          2x - 3y = -5<br />
+          }
+        </div>
+
+        <button
+          class="btn"
+          onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'"
+        >
+          Voir la solution
+        </button>
+        <div class="solution">
+          <p>
+            <strong>Étape 1 :</strong> Multiplions la seconde équation par 2 :
+            4x - 6y = -10
+          </p>
+          <p>
+            <strong>Étape 2 :</strong> Additionnons avec la première équation :
+            (4x + 5y) + (4x - 6y) = 13 + (-10)
+          </p>
+          <p>8x - y = 3</p>
+          <p>-y = 3 - 8x</p>
+          <p>y = 8x - 3</p>
+          <p>
+            <strong>Étape 3 :</strong> Substituons dans la première équation :
+            4x + 5(8x - 3) = 13
+          </p>
+          <p>4x + 40x - 15 = 13</p>
+          <p>44x = 28</p>
+          <p>x = 28/44 = 7/11</p>
+          <p>
+            <strong>Étape 4 :</strong> Calculons y : y = 8(7/11) - 3 = 56/11 - 3
+            = 56/11 - 33/11 = 23/11
+          </p>
+          <p><strong>Solution :</strong> (x, y) = (7/11, 23/11)</p>
+        </div>
+      </div>
+
+      <div class="exercice">
+        <h3>Exercice 3 : Méthode de Cramer</h3>
+        <p>Résoudre le système suivant par la méthode de Cramer :</p>
+        <div class="formule">
+          {
+          <br />
+          5x - 2y = 11<br />
+          3x + 4y = 1<br />
+          }
+        </div>
+
+        <button
+          class="btn"
+          onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'"
+        >
+          Voir la solution
+        </button>
+        <div class="solution">
+          <p>Ici, a = 5, b = -2, c = 11, d = 3, e = 4, f = 1</p>
+          <p>D = (5)(4) - (-2)(3) = 20 + 6 = 26</p>
+          <p>D_x = (11)(4) - (-2)(1) = 44 + 2 = 46</p>
+          <p>D_y = (5)(1) - (11)(3) = 5 - 33 = -28</p>
+          <p>x = D_x / D = 46 / 26 = 23/13</p>
+          <p>y = D_y / D = -28 / 26 = -14/13</p>
+          <p><strong>Solution :</strong> (x, y) = (23/13, -14/13)</p>
+        </div>
+      </div>
+
+      <div class="exercice">
+        <h3>Exercice 4 : Application concrète</h3>
+        <p>
+          Un cinéma a vendu 200 billets pour une séance, pour un montant total
+          de 1650€. Sachant que le prix d'un billet plein tarif est de 9€ et
+          celui d'un billet réduit est de 6€, combien de billets de chaque type
+          ont été vendus ?
+        </p>
+
+        <button
+          class="btn"
+          onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'"
+        >
+          Voir la solution
+        </button>
+        <div class="solution">
+          <p>
+            Soit x le nombre de billets plein tarif et y le nombre de billets à
+            tarif réduit.
+          </p>
+          <p>On a le système :</p>
+          <div class="formule">
+            {
+            <br />
+            x + y = 200<br />
+            9x + 6y = 1650<br />
+            }
+          </div>
+          <p>De la première équation, on tire : y = 200 - x</p>
+          <p>En substituant dans la seconde : 9x + 6(200 - x) = 1650</p>
+          <p>9x + 1200 - 6x = 1650</p>
+          <p>3x + 1200 = 1650</p>
+          <p>3x = 450</p>
+          <p>x = 150</p>
+          <p>D'où y = 200 - 150 = 50</p>
+          <p>
+            <strong>Solution :</strong> Le cinéma a vendu 150 billets plein
+            tarif et 50 billets à tarif réduit.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Cas particuliers</h2>
+
+      <h3>Système sans solution (incompatible)</h3>
+      <p>
+        Si les droites correspondant aux équations sont parallèles, le système
+        n'admet pas de solution.
+      </p>
+
+      <div class="example">
+        <h4>Exemple :</h4>
+        <div class="formule">
+          {
+          <br />
+          2x + 3y = 6<br />
+          4x + 6y = 8<br />
+          }
+        </div>
+
+        <p>
+          On remarque que la seconde équation est un multiple de la première
+          (coefficients proportionnels), mais pas le terme constant. Par
+          conséquent, ce système n'admet pas de solution.
+        </p>
+      </div>
+
+      <h3>Système avec une infinité de solutions</h3>
+      <p>
+        Si les deux équations représentent la même droite, le système admet une
+        infinité de solutions.
+      </p>
+
+      <div class="example">
+        <h4>Exemple :</h4>
+        <div class="formule">
+          {
+          <br />
+          2x + 3y = 6<br />
+          4x + 6y = 12<br />
+          }
+        </div>
+
+        <p>
+          La seconde équation est exactement le double de la première. Les
+          solutions sont toutes les paires (x, y) qui vérifient 2x + 3y = 6, ce
+          qui peut s'écrire y = (6 - 2x) / 3 = 2 - 2x/3.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Exercices supplémentaires</h2>
+
+      <table>
+        <tr>
+          <th>N°</th>
+          <th>Système</th>
+          <th>Méthode conseillée</th>
+          <th>Difficulté</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            {
+            <br />
+            x + y = 10<br />
+            x - y = 4<br />
+            }
+          </td>
+          <td>Élimination</td>
+          <td>⭐</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            {
+            <br />
+            2x + 5y = 16<br />
+            3x - 2y = 7<br />
+            }
+          </td>
+          <td>Substitution</td>
+          <td>⭐⭐</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            {
+            <br />
+            4x - 3y = 1<br />
+            8x - 6y = 2<br />
+            }
+          </td>
+          <td>Cramer</td>
+          <td>⭐⭐</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            {
+            <br />
+            0,3x + 0,2y = 1,7<br />
+            0,5x - 0,1y = 1,3<br />
+            }
+          </td>
+          <td>Élimination</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            Une voiture parcourt 240 km. À l'aller, sa vitesse est de 80 km/h.
+            Au retour, à cause des embouteillages, sa vitesse n'est que de 60
+            km/h. Quel est le temps total du voyage ?
+          </td>
+          <td>Application</td>
+          <td>⭐⭐</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Exercice interactif</h2>
+
+      <p>
+        Testez vos compétences avec ce système d'équations généré aléatoirement
+        :
+      </p>
+
+      <div id="systeme-aleatoire" class="formule">
+        <!-- Le système sera inséré ici par JavaScript -->
+      </div>
+
+      <div
+        style="
+          margin: 20px 0;
+          background-color: #f8f9fa;
+          padding: 15px;
+          border-radius: 5px;
+        "
+      >
+        <h3>Votre réponse :</h3>
+        <div style="display: flex; gap: 20px; margin-bottom: 15px">
+          <div>
+            <label for="reponse-x">x = </label>
+            <input
+              type="number"
+              id="reponse-x"
+              step="any"
+              style="width: 80px; padding: 5px"
+            />
+          </div>
+          <div>
+            <label for="reponse-y">y = </label>
+            <input
+              type="number"
+              id="reponse-y"
+              step="any"
+              style="width: 80px; padding: 5px"
+            />
+          </div>
+        </div>
+
+        <button id="verifier-reponse" class="btn" style="margin-right: 10px">
+          Vérifier ma réponse
+        </button>
+        <button
+          id="generer-systeme"
+          class="btn"
+          style="background-color: #27ae60"
+        >
+          Nouveau système
+        </button>
+
+        <div id="resultat-verification" style="margin-top: 15px">
+          <!-- Le résultat de la vérification sera affiché ici -->
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Pour aller plus loin</h2>
+
+      <h3>Généralisation à plus de deux inconnues</h3>
+      <p>
+        Les méthodes vues ici peuvent être généralisées pour résoudre des
+        systèmes avec trois inconnues ou plus, bien que la complexité augmente.
+      </p>
+
+      <h3>Matrices et déterminants</h3>
+      <p>
+        L'étude des systèmes d'équations linéaires est intimement liée à
+        l'algèbre linéaire, notamment aux notions de matrices et de
+        déterminants.
+      </p>
+
+      <h3>Programmation linéaire</h3>
+      <p>
+        Les systèmes d'équations et d'inéquations linéaires sont à la base de la
+        programmation linéaire, utilisée pour résoudre des problèmes
+        d'optimisation.
+      </p>
+
+      <h3>Systèmes non linéaires</h3>
+      <p>
+        Il existe également des systèmes d'équations non linéaires (impliquant
+        des produits d'inconnues, des puissances, etc.) qui nécessitent d'autres
+        méthodes de résolution.
+      </p>
+    </div>
+
+    <footer>
+      <p>© 2025 - Cours de mathématiques - Les équations à deux inconnues</p>
+      <p>Pour toute question, n'hésitez pas à contacter votre professeur.</p>
+    </footer>
+
+    <script>
+      // Script pour gérer l'affichage des solutions
+      document.addEventListener("DOMContentLoaded", function () {
+        const btnList = document.querySelectorAll(".btn");
+        btnList.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const solution = this.nextElementSibling;
+            if (
+              solution.style.display === "none" ||
+              solution.style.display === ""
+            ) {
+              solution.style.display = "block";
+              this.textContent = "Masquer la solution";
+            } else {
+              solution.style.display = "none";
+              this.textContent = "Voir la solution";
+            }
+          });
+        });
+
+        // Fonction pour générer des systèmes d'équations aléatoires
+        function genererSystemeAleatoire() {
+          // Générer des coefficients aléatoires entre -10 et 10
+          const a = Math.floor(Math.random() * 21) - 10;
+          const b = Math.floor(Math.random() * 21) - 10;
+          const c = Math.floor(Math.random() * 21) - 10;
+          const d = Math.floor(Math.random() * 21) - 10;
+          const e = Math.floor(Math.random() * 21) - 10;
+          const f = Math.floor(Math.random() * 21) - 10;
+
+          // Solution du système (peut être calculée ou générée aléatoirement)
+          // Pour cet exemple, je vais d'abord générer une solution
+          let x = Math.floor(Math.random() * 11) - 5; // entre -5 et 5
+          let y = Math.floor(Math.random() * 11) - 5; // entre -5 et 5
+
+          // Puis calculer c et f pour que le système ait cette solution
+          let c_calc = a * x + b * y;
+          let f_calc = d * x + e * y;
+
+          return {
+            coefficients: { a, b, c: c_calc, d, e, f: f_calc },
+            solution: { x, y },
+          };
+        }
+
+        // Fonction pour afficher un système d'équations
+        function afficherSysteme(systeme) {
+          let equation1 = `${systeme.coefficients.a}x ${
+            systeme.coefficients.b >= 0
+              ? "+ " + systeme.coefficients.b
+              : "- " + Math.abs(systeme.coefficients.b)
+          }y = ${systeme.coefficients.c}`;
+          let equation2 = `${systeme.coefficients.d}x ${
+            systeme.coefficients.e >= 0
+              ? "+ " + systeme.coefficients.e
+              : "- " + Math.abs(systeme.coefficients.e)
+          }y = ${systeme.coefficients.f}`;
+
+          document.getElementById("systeme-aleatoire").innerHTML = `
+                    <div class="formule">
+                        {
+                            <br>
+                            ${equation1}<br>
+                            ${equation2}<br>
+                        }
+                    </div>
+                `;
+        }
+
+        // Fonction pour vérifier la réponse de l'utilisateur
+        function verifierReponse() {
+          const xReponse = parseFloat(
+            document.getElementById("reponse-x").value
+          );
+          const yReponse = parseFloat(
+            document.getElementById("reponse-y").value
+          );
+
+          // Récupérer la solution correcte (stockée dans un attribut de données)
+          const xCorrect = parseFloat(
+            document.getElementById("systeme-aleatoire").dataset.solutionX
+          );
+          const yCorrect = parseFloat(
+            document.getElementById("systeme-aleatoire").dataset.solutionY
+          );
+
+          // Vérifier si la réponse est correcte (avec une petite marge d'erreur pour les calculs décimaux)
+          const estCorrect =
+            Math.abs(xReponse - xCorrect) < 0.001 &&
+            Math.abs(yReponse - yCorrect) < 0.001;
+
+          // Afficher le résultat
+          const resultatDiv = document.getElementById("resultat-verification");
+          if (estCorrect) {
+            resultatDiv.innerHTML =
+              '<p style="color: green; font-weight: bold;">Bravo ! Votre réponse est correcte.</p>';
+          } else {
+            resultatDiv.innerHTML = `<p style="color: red; font-weight: bold;">Incorrect. La solution est x = ${xCorrect} et y = ${yCorrect}.</p>`;
+          }
+        }
+
+        // Fonction pour générer un nouveau système aléatoire
+        function nouveauSysteme() {
+          const systeme = genererSystemeAleatoire();
+          afficherSysteme(systeme);
+
+          // Stocker la solution dans des attributs de données
+          document.getElementById("systeme-aleatoire").dataset.solutionX =
+            systeme.solution.x;
+          document.getElementById("systeme-aleatoire").dataset.solutionY =
+            systeme.solution.y;
+
+          // Réinitialiser les champs de réponse et le message de résultat
+          document.getElementById("reponse-x").value = "";
+          document.getElementById("reponse-y").value = "";
+          document.getElementById("resultat-verification").innerHTML = "";
+        }
+
+        // Initialiser le système aléatoire lorsque le bouton existe
+        const btnGenerer = document.getElementById("generer-systeme");
+        if (btnGenerer) {
+          btnGenerer.addEventListener("click", nouveauSysteme);
+          // Générer un premier système au chargement
+          nouveauSysteme();
+        }
+
+        // Gestionnaire d'événements pour le bouton de vérification
+        const btnVerifier = document.getElementById("verifier-reponse");
+        if (btnVerifier) {
+          btnVerifier.addEventListener("click", verifierReponse);
+        }
+      });
+    </script>
+  </body>
+</html>

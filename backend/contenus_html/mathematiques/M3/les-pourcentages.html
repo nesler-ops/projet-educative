@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les pourcentages - Cours de mathématiques</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/mathematiques/M3/les-pourcentages.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Les Pourcentages</h1>
+      <p>Concepts fondamentaux, applications pratiques et exercices</p>
+    </header>
+
+    <div class="container">
+      <div class="content">
+        <section id="introduction">
+          <h2>Introduction aux pourcentages</h2>
+          <p>
+            Les pourcentages sont un outil mathématique essentiel utilisé
+            quotidiennement dans de nombreux domaines : finance, statistiques,
+            sciences, commerce, etc. Le terme "pourcentage" vient du latin "per
+            centum" qui signifie "pour cent" ou "sur cent".
+          </p>
+
+          <p>
+            Un pourcentage représente une proportion sur 100. Par exemple, 25%
+            signifie 25 pour 100, soit \(25/100 = 0,25\) en notation décimale.
+          </p>
+
+          <div class="percentage-visual">
+            <div class="percentage-fill" style="width: 25%"></div>
+          </div>
+          <p><em>Représentation visuelle de 25%</em></p>
+        </section>
+
+        <section id="definition">
+          <h2>Définition et notation</h2>
+          <p>
+            Un pourcentage est une façon d'exprimer un nombre comme une fraction
+            de 100. Il est noté avec le symbole %.
+          </p>
+
+          <div class="formula-box">
+            <h3>Conversions de base</h3>
+            <ul>
+              <li>
+                Pour convertir un pourcentage en décimal : divisez par 100
+              </li>
+              <li>
+                Pour convertir un décimal en pourcentage : multipliez par 100
+              </li>
+            </ul>
+            <p>Exemples :</p>
+            <ul>
+              <li>75% = 75/100 = 0,75</li>
+              <li>0,35 = 35/100 = 35%</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="calculs-base">
+          <h2>Calculs de base avec des pourcentages</h2>
+
+          <h3>Calculer un pourcentage d'une quantité</h3>
+          <div class="formula-box">
+            <p>Pour calculer x% de y :</p>
+            <p>Résultat = (x/100) × y</p>
+          </div>
+
+          <div class="example">
+            <h4>Exemple 1</h4>
+            <p>Calculer 15% de 80 €</p>
+            <p>Solution : 15% de 80 € = (15/100) × 80 = 0,15 × 80 = 12 €</p>
+          </div>
+
+          <h3>Trouver la valeur initiale connaissant le pourcentage</h3>
+          <div class="formula-box">
+            <p>Si x% de la valeur initiale donne y :</p>
+            <p>Valeur initiale = y ÷ (x/100) = (y × 100) ÷ x</p>
+          </div>
+
+          <div class="example">
+            <h4>Exemple 2</h4>
+            <p>Si 30% d'un nombre vaut 21, quel est ce nombre ?</p>
+            <p>Solution : 21 ÷ 0,3 = 21 × (100/30) = 70</p>
+          </div>
+
+          <h3>Calculer un pourcentage d'augmentation ou de diminution</h3>
+          <div class="formula-box">
+            <p>
+              Augmentation : Nouvelle valeur = Valeur initiale × (1 +
+              pourcentage/100)
+            </p>
+            <p>
+              Diminution : Nouvelle valeur = Valeur initiale × (1 -
+              pourcentage/100)
+            </p>
+          </div>
+
+          <div class="example">
+            <h4>Exemple 3</h4>
+            <p>
+              Un produit coûtant 50 € augmente de 20%. Quel est son nouveau prix
+              ?
+            </p>
+            <p>Solution : 50 × (1 + 20/100) = 50 × 1,2 = 60 €</p>
+          </div>
+
+          <div class="example">
+            <h4>Exemple 4</h4>
+            <p>
+              Un produit coûtant 80 € diminue de 15%. Quel est son nouveau prix
+              ?
+            </p>
+            <p>Solution : 80 × (1 - 15/100) = 80 × 0,85 = 68 €</p>
+          </div>
+        </section>
+
+        <section id="applications">
+          <h2>Applications pratiques</h2>
+
+          <h3>Soldes et promotions</h3>
+          <div class="example">
+            <p>
+              Un article coûte 60 € avant les soldes. Il est affiché avec -30%.
+              Quel est son prix soldé ?
+            </p>
+            <p>Prix soldé = 60 × (1 - 30/100) = 60 × 0,7 = 42 €</p>
+          </div>
+
+          <h3>Intérêts bancaires</h3>
+          <div class="example">
+            <p>
+              Vous placez 1000 € sur un compte rapportant 3% d'intérêts par an.
+              Combien aurez-vous après un an ?
+            </p>
+            <p>Montant final = 1000 × (1 + 3/100) = 1000 × 1,03 = 1030 €</p>
+          </div>
+
+          <h3>TVA (Taxe sur la Valeur Ajoutée)</h3>
+          <div class="example">
+            <p>
+              Un produit coûte 80 € hors taxes (HT). Calculez son prix TTC
+              (toutes taxes comprises) avec une TVA de 20%.
+            </p>
+            <p>Prix TTC = 80 × (1 + 20/100) = 80 × 1,2 = 96 €</p>
+          </div>
+        </section>
+
+        <section id="cas-speciaux">
+          <h2>Cas spéciaux et avancés</h2>
+
+          <h3>Pourcentages successifs</h3>
+          <div class="formula-box">
+            <p>
+              Lorsqu'on applique deux pourcentages successifs, le résultat n'est
+              pas la somme des pourcentages mais leur effet composé.
+            </p>
+          </div>
+
+          <div class="example">
+            <h4>Exemple</h4>
+            <p>
+              Un produit coûtant 100 € augmente de 10%, puis de 20%. Quel est
+              son prix final ?
+            </p>
+            <p>Après la première augmentation : 100 × 1,1 = 110 €</p>
+            <p>Après la deuxième augmentation : 110 × 1,2 = 132 €</p>
+            <p>
+              Note : Ce n'est pas une augmentation de 30% (qui donnerait 130 €)
+              mais de 32%.
+            </p>
+          </div>
+
+          <h3>Coefficient multiplicateur</h3>
+          <div class="formula-box">
+            <p>Le coefficient multiplicateur pour une variation de x% est :</p>
+            <p>CM = 1 + x/100 (pour une augmentation)</p>
+            <p>CM = 1 - x/100 (pour une diminution)</p>
+          </div>
+
+          <div class="example">
+            <p>
+              Pour une augmentation de 35%, le coefficient multiplicateur est :
+              1 + 35/100 = 1,35
+            </p>
+            <p>
+              Pour une diminution de 20%, le coefficient multiplicateur est : 1
+              - 20/100 = 0,8
+            </p>
+          </div>
+
+          <h3>Calculer un pourcentage de variation</h3>
+          <div class="formula-box">
+            <p>
+              Pourcentage de variation = ((Valeur finale - Valeur initiale) /
+              Valeur initiale) × 100
+            </p>
+          </div>
+
+          <div class="example">
+            <p>
+              Un prix passe de 80 € à 92 €. Quel est le pourcentage
+              d'augmentation ?
+            </p>
+            <p>
+              Pourcentage d'augmentation = ((92 - 80) / 80) × 100 = (12/80) ×
+              100 = 15%
+            </p>
+          </div>
+        </section>
+
+        <section id="exercices">
+          <h2>Exercices</h2>
+
+          <div class="exercise">
+            <h3>Exercice 1 : Calcul de base</h3>
+            <p>Calculez 45% de 200.</p>
+            <button class="show-solution" onclick="toggleSolution('solution1')">
+              Voir la solution
+            </button>
+            <div class="solution" id="solution1">
+              <p>45% de 200 = (45/100) × 200 = 0,45 × 200 = 90</p>
+            </div>
+          </div>
+
+          <div class="exercise">
+            <h3>Exercice 2 : Recherche de la valeur initiale</h3>
+            <p>Si 12% d'un nombre est égal à 36, quel est ce nombre ?</p>
+            <button class="show-solution" onclick="toggleSolution('solution2')">
+              Voir la solution
+            </button>
+            <div class="solution" id="solution2">
+              <p>Si 12% de x = 36, alors :</p>
+              <p>(12/100) × x = 36</p>
+              <p>0,12x = 36</p>
+              <p>x = 36 / 0,12 = 300</p>
+            </div>
+          </div>
+
+          <div class="exercise">
+            <h3>Exercice 3 : Augmentation de prix</h3>
+            <p>
+              Un article coûte 75 € et subit une augmentation de 8%. Quel est
+              son nouveau prix ?
+            </p>
+            <button class="show-solution" onclick="toggleSolution('solution3')">
+              Voir la solution
+            </button>
+            <div class="solution" id="solution3">
+              <p>Nouveau prix = 75 × (1 + 8/100) = 75 × 1,08 = 81 €</p>
+            </div>
+          </div>
+
+          <div class="exercise">
+            <h3>Exercice 4 : Soldes</h3>
+            <p>
+              Un pantalon coûtant initialement 65 € est soldé à 48,75 €. Quel
+              est le pourcentage de réduction ?
+            </p>
+            <button class="show-solution" onclick="toggleSolution('solution4')">
+              Voir la solution
+            </button>
+            <div class="solution" id="solution4">
+              <p>Montant de la réduction = 65 - 48,75 = 16,25 €</p>
+              <p>Pourcentage de réduction = (16,25 / 65) × 100 = 25%</p>
+            </div>
+          </div>
+
+          <div class="exercise">
+            <h3>Exercice 5 : Pourcentages successifs</h3>
+            <p>
+              Un prix augmente de 20%, puis diminue de 10%. Calculez le
+              pourcentage d'évolution global.
+            </p>
+            <button class="show-solution" onclick="toggleSolution('solution5')">
+              Voir la solution
+            </button>
+            <div class="solution" id="solution5">
+              <p>Coefficient multiplicateur pour +20% : 1,2</p>
+              <p>Coefficient multiplicateur pour -10% : 0,9</p>
+              <p>Coefficient multiplicateur global : 1,2 × 0,9 = 1,08</p>
+              <p>Pourcentage d'évolution global : +8%</p>
+            </div>
+          </div>
+
+          <div class="exercise">
+            <h3>Exercice 6 : Application pratique</h3>
+            <p>
+              Un magasin propose une remise de 15% sur tous les articles. Un
+              client achète un article normalement vendu à 120 €. Combien
+              va-t-il payer ? S'il dispose d'un bon de réduction supplémentaire
+              de 10 €, quel sera le prix final ?
+            </p>
+            <button class="show-solution" onclick="toggleSolution('solution6')">
+              Voir la solution
+            </button>
+            <div class="solution" id="solution6">
+              <p>
+                Prix après remise de 15% : 120 × (1 - 15/100) = 120 × 0,85 = 102
+                €
+              </p>
+              <p>Prix final avec le bon de réduction : 102 - 10 = 92 €</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="mise-en-pratique">
+          <h2>Mise en pratique interactive</h2>
+
+          <div class="calculator">
+            <h3>Calculateur de pourcentages</h3>
+            <div>
+              <label for="value">Valeur :</label>
+              <input type="number" id="value" step="any" />
+            </div>
+            <div>
+              <label for="percentage">Pourcentage :</label>
+              <input type="number" id="percentage" step="any" />
+            </div>
+            <div>
+              <button onclick="calculatePercentage()">Calculer</button>
+            </div>
+            <p id="result">Résultat :</p>
+          </div>
+
+       
+
+        <section id="resume">
+          <h2>Résumé des formules importantes</h2>
+
+          <table>
+            <tr>
+              <th>Opération</th>
+              <th>Formule</th>
+              <th>Exemple</th>
+            </tr>
+            <tr>
+              <td>Calcul d'un pourcentage</td>
+              <td>(x/100) × valeur</td>
+              <td>25% de 80 = 0,25 × 80 = 20</td>
+            </tr>
+            <tr>
+              <td>Augmentation</td>
+              <td>valeur × (1 + x/100)</td>
+              <td>40 € + 15% = 40 × 1,15 = 46 €</td>
+            </tr>
+            <tr>
+              <td>Diminution</td>
+              <td>valeur × (1 - x/100)</td>
+              <td>50 € - 20% = 50 × 0,8 = 40 €</td>
+            </tr>
+            <tr>
+              <td>Pourcentage de variation</td>
+              <td>((final - initial) / initial) × 100</td>
+              <td>De 80 à 100 : ((100-80)/80) × 100 = 25%</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+
+      <div class="sidebar">
+        <h3>Sommaire</h3>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#definition">Définition et notation</a></li>
+          <li><a href="#calculs-base">Calculs de base</a></li>
+          <li><a href="#applications">Applications pratiques</a></li>
+          <li><a href="#cas-speciaux">Cas spéciaux</a></li>
+          <li><a href="#exercices">Exercices</a></li>
+          <li><a href="#mise-en-pratique">Mise en pratique</a></li>
+          <li><a href="#resume">Résumé</a></li>
+        </ul>
+
+        <div class="tip">
+          <h3>Astuce</h3>
+          <p>Pour calculer rapidement un pourcentage simple :</p>
+          <ul>
+            <li>10% = diviser par 10</li>
+            <li>5% = diviser par 20</li>
+            <li>25% = diviser par 4</li>
+            <li>50% = diviser par 2</li>
+          </ul>
+        </div>
+
+        <div class="tip">
+          <h3>Mémo</h3>
+          <p>
+            Pour une augmentation de x%, le coefficient multiplicateur est (1 +
+            x/100).
+          </p>
+          <p>
+            Pour une diminution de x%, le coefficient multiplicateur est (1 -
+            x/100).
+          </p>
+        </div>
+
+        <img
+          src="/api/placeholder/300/200"
+          alt="Graphique de pourcentages"
+          style="width: 100%; margin-top: 20px; border-radius: 5px"
+        />
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 - Cours de mathématiques - Les pourcentages</p>
+      <p>
+        Une ressource éducative pour mieux comprendre et appliquer les
+        pourcentages dans la vie quotidienne.
+      </p>
+    </footer>
+
+    <script>
+      function toggleSolution(id) {
+        const solution = document.getElementById(id);
+        if (solution.style.display === "block") {
+          solution.style.display = "none";
+        } else {
+          solution.style.display = "block";
+        }
+      }
+
+      function calculatePercentage() {
+        const value = parseFloat(document.getElementById("value").value);
+        const percentage = parseFloat(
+          document.getElementById("percentage").value
+        );
+
+        if (isNaN(value) || isNaN(percentage)) {
+          document.getElementById("result").textContent =
+            "Veuillez entrer des nombres valides.";
+          return;
+        }
+
+        const result = (percentage / 100) * value;
+        document.getElementById(
+          "result"
+        ).textContent = `Résultat : ${percentage}% de ${value} = ${result.toFixed(
+          2
+        )}`;
+      }
+    </script>
+  </body>
+</html>

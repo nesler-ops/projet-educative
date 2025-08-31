@@ -4,6 +4,12 @@ python-jose[cryptography]
 pymongo
 psycopg2-binary
 
-
-
 #npm install bootstrap
+#pip install passlib[bcrypt] python-jose[cryptography] opencv-python numpy
+
+#pip install --upgrade pip wheel cmake
+#pip install python-multipart
+#pip install face_recognition opencv-python numpy
+#pip install openai
+#npm install react-icons react-speech-recognition
+#npm i lucide-react@0.469.0

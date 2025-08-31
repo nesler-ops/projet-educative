@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #4caf50;
+  --accent-color: #2e7d32;
+  --highlight-color: #e53935;
+  --warning-color: #ffc107;
+  --info-color: #2196f3;
+  --background-color: #f5f5f5;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--accent-color);
+}
+
+.container {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.example {
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-left: 5px solid var(--primary-color);
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.exercice {
+  background-color: #fff8e1;
+  padding: 15px;
+  border-left: 5px solid var(--warning-color);
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.solution {
+  background-color: #e3f2fd;
+  padding: 15px;
+  border-left: 5px solid var(--info-color);
+  margin: 20px 0;
+  border-radius: 5px;
+  display: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.math-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 1;
+  min-width: 300px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--highlight-color);
+}
+
+.interactive {
+  border: 2px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border-top: 5px solid #388e3c;
+  margin-top: 50px;
+}
+
+/* Estilo para los inputs de ejercicios */
+input[type="number"] {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 80px;
+  transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+}
+
+/* Bordes cuando se verifica la respuesta */
+input.correct {
+  border-color: green;
+  background-color: #e8f5e9;
+}
+
+input.incorrect {
+  border-color: red;
+  background-color: #ffebee;
+}
+
+input.empty {
+  border-color: gray;
+  background-color: #f5f5f5;
+}
+
+.feedback-message {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.correct-message {
+  color: green;
+}
+
+.incorrect-message {
+  color: red;
+}
+
+.empty-message {
+  color: gray;
+}

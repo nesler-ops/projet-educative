@@ -4,345 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exprimer ses opinions en français</title>
-    <style>
-      :root {
-        --primary-color: #3498db;
-        --secondary-color: #2980b9;
-        --accent-color: #e74c3c;
-        --light-color: #ecf0f1;
-        --dark-color: #2c3e50;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background-color: #f5f7fa;
-      }
-
-      header {
-        background: linear-gradient(
-          135deg,
-          var(--primary-color),
-          var(--secondary-color)
-        );
-        color: white;
-        text-align: center;
-        padding: 2rem 0;
-        margin-bottom: 2rem;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      .subtitle {
-        font-size: 1.2rem;
-        font-weight: 300;
-      }
-
-      .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 2rem;
-      }
-
-      .intro {
-        background-color: white;
-        padding: 2rem;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      section {
-        background-color: white;
-        padding: 2rem;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      h2 {
-        color: var(--primary-color);
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid var(--light-color);
-      }
-
-      h3 {
-        color: var(--secondary-color);
-        margin: 1.5rem 0 0.5rem;
-      }
-
-      p {
-        margin-bottom: 1rem;
-      }
-
-      .example {
-        background-color: var(--light-color);
-        padding: 1rem;
-        border-left: 4px solid var(--primary-color);
-        margin: 1rem 0;
-        border-radius: 0 4px 4px 0;
-      }
-
-      .highlight {
-        font-weight: bold;
-        color: var(--accent-color);
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 1rem 0;
-      }
-
-      th,
-      td {
-        padding: 0.75rem;
-        text-align: left;
-        border-bottom: 1px solid var(--light-color);
-      }
-
-      th {
-        background-color: var(--primary-color);
-        color: white;
-      }
-
-      tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
-
-      .exercise {
-        background-color: #e8f4fc;
-        padding: 1.5rem;
-        border-radius: 8px;
-        margin: 1.5rem 0;
-      }
-
-      .exercise-title {
-        color: var(--secondary-color);
-        font-weight: bold;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-      }
-
-      .exercise-title::before {
-        content: "✏️";
-        margin-right: 0.5rem;
-      }
-
-      .exercise-question {
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-      }
-
-      .btn {
-        display: inline-block;
-        background-color: var(--primary-color);
-        color: white;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 1rem;
-        margin-top: 1rem;
-        transition: background-color 0.3s;
-      }
-
-      .btn:hover {
-        background-color: var(--secondary-color);
-      }
-
-      .solution {
-        display: none;
-        background-color: #f8f9fa;
-        padding: 1rem;
-        border-radius: 4px;
-        margin-top: 1rem;
-      }
-
-      .tip-box {
-        background-color: #fff3cd;
-        border-left: 4px solid #ffc107;
-        padding: 1rem;
-        margin: 1rem 0;
-        border-radius: 0 4px 4px 0;
-      }
-
-      .tip-box::before {
-        content: "💡 Conseil";
-        font-weight: bold;
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-
-      .intonation-box {
-        background-color: #d1ecf1;
-        border-left: 4px solid #17a2b8;
-        padding: 1rem;
-        margin: 1rem 0;
-        border-radius: 0 4px 4px 0;
-      }
-
-      .intonation-box::before {
-        content: "🔊 Intonation";
-        font-weight: bold;
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-
-      .vocabulary-card {
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 1rem;
-        margin: 1rem 0;
-        transition: transform 0.3s;
-      }
-
-      .vocabulary-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      .vocabulary-term {
-        font-weight: bold;
-        color: var(--secondary-color);
-      }
-
-      .vocabulary-definition {
-        color: #666;
-      }
-
-      .image-container {
-        text-align: center;
-        margin: 1.5rem 0;
-      }
-
-      .image-container img {
-        max-width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      .image-caption {
-        font-style: italic;
-        color: #666;
-        margin-top: 0.5rem;
-      }
-
-      footer {
-        background-color: var(--dark-color);
-        color: white;
-        text-align: center;
-        padding: 2rem 0;
-        margin-top: 2rem;
-      }
-
-      .language-level {
-        display: inline-block;
-        background-color: var(--accent-color);
-        color: white;
-        padding: 0.25rem 0.5rem;
-        border-radius: 4px;
-        font-size: 0.8rem;
-        margin-left: 0.5rem;
-      }
-
-      @media (max-width: 768px) {
-        .container {
-          padding: 0 1rem;
-        }
-
-        h1 {
-          font-size: 2rem;
-        }
-      }
-
-      .situation-card {
-        background-color: #f0f8ff;
-        padding: 1rem;
-        border-radius: 8px;
-        margin: 1rem 0;
-        border: 1px dashed var(--primary-color);
-      }
-
-      .situation-title {
-        font-weight: bold;
-        color: var(--primary-color);
-        margin-bottom: 0.5rem;
-      }
-
-      .tabs {
-        display: flex;
-        border-bottom: 1px solid #ddd;
-        margin-bottom: 1rem;
-      }
-
-      .tab {
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        background-color: #f1f1f1;
-        border: 1px solid #ddd;
-        border-bottom: none;
-        border-radius: 4px 4px 0 0;
-        margin-right: 0.5rem;
-      }
-
-      .tab.active {
-        background-color: white;
-        border-bottom: 1px solid white;
-        margin-bottom: -1px;
-        color: var(--primary-color);
-        font-weight: bold;
-      }
-
-      .tab-content {
-        display: none;
-      }
-
-      .tab-content.active {
-        display: block;
-      }
-
-      .dialogue-box {
-        background-color: #f9f9f9;
-        padding: 1rem;
-        border-radius: 8px;
-        margin: 1rem 0;
-      }
-
-      .dialogue-speaker {
-        font-weight: bold;
-        color: var(--primary-color);
-      }
-
-      .cultural-note {
-        background-color: #e6f7ff;
-        border-left: 4px solid #1890ff;
-        padding: 1rem;
-        margin: 1rem 0;
-        border-radius: 0 4px 4px 0;
-      }
-
-      .cultural-note::before {
-        content: "🌍 Note culturelle";
-        font-weight: bold;
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/francais/B1/exprimer-ses-opinions.css"
+    />
   </head>
   <body>
     <header>
@@ -369,8 +34,9 @@
 
         <div class="image-container">
           <img
-            src="/api/placeholder/600/300"
-            alt="Personnes discutant et partageant leurs opinions"
+            src="http://localhost:8000/static/images/contenus_images/francais/B1/opinions/opinions.jpg"
+            width="900"
+            height="500"
           />
           <p class="image-caption">
             Savoir exprimer son opinion est essentiel dans les discussions
@@ -785,8 +451,9 @@
 
         <div class="image-container">
           <img
-            src="/api/placeholder/500/300"
-            alt="Nuage de mots d'expressions d'opinion en français"
+            src="http://localhost:8000/static/images/contenus_images/francais/B1/opinions/nuage.jpg"
+            width="900"
+            height="500"
           />
           <p class="image-caption">
             Nuage de mots : expressions pour donner son opinion
@@ -797,114 +464,267 @@
       <section id="exercices">
         <h2>Exercices pratiques</h2>
 
+        <!-- Exercice 1 -->
         <div class="exercise">
           <div class="exercise-title">
-            Exercice 1 : Compléter avec l'expression appropriée
+            Exercice 1 : Choisissez l'expression d'opinion appropriée
           </div>
-          <p>
-            Complétez les phrases suivantes avec une expression d'opinion
-            appropriée.
-          </p>
+          <form id="qcm1-form">
+            <div class="qcm-question">
+              <p>
+                1. __________, la musique classique est plus relaxante que le
+                rock.
+              </p>
+              <select name="q1">
+                <option value="">-- Choisissez --</option>
+                <option value="a">Je ne suis pas d'accord</option>
+                <option value="b">Je pense que</option>
+                <option value="c">Ce n'est pas vrai</option>
+              </select>
+            </div>
 
-          <div class="exercise-question">
-            1. __________, la musique classique est plus relaxante que le rock.
-          </div>
-          <div class="exercise-question">
-            2. __________ que cette décision aura des conséquences importantes.
-          </div>
-          <div class="exercise-question">
-            3. __________ il faudrait investir davantage dans l'éducation.
-          </div>
-          <div class="exercise-question">
-            4. Ce n'est pas une bonne idée, __________.
-          </div>
-          <div class="exercise-question">
-            5. __________ nous devrions reporter la réunion.
-          </div>
+            <div class="qcm-question">
+              <p>
+                2. __________ cette décision aura des conséquences importantes.
+              </p>
+              <select name="q2">
+                <option value="">-- Choisissez --</option>
+                <option value="a">Je suis convaincu que</option>
+                <option value="b">Je suppose que</option>
+                <option value="c">Il semble que</option>
+              </select>
+            </div>
 
-          <button class="btn" onclick="toggleSolution('solution1')">
-            Voir la solution
-          </button>
-          <div id="solution1" class="solution">
-            <p>
-              1. À mon avis / Selon moi / Je pense que, la musique classique est
-              plus relaxante que le rock.
-            </p>
-            <p>
-              2. Je suis certain(e) / Je suis convaincu(e) / Il est évident que
-              cette décision aura des conséquences importantes.
-            </p>
-            <p>
-              3. Je crois que / Je pense que / À mon sens, il faudrait investir
-              davantage dans l'éducation.
-            </p>
-            <p>
-              4. Ce n'est pas une bonne idée, à mon avis / selon moi / je
-              trouve.
-            </p>
-            <p>
-              5. Je pense que / J'ai l'impression que / Il me semble que nous
-              devrions reporter la réunion.
-            </p>
-          </div>
+            <div class="qcm-question">
+              <p>
+                3. __________ il faudrait investir davantage dans l'éducation.
+              </p>
+              <select name="q3">
+                <option value="">-- Choisissez --</option>
+                <option value="a">Je crois que</option>
+                <option value="b">Pas du tout</option>
+                <option value="c">Je ne sais pas</option>
+              </select>
+            </div>
+
+            <div class="qcm-buttons">
+              <button
+                type="button"
+                onclick="verifierQCM('qcm1-form', 'qcm1-feedback', {q1:'b', q2:'a', q3:'a'})"
+              >
+                Vérifier
+              </button>
+              <button
+                type="button"
+                onclick="afficherReponsesQCM('qcm1-solutions', [
+          '1. Je pense que',
+          '2. Je suis convaincu que',
+          '3. Je crois que'
+        ])"
+              >
+                Voir les réponses
+              </button>
+            </div>
+            <div id="qcm1-feedback"></div>
+            <div id="qcm1-solutions" class="solution"></div>
+          </form>
         </div>
 
+        <!-- Exercice 2 -->
         <div class="exercise">
           <div class="exercise-title">
             Exercice 2 : Exprimer son accord ou son désaccord
           </div>
-          <p>
-            Comment réagiriez-vous aux opinions suivantes ? Exprimez votre
-            accord ou désaccord et justifiez votre position.
-          </p>
+          <form id="qcm2-form">
+            <div class="qcm-question">
+              <p>
+                1. "Les réseaux sociaux ont un impact positif sur la société."
+                Comment réagiriez-vous ?
+              </p>
+              <select name="q1">
+                <option value="">-- Choisissez --</option>
+                <option value="a">Je ne suis pas d'accord</option>
+                <option value="b">Je suis totalement d'accord</option>
+                <option value="c">C'est évident</option>
+              </select>
+            </div>
 
-          <div class="exercise-question">
-            1. "Les réseaux sociaux ont un impact positif sur la société."
-          </div>
-          <div class="exercise-question">
-            2. "L'apprentissage d'une langue étrangère devrait être obligatoire
-            dès l'école primaire."
-          </div>
-          <div class="exercise-question">
-            3. "Le télétravail est plus productif que le travail au bureau."
-          </div>
+            <div class="qcm-question">
+              <p>
+                2. "L'apprentissage d'une langue étrangère devrait être
+                obligatoire dès l'école primaire." Votre avis ?
+              </p>
+              <select name="q2">
+                <option value="">-- Choisissez --</option>
+                <option value="a">Je suis totalement d'accord</option>
+                <option value="b">Je ne partage pas cet avis</option>
+                <option value="c">Pas du tout</option>
+              </select>
+            </div>
 
-          <button class="btn" onclick="toggleSolution('solution2')">
-            Voir un exemple de réponse
-          </button>
-          <div id="solution2" class="solution">
-            <p>
-              1. Je ne suis pas tout à fait d'accord. Bien que les réseaux
-              sociaux facilitent la communication, ils peuvent aussi créer de
-              l'isolement et des problèmes de santé mentale. De plus, ils posent
-              des questions de confidentialité et de protection des données.
-            </p>
-            <p>
-              2. Je suis totalement d'accord. En effet, les enfants apprennent
-              plus facilement les langues à un jeune âge. Par ailleurs,
-              connaître plusieurs langues est un atout important dans notre
-              monde globalisé.
-            </p>
-            <p>
-              3. Je suis d'accord dans une certaine mesure. Le télétravail offre
-              plus de flexibilité et élimine le temps de trajet, ce qui peut
-              augmenter la productivité. Cependant, il peut aussi créer des
-              problèmes de communication et d'isolement social.
-            </p>
-          </div>
+            <div class="qcm-question">
+              <p>
+                3. "Le télétravail est plus productif que le travail au bureau."
+                Vous réagissez ?
+              </p>
+              <select name="q3">
+                <option value="">-- Choisissez --</option>
+                <option value="a">
+                  Je suis d'accord dans une certaine mesure
+                </option>
+                <option value="b">Je ne suis pas d'accord</option>
+                <option value="c">Je suis contre</option>
+              </select>
+            </div>
+
+            <div class="qcm-buttons">
+              <button
+                type="button"
+                onclick="verifierQCM('qcm2-form', 'qcm2-feedback', {q1:'a', q2:'a', q3:'a'})"
+              >
+                Vérifier
+              </button>
+              <button
+                type="button"
+                onclick="afficherReponsesQCM('qcm2-solutions', [
+          '1. Je ne suis pas d\'accord',
+          '2. Je suis totalement d\'accord',
+          '3. Je suis d\'accord dans une certaine mesure'
+        ])"
+              >
+                Voir les réponses
+              </button>
+            </div>
+            <div id="qcm2-feedback"></div>
+            <div id="qcm2-solutions" class="solution"></div>
+          </form>
         </div>
 
+        <!-- Exercice 3 -->
         <div class="exercise">
-          <div class="exercise-title">Exercice 3 : Jeu de rôle</div>
-          <p>
-            Imaginez un dialogue entre deux personnes qui discutent d'un des
-            sujets suivants. Utilisez les expressions d'opinion, d'accord et de
-            désaccord que vous avez apprises.
-          </p>
+          <div class="exercise-title">
+            Exercice 3 : Dialogue et argumentation
+          </div>
+          <form id="qcm3-form">
+            <div class="qcm-question">
+              <p>
+                1. Quelle expression convient pour exprimer un désaccord poli ?
+              </p>
+              <select name="q1">
+                <option value="">-- Choisissez --</option>
+                <option value="a">Je suis d'accord</option>
+                <option value="b">Je ne suis pas tout à fait d'accord</option>
+                <option value="c">Pas du tout</option>
+              </select>
+            </div>
 
-          <ul></ul>
+            <div class="qcm-question">
+              <p>2. Quelle phrase montre une concession dans un débat ?</p>
+              <select name="q2">
+                <option value="">-- Choisissez --</option>
+                <option value="a">C'est faux</option>
+                <option value="b">Tu as peut-être raison</option>
+                <option value="c">Je ne crois pas</option>
+              </select>
+            </div>
+
+            <div class="qcm-question">
+              <p>3. Quelle expression peut servir à conclure un argument ?</p>
+              <select name="q3">
+                <option value="">-- Choisissez --</option>
+                <option value="a">En conclusion</option>
+                <option value="b">Mais</option>
+                <option value="c">Donc</option>
+              </select>
+            </div>
+
+            <div class="qcm-buttons">
+              <button
+                type="button"
+                onclick="verifierQCM('qcm3-form', 'qcm3-feedback', {q1:'b', q2:'b', q3:'a'})"
+              >
+                Vérifier
+              </button>
+              <button
+                type="button"
+                onclick="afficherReponsesQCM('qcm3-solutions', [
+          '1. Je ne suis pas tout à fait d\'accord',
+          '2. Tu as peut-être raison',
+          '3. En conclusion'
+        ])"
+              >
+                Voir les réponses
+              </button>
+            </div>
+            <div id="qcm3-feedback"></div>
+            <div id="qcm3-solutions" class="solution"></div>
+          </form>
         </div>
       </section>
     </div>
+
+    <footer>
+      <p>© 2025 - Cours de français - Exprimer ses opinions</p>
+      <p>Une ressource pédagogique pour les apprenants du français</p>
+    </footer>
+
+    <script>
+      // Pestañas interactives pour accord / désaccord / nuancé
+      function openTab(evt, tabId) {
+        // Cacher tous les contenus
+        const tabContents = document.querySelectorAll(".tab-content");
+        tabContents.forEach((el) => (el.style.display = "none"));
+
+        // Supprimer 'active' de toutes les tabs
+        const tabs = document.querySelectorAll(".tab");
+        tabs.forEach((el) => el.classList.remove("active"));
+
+        // Afficher l'onglet sélectionné
+        document.getElementById(tabId).style.display = "block";
+        evt.currentTarget.classList.add("active");
+      }
+
+      // Initialisation automatique à l'ouverture de la page
+      window.addEventListener("DOMContentLoaded", () => {
+        const activeTab = document.querySelector(".tab.active");
+        if (activeTab) {
+          const tabId = activeTab.getAttribute("onclick").match(/'(.*?)'/)[1];
+          openTab({ currentTarget: activeTab }, tabId);
+        }
+      });
+
+      function verifierQCM(formId, feedbackId, bonnesReponses) {
+        const form = document.forms[formId];
+        const feedback = document.getElementById(feedbackId);
+        let correct = 0;
+        const total = Object.keys(bonnesReponses).length;
+
+        for (let key in bonnesReponses) {
+          const champ = form[key];
+          if (champ && champ.value === bonnesReponses[key]) {
+            champ.style.borderColor = "green";
+            correct++;
+          } else {
+            champ.style.borderColor = "red";
+          }
+        }
+
+        if (correct === total) {
+          feedback.textContent = "✅ Toutes les réponses sont correctes !";
+          feedback.style.color = "green";
+        } else {
+          feedback.textContent = `❌ Vous avez ${correct} bonne(s) réponse(s) sur ${total}.`;
+          feedback.style.color = "red";
+        }
+      }
+
+      function afficherReponsesQCM(containerId, lignes) {
+        const conteneur = document.getElementById(containerId);
+        conteneur.innerHTML =
+          "<h4>✔ Réponses correctes :</h4>" +
+          lignes.map((l) => `<p>${l}</p>`).join("");
+        conteneur.style.display = "block";
+      }
+    </script>
   </body>
 </html>

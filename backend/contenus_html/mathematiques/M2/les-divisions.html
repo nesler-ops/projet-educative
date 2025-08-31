@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les divisions - Cours de mathématiques</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/mathematiques/M2/les-divisions.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Les divisions en mathématiques</h1>
+      <div class="subtitle">Apprendre à diviser pas à pas</div>
+    </header>
+
+    <div class="container">
+      <section id="introduction">
+        <h2>Introduction à la division</h2>
+        <p>
+          La division est l'une des quatre opérations fondamentales de
+          l'arithmétique, avec l'addition, la soustraction et la multiplication.
+          Elle permet de partager une quantité en parts égales ou de déterminer
+          combien de fois un nombre est contenu dans un autre.
+        </p>
+
+        <div class="note">
+          <p>En mathématiques, la division se note de différentes façons :</p>
+          <ul>
+            <li>Avec le symbole ÷ : 15 ÷ 3 = 5</li>
+            <li>Avec la barre de fraction : 15/3 = 5</li>
+            <li>Avec le symbole « : » : 15 : 3 = 5</li>
+          </ul>
+        </div>
+
+        <h3>Vocabulaire de la division</h3>
+        <p>Dans une division, on utilise un vocabulaire spécifique :</p>
+        <ul>
+          <li><strong>Le dividende</strong> : le nombre que l'on divise</li>
+          <li><strong>Le diviseur</strong> : le nombre par lequel on divise</li>
+          <li><strong>Le quotient</strong> : le résultat de la division</li>
+          <li>
+            <strong>Le reste</strong> : ce qu'il reste après la division (si la
+            division n'est pas exacte)
+          </li>
+        </ul>
+
+        <div class="example">
+          <p>Dans la division 17 ÷ 5 = 3 reste 2 :</p>
+          <ul>
+            <li>17 est le dividende</li>
+            <li>5 est le diviseur</li>
+            <li>3 est le quotient</li>
+            <li>2 est le reste</li>
+          </ul>
+        </div>
+
+        <img
+          src="http://localhost:8000/static/images/contenus_images/mathematiques/M2/divisions/division.gif"
+          width="700"
+          height="400"
+          style="display: block; margin: 0 auto"
+        />
+      </section>
+
+      <section id="division-simple">
+        <h2>La division simple</h2>
+        <p>La division simple consiste à partager un nombre en parts égales.</p>
+
+        <div class="example">
+          <p>
+            Si l'on a 12 bonbons à partager équitablement entre 3 enfants,
+            combien chaque enfant recevra-t-il de bonbons ?
+          </p>
+          <p>On effectue la division : 12 ÷ 3 = 4</p>
+          <p>Chaque enfant recevra donc 4 bonbons.</p>
+        </div>
+
+        <h3>La relation avec la multiplication</h3>
+        <p>
+          La division est l'opération inverse de la multiplication. Si a × b =
+          c, alors c ÷ a = b et c ÷ b = a.
+        </p>
+
+        <div class="example">
+          <p>7 × 6 = 42, donc 42 ÷ 7 = 6 et 42 ÷ 6 = 7</p>
+        </div>
+
+        <div class="note">
+          <p>
+            Cette relation est très utile pour vérifier les résultats d'une
+            division : multipliez le quotient par le diviseur et ajoutez le
+            reste éventuel. Vous devez retrouver le dividende.
+          </p>
+          <p>
+            <span class="formula"
+              >Dividende = (Diviseur × Quotient) + Reste</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="division-euclidienne">
+        <h2>La division euclidienne</h2>
+        <p>
+          La division euclidienne est une division entre nombres entiers qui
+          donne un quotient entier et un reste entier.
+        </p>
+
+        <div class="note">
+          <p>
+            Dans une division euclidienne, le reste doit être inférieur au
+            diviseur.
+          </p>
+        </div>
+
+        <h3>Propriétés de la division euclidienne</h3>
+        <p>
+          Pour tous nombres entiers a et b (avec b ≠ 0), il existe un unique
+          couple d'entiers (q, r) tel que :
+        </p>
+        <p>
+          <span class="formula">a = b × q + r</span> avec
+          <span class="formula">0 ≤ r < b</span>
+        </p>
+        <p>où :</p>
+        <ul>
+          <li>a est le dividende</li>
+          <li>b est le diviseur</li>
+          <li>q est le quotient</li>
+          <li>r est le reste</li>
+        </ul>
+
+        <div class="example">
+          <p>Division euclidienne de 23 par 5 :</p>
+          <p>23 = 5 × 4 + 3</p>
+          <p>Donc le quotient est 4 et le reste est 3.</p>
+        </div>
+
+        <div class="calculation">23 ÷ 5 = 4 reste 3 4 5)23 20 -- 3</div>
+      </section>
+
+      <section id="technique-operatoire">
+        <h2>Technique opératoire de la division</h2>
+        <p>
+          La division posée (ou technique opératoire) permet de calculer le
+          quotient et le reste d'une division entre deux nombres.
+        </p>
+
+        <div class="step-by-step">
+          <h3>Comment poser une division euclidienne</h3>
+          <div class="step">
+            Écrivez le dividende sous la forme d'une potence et placez le
+            diviseur à gauche.
+          </div>
+          <div class="step">
+            Prenez le premier chiffre (ou les premiers chiffres) du dividende :
+            ce nombre doit être supérieur ou égal au diviseur.
+          </div>
+          <div class="step">
+            Divisez ce nombre par le diviseur et écrivez le résultat au-dessus.
+          </div>
+          <div class="step">
+            Multipliez ce résultat par le diviseur et écrivez le produit sous le
+            nombre pris.
+          </div>
+          <div class="step">
+            Calculez la différence et abaissez le chiffre suivant du dividende.
+          </div>
+          <div class="step">
+            Recommencez les étapes 3 à 5 jusqu'à ce que tous les chiffres du
+            dividende soient utilisés.
+          </div>
+          <div class="step">
+            Le dernier reste est le reste final de la division.
+          </div>
+        </div>
+
+        <div class="example">
+          <p>Calculons 847 ÷ 7</p>
+          <div class="calculation">
+            1 2 1 7)8 4 7 7 -- 1 4 1 4 -- 0 7 7 -- 0
+          </div>
+          <p>Donc 847 ÷ 7 = 121 reste 0 (la division est exacte)</p>
+        </div>
+
+        <h3>Division avec un diviseur à plusieurs chiffres</h3>
+        <p>
+          Le principe reste le même, mais il peut être plus difficile de trouver
+          le bon chiffre du quotient.
+        </p>
+
+        <div class="example">
+          <p>Calculons 925 ÷ 37</p>
+          <div class="calculation">2 5 37)9 2 5 7 4 -- 1 8 5 1 8 5 -- 0</div>
+          <p>Donc 925 ÷ 37 = 25 reste 0 (la division est exacte)</p>
+        </div>
+      </section>
+
+      <section id="division-decimaux">
+        <h2>Division avec des nombres décimaux</h2>
+        <p>
+          La division de nombres décimaux suit les mêmes principes que la
+          division de nombres entiers, avec quelques adaptations.
+        </p>
+
+        <h3>Division d'un nombre décimal par un entier</h3>
+        <p>
+          On effectue la division comme pour les entiers, en tenant compte de la
+          virgule.
+        </p>
+
+        <div class="example">
+          <p>Calculons 42,6 ÷ 3</p>
+          <div class="calculation">
+            1 4 , 2 3)4 2 , 6 3 -- 1 2 1 2 -- 0 , 6 0 , 6 -- 0
+          </div>
+          <p>Donc 42,6 ÷ 3 = 14,2</p>
+        </div>
+
+        <h3>Division par un nombre décimal</h3>
+        <p>
+          Pour diviser par un nombre décimal, on transforme le diviseur en
+          nombre entier en multipliant le dividende et le diviseur par une même
+          puissance de 10.
+        </p>
+
+        <div class="example">
+          <p>Pour calculer 15 ÷ 2,5 :</p>
+          <p>
+            Multipliez le dividende et le diviseur par 10 : (15 × 10) ÷ (2,5 ×
+            10) = 150 ÷ 25
+          </p>
+          <div class="calculation">6 25)1 5 0 1 5 0 -- 0</div>
+          <p>Donc 15 ÷ 2,5 = 6</p>
+        </div>
+      </section>
+
+      <section id="division-fractions">
+        <h2>Division de fractions</h2>
+        <p>
+          Pour diviser une fraction par une autre, on multiplie la première
+          fraction par l'inverse de la seconde.
+        </p>
+
+        <div class="formula">a/b ÷ c/d = a/b × d/c = (a×d)/(b×c)</div>
+
+        <div class="example">
+          <p>Calculons 3/4 ÷ 2/5</p>
+          <p>3/4 ÷ 2/5 = 3/4 × 5/2 = (3×5)/(4×2) = 15/8 = 1 + 7/8 = 1,875</p>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>Exercices interactifs</h2>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercice 1 : Divisions euclidiennes</div>
+          <p>Complétez les résultats de chaque division :</p>
+          <ol>
+            <li>
+              78 ÷ 6 =
+              <input
+                class="answer-input"
+                data-q="13"
+                data-r="0"
+                placeholder="quotient"
+              />
+              reste
+              <input class="answer-input" data-q="0" placeholder="reste" />
+            </li>
+            <li>
+              125 ÷ 9 =
+              <input
+                class="answer-input"
+                data-q="13"
+                data-r="8"
+                placeholder="quotient"
+              />
+              reste
+              <input class="answer-input" data-q="8" placeholder="reste" />
+            </li>
+            <li>
+              247 ÷ 12 =
+              <input
+                class="answer-input"
+                data-q="20"
+                data-r="7"
+                placeholder="quotient"
+              />
+              reste
+              <input class="answer-input" data-q="7" placeholder="reste" />
+            </li>
+            <li>
+              515 ÷ 25 =
+              <input
+                class="answer-input"
+                data-q="20"
+                data-r="15"
+                placeholder="quotient"
+              />
+              reste
+              <input class="answer-input" data-q="15" placeholder="reste" />
+            </li>
+          </ol>
+          <button onclick="verifierExercices(this)">
+            Vérifier les réponses
+          </button>
+          <button onclick="toggleSolution(this)">Voir la solution</button>
+          <div class="solution">
+            <ul>
+              <li>78 ÷ 6 = 13 reste 0</li>
+              <li>125 ÷ 9 = 13 reste 8</li>
+              <li>247 ÷ 12 = 20 reste 7</li>
+              <li>515 ÷ 25 = 20 reste 15</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercice 2 : Problèmes de partage</div>
+          <ol>
+            <li>
+              156 ÷ 26 =
+              <input
+                class="answer-input"
+                data-q="6"
+                data-r="0"
+                placeholder="quotient"
+              />
+              reste
+              <input class="answer-input" data-q="0" placeholder="reste" />
+            </li>
+            <li>
+              234 ÷ 8 =
+              <input
+                class="answer-input"
+                data-q="29"
+                data-r="2"
+                placeholder="quotient"
+              />
+              reste
+              <input class="answer-input" data-q="2" placeholder="reste" />
+            </li>
+          </ol>
+          <button onclick="verifierExercices(this)">
+            Vérifier les réponses
+          </button>
+          <button onclick="toggleSolution(this)">Voir la solution</button>
+          <div class="solution">
+            <ul>
+              <li>156 ÷ 26 = 6 reste 0</li>
+              <li>234 ÷ 8 = 29 reste 2</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercice 3 : Divisions décimales</div>
+          <ol>
+            <li>
+              45,6 ÷ 8 =
+              <input class="answer-input" data-q="5.70" placeholder="réponse" />
+            </li>
+            <li>
+              123 ÷ 4 =
+              <input
+                class="answer-input"
+                data-q="30.75"
+                placeholder="réponse"
+              />
+            </li>
+            <li>
+              7,5 ÷ 0,25 =
+              <input class="answer-input" data-q="30" placeholder="réponse" />
+            </li>
+            <li>
+              12 ÷ 0,75 =
+              <input class="answer-input" data-q="16" placeholder="réponse" />
+            </li>
+          </ol>
+          <button onclick="verifierExercices(this)">
+            Vérifier les réponses
+          </button>
+          <button onclick="toggleSolution(this)">Voir la solution</button>
+          <div class="solution">
+            <ul>
+              <li>45,6 ÷ 8 = 5,70</li>
+              <li>123 ÷ 4 = 30,75</li>
+              <li>7,5 ÷ 0,25 = 30</li>
+              <li>12 ÷ 0,75 = 16</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercice 4 : Divisions de fractions</div>
+          <ol>
+            <li>
+              2/3 ÷ 5/6 =
+              <input class="answer-input" data-q="0.8" placeholder="réponse" />
+            </li>
+            <li>
+              4/5 ÷ 2/15 =
+              <input class="answer-input" data-q="6" placeholder="réponse" />
+            </li>
+            <li>
+              1/2 ÷ 1/4 =
+              <input class="answer-input" data-q="2" placeholder="réponse" />
+            </li>
+            <li>
+              3/8 ÷ 3/4 =
+              <input class="answer-input" data-q="0.5" placeholder="réponse" />
+            </li>
+          </ol>
+          <button onclick="verifierExercices(this)">
+            Vérifier les réponses
+          </button>
+          <button onclick="toggleSolution(this)">Voir la solution</button>
+          <div class="solution">
+            <ul>
+              <li>2/3 ÷ 5/6 = 0,8</li>
+              <li>4/5 ÷ 2/15 = 6</li>
+              <li>1/2 ÷ 1/4 = 2</li>
+              <li>3/8 ÷ 3/4 = 0,5</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="applications">
+        <h2>Applications pratiques de la division</h2>
+
+        <div class="grid">
+          <div>
+            <h3>Dans la vie quotidienne</h3>
+            <ul>
+              <li>Partager équitablement un montant d'argent</li>
+              <li>Calculer un prix unitaire</li>
+              <li>Déterminer le nombre de parts possibles</li>
+              <li>Convertir des unités de mesure</li>
+              <li>Calculer une moyenne</li>
+            </ul>
+          </div>
+          <div>
+            <h3>En mathématiques avancées</h3>
+            <ul>
+              <li>Calcul de fractions et de pourcentages</li>
+              <li>Résolution d'équations</li>
+              <li>Calcul de rapports et proportions</li>
+              <li>Théorie des nombres (divisibilité, PGCD, PPCM)</li>
+              <li>Factorisation polynomiale</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>La division dans les autres disciplines</h3>
+        <p>La division est utilisée dans de nombreuses disciplines :</p>
+        <ul>
+          <li>
+            <strong>Physique</strong> : calcul de vitesse (distance ÷ temps), de
+            densité (masse ÷ volume), etc.
+          </li>
+          <li>
+            <strong>Économie</strong> : calcul de rendements, de taux, de ratios
+            financiers
+          </li>
+          <li>
+            <strong>Informatique</strong> : algorithmes de division, division
+            binaire
+          </li>
+          <li>
+            <strong>Statistiques</strong> : calcul de moyennes, de proportions
+          </li>
+        </ul>
+      </section>
+
+      <section id="quiz">
+        <h2>Quiz interactif</h2>
+        <div class="interactive">
+          <p>
+            <strong>Question 1:</strong> Dans la division 42 ÷ 5 = 8 reste 2,
+            quel est le dividende ?
+          </p>
+          <input class="answer-input" data-q="42" placeholder="Réponse" />
+
+          <p><strong>Question 2:</strong> Quel est le quotient de 72 ÷ 9 ?</p>
+          <input class="answer-input" data-q="8" placeholder="Réponse" />
+
+          <p>
+            <strong>Question 3:</strong> Si a = b × q + r, avec 0 ≤ r < b,
+            quelle opération est décrite ?
+          </p>
+          <input
+            class="answer-input"
+            data-q="division euclidienne"
+            placeholder="Réponse"
+          />
+
+          <button onclick="verifierExercices(this)">
+            Vérifier les réponses
+          </button>
+          <button onclick="toggleSolution(this)">Voir la solution</button>
+          <div class="solution">
+            <ul>
+              <li>Question 1 : 42</li>
+              <li>Question 2 : 8</li>
+              <li>Question 3 : division euclidienne</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="ressources">
+        <h2>Ressources complémentaires</h2>
+        <p>
+          Pour approfondir votre compréhension de la division, voici quelques
+          ressources supplémentaires :
+        </p>
+
+        <h3>Livres recommandés</h3>
+        <ul>
+          <li>« Les mathématiques expliquées simplement » par Jean Dupont</li>
+          <li>
+            « Guide pratique des opérations arithmétiques » par Marie Martin
+          </li>
+          <li>« Les divisions pas à pas » par Claude Mathieu</li>
+        </ul>
+
+        <h3>Sites web éducatifs</h3>
+        <ul>
+          <li>MathEnPoche - Cours et exercices interactifs</li>
+          <li>Khan Academy - Vidéos explicatives</li>
+          <li>Sésamath - Ressources pour l'enseignement des mathématiques</li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2025 - Cours de mathématiques | Les divisions</p>
+      <p>Créé à des fins pédagogiques</p>
+    </footer>
+
+    <script>
+      function verifierExercices(button) {
+        const inputs = button.parentElement.querySelectorAll(".answer-input");
+        let score = 0;
+        let total = 0;
+
+        inputs.forEach((input) => {
+          const expected = input.dataset.q?.trim().replace(",", ".");
+          const value = (input.value || "").trim().replace(",", ".");
+          let feedback = input.nextElementSibling;
+
+          if (!feedback || !feedback.classList.contains("feedback")) {
+            feedback = document.createElement("span");
+            feedback.classList.add("feedback");
+            input.after(feedback);
+          }
+
+          input.classList.remove("correct", "incorrect", "empty");
+          feedback.classList.remove("correct", "incorrect", "empty");
+          feedback.textContent = "";
+
+          if (!expected) return;
+
+          total++;
+
+          if (value === "") {
+            input.classList.add("empty");
+            feedback.classList.add("empty");
+            feedback.textContent = "⛔";
+          } else if (value === expected) {
+            input.classList.add("correct");
+            feedback.classList.add("correct");
+            feedback.textContent = "✅";
+            score++;
+          } else {
+            input.classList.add("incorrect");
+            feedback.classList.add("incorrect");
+            feedback.textContent = "❌";
+          }
+        });
+      }
+
+      function toggleSolution(button) {
+        const solution = button.parentElement.querySelector(".solution");
+        if (!solution) return;
+        solution.style.display =
+          solution.style.display === "block" ? "none" : "block";
+        button.textContent =
+          solution.style.display === "block"
+            ? "Masquer la solution"
+            : "Voir la solution";
+      }
+    </script>
+  </body>
+</html>

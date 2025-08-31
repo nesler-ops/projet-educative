@@ -1,0 +1,246 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f0f8ff;
+}
+
+header {
+  background-color: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  background-image: linear-gradient(to right, #1e90ff, #00bfff);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 5px solid #1e90ff;
+}
+
+h2 {
+  color: #1e90ff;
+  border-bottom: 2px solid #1e90ff;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+h3 {
+  color: #00bfff;
+}
+
+.img-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.cycle-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.etape {
+  background-color: #e6f7ff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.etape-title {
+  color: #0066cc;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.fun-fact {
+  background-color: #fffde7;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border-left: 4px solid #ffd700;
+}
+
+.interactive {
+  background-color: #e8f5e9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #4caf50;
+  margin: 1.5rem 0;
+}
+
+.quiz {
+  background-color: #e3f2fd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.quiz-question {
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+.quiz-options {
+  margin-left: 1.5rem;
+}
+
+.quiz-option {
+  margin: 0.3rem 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.quiz-option:hover {
+  background-color: #bbdefb;
+}
+
+.activite {
+  background-color: #f3e5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #9c27b0;
+  margin: 1.5rem 0;
+}
+
+.vocabulary {
+  background-color: #fff3e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.vocab-item {
+  display: flex;
+  margin: 0.5rem 0;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.vocab-term {
+  font-weight: bold;
+  width: 30%;
+  color: #e65100;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1e90ff;
+  color: white;
+  margin-top: 2rem;
+}
+
+.resource-link {
+  margin: 0.5rem 0;
+}
+
+.resource-link a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.resource-link a:hover {
+  text-decoration: underline;
+}
+
+.exercise-container {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #0066cc;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.dropdown {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+}
+
+.dropdown-content {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown-title {
+  cursor: pointer;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.dropdown-title::before {
+  content: "▶ ";
+}
+
+.dropdown-title.active::before {
+  content: "▼ ";
+}
+
+#cycle-animation {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 1rem 0;
+  overflow: hidden;
+  position: relative;
+}

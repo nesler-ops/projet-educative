@@ -1,0 +1,201 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #f1c40f;
+  --light-bg: #f9f9f9;
+  --text-color: #333;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+h3 {
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.example {
+  background-color: #e8f4fc;
+  padding: 15px;
+  border-left: 4px solid var(--secondary-color);
+  margin: 15px 0;
+}
+
+.exercice {
+  background-color: #edf7ed;
+  padding: 15px;
+  border-left: 4px solid #27ae60;
+  margin: 15px 0;
+}
+
+.solution {
+  background-color: #fcf8e3;
+  padding: 15px;
+  border-left: 4px solid var(--accent-color);
+  margin: 15px 0;
+  display: none;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.formule {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Cambria Math", Georgia, serif;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.graphique {
+  text-align: center;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.methode {
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  border-radius: 0;
+}
+
+.nav-menu {
+  background-color: #34495e;
+  padding: 10px;
+  border-radius: 0;
+  margin: 0;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-menu li {
+  margin: 5px 10px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-menu li a:hover {
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--secondary-color);
+  color: var(--secondary-color);
+  cursor: help;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

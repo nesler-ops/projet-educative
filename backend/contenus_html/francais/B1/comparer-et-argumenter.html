@@ -4,204 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comparer et Argumenter - Cours de Français</title>
-    <style>
-      :root {
-        --primary-color: #3498db;
-        --secondary-color: #2ecc71;
-        --accent-color: #e74c3c;
-        --background-color: #f9f9f9;
-        --text-color: #333;
-        --light-gray: #ecf0f1;
-      }
-
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: var(--text-color);
-        background-color: var(--background-color);
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        background-color: var(--primary-color);
-        color: white;
-        text-align: center;
-        padding: 2rem 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 2.5rem;
-      }
-
-      .subtitle {
-        font-size: 1.2rem;
-        opacity: 0.9;
-        margin-top: 0.5rem;
-      }
-
-      nav {
-        background-color: #2980b9;
-        padding: 0.5rem;
-      }
-
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-      }
-
-      nav li {
-        margin: 0 1rem;
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-        border-radius: 3px;
-        transition: background-color 0.3s;
-      }
-
-      nav a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      main {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 2rem;
-      }
-
-      section {
-        margin-bottom: 3rem;
-        padding: 1.5rem;
-        background-color: white;
-        border-radius: 5px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-      }
-
-      h2 {
-        color: var(--primary-color);
-        border-bottom: 2px solid var(--light-gray);
-        padding-bottom: 0.5rem;
-        margin-top: 0;
-      }
-
-      h3 {
-        color: var(--secondary-color);
-      }
-
-      .important-note {
-        background-color: #ffe9e3;
-        border-left: 4px solid var(--accent-color);
-        padding: 1rem;
-        margin: 1rem 0;
-      }
-
-      .example {
-        background-color: #e3f2fd;
-        border-left: 4px solid var(--primary-color);
-        padding: 1rem;
-        margin: 1rem 0;
-      }
-
-      .exercise {
-        background-color: #e8f5e9;
-        border-radius: 5px;
-        padding: 1.5rem;
-        margin: 1.5rem 0;
-        border: 1px solid #c8e6c9;
-      }
-
-      .exercise h4 {
-        color: var(--secondary-color);
-        margin-top: 0;
-      }
-
-      .image-container {
-        display: flex;
-        justify-content: center;
-        margin: 1.5rem 0;
-      }
-
-      .table-container {
-        overflow-x: auto;
-        margin: 1.5rem 0;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      th,
-      td {
-        padding: 0.75rem;
-        text-align: left;
-        border-bottom: 1px solid var(--light-gray);
-      }
-
-      th {
-        background-color: var(--light-gray);
-      }
-
-      .btn {
-        display: inline-block;
-        background-color: var(--primary-color);
-        color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 3px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-        border: none;
-        cursor: pointer;
-        font-size: 1rem;
-      }
-
-      .btn:hover {
-        background-color: #2980b9;
-      }
-
-      .btn-secondary {
-        background-color: var(--secondary-color);
-      }
-
-      .btn-secondary:hover {
-        background-color: #27ae60;
-      }
-
-      footer {
-        background-color: #34495e;
-        color: white;
-        text-align: center;
-        padding: 1.5rem;
-        margin-top: 2rem;
-      }
-
-      .hidden {
-        display: none;
-      }
-
-      .show-answer {
-        margin-top: 1rem;
-      }
-
-      @media (max-width: 768px) {
-        nav ul {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        nav li {
-          margin: 0.5rem 0;
-        }
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/francais/B1/comparer-et-argumenter.css"
+    />
   </head>
   <body>
     <header>
@@ -231,8 +37,9 @@
 
         <div class="image-container">
           <img
-            src="/api/placeholder/500/300"
-            alt="Illustration montrant la comparaison et l'argumentation"
+            src="http://localhost:8000/static/images/contenus_images/francais/B1/comparer/argumentation.jpg"
+            width="600"
+            height="600"
           />
         </div>
 
@@ -416,8 +223,9 @@
 
         <div class="image-container">
           <img
-            src="/api/placeholder/500/300"
-            alt="Schéma d'une argumentation structurée"
+            src="http://localhost:8000/static/images/contenus_images/francais/B1/comparer/comparer.jpg"
+            width="600"
+            height="600"
           />
         </div>
 
@@ -785,42 +593,6 @@
           </div>
         </div>
       </section>
-
-      <section id="ressources">
-        <h2>Ressources complémentaires</h2>
-
-        <h3>Ouvrages recommandés</h3>
-        <ul>
-          <li><strong>L'argumentation écrite</strong> par Claude Thomasset</li>
-          <li><strong>L'art de convaincre</strong> par Philippe Breton</li>
-          <li>
-            <strong>La comparaison et ses expressions</strong> par Michel
-            Charolles
-          </li>
-        </ul>
-
-        <h3>Vidéos pédagogiques</h3>
-        <div class="image-container">
-          <img
-            src="/api/placeholder/500/300"
-            alt="Écran de vidéo pédagogique"
-          />
-        </div>
-        <ul>
-          <li>
-            Série "Les techniques d'argumentation" sur la chaîne YouTube
-            "Français avec Pierre"
-          </li>
-          <li>MOOC "Argumenter pour convaincre" sur la plateforme FUN</li>
-        </ul>
-
-        <h3>Activités interactives</h3>
-        <p>Pour tester vos connaissances et vous entraîner davantage :</p>
-        <div class="btn-container">
-          <a href="#" class="btn">Quiz interactif</a>
-          <a href="#" class="btn btn-secondary">Générateur d'exercices</a>
-        </div>
-      </section>
     </main>
 
     <footer>
@@ -829,18 +601,13 @@
     </footer>
 
     <script>
-      // Script pour la navigation fluide
-      document.querySelectorAll("nav a").forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          const targetElement = document.querySelector(targetId);
-
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: "smooth",
-          });
+      document.querySelectorAll(".show-answer").forEach((button) => {
+        button.addEventListener("click", () => {
+          const targetId = button.dataset.target;
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.classList.toggle("hidden");
+          }
         });
       });
     </script>

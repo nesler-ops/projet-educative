@@ -1,0 +1,215 @@
+:root {
+  --primary-color: #4a6fa5;
+  --secondary-color: #68a357;
+  --accent-color: #f39c12;
+  --light-bg: #f9f9f9;
+  --text-color: #333;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+}
+
+.container {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.example {
+  background-color: #e8f4f8;
+  padding: 15px;
+  border-left: 5px solid var(--primary-color);
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.exercice {
+  background-color: #f0f7ee;
+  padding: 15px;
+  border-left: 5px solid var(--secondary-color);
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.solution {
+  display: none;
+  background-color: #fdf0d5;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px 0;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3a5a80;
+}
+
+.methode {
+  background-color: #f3e5f5;
+  padding: 15px;
+  border-left: 5px solid #8e44ad;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.astuce {
+  background-color: #ffecb3;
+  padding: 15px;
+  border-left: 5px solid var(--accent-color);
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.illustration {
+  text-align: center;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.calculator {
+  background-color: #edf2f7;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.calculator input {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 60px;
+  text-align: center;
+}
+
+.calculator button {
+  margin-left: 10px;
+}
+
+#result {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 0;
+}
+
+/* Inputs des exercices interactifs */
+input[type="number"][data-answer] {
+  padding: 6px 10px;
+  font-size: 14px;
+  margin-left: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 80px;
+  transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+}
+
+input.correct {
+  border-color: green;
+  background-color: #e8f5e9;
+}
+
+input.incorrect {
+  border-color: red;
+  background-color: #ffebee;
+}
+
+input.empty {
+  border-color: gray;
+  background-color: #f5f5f5;
+}
+
+/* Messages de feedback à côté des inputs */
+.feedback-message {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.correct-message {
+  color: green;
+}
+
+.incorrect-message {
+  color: red;
+}
+
+.empty-message {
+  color: gray;
+}

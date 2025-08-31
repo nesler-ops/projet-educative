@@ -3,230 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salutations et Présentations en Français</title>
-    <style>
-      :root {
-        --primary-color: #3f51b5;
-        --secondary-color: #ff4081;
-        --background-color: #f5f5f7;
-        --text-color: #333;
-        --light-accent: #e8eaf6;
-      }
 
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: var(--text-color);
-        background-color: var(--background-color);
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        background-color: var(--primary-color);
-        color: white;
-        text-align: center;
-        padding: 2rem 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      nav {
-        background-color: #303f9f;
-        padding: 0.5rem;
-      }
-
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-      }
-
-      nav li {
-        margin: 0 15px;
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s;
-      }
-
-      nav a:hover {
-        color: #ffc107;
-      }
-
-      main {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-      }
-
-      section {
-        margin-bottom: 2rem;
-        padding: 1.5rem;
-        border-radius: 8px;
-        background-color: white;
-      }
-
-      h1,
-      h2,
-      h3 {
-        color: var(--primary-color);
-      }
-
-      h2 {
-        border-bottom: 2px solid var(--light-accent);
-        padding-bottom: 0.5rem;
-      }
-
-      .vocab-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 1rem 0;
-      }
-
-      .vocab-table th,
-      .vocab-table td {
-        padding: 0.8rem;
-        border: 1px solid #ddd;
-        text-align: left;
-      }
-
-      .vocab-table th {
-        background-color: var(--light-accent);
-      }
-
-      .vocab-table tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-
-      .example {
-        background-color: #e8f5e9;
-        padding: 1rem;
-        border-left: 4px solid #4caf50;
-        margin: 1rem 0;
-      }
-
-      .exercise {
-        background-color: #e3f2fd;
-        padding: 1.5rem;
-        border-radius: 8px;
-        margin-top: 2rem;
-        position: relative;
-      }
-
-      .exercise h3 {
-        margin-top: 0;
-        color: #1976d2;
-      }
-
-      .exercise-label {
-        position: absolute;
-        top: -10px;
-        left: 20px;
-        background-color: #2196f3;
-        color: white;
-        padding: 0.3rem 0.8rem;
-        border-radius: 4px;
-        font-size: 0.9rem;
-        font-weight: bold;
-      }
-
-      .culture-note {
-        background-color: #fff8e1;
-        padding: 1rem;
-        border-left: 4px solid #ffc107;
-        margin: 1rem 0;
-      }
-
-      .pronunciation {
-        color: #9c27b0;
-        font-style: italic;
-      }
-
-      button {
-        background-color: var(--primary-color);
-        color: white;
-        border: none;
-        padding: 0.6rem 1.2rem;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: background-color 0.3s;
-      }
-
-      button:hover {
-        background-color: #303f9f;
-      }
-
-      .hide {
-        display: none;
-      }
-
-      .image-container {
-        text-align: center;
-        margin: 1.5rem 0;
-      }
-
-      .language-tip {
-        background-color: #f3e5f5;
-        padding: 1rem;
-        border-left: 4px solid #9c27b0;
-        margin: 1rem 0;
-      }
-
-      .dialog {
-        background-color: #f5f5f5;
-        padding: 1rem;
-        border-radius: 8px;
-        margin: 1rem 0;
-      }
-
-      .dialog p {
-        margin: 0.5rem 0;
-      }
-
-      .person1 {
-        color: #e91e63;
-      }
-
-      .person2 {
-        color: #2196f3;
-      }
-
-      .audio-btn {
-        background-color: #4caf50;
-        margin-left: 10px;
-        padding: 0.3rem 0.6rem;
-        font-size: 0.9rem;
-      }
-
-      footer {
-        text-align: center;
-        padding: 1.5rem;
-        background-color: var(--primary-color);
-        color: white;
-        margin-top: 2rem;
-      }
-
-      @media (max-width: 768px) {
-        nav ul {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        nav li {
-          margin: 5px 0;
-        }
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/francais/A1/salutations-et-presentations.css"
+    />
   </head>
   <body>
+    <nav
+      style="
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      "
+    >
+      <a
+        href="http://localhost:5173/cours/francais"
+        style="text-decoration: none; color: #007bff; font-weight: bold"
+      >
+        ← Retour aux cours
+      </a>
+    </nav>
+
     <header>
       <h1>Salutations et Présentations en Français</h1>
       <p>Apprenez à vous présenter et à saluer les autres en français</p>
@@ -265,6 +63,7 @@
             width="200"
             height="200"
           />
+
           <p>
             <em
               >Les salutations sont une partie importante de la culture
@@ -477,9 +276,9 @@
 
         <div class="image-container">
           <img
-            src="http://localhost:8000/static/images/zorin6.png"
-            alt="Personnes se présentant"
-            width="200"
+            src="http://localhost:8000/static/images/zorin.png"
+            alt="Des personnes qui se saluent en France"
+            width="300"
             height="200"
           />
           <p>
@@ -598,14 +397,29 @@
           <p>Remplissez les blancs avec les expressions appropriées :</p>
 
           <div class="dialog">
-            <p>A : ________, je m'appelle Laura.</p>
-            <p>B : Bonjour Laura, je ________ Marc. ________ ?</p>
+            <p>
+              A : <input type="text" id="ex1-1" size="10" />, je m'appelle
+              Laura.
+            </p>
+            <p>
+              B : Bonjour Laura, je
+              <input type="text" id="ex1-2" size="10" /> Marc.
+              <input type="text" id="ex1-3" size="10" /> ?
+            </p>
             <p>A : Je vais bien, merci. Et toi ?</p>
-            <p>B : ________, merci. Tu ________ d'où ?</p>
-            <p>A : Je viens du Canada, mais ________ à Paris maintenant.</p>
+            <p>
+              B : <input type="text" id="ex1-4" size="10" />, merci. Tu
+              <input type="text" id="ex1-5" size="10" /> d'où ?
+            </p>
+            <p>
+              A : Je viens du Canada, mais
+              <input type="text" id="ex1-6" size="10" /> à Paris maintenant.
+            </p>
           </div>
 
-          <button onclick="toggleElement('solution1')">Voir la solution</button>
+          <button onclick="verifierExercice1()">Vérifier mes réponses</button>
+          <button onclick="montrerSolution1()">Voir la solution</button>
+          <div id="resultat-ex1"></div>
           <div id="solution1" class="hide">
             <p><strong>Solution :</strong></p>
             <p>A : <strong>Salut</strong>, je m'appelle Laura.</p>
@@ -633,18 +447,76 @@
             informelles (I) :
           </p>
 
-          <ol>
-            <li>Salut ! _____</li>
-            <li>Comment allez-vous ? _____</li>
-            <li>Tu viens d'où ? _____</li>
-            <li>Enchanté de faire votre connaissance. _____</li>
-            <li>À plus tard ! _____</li>
-            <li>Ça va ? _____</li>
-            <li>Au revoir, Madame. _____</li>
-            <li>Je te présente mon ami. _____</li>
-          </ol>
+          <div>
+            <p>
+              1. Salut !
+              <select id="ex2-1">
+                <option value="">--Choisir--</option>
+                <option value="F">Formel (F)</option>
+                <option value="I">Informel (I)</option>
+              </select>
+            </p>
+            <p>
+              2. Comment allez-vous ?
+              <select id="ex2-2">
+                <option value="">--Choisir--</option>
+                <option value="F">Formel (F)</option>
+                <option value="I">Informel (I)</option>
+              </select>
+            </p>
+            <p>
+              3. Tu viens d'où ?
+              <select id="ex2-3">
+                <option value="">--Choisir--</option>
+                <option value="F">Formel (F)</option>
+                <option value="I">Informel (I)</option>
+              </select>
+            </p>
+            <p>
+              4. Enchanté de faire votre connaissance.
+              <select id="ex2-4">
+                <option value="">--Choisir--</option>
+                <option value="F">Formel (F)</option>
+                <option value="I">Informel (I)</option>
+              </select>
+            </p>
+            <p>
+              5. À plus tard !
+              <select id="ex2-5">
+                <option value="">--Choisir--</option>
+                <option value="F">Formel (F)</option>
+                <option value="I">Informel (I)</option>
+              </select>
+            </p>
+            <p>
+              6. Ça va ?
+              <select id="ex2-6">
+                <option value="">--Choisir--</option>
+                <option value="F">Formel (F)</option>
+                <option value="I">Informel (I)</option>
+              </select>
+            </p>
+            <p>
+              7. Au revoir, Madame.
+              <select id="ex2-7">
+                <option value="">--Choisir--</option>
+                <option value="F">Formel (F)</option>
+                <option value="I">Informel (I)</option>
+              </select>
+            </p>
+            <p>
+              8. Je te présente mon ami.
+              <select id="ex2-8">
+                <option value="">--Choisir--</option>
+                <option value="F">Formel (F)</option>
+                <option value="I">Informel (I)</option>
+              </select>
+            </p>
+          </div>
 
-          <button onclick="toggleElement('solution2')">Voir la solution</button>
+          <button onclick="verifierExercice2()">Vérifier mes réponses</button>
+          <button onclick="montrerSolution2()">Voir la solution</button>
+          <div id="resultat-ex2"></div>
           <div id="solution2" class="hide">
             <p><strong>Solution :</strong></p>
             <ol>
@@ -672,19 +544,125 @@
               Vous rencontrez le nouveau professeur de votre école. (Dialogue
               formel)
             </li>
+            <textarea
+              id="ex3-1"
+              rows="5"
+              cols="50"
+              placeholder="Écrivez votre dialogue ici..."
+            ></textarea>
+
             <li>
               Vous présentez votre ami français à votre frère. (Dialogue
               informel)
             </li>
+            <textarea
+              id="ex3-2"
+              rows="5"
+              cols="50"
+              placeholder="Écrivez votre dialogue ici..."
+            ></textarea>
+
             <li>
               Vous vous présentez à un entretien d'embauche. (Dialogue formel)
             </li>
+            <textarea
+              id="ex3-3"
+              rows="5"
+              cols="50"
+              placeholder="Écrivez votre dialogue ici..."
+            ></textarea>
           </ol>
 
-          <p>
-            Écrivez vos dialogues et pratiquez-les avec un(e) partenaire si
-            possible.
-          </p>
+          <button onclick="sauvegarderDialogues()">
+            Sauvegarder mes dialogues
+          </button>
+          <button onclick="montrerExemples()">Voir des exemples</button>
+          <div id="message-sauvegarde"></div>
+          <div id="exemples-dialogues" class="hide">
+            <h4>Exemples de dialogues</h4>
+
+            <p>
+              <strong>Exemple 1 : Rencontre avec un nouveau professeur</strong>
+            </p>
+            <div class="dialog">
+              <p>
+                <strong>Vous</strong> : Bonjour Madame/Monsieur. Je m'appelle
+                [votre nom]. Je suis dans votre classe de français.
+              </p>
+              <p>
+                <strong>Professeur</strong> : Bonjour [votre nom]. Enchantée de
+                vous rencontrer. Je suis Madame Martin, votre nouvelle
+                professeure de français.
+              </p>
+              <p>
+                <strong>Vous</strong> : Enchanté également, Madame Martin. D'où
+                venez-vous ?
+              </p>
+              <p>
+                <strong>Professeur</strong> : Je viens de Lyon, mais j'habite à
+                Paris depuis dix ans.
+              </p>
+              <p>
+                <strong>Vous</strong> : Je vous souhaite la bienvenue dans notre
+                école, Madame.
+              </p>
+              <p><strong>Professeur</strong> : Merci beaucoup !</p>
+            </div>
+
+            <p>
+              <strong>Exemple 2 : Présentation d'un ami à votre frère</strong>
+            </p>
+            <div class="dialog">
+              <p>
+                <strong>Vous</strong> : Salut Marc ! Je te présente Pierre, mon
+                ami français. On s'est rencontrés à l'université.
+              </p>
+              <p><strong>Votre frère</strong> : Salut Pierre ! Ça va ?</p>
+              <p>
+                <strong>Pierre</strong> : Salut Marc ! Oui, ça va super, et toi
+                ?
+              </p>
+              <p>
+                <strong>Votre frère</strong> : Ça va bien, merci. Tu es en
+                vacances ici ?
+              </p>
+              <p>
+                <strong>Pierre</strong> : Oui, je suis ici pour deux semaines.
+                Je viens de Paris.
+              </p>
+              <p><strong>Votre frère</strong> : Cool ! Bienvenue chez nous !</p>
+            </div>
+
+            <p><strong>Exemple 3 : Entretien d'embauche</strong></p>
+            <div class="dialog">
+              <p>
+                <strong>Recruteur</strong> : Bonjour, installez-vous.
+                Pourriez-vous vous présenter, s'il vous plaît ?
+              </p>
+              <p>
+                <strong>Vous</strong> : Bonjour Madame/Monsieur. Je m'appelle
+                [votre nom]. J'ai [votre âge] ans et je suis [votre
+                nationalité]. J'habite à [ville] depuis [nombre] ans.
+              </p>
+              <p>
+                <strong>Recruteur</strong> : Très bien. Quelle est votre
+                formation ?
+              </p>
+              <p>
+                <strong>Vous</strong> : Je suis diplômé(e) en [domaine d'études]
+                de l'Université de [nom]. J'ai [nombre] années d'expérience dans
+                ce domaine.
+              </p>
+              <p>
+                <strong>Recruteur</strong> : Pourquoi êtes-vous intéressé(e) par
+                ce poste ?
+              </p>
+              <p>
+                <strong>Vous</strong> : Ce poste correspond parfaitement à mes
+                compétences en [compétence] et à mon intérêt pour [domaine].
+              </p>
+            </div>
+          </div>
         </div>
 
         <div class="exercise">
@@ -702,6 +680,18 @@
             <li>Votre profession ou études</li>
             <li>Vos hobbies (facultatif)</li>
           </ul>
+
+          <textarea
+            id="ex4-presentation"
+            rows="8"
+            cols="60"
+            placeholder="Écrivez votre présentation ici..."
+          ></textarea>
+
+          <button onclick="sauvegarderPresentation()">
+            Sauvegarder ma présentation
+          </button>
+          <div id="message-presentation"></div>
 
           <div class="example">
             <p>
@@ -742,9 +732,9 @@
           </ul>
           <div class="image-container">
             <img
-              src="http://localhost:8000/static/images/zorin.png"
-              alt="La bise en France"
-              width="300"
+              src="http://localhost:8000/static/images/zorin6.png"
+              alt="Des personnes qui se saluent en France"
+              width="200"
               height="200"
             />
             <p><em>La bise, une tradition française</em></p>
@@ -818,14 +808,135 @@
     </footer>
 
     <script>
-      function toggleElement(id) {
-        const element = document.getElementById(id);
-        if (element.classList.contains("hide")) {
-          element.classList.remove("hide");
-        } else {
-          element.classList.add("hide");
+      // Fonction utilitaire pour afficher/masquer un élément
+      const toggleElement = (id) => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.classList.toggle("hide");
         }
-      }
+      };
+
+      // ======= EXERCICE 1 =======
+      const verifierExercice1 = () => {
+        const reponses = {
+          "ex1-1": "Salut",
+          "ex1-2": "suis",
+          "ex1-3": "Ça va",
+          "ex1-4": "Ça va bien",
+          "ex1-5": "viens",
+          "ex1-6": "j'habite",
+        };
+
+        let score = 0;
+        let feedback = "<p><strong>Résultats :</strong></p>";
+
+        for (const [id, reponseCorrecte] of Object.entries(reponses)) {
+          const input = document.getElementById(id);
+          if (!input) continue;
+          const valeur = input.value.trim();
+          if (valeur.toLowerCase() === reponseCorrecte.toLowerCase()) {
+            score++;
+            feedback += `<p>✅ ${id} : Correct !</p>`;
+          } else {
+            feedback += `<p>❌ ${id} : "${valeur}" n'est pas correct.</p>`;
+          }
+        }
+
+        const resultat = document.getElementById("resultat-ex1");
+        if (resultat) {
+          resultat.innerHTML =
+            feedback + `<p><strong>Score : ${score}/6</strong></p>`;
+          resultat.classList.remove("hide");
+        }
+      };
+
+      const montrerSolution1 = () => {
+        toggleElement("solution1");
+      };
+
+      // ======= EXERCICE 2 =======
+      const verifierExercice2 = () => {
+        const reponses = {
+          "ex2-1": "I",
+          "ex2-2": "F",
+          "ex2-3": "I",
+          "ex2-4": "F",
+          "ex2-5": "I",
+          "ex2-6": "I",
+          "ex2-7": "F",
+          "ex2-8": "I",
+        };
+
+        let score = 0;
+        let feedback = "<p><strong>Résultats :</strong></p>";
+
+        for (const [id, reponseCorrecte] of Object.entries(reponses)) {
+          const select = document.getElementById(id);
+          if (!select) continue;
+          const valeur = select.value;
+          if (valeur === reponseCorrecte) {
+            score++;
+            feedback += `<p>✅ ${id} : Correct !</p>`;
+          } else {
+            feedback += `<p>❌ ${id} : Incorrect</p>`;
+          }
+        }
+
+        const resultat = document.getElementById("resultat-ex2");
+        if (resultat) {
+          resultat.innerHTML =
+            feedback + `<p><strong>Score : ${score}/8</strong></p>`;
+          resultat.classList.remove("hide");
+        }
+      };
+
+      const montrerSolution2 = () => {
+        toggleElement("solution2");
+      };
+
+      // ======= EXERCICE 3 =======
+      const sauvegarderDialogues = () => {
+        const messageDiv = document.getElementById("message-sauvegarde");
+        if (messageDiv) {
+          messageDiv.innerHTML =
+            "<p class='success'>✅ Vos dialogues ont été sauvegardés avec succès !</p>";
+          setTimeout(() => {
+            messageDiv.innerHTML = "";
+          }, 3000);
+        }
+      };
+
+      const montrerExemples = () => {
+        toggleElement("exemples-dialogues");
+      };
+
+      // ======= EXERCICE 4 =======
+      const sauvegarderPresentation = () => {
+        const textarea = document.getElementById("ex4-presentation");
+        const messageDiv = document.getElementById("message-presentation");
+        if (textarea && messageDiv) {
+          const texte = textarea.value.trim();
+          if (texte.length > 0) {
+            messageDiv.innerHTML =
+              "<p class='success'>✅ Présentation sauvegardée !</p>";
+          } else {
+            messageDiv.innerHTML =
+              "<p class='error'>❌ Veuillez écrire votre présentation.</p>";
+          }
+          setTimeout(() => {
+            messageDiv.innerHTML = "";
+          }, 3000);
+        }
+      };
+
+      // === Exporter dans le scope global pour fonctionner avec onclick ===
+      window.verifierExercice1 = verifierExercice1;
+      window.montrerSolution1 = montrerSolution1;
+      window.verifierExercice2 = verifierExercice2;
+      window.montrerSolution2 = montrerSolution2;
+      window.sauvegarderDialogues = sauvegarderDialogues;
+      window.montrerExemples = montrerExemples;
+      window.sauvegarderPresentation = sauvegarderPresentation;
     </script>
   </body>
 </html>

@@ -1,0 +1,245 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+header {
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+h2 {
+  color: #3f51b5;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+h3 {
+  color: #5c6bc0;
+}
+.etat-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.solid {
+  border-left: 5px solid #2196f3;
+}
+.liquid {
+  border-left: 5px solid #4caf50;
+}
+.gas {
+  border-left: 5px solid #ff9800;
+}
+.plasma {
+  border-left: 5px solid #e91e63;
+}
+
+.states-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 2rem 0;
+}
+.state-card {
+  flex: 1;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.state-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.solid-card {
+  background-color: #bbdefb;
+}
+.liquid-card {
+  background-color: #c8e6c9;
+}
+.gas-card {
+  background-color: #ffe0b2;
+}
+.plasma-card {
+  background-color: #f8bbd0;
+}
+
+.state-img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.experiment {
+  background-color: #e3f2fd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  position: relative;
+}
+.experiment::before {
+  content: "Expérience";
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: #2196f3;
+  color: white;
+  padding: 0.2rem 1rem;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.quiz-container {
+  background-color: #f0f4c3;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+.quiz-question {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px dashed #bdbdbd;
+  padding-bottom: 1rem;
+}
+.options label {
+  display: block;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.options label:hover {
+  background-color: #e0e0e0;
+}
+.options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.transition-diagram {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #303f9f;
+}
+
+.activity {
+  background-color: #e8eaf6;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border-left: 5px solid #3f51b5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+th,
+td {
+  border: 1px solid #e0e0e0;
+  padding: 0.8rem;
+  text-align: left;
+}
+th {
+  background-color: #e3f2fd;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+footer {
+  background-color: #303f9f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.info-box {
+  background-color: #e1f5fe;
+  border-left: 4px solid #03a9f4;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .states-container {
+    flex-direction: column;
+  }
+  .state-card {
+    margin-bottom: 1rem;
+  }
+}
+
+.correct-answer {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect-answer {
+  color: red;
+  text-decoration: line-through;
+}
+
+.options label {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.correct-answer {
+  background-color: #e6ffe6;
+}
+
+.incorrect-answer {
+  background-color: #ffe6e6;
+}
+
+#quiz-results {
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}

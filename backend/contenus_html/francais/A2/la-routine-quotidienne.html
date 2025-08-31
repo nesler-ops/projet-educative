@@ -4,271 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La routine quotidienne - Cours de français</title>
-    <style>
-      :root {
-        --primary-color: #3498db;
-        --secondary-color: #f39c12;
-        --accent-color: #e74c3c;
-        --bg-color: #f5f5f5;
-        --text-color: #333;
-        --light-gray: #ddd;
-      }
-
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: var(--bg-color);
-        color: var(--text-color);
-      }
-
-      header {
-        background-color: var(--primary-color);
-        color: white;
-        text-align: center;
-        padding: 2rem 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 2.5rem;
-      }
-
-      .subtitle {
-        font-style: italic;
-        margin-top: 0.5rem;
-      }
-
-      main {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
-      }
-
-      section {
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-        margin-bottom: 2rem;
-      }
-
-      h2 {
-        color: var(--primary-color);
-        border-bottom: 2px solid var(--light-gray);
-        padding-bottom: 0.5rem;
-        margin-top: 0;
-      }
-
-      h3 {
-        color: var(--secondary-color);
-      }
-
-      .vocabulary-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 1rem;
-      }
-
-      .vocabulary-item {
-        background-color: #f9f9f9;
-        border-left: 4px solid var(--primary-color);
-        padding: 1rem;
-        border-radius: 4px;
-      }
-
-      .vocabulary-item strong {
-        color: var(--primary-color);
-      }
-
-      .time-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 1.5rem 0;
-      }
-
-      .time-table th,
-      .time-table td {
-        border: 1px solid var(--light-gray);
-        padding: 0.75rem;
-        text-align: left;
-      }
-
-      .time-table th {
-        background-color: var(--primary-color);
-        color: white;
-      }
-
-      .time-table tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
-
-      .example {
-        background-color: #e8f4f8;
-        border-left: 4px solid var(--secondary-color);
-        padding: 1rem;
-        margin: 1rem 0;
-        border-radius: 4px;
-      }
-
-      .exercise {
-        background-color: #fff8e1;
-        border: 1px solid #ffecb3;
-        border-radius: 8px;
-        padding: 1.5rem;
-        margin: 2rem 0;
-      }
-
-      .exercise h3 {
-        margin-top: 0;
-        color: var(--secondary-color);
-      }
-
-      .exercise-question {
-        margin-bottom: 1rem;
-        font-weight: bold;
-      }
-
-      .answer-box {
-        background-color: white;
-        border: 1px dashed var(--light-gray);
-        padding: 0.5rem;
-        min-height: 2rem;
-        margin-bottom: 1rem;
-      }
-
-      .btn {
-        display: inline-block;
-        background-color: var(--primary-color);
-        color: white;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-
-      .btn:hover {
-        background-color: #2980b9;
-      }
-
-      .btn-secondary {
-        background-color: var(--secondary-color);
-      }
-
-      .btn-secondary:hover {
-        background-color: #e67e22;
-      }
-
-      .image-container {
-        display: flex;
-        justify-content: center;
-        margin: 1.5rem 0;
-      }
-
-      .timeline {
-        display: flex;
-        justify-content: space-between;
-        margin: 2rem 0;
-        position: relative;
-      }
-
-      .timeline::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background-color: var(--primary-color);
-        transform: translateY(-50%);
-        z-index: 1;
-      }
-
-      .timeline-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        z-index: 2;
-        width: 100px;
-      }
-
-      .timeline-time {
-        background-color: var(--primary-color);
-        color: white;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-      }
-
-      .timeline-label {
-        text-align: center;
-        font-size: 0.9rem;
-      }
-
-      .grammar-box {
-        background-color: #e3f2fd;
-        border-left: 4px solid #2196f3;
-        padding: 1rem;
-        margin: 1.5rem 0;
-        border-radius: 4px;
-      }
-
-      .tip {
-        background-color: #e8f5e9;
-        border-left: 4px solid #4caf50;
-        padding: 1rem;
-        margin: 1.5rem 0;
-        border-radius: 4px;
-      }
-
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 1.5rem 0;
-        margin-top: 2rem;
-      }
-
-      @media (max-width: 768px) {
-        .vocabulary-list {
-          grid-template-columns: 1fr;
-        }
-
-        .timeline {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .timeline::before {
-          top: 0;
-          bottom: 0;
-          left: 30px;
-          right: auto;
-          width: 4px;
-          height: auto;
-          transform: none;
-        }
-
-        .timeline-item {
-          flex-direction: row;
-          margin-bottom: 1rem;
-          width: 100%;
-        }
-
-        .timeline-time {
-          margin-right: 1rem;
-          margin-bottom: 0;
-        }
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/francais/A2/la-routine-quotidienne.css"
+    />
   </head>
   <body>
     <header>
@@ -295,8 +34,9 @@
 
         <div class="image-container">
           <img
-            src="/api/placeholder/600/300"
-            alt="Une journée typique en images"
+            src="http://localhost:8000/static/images/contenus_images/francais/A2/routine/routine.jpg"
+            width="600"
+            height="400"
           />
         </div>
       </section>
@@ -519,8 +259,9 @@
 
         <div class="image-container">
           <img
-            src="/api/placeholder/800/200"
-            alt="Une journée typique en images"
+            src="http://localhost:8000/static/images/contenus_images/francais/A2/routine/routine2.jpg"
+            width="600"
+            height="400"
           />
         </div>
       </section>
@@ -561,36 +302,54 @@
         <div class="exercise">
           <h3>Exercice 1 : Complétez avec le verbe pronominal correct</h3>
           <div class="exercise-question">
-            1. Le matin, je __________ (se réveiller) à 7h.
+            1. Le matin, je
+            <input type="text" class="verb-input" data-answer="me réveille" />
+            (se réveiller) à 7h.
           </div>
-          <div class="answer-box"></div>
 
           <div class="exercise-question">
-            2. Ensuite, je __________ (se lever) et je __________ (se doucher).
+            2. Ensuite, je
+            <input type="text" class="verb-input" data-answer="me lève" /> (se
+            lever) et je
+            <input type="text" class="verb-input" data-answer="me douche" /> (se
+            doucher).
           </div>
-          <div class="answer-box"></div>
 
           <div class="exercise-question">
-            3. Après la douche, je __________ (s'habiller) rapidement.
+            3. Après la douche, je
+            <input type="text" class="verb-input" data-answer="m'habille" />
+            (s'habiller) rapidement.
           </div>
-          <div class="answer-box"></div>
 
           <div class="exercise-question">
-            4. Le soir, nous __________ (se détendre) en famille.
+            4. Le soir, nous
+            <input
+              type="text"
+              class="verb-input"
+              data-answer="nous détendons"
+            />
+            (se détendre) en famille.
           </div>
-          <div class="answer-box"></div>
 
           <div class="exercise-question">
-            5. À quelle heure __________ -vous (se coucher) habituellement ?
+            5. À quelle heure
+            <input
+              type="text"
+              class="verb-input"
+              data-answer="vous couchez-vous"
+            />
+            (se coucher) habituellement ?
           </div>
-          <div class="answer-box"></div>
 
-          <button
-            class="btn"
-            onclick="alert('Réponses:\n1. me réveille\n2. me lève, me douche\n3. m\'habille\n4. nous détendons\n5. vous couchez-vous')"
-          >
-            Voir les réponses
-          </button>
+          <div class="button-group">
+            <button class="btn" onclick="checkExercise1()">
+              Vérifier mes réponses
+            </button>
+            <button class="btn" onclick="showAnswers1()">
+              Voir les réponses
+            </button>
+          </div>
+          <div id="exercise1-feedback" class="feedback"></div>
         </div>
 
         <div class="exercise">
@@ -600,21 +359,112 @@
             :
           </p>
 
-          <div class="exercise-question">____ dîner</div>
-          <div class="exercise-question">____ se lever</div>
-          <div class="exercise-question">____ travailler</div>
-          <div class="exercise-question">____ se coucher</div>
-          <div class="exercise-question">____ déjeuner</div>
-          <div class="exercise-question">____ prendre le petit-déjeuner</div>
-          <div class="exercise-question">____ se réveiller</div>
-          <div class="exercise-question">____ rentrer à la maison</div>
+          <div class="exercise-question">
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="order-input"
+              data-activity="dîner"
+              data-expected="7"
+              style="width: 50px"
+            />
+            dîner
+          </div>
+          <div class="exercise-question">
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="order-input"
+              data-activity="se lever"
+              data-expected="2"
+              style="width: 50px"
+            />
+            se lever
+          </div>
+          <div class="exercise-question">
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="order-input"
+              data-activity="travailler"
+              data-expected="4"
+              style="width: 50px"
+            />
+            travailler
+          </div>
+          <div class="exercise-question">
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="order-input"
+              data-activity="se coucher"
+              data-expected="8"
+              style="width: 50px"
+            />
+            se coucher
+          </div>
+          <div class="exercise-question">
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="order-input"
+              data-activity="déjeuner"
+              data-expected="5"
+              style="width: 50px"
+            />
+            déjeuner
+          </div>
+          <div class="exercise-question">
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="order-input"
+              data-activity="prendre le petit-déjeuner"
+              data-expected="3"
+              style="width: 50px"
+            />
+            prendre le petit-déjeuner
+          </div>
+          <div class="exercise-question">
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="order-input"
+              data-activity="se réveiller"
+              data-expected="1"
+              style="width: 50px"
+            />
+            se réveiller
+          </div>
+          <div class="exercise-question">
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="order-input"
+              data-activity="rentrer à la maison"
+              data-expected="6"
+              style="width: 50px"
+            />
+            rentrer à la maison
+          </div>
 
-          <button
-            class="btn"
-            onclick="alert('Ordre logique possible:\n1. se réveiller\n2. se lever\n3. prendre le petit-déjeuner\n4. travailler\n5. déjeuner\n6. rentrer à la maison\n7. dîner\n8. se coucher')"
-          >
-            Voir une réponse possible
-          </button>
+          <div class="button-group">
+            <button class="btn" onclick="checkExercise2()">
+              Vérifier mes réponses
+            </button>
+            <button class="btn" onclick="showAnswers2()">
+              Voir une réponse possible
+            </button>
+          </div>
+          <div id="exercise2-feedback" class="feedback"></div>
         </div>
 
         <div class="exercise">
@@ -684,34 +534,67 @@
           <div class="exercise-question">
             1. À quelle heure Thomas se réveille-t-il ?
           </div>
-          <div class="answer-box"></div>
+          <input
+            type="text"
+            class="dialog-input"
+            data-question="1"
+            data-answer="Il se réveille à 6h30 en semaine"
+            style="width: 100%"
+          />
 
           <div class="exercise-question">
             2. Qu'est-ce que Thomas prend au petit-déjeuner ?
           </div>
-          <div class="answer-box"></div>
+          <input
+            type="text"
+            class="dialog-input"
+            data-question="2"
+            data-answer="Il prend un café et des céréales"
+            style="width: 100%"
+          />
 
           <div class="exercise-question">
             3. À quelle heure Marie se lève-t-elle ?
           </div>
-          <div class="answer-box"></div>
+          <input
+            type="text"
+            class="dialog-input"
+            data-question="3"
+            data-answer="Elle se lève vers 7h15"
+            style="width: 100%"
+          />
 
           <div class="exercise-question">
             4. Que fait Marie après le travail ?
           </div>
-          <div class="answer-box"></div>
+          <input
+            type="text"
+            class="dialog-input"
+            data-question="4"
+            data-answer="Elle fait souvent du sport avant de rentrer"
+            style="width: 100%"
+          />
 
           <div class="exercise-question">
             5. À quelle heure Marie se couche-t-elle ?
           </div>
-          <div class="answer-box"></div>
+          <input
+            type="text"
+            class="dialog-input"
+            data-question="5"
+            data-answer="Elle se couche vers 22h30"
+            style="width: 100%"
+          />
 
-          <button
-            class="btn"
-            onclick="alert('Réponses:\n1. Il se réveille à 6h30 en semaine.\n2. Il prend un café et des céréales.\n3. Elle se lève vers 7h15.\n4. Elle fait souvent du sport avant de rentrer.\n5. Elle se couche vers 22h30.')"
-          >
-            Voir les réponses
-          </button>
+          <div class="button-group">
+            <button class="btn" onclick="checkExercise4()">
+              Vérifier mes réponses
+            </button>
+            <button class="btn" onclick="showAnswers4()">
+              Voir les réponses
+            </button>
+          </div>
+          <div id="exercise4-feedback" class="feedback"></div>
         </div>
       </section>
 
@@ -780,7 +663,164 @@
     </footer>
 
     <script>
-      // Simple script to make the exercises interactive
+      // Script pour les exercices interactifs
+
+      // Exercice 1: Vérifier les verbes pronominaux
+      function checkExercise1() {
+        const inputs = document.querySelectorAll(".verb-input");
+        let correct = 0;
+
+        inputs.forEach((input) => {
+          const userAnswer = input.value.trim().toLowerCase();
+          const correctAnswer = input.dataset.answer.toLowerCase();
+
+          if (userAnswer === correctAnswer) {
+            input.classList.add("correct");
+            input.classList.remove("incorrect");
+            correct++;
+          } else {
+            input.classList.add("incorrect");
+            input.classList.remove("correct");
+          }
+        });
+
+        const feedback = document.getElementById("exercise1-feedback");
+        if (correct === inputs.length) {
+          feedback.textContent = "Bravo ! Toutes vos réponses sont correctes !";
+          feedback.className = "feedback success";
+        } else {
+          feedback.textContent = `Vous avez ${correct} réponse(s) correcte(s) sur ${inputs.length}. Continuez !`;
+          feedback.className = "feedback error";
+        }
+      }
+
+      function showAnswers1() {
+        const inputs = document.querySelectorAll(".verb-input");
+
+        inputs.forEach((input) => {
+          input.value = input.dataset.answer;
+          input.classList.add("correct");
+          input.classList.remove("incorrect");
+        });
+
+        const feedback = document.getElementById("exercise1-feedback");
+        feedback.textContent = "Voici les réponses correctes.";
+        feedback.className = "feedback success";
+      }
+
+      // Exercice 2: Vérifier l'ordre des activités
+      function checkExercise2() {
+        const inputs = document.querySelectorAll(".order-input");
+        let correct = 0;
+        let usedNumbers = new Set();
+        let hasDuplicates = false;
+
+        // Vérifier d'abord s'il y a des doublons
+        inputs.forEach((input) => {
+          const value = input.value;
+          if (value) {
+            if (usedNumbers.has(value)) {
+              hasDuplicates = true;
+            } else {
+              usedNumbers.add(value);
+            }
+          }
+        });
+
+        // Si des doublons sont trouvés, afficher un message d'erreur
+        if (hasDuplicates) {
+          const feedback = document.getElementById("exercise2-feedback");
+          feedback.textContent =
+            "Attention ! Vous avez utilisé le même numéro plusieurs fois. Chaque activité doit avoir un numéro unique.";
+          feedback.className = "feedback error";
+          return;
+        }
+
+        // Vérifier les réponses
+        inputs.forEach((input) => {
+          const userAnswer = input.value;
+          const correctAnswer = input.dataset.expected;
+
+          if (userAnswer === correctAnswer) {
+            input.classList.add("correct");
+            input.classList.remove("incorrect");
+            correct++;
+          } else {
+            input.classList.add("incorrect");
+            input.classList.remove("correct");
+          }
+        });
+
+        const feedback = document.getElementById("exercise2-feedback");
+        if (correct === inputs.length) {
+          feedback.textContent =
+            "Excellent ! Vous avez parfaitement ordonné les activités.";
+          feedback.className = "feedback success";
+        } else {
+          feedback.textContent = `Vous avez ${correct} activité(s) correctement placée(s) sur ${inputs.length}. Essayez encore !`;
+          feedback.className = "feedback error";
+        }
+      }
+
+      function showAnswers2() {
+        const inputs = document.querySelectorAll(".order-input");
+
+        inputs.forEach((input) => {
+          input.value = input.dataset.expected;
+          input.classList.add("correct");
+          input.classList.remove("incorrect");
+        });
+
+        const feedback = document.getElementById("exercise2-feedback");
+        feedback.textContent = "Voici un ordre possible pour ces activités.";
+        feedback.className = "feedback success";
+      }
+
+      // Exercice 4: Vérifier les réponses sur le dialogue
+      function checkExercise4() {
+        const inputs = document.querySelectorAll(".dialog-input");
+        let correct = 0;
+
+        inputs.forEach((input) => {
+          const userAnswer = input.value.trim().toLowerCase();
+          const correctAnswer = input.dataset.answer.toLowerCase();
+
+          if (userAnswer === correctAnswer) {
+            input.classList.add("correct");
+            input.classList.remove("incorrect");
+            correct++;
+          } else {
+            input.classList.add("incorrect");
+            input.classList.remove("correct");
+          }
+        });
+
+        const feedback = document.getElementById("exercise4-feedback");
+        if (correct === inputs.length) {
+          feedback.textContent =
+            "Félicitations ! Vous avez bien compris le dialogue.";
+          feedback.className = "feedback success";
+        } else {
+          feedback.textContent = `Vous avez ${correct} réponse(s) correcte(s) sur ${inputs.length}. Relisez le dialogue et essayez encore !`;
+          feedback.className = "feedback error";
+        }
+      }
+
+      function showAnswers4() {
+        const inputs = document.querySelectorAll(".dialog-input");
+
+        inputs.forEach((input) => {
+          input.value = input.dataset.answer;
+          input.classList.add("correct");
+          input.classList.remove("incorrect");
+        });
+
+        const feedback = document.getElementById("exercise4-feedback");
+        feedback.textContent = "Voici les réponses attendues.";
+        feedback.className = "feedback success";
+      }
+
+      // Gestion des boutons d'enregistrement
       document.querySelectorAll(".btn-secondary").forEach((button) => {
         button.addEventListener("click", function () {
           alert("Votre réponse a été enregistrée ! Beau travail !");

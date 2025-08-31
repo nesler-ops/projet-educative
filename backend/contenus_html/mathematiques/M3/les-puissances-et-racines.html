@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les puissances et racines en mathématiques</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/mathematiques/M3/les-puissances-et-racines.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Les puissances et racines</h1>
+      <p>Cours complet avec exercices et exemples</p>
+    </header>
+
+    <nav class="nav-container">
+      <div class="nav-menu">
+        <h3>📚 Sommaire du cours</h3>
+        <ul>
+          <li>📌 <a href="#introduction">Introduction</a></li>
+          <li>⚡ <a href="#puissances">Les puissances</a></li>
+          <li>
+            🧠 <a href="#proprietes-puissances">Propriétés des puissances</a>
+          </li>
+          <li>🧮 <a href="#racines">Les racines</a></li>
+          <li>🔍 <a href="#proprietes-racines">Propriétés des racines</a></li>
+          <li>🔗 <a href="#racines-puissances">Racines et puissances</a></li>
+          <li>🛠️ <a href="#applications">Applications pratiques</a></li>
+          <li>📝 <a href="#exercices">Exercices</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="section" id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        Les puissances et les racines sont des concepts mathématiques
+        fondamentaux qui nous permettent d'exprimer de manière concise des
+        opérations répétitives de multiplication et de résoudre des équations.
+        Ces notions sont essentielles dans de nombreux domaines comme la
+        physique, l'informatique, la finance et l'ingénierie.
+      </p>
+
+      <div class="image-container">
+        <img
+          src="http://localhost:8000/static/images/contenus_images/mathematiques/M3/racines/racines.jpg"
+          width="700"
+          height="400"
+          style="display: block; margin: 0 auto"
+        />
+        <p><em>Représentation graphique des puissances et racines</em></p>
+      </div>
+
+      <p>
+        Dans ce cours, nous allons explorer en détail ces concepts, leurs
+        propriétés et comment les utiliser efficacement pour résoudre différents
+        types de problèmes.
+      </p>
+    </div>
+
+    <div class="section" id="puissances">
+      <h2>Les puissances</h2>
+
+      <h3>Définition</h3>
+      <p>
+        La puissance d'un nombre représente le produit de ce nombre multiplié
+        par lui-même un certain nombre de fois.
+      </p>
+
+      <div class="formula">a<sup>n</sup> = a × a × a × ... × a (n fois)</div>
+
+      <p>Où :</p>
+      <ul>
+        <li><strong>a</strong> est la base</li>
+        <li><strong>n</strong> est l'exposant (ou la puissance)</li>
+        <li>
+          <strong>a<sup>n</sup></strong> est le résultat, appelé "a puissance n"
+          ou "a exposant n"
+        </li>
+      </ul>
+
+      <div class="example">
+        <p><strong>Exemple 1:</strong> 2<sup>3</sup> = 2 × 2 × 2 = 8</p>
+        <p><strong>Exemple 2:</strong> 5<sup>2</sup> = 5 × 5 = 25</p>
+        <p>
+          <strong>Exemple 3:</strong> 10<sup>4</sup> = 10 × 10 × 10 × 10 = 10
+          000
+        </p>
+      </div>
+
+      <h3>Cas particuliers</h3>
+
+      <div class="important">
+        <p>
+          <strong>Puissance 0:</strong> Tout nombre (sauf 0) élevé à la
+          puissance 0 est égal à 1.
+        </p>
+        <p>a<sup>0</sup> = 1 (a ≠ 0)</p>
+        <p>
+          <strong>Puissance 1:</strong> Tout nombre élevé à la puissance 1 est
+          égal à lui-même.
+        </p>
+        <p>a<sup>1</sup> = a</p>
+      </div>
+
+      <h3>Puissances négatives</h3>
+      <p>
+        Un exposant négatif indique qu'il faut prendre l'inverse de la base
+        élevée à la puissance positive correspondante.
+      </p>
+
+      <div class="formula">a<sup>-n</sup> = 1 / a<sup>n</sup></div>
+
+      <div class="example">
+        <p>
+          <strong>Exemple:</strong> 2<sup>-3</sup> = 1 / 2<sup>3</sup> = 1 / 8 =
+          0,125
+        </p>
+      </div>
+
+      <h3>Puissances fractionnaires</h3>
+      <p>Une puissance fractionnaire peut être exprimée comme une racine.</p>
+
+      <div class="formula">
+        a<sup>m/n</sup> = <sup>n</sup>√(a<sup>m</sup>) = (<sup>n</sup>√a)<sup
+          >m</sup
+        >
+      </div>
+
+      <div class="example">
+        <p>
+          <strong>Exemple:</strong> 8<sup>2/3</sup> =
+          <sup>3</sup>√(8<sup>2</sup>) = <sup>3</sup>√64 = 4
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="proprietes-puissances">
+      <h2>Propriétés des puissances</h2>
+
+      <p>
+        Les puissances obéissent à plusieurs règles qui permettent de simplifier
+        les calculs.
+      </p>
+
+      <h3>Produit de puissances de même base</h3>
+      <div class="formula">a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></div>
+
+      <div class="example">
+        <p>
+          <strong>Exemple:</strong> 2<sup>3</sup> × 2<sup>4</sup> = 2<sup
+            >3+4</sup
+          >
+          = 2<sup>7</sup> = 128
+        </p>
+      </div>
+
+      <h3>Quotient de puissances de même base</h3>
+      <div class="formula">a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m-n</sup></div>
+
+      <div class="example">
+        <p>
+          <strong>Exemple:</strong> 3<sup>5</sup> ÷ 3<sup>2</sup> = 3<sup
+            >5-2</sup
+          >
+          = 3<sup>3</sup> = 27
+        </p>
+      </div>
+
+      <h3>Puissance d'une puissance</h3>
+      <div class="formula">(a<sup>m</sup>)<sup>n</sup> = a<sup>m×n</sup></div>
+
+      <div class="example">
+        <p>
+          <strong>Exemple:</strong> (2<sup>3</sup>)<sup>2</sup> = 2<sup
+            >3×2</sup
+          >
+          = 2<sup>6</sup> = 64
+        </p>
+      </div>
+
+      <h3>Puissance d'un produit</h3>
+      <div class="formula">
+        (a × b)<sup>n</sup> = a<sup>n</sup> × b<sup>n</sup>
+      </div>
+
+      <div class="example">
+        <p>
+          <strong>Exemple:</strong> (2 × 3)<sup>4</sup> = 2<sup>4</sup> × 3<sup
+            >4</sup
+          >
+          = 16 × 81 = 1296
+        </p>
+      </div>
+
+      <h3>Puissance d'un quotient</h3>
+      <div class="formula">
+        (a ÷ b)<sup>n</sup> = a<sup>n</sup> ÷ b<sup>n</sup>
+      </div>
+
+      <div class="example">
+        <p>
+          <strong>Exemple:</strong> (8 ÷ 2)<sup>3</sup> = 8<sup>3</sup> ÷ 2<sup
+            >3</sup
+          >
+          = 512 ÷ 8 = 64
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="racines">
+      <h2>Les racines</h2>
+
+      <h3>Définition</h3>
+      <p>
+        La racine n-ième d'un nombre a est le nombre b tel que b<sup>n</sup> =
+        a.
+      </p>
+
+      <div class="formula"><sup>n</sup>√a = b ⟺ b<sup>n</sup> = a</div>
+
+      <p>La racine carrée est la racine d'ordre 2 et s'écrit simplement √a.</p>
+
+      <div class="image-container">
+        <img
+          src="http://localhost:8000/static/images/contenus_images/mathematiques/M3/racines/representation.jpg"
+          width="700"
+          height="400"
+          style="display: block; margin: 0 auto"
+        />
+        <p><em>Représentation géométrique d'une racine carrée</em></p>
+      </div>
+
+      <div class="example">
+        <p><strong>Exemple 1:</strong> √25 = 5 car 5<sup>2</sup> = 25</p>
+        <p>
+          <strong>Exemple 2:</strong> <sup>3</sup>√27 = 3 car 3<sup>3</sup> = 27
+        </p>
+        <p>
+          <strong>Exemple 3:</strong> <sup>4</sup>√16 = 2 car 2<sup>4</sup> = 16
+        </p>
+      </div>
+
+      <h3>Racines de nombres négatifs</h3>
+      <p>
+        Pour les racines d'ordre pair (2, 4, 6, ...), le radicande (nombre sous
+        la racine) doit être positif dans l'ensemble des nombres réels.
+      </p>
+      <p>
+        Pour les racines d'ordre impair (3, 5, 7, ...), le radicande peut être
+        négatif.
+      </p>
+
+      <div class="important">
+        <p>
+          <strong>Attention:</strong> √(-9) n'existe pas dans les nombres réels,
+          mais <sup>3</sup>√(-8) = -2 car (-2)<sup>3</sup> = -8
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="proprietes-racines">
+      <h2>Propriétés des racines</h2>
+
+      <h3>Racine d'un produit</h3>
+      <div class="formula">
+        <sup>n</sup>√(a × b) = <sup>n</sup>√a × <sup>n</sup>√b
+      </div>
+
+      <div class="example">
+        <p><strong>Exemple:</strong> √(4 × 9) = √4 × √9 = 2 × 3 = 6</p>
+      </div>
+
+      <h3>Racine d'un quotient</h3>
+      <div class="formula">
+        <sup>n</sup>√(a ÷ b) = <sup>n</sup>√a ÷ <sup>n</sup>√b (pour b > 0)
+      </div>
+
+      <div class="example">
+        <p><strong>Exemple:</strong> √(25 ÷ 9) = √25 ÷ √9 = 5 ÷ 3 = 5/3</p>
+      </div>
+
+      <h3>Racine d'une puissance</h3>
+      <div class="formula">
+        <sup>n</sup>√(a<sup>m</sup>) = (<sup>n</sup>√a)<sup>m</sup> = a<sup
+          >m/n</sup
+        >
+      </div>
+
+      <div class="example">
+        <p>
+          <strong>Exemple:</strong> <sup>3</sup>√(8<sup>2</sup>) =
+          (<sup>3</sup>√8)<sup>2</sup> = 2<sup>2</sup> = 4
+        </p>
+      </div>
+
+      <h3>Simplification des racines</h3>
+      <p>
+        On peut simplifier les racines en recherchant des facteurs parfaits.
+      </p>
+
+      <div class="formula">
+        <sup>n</sup>√(a<sup>n</sup> × b) = a × <sup>n</sup>√b
+      </div>
+
+      <div class="example">
+        <p>
+          <strong>Exemple:</strong> √(9 × 5) = √(3<sup>2</sup> × 5) = 3 × √5
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="racines-puissances">
+      <h2>Relation entre racines et puissances</h2>
+
+      <p>
+        Les racines peuvent s'exprimer sous forme de puissances fractionnaires
+        et vice versa.
+      </p>
+
+      <div class="formula"><sup>n</sup>√a = a<sup>1/n</sup></div>
+
+      <div class="example">
+        <p><strong>Exemple 1:</strong> √7 = 7<sup>1/2</sup></p>
+        <p><strong>Exemple 2:</strong> <sup>3</sup>√10 = 10<sup>1/3</sup></p>
+      </div>
+
+      <h3>Tableau récapitulatif</h3>
+      <table>
+        <tr>
+          <th>Notation avec racine</th>
+          <th>Notation avec puissance</th>
+          <th>Exemple</th>
+        </tr>
+        <tr>
+          <td>√a</td>
+          <td>a<sup>1/2</sup></td>
+          <td>√16 = 16<sup>1/2</sup> = 4</td>
+        </tr>
+        <tr>
+          <td><sup>3</sup>√a</td>
+          <td>a<sup>1/3</sup></td>
+          <td><sup>3</sup>√27 = 27<sup>1/3</sup> = 3</td>
+        </tr>
+        <tr>
+          <td><sup>n</sup>√a<sup>m</sup></td>
+          <td>a<sup>m/n</sup></td>
+          <td><sup>4</sup>√16<sup>3</sup> = 16<sup>3/4</sup> = 8</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section" id="applications">
+      <h2>Applications pratiques</h2>
+
+      <h3>Notation scientifique</h3>
+      <p>
+        Les puissances de 10 sont utilisées pour exprimer de très grands ou très
+        petits nombres sous forme de notation scientifique.
+      </p>
+
+      <div class="example">
+        <p><strong>Exemple:</strong> 5 300 000 = 5,3 × 10<sup>6</sup></p>
+        <p><strong>Exemple:</strong> 0,000072 = 7,2 × 10<sup>-5</sup></p>
+      </div>
+
+      <h3>Croissance exponentielle</h3>
+      <p>
+        Les puissances sont utilisées pour modéliser des phénomènes de
+        croissance exponentielle comme la croissance d'une population, les
+        intérêts composés, etc.
+      </p>
+
+      <div class="formula">A = P(1 + r)<sup>t</sup></div>
+
+      <p>Où:</p>
+      <ul>
+        <li>A est le montant final</li>
+        <li>P est le principal (montant initial)</li>
+        <li>r est le taux d'intérêt</li>
+        <li>t est le temps</li>
+      </ul>
+
+      <h3>Calcul de surfaces et volumes</h3>
+      <p>
+        Les puissances et racines sont essentielles pour calculer des surfaces
+        et des volumes.
+      </p>
+
+      <div class="example">
+        <p><strong>Aire d'un carré:</strong> A = côté<sup>2</sup></p>
+        <p><strong>Volume d'un cube:</strong> V = arête<sup>3</sup></p>
+        <p>
+          <strong>Côté d'un carré connaissant son aire:</strong> côté = √aire
+        </p>
+      </div>
+
+      <h3>Distance euclidienne</h3>
+      <p>
+        Pour calculer la distance entre deux points dans un plan ou dans
+        l'espace, on utilise la formule de la distance euclidienne qui fait
+        intervenir des puissances et des racines.
+      </p>
+
+      <div class="formula">
+        d = √[(x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> -
+        y<sub>1</sub>)<sup>2</sup>]
+      </div>
+    </div>
+
+    <div class="section" id="exercices">
+      <h2>Exercices</h2>
+
+      <div class="exercise">
+        <h4>Exercice 1: Calcul de puissances</h4>
+        <p>Calculez les expressions suivantes:</p>
+        <ol>
+          <li>
+            3<sup>4</sup> = <input type="text" /> <span class="feedback"></span>
+          </li>
+          <li>
+            2<sup>5</sup> = <input type="text" /> <span class="feedback"></span>
+          </li>
+          <li>
+            5<sup>3</sup> = <input type="text" /> <span class="feedback"></span>
+          </li>
+          <li>
+            10<sup>-2</sup> = <input type="text" />
+            <span class="feedback"></span>
+          </li>
+        </ol>
+        <button
+          class="btn"
+          onclick="verifierExercice(this, ['81', '32', '125', '0.01'])"
+        >
+          Vérifier les réponses
+        </button>
+        <button class="btn" onclick="toggleSolution('solution1')">
+          Voir la solution
+        </button>
+        <div id="solution1" class="exercise-solution" style="display: none">
+          <ol>
+            <li>3<sup>4</sup> = 81</li>
+            <li>2<sup>5</sup> = 32</li>
+            <li>5<sup>3</sup> = 125</li>
+            <li>10<sup>-2</sup> = 0,01</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <h4>Exercice 2: Simplification d'expressions avec des puissances</h4>
+        <p>Simplifiez les expressions suivantes:</p>
+        <ol>
+          <li>
+            2<sup>3</sup> × 2<sup>4</sup> = <input type="text" />
+            <span class="feedback"></span>
+          </li>
+          <li>
+            5<sup>6</sup> ÷ 5<sup>2</sup> = <input type="text" />
+            <span class="feedback"></span>
+          </li>
+          <li>
+            (3<sup>2</sup>)<sup>3</sup> = <input type="text" />
+            <span class="feedback"></span>
+          </li>
+          <li>
+            2<sup>4</sup> × 3<sup>2</sup> ÷ 2<sup>2</sup> =
+            <input type="text" /> <span class="feedback"></span>
+          </li>
+        </ol>
+        <button
+          class="btn"
+          onclick="verifierExercice(this, ['128', '625', '729', '36'])"
+        >
+          Vérifier les réponses
+        </button>
+        <button class="btn" onclick="toggleSolution('solution2')">
+          Voir la solution
+        </button>
+        <div id="solution2" class="exercise-solution" style="display: none">
+          <ol>
+            <li>128</li>
+            <li>625</li>
+            <li>729</li>
+            <li>36</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <h4>Exercice 3: Calcul de racines</h4>
+        <p>Calculez les expressions suivantes:</p>
+        <ol>
+          <li>√49 = <input type="text" /> <span class="feedback"></span></li>
+          <li>
+            <sup>3</sup>√125 = <input type="text" />
+            <span class="feedback"></span>
+          </li>
+          <li>√0,25 = <input type="text" /> <span class="feedback"></span></li>
+          <li>
+            <sup>4</sup>√81 = <input type="text" />
+            <span class="feedback"></span>
+          </li>
+        </ol>
+        <button
+          class="btn"
+          onclick="verifierExercice(this, ['7', '5', '0.5', '3'])"
+        >
+          Vérifier les réponses
+        </button>
+        <button class="btn" onclick="toggleSolution('solution3')">
+          Voir la solution
+        </button>
+        <div id="solution3" class="exercise-solution" style="display: none">
+          <ol>
+            <li>7</li>
+            <li>5</li>
+            <li>0,5</li>
+            <li>3</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <h4>Exercice 4: Simplification d'expressions avec des racines</h4>
+        <p>Simplifiez les expressions suivantes:</p>
+        <ol>
+          <li>
+            √(4 × 9) = <input type="text" /> <span class="feedback"></span>
+          </li>
+          <li>
+            <sup>3</sup>√(8 × 27) = <input type="text" />
+            <span class="feedback"></span>
+          </li>
+          <li>√72 = <input type="text" /> <span class="feedback"></span></li>
+          <li>
+            <sup>3</sup>√54 = <input type="text" />
+            <span class="feedback"></span>
+          </li>
+        </ol>
+        <button
+          class="btn"
+          onclick="verifierExercice(this, ['6', '6', '6√2', '3∛2'])"
+        >
+          Vérifier les réponses
+        </button>
+        <button class="btn" onclick="toggleSolution('solution4')">
+          Voir la solution
+        </button>
+        <div id="solution4" class="exercise-solution" style="display: none">
+          <ol>
+            <li>6</li>
+            <li>6</li>
+            <li>6√2</li>
+            <li>3∛2</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <h4>Exercice 5: Problème d'application</h4>
+        <p>
+          Un investissement de 2 000 € est placé à un taux d'intérêt annuel de
+          5% avec intérêts composés. Calculez la valeur de l'investissement
+          après 10 ans.
+        </p>
+        <p>
+          Valeur finale (€): <input type="text" />
+          <span class="feedback"></span>
+        </p>
+        <button
+          class="btn"
+          onclick="verifierExercice(this, ['3257.8', '3257,8'])"
+        >
+          Vérifier les réponses
+        </button>
+        <button class="btn" onclick="toggleSolution('solution5')">
+          Voir la solution
+        </button>
+        <div id="solution5" class="exercise-solution" style="display: none">
+          <p>A = 2 000 × 1,05<sup>10</sup> = 3 257,80 €</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleSolution(id) {
+        const el = document.getElementById(id);
+        el.style.display = el.style.display === "none" ? "block" : "none";
+      }
+
+      function verifierExercice(btn, bonnesReponses) {
+        const inputs = btn.parentElement.querySelectorAll("input");
+        const feedbacks = btn.parentElement.querySelectorAll(".feedback");
+
+        inputs.forEach((input, index) => {
+          const userInput = input.value.replace(",", ".").trim();
+          const bonneReponse = bonnesReponses[index];
+
+          if (!userInput) {
+            input.className = "incomplete";
+            feedbacks[index].textContent = "⛔";
+          } else if (bonneReponse.includes(userInput)) {
+            input.className = "correct";
+            feedbacks[index].textContent = "✅";
+          } else {
+            input.className = "incorrect";
+            feedbacks[index].textContent = "❌";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
