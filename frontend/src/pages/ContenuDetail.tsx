@@ -1,4 +1,4 @@
-// src/pages/ContenuDetail.tsx
+// src/pages/ContenuDetail.tsx   CONTENUS
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from "../services/api";

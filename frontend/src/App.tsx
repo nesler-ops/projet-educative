@@ -1,3 +1,4 @@
+// src/App.tsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -10,29 +11,70 @@ import DashboardEtudiant from "./pages/DashboardEtudiant";
 import DashboardAdmin from "./pages/DashboardAdmin";
 import ContenusParMatiere from "./pages/ContenusParMatiere";
 import ContenuDetail from "./pages/ContenuDetail";
+import TwoFAVerification from "./pages/TwoFAVerification";
+import EnrollFace from "./pages/EnrollFace";
+import Chatbox from "./pages/Chatbox";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
+        {/* públicas */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/dashboard/etudiant" element={<DashboardEtudiant />} />
-        <Route path="/dashboard/admin" element={<DashboardAdmin />} />
-        <Route path="/cours/:matiere" element={<ContenusParMatiere />} />
-        <Route path="/cours/:matiere/:slug" element={<ContenuDetail />} />
-
-        {/* ✅ Ruta protegida */}
+        <Route path="/twofa" element={<TwoFAVerification />} />
         <Route
           path="/dashboard"
           element={
-            <ProtectedRoute>
+            <>
               <Dashboard />
               <ZorinWidget />
+            </>
+          }
+        />
+        <Route path="/cours/:matiere" element={<ContenusParMatiere />} />
+        <Route path="/cours/:matiere/:slug" element={<ContenuDetail />} />
+
+        {/* privadas */}
+        <Route
+          path="/dashboard/etudiant"
+          element={
+            <ProtectedRoute>
+              <DashboardEtudiant />
             </ProtectedRoute>
           }
+        />
+        <Route
+          path="/dashboard/admin"
+          element={
+            <ProtectedRoute>
+              <DashboardAdmin />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/enroll-face"
+          element={
+            <ProtectedRoute>
+              <EnrollFace />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/chatbox"
+          element={
+            <ProtectedRoute>
+              <Chatbox />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* 404 */}
+        <Route
+          path="*"
+          element={<div style={{ padding: 20 }}>404 (App.tsx)</div>}
         />
       </Routes>
     </Router>

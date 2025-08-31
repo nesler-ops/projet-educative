@@ -10,7 +10,8 @@ interface Contenu {
   type: string;
   difficulte: string;
   lien: string;
-  slug: string; // ✅ nuevo campo
+  niveau: string;
+  slug: string;
 }
 
 export default function ContenusParMatiere() {
@@ -58,12 +59,12 @@ export default function ContenusParMatiere() {
               🔸 Difficulté : <strong>{contenu.difficulte}</strong>
             </p>
 
-            <Link
+            <a
               className="btn-green"
-              to={`/cours/${matiere}/${contenu.slug}`}
+              href={`http://localhost:8000/contenus/${matiere}/${contenu.niveau}/${contenu.slug}`}
             >
               Commencer
-            </Link>
+            </a>
           </div>
         ))}
       </div>

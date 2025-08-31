@@ -6,12 +6,12 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-/* Tarjetas de cursos */
+/* Tarjetas de cursos (3 por fila en escritorio) */
 .grid-cours {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  justify-content: center;
+  justify-items: center;
 }
 
 /* Cada carte de matière */
@@ -19,7 +19,8 @@
   background-color: #fff;
   border-radius: 16px;
   padding: 1.5rem;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
   display: flex;
@@ -79,13 +80,18 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .grid-cours {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-cours {
+    grid-template-columns: 1fr;
   }
 
   .card-cours {
-    width: 90%;
+    max-width: 90%;
   }
 }

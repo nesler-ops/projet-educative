@@ -4,9 +4,14 @@ import { Link } from "react-router-dom";
 
 export default function DashboardEtudiant() {
   const cours = [
-    { nom: "Français", icone: "📘", progression: 50 },
-    { nom: "Mathématiques", icone: "🔢", progression: 60 },
-    { nom: "Sciences", icone: "🔬", progression: 25 },
+    { nom: "Français", icone: "📘", progression: 50, matiere: "francais" },
+    {
+      nom: "Mathématiques",
+      icone: "🔢",
+      progression: 60,
+      matiere: "mathematiques",
+    },
+    { nom: "Sciences", icone: "🔬", progression: 25, matiere: "sciences" },
   ];
 
   return (
@@ -32,7 +37,7 @@ export default function DashboardEtudiant() {
               </div>
             </div>
 
-            <Link to={`/cours/${c.nom.toLowerCase()}`} className="btn-green">
+            <Link to={`/cours/${c.matiere}`} className="btn-green">
               Continuer
             </Link>
           </div>
