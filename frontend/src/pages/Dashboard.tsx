@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import api from "../services/api";
 
 function PublicDashboard() {
-  // Contenido visible para todos (sin sesión)
   return (
     <div className="container">
       <div className="card" style={{ maxWidth: 800 }}>

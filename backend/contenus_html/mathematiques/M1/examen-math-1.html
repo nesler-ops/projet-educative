@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen 1 – Mathématiques (Niveau 1)</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/mathematiques/M1/examen-math-1.css"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Examen 1 – Mathématiques (Niveau 1)</h1>
+      <p class="subtitle">
+        Les additions · Les soustractions · Les multiplications
+      </p>
+    </header>
+
+    <!-- SCORE GLOBAL -->
+    <section id="score-global" class="score-wrapper" aria-live="polite">
+      <div class="score-card">
+        <div class="score-left">
+          <div class="score-title">Score total</div>
+          <div class="score-subtitle">Somme de toutes les parties</div>
+        </div>
+        <div class="score-right">
+          <span id="score-value">0 / 0</span>
+          <button id="btn-recalc" class="btn" title="Recalculer le score">
+            Recalculer
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- PARTIE 1: ADDITIONS -->
+      <section class="exam-section" id="partie-additions">
+        <h2>Partie 1 — Additions</h2>
+        <p>Écrivez la <strong>somme</strong> dans chaque champ.</p>
+
+        <div class="exercise" data-section="additions">
+          <ol class="grid-2">
+            <li>
+              5 + 7 = <input type="number" class="num" data-answer="12" />
+            </li>
+            <li>
+              14 + 9 = <input type="number" class="num" data-answer="23" />
+            </li>
+            <li>
+              27 + 15 = <input type="number" class="num" data-answer="42" />
+            </li>
+            <li>
+              36 + 48 = <input type="number" class="num" data-answer="84" />
+            </li>
+            <li>
+              58 + 27 = <input type="number" class="num" data-answer="85" />
+            </li>
+            <li>
+              129 + 246 = <input type="number" class="num" data-answer="375" />
+            </li>
+            <li>
+              300 + 45 = <input type="number" class="num" data-answer="345" />
+            </li>
+            <li>
+              407 + 93 = <input type="number" class="num" data-answer="500" />
+            </li>
+            <li>
+              999 + 1 = <input type="number" class="num" data-answer="1000" />
+            </li>
+            <li>
+              1250 + 250 =
+              <input type="number" class="num" data-answer="1500" />
+            </li>
+          </ol>
+
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE 2: SOUSTRACTIONS -->
+      <section class="exam-section" id="partie-soustractions">
+        <h2>Partie 2 — Soustractions</h2>
+        <p>Écrivez la <strong>différence</strong> dans chaque champ.</p>
+
+        <div class="exercise" data-section="soustractions">
+          <ol class="grid-2">
+            <li>
+              15 - 7 = <input type="number" class="num" data-answer="8" />
+            </li>
+            <li>
+              23 - 9 = <input type="number" class="num" data-answer="14" />
+            </li>
+            <li>
+              52 - 27 = <input type="number" class="num" data-answer="25" />
+            </li>
+            <li>
+              100 - 67 = <input type="number" class="num" data-answer="33" />
+            </li>
+            <li>
+              83 - 57 = <input type="number" class="num" data-answer="26" />
+            </li>
+            <li>
+              325 - 168 = <input type="number" class="num" data-answer="157" />
+            </li>
+            <li>
+              1000 - 764 = <input type="number" class="num" data-answer="236" />
+            </li>
+            <li>
+              2053 - 1789 =
+              <input type="number" class="num" data-answer="264" />
+            </li>
+            <li>
+              45 - ☐ = 29 → ☐ =
+              <input type="number" class="num" data-answer="16" />
+            </li>
+            <li>
+              ☐ - 34 = 27 → ☐ =
+              <input type="number" class="num" data-answer="61" />
+            </li>
+          </ol>
+
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE 3: MULTIPLICATIONS -->
+      <section class="exam-section" id="partie-multiplications">
+        <h2>Partie 3 — Multiplications</h2>
+        <p>Écrivez le <strong>produit</strong> dans chaque champ.</p>
+
+        <div class="exercise" data-section="multiplications">
+          <ol class="grid-2">
+            <li>
+              7 × 8 = <input type="number" class="num" data-answer="56" />
+            </li>
+            <li>
+              9 × 6 = <input type="number" class="num" data-answer="54" />
+            </li>
+            <li>
+              4 × 5 = <input type="number" class="num" data-answer="20" />
+            </li>
+            <li>
+              3 × 9 = <input type="number" class="num" data-answer="27" />
+            </li>
+            <li>
+              8 × 4 = <input type="number" class="num" data-answer="32" />
+            </li>
+            <li>
+              45 × 7 = <input type="number" class="num" data-answer="315" />
+            </li>
+            <li>
+              12 × 12 = <input type="number" class="num" data-answer="144" />
+            </li>
+            <li>
+              123 × 5 = <input type="number" class="num" data-answer="615" />
+            </li>
+            <li>
+              25 × 16 = <input type="number" class="num" data-answer="400" />
+            </li>
+            <li>
+              78 × 12 = <input type="number" class="num" data-answer="936" />
+            </li>
+          </ol>
+
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE 4: PROBLÈMES CONCRETS -->
+      <section class="exam-section" id="partie-problemes">
+        <h2>Partie 4 — Problèmes concrets (tout numérique)</h2>
+        <p>
+          Résolvez et saisissez <strong>uniquement le nombre</strong> demandé.
+        </p>
+
+        <div class="exercise" data-section="problemes">
+          <ol>
+            <li>
+              Dans une classe, il y a 14 filles et 12 garçons. Combien d'élèves
+              au total ?
+              <input type="number" class="num" data-answer="26" />
+            </li>
+            <li>
+              Un lot a 25 billes et on en ajoute 17. Combien de billes
+              maintenant ?
+              <input type="number" class="num" data-answer="42" />
+            </li>
+            <li>
+              Un bus transporte 42 élèves. 8 bus identiques sont remplis. Nombre
+              d'élèves transportés :
+              <input type="number" class="num" data-answer="336" />
+            </li>
+            <li>
+              Un achat coûte 97 € et je paie avec 150 €. Quelle monnaie dois-je
+              recevoir ?
+              <input type="number" class="num" data-answer="53" />
+            </li>
+            <li>
+              Il est 14h45. À 17h20, combien de minutes se sont écoulées ?
+              <input type="number" class="num" data-answer="155" />
+            </li>
+          </ol>
+
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>© 2025 - Examen de mathématiques (Niveau 1)</p>
+    </footer>
+
+    <script>
+      // ---------- Utils ----------
+      const num = (v) => Number((v ?? "").toString().trim());
+      function verifySection(sectionEl) {
+        const res = sectionEl.querySelector(".resultat");
+        let total = 0,
+          ok = 0;
+
+        sectionEl.querySelectorAll("input.num[data-answer]").forEach((inp) => {
+          total++;
+          const user = num(inp.value);
+          const correct = num(inp.dataset.answer);
+          inp.classList.remove("correct", "incorrect", "empty");
+
+          // feedback message span
+          let msg = inp.nextElementSibling;
+          if (!msg || !msg.classList.contains("feedback-message")) {
+            msg = document.createElement("span");
+            msg.className = "feedback-message";
+            inp.insertAdjacentElement("afterend", msg);
+          }
+
+          if (inp.value === "") {
+            inp.classList.add("empty");
+            msg.textContent = "⚪ Vide";
+            msg.className = "feedback-message empty-message";
+          } else if (user === correct) {
+            ok++;
+            inp.classList.add("correct");
+            msg.textContent = "✅ Correct !";
+            msg.className = "feedback-message correct-message";
+          } else {
+            inp.classList.add("incorrect");
+            msg.textContent = "❌ Incorrect...";
+            msg.className = "feedback-message incorrect-message";
+          }
+        });
+
+        if (res) {
+          res.style.display = "block";
+          res.textContent = `Score : ${ok}/${total}`;
+          res.className =
+            "resultat " + (ok === total ? "correct" : "incorrect");
+        }
+        updateGlobalScore();
+      }
+
+      function showAnswers(sectionEl) {
+        sectionEl.querySelectorAll("input.num[data-answer]").forEach((inp) => {
+          inp.value = inp.dataset.answer || "";
+          // set as correct
+          inp.classList.remove("incorrect", "empty");
+          inp.classList.add("correct");
+          let msg = inp.nextElementSibling;
+          if (!msg || !msg.classList.contains("feedback-message")) {
+            msg = document.createElement("span");
+            msg.className = "feedback-message";
+            inp.insertAdjacentElement("afterend", msg);
+          }
+          msg.textContent = "✔ Réponse affichée";
+          msg.className = "feedback-message correct-message";
+        });
+        const res = sectionEl.querySelector(".resultat");
+        if (res) {
+          res.style.display = "block";
+          res.textContent = "Voici les réponses correctes.";
+          res.className = "resultat correct";
+        }
+        updateGlobalScore();
+      }
+
+      function resetSection(sectionEl) {
+        sectionEl.querySelectorAll("input.num").forEach((inp) => {
+          inp.value = "";
+          inp.classList.remove("correct", "incorrect", "empty");
+          const msg = inp.nextElementSibling;
+          if (
+            msg &&
+            msg.classList &&
+            msg.classList.contains("feedback-message")
+          ) {
+            msg.remove();
+          }
+        });
+        const res = sectionEl.querySelector(".resultat");
+        if (res) {
+          res.style.display = "none";
+          res.textContent = "";
+          res.className = "resultat";
+        }
+        updateGlobalScore();
+      }
+
+      // ---------- Score global ----------
+      function countAll() {
+        let total = 0,
+          ok = 0;
+        document.querySelectorAll("input.num[data-answer]").forEach((inp) => {
+          total++;
+          const user = num(inp.value);
+          const correct = num(inp.dataset.answer);
+          if (inp.value !== "" && user === correct) ok++;
+        });
+        return { total, ok };
+      }
+
+      function updateGlobalScore() {
+        const { total, ok } = countAll();
+        const label = document.getElementById("score-value");
+        label.textContent = `${ok} / ${total}`;
+        label.style.background =
+          ok === total ? "var(--success-100)" : "var(--primary-100)";
+      }
+
+      // ---------- Wiring ----------
+      document.querySelectorAll(".exercise").forEach((sec) => {
+        sec
+          .querySelector(".verifier")
+          ?.addEventListener("click", () => verifySection(sec));
+        sec
+          .querySelector(".montrer")
+          ?.addEventListener("click", () => showAnswers(sec));
+        sec
+          .querySelector(".reinitialiser")
+          ?.addEventListener("click", () => resetSection(sec));
+      });
+      document
+        .getElementById("btn-recalc")
+        ?.addEventListener("click", updateGlobalScore);
+
+      // Recalcular si el usuario escribe
+      document.addEventListener("input", (e) => {
+        if (e.target.matches("input.num")) updateGlobalScore();
+      });
+
+      // init
+      updateGlobalScore();
+    </script>
+  </body>
+</html>

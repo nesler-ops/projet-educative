@@ -7,7 +7,6 @@ export default function Navbar() {
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
-  // 🌤 Estado para clima y hora
   const [weather, setWeather] = useState<{
     temp: number;
     description: string;
@@ -15,7 +14,6 @@ export default function Navbar() {
   } | null>(null);
   const [time, setTime] = useState<string>("");
 
-  // ✅ Detectar token al cargar y en cambios de localStorage
   useEffect(() => {
     const checkAuth = () => {
       const token = localStorage.getItem("token");

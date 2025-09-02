@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen 2 – Sciences (Niveau 2)</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/sciences/S2/examen-science-2.css"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Examen 2 – Sciences (Niveau 2)</h1>
+      <p class="subtitle">
+        Les états de la matière · Les chaînes alimentaires · Le système solaire
+      </p>
+      <nav class="top-nav">
+        <a href="/sciences/S2/les-etats-de-la-m.html"
+          >Cours : États de la matière</a
+        >
+        <a href="/sciences/S2/les-chaines-alimentaires.html"
+          >Cours : Chaînes alimentaires</a
+        >
+        <a href="/sciences/S2/le-systeme-solaire.html"
+          >Cours : Système solaire</a
+        >
+      </nav>
+    </header>
+
+    <!-- SCORE GLOBAL -->
+    <section id="score-global" class="score-wrapper" aria-live="polite">
+      <div class="score-card">
+        <div>
+          <div class="score-title">Score total</div>
+          <div class="score-subtitle">Somme de toutes les parties</div>
+        </div>
+        <div class="score-right">
+          <span id="score-value">0 / 0</span>
+          <button id="btn-recalc" class="btn">Recalculer</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- PARTIE A : ÉTATS DE LA MATIÈRE -->
+      <section class="exam-section" id="partie-etats">
+        <h2>Partie A — Les états de la matière</h2>
+
+        <!-- A1: Changements d'état -->
+        <div class="exercise" data-section="etats-changements">
+          <h3>
+            A1. Associe chaque changement d’état avec la bonne transformation
+          </h3>
+          <table class="assoc assoc-wide">
+            <tr>
+              <th>Transformation</th>
+              <th>Nom du changement d’état</th>
+            </tr>
+            <tr>
+              <td>Solide → Liquide</td>
+              <td>
+                <select data-answer="fusion">
+                  <option value="">— Choisir —</option>
+                  <option value="fusion">Fusion</option>
+                  <option value="solidification">Solidification</option>
+                  <option value="vaporisation">Vaporisation</option>
+                  <option value="condensation">Condensation</option>
+                  <option value="sublimation">Sublimation</option>
+                  <option value="condensation solide">
+                    Condensation solide
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Liquide → Solide</td>
+              <td>
+                <select data-answer="solidification">
+                  <option value="">— Choisir —</option>
+                  <option value="fusion">Fusion</option>
+                  <option value="solidification">Solidification</option>
+                  <option value="vaporisation">Vaporisation</option>
+                  <option value="condensation">Condensation</option>
+                  <option value="sublimation">Sublimation</option>
+                  <option value="condensation solide">
+                    Condensation solide
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Liquide → Gaz</td>
+              <td>
+                <select data-answer="vaporisation">
+                  <option value="">— Choisir —</option>
+                  <option value="fusion">Fusion</option>
+                  <option value="solidification">Solidification</option>
+                  <option value="vaporisation">Vaporisation</option>
+                  <option value="condensation">Condensation</option>
+                  <option value="sublimation">Sublimation</option>
+                  <option value="condensation solide">
+                    Condensation solide
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Gaz → Liquide</td>
+              <td>
+                <select data-answer="condensation">
+                  <option value="">— Choisir —</option>
+                  <option value="fusion">Fusion</option>
+                  <option value="solidification">Solidification</option>
+                  <option value="vaporisation">Vaporisation</option>
+                  <option value="condensation">Condensation</option>
+                  <option value="sublimation">Sublimation</option>
+                  <option value="condensation solide">
+                    Condensation solide
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Solide → Gaz (direct)</td>
+              <td>
+                <select data-answer="sublimation">
+                  <option value="">— Choisir —</option>
+                  <option value="fusion">Fusion</option>
+                  <option value="solidification">Solidification</option>
+                  <option value="vaporisation">Vaporisation</option>
+                  <option value="condensation">Condensation</option>
+                  <option value="sublimation">Sublimation</option>
+                  <option value="condensation solide">
+                    Condensation solide
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Gaz → Solide (direct)</td>
+              <td>
+                <select data-answer="condensation solide">
+                  <option value="">— Choisir —</option>
+                  <option value="fusion">Fusion</option>
+                  <option value="solidification">Solidification</option>
+                  <option value="vaporisation">Vaporisation</option>
+                  <option value="condensation">Condensation</option>
+                  <option value="sublimation">Sublimation</option>
+                  <option value="condensation solide">
+                    Condensation solide
+                  </option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- A2: QCM propriétés/Exemples -->
+        <div class="exercise" data-section="etats-qcm">
+          <h3>A2. QCM</h3>
+          <ol class="qcm">
+            <li>
+              Quel état possède un <em>volume défini</em> mais pas de forme
+              propre ?
+              <div class="qcm-group" data-answer="liquide">
+                <label
+                  ><input type="radio" name="a2q1" value="solide" />
+                  Solide</label
+                >
+                <label
+                  ><input type="radio" name="a2q1" value="liquide" />
+                  Liquide</label
+                >
+                <label
+                  ><input type="radio" name="a2q1" value="gaz" /> Gaz</label
+                >
+                <label
+                  ><input type="radio" name="a2q1" value="plasma" />
+                  Plasma</label
+                >
+              </div>
+            </li>
+            <li>
+              La formation de givre sur une vitre correspond à…
+              <div class="qcm-group" data-answer="condensation solide">
+                <label
+                  ><input type="radio" name="a2q2" value="vaporisation" />
+                  Vaporisation</label
+                >
+                <label
+                  ><input type="radio" name="a2q2" value="condensation" />
+                  Condensation</label
+                >
+                <label
+                  ><input type="radio" name="a2q2" value="sublimation" />
+                  Sublimation</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="a2q2"
+                    value="condensation solide"
+                  />
+                  Condensation solide</label
+                >
+              </div>
+            </li>
+            <li>
+              Lequel est un exemple de <em>plasma</em> ?
+              <div class="qcm-group" data-answer="eclair">
+                <label
+                  ><input type="radio" name="a2q3" value="vapeur" /> Vapeur
+                  d’eau</label
+                >
+                <label
+                  ><input type="radio" name="a2q3" value="mercure" />
+                  Mercure</label
+                >
+                <label
+                  ><input type="radio" name="a2q3" value="eclair" /> Un
+                  éclair</label
+                >
+                <label
+                  ><input type="radio" name="a2q3" value="glace" /> Glace</label
+                >
+              </div>
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- A3: Vrai/Faux -->
+        <div class="exercise" data-section="etats-vf">
+          <h3>A3. Vrai / Faux</h3>
+          <ul class="vf">
+            <li>
+              Les gaz sont très compressibles.
+              <select data-answer="vrai">
+                <option value="">—</option>
+                <option value="vrai">Vrai</option>
+                <option value="faux">Faux</option>
+              </select>
+            </li>
+            <li>
+              Dans un solide, les particules se déplacent librement dans tout le
+              volume.
+              <select data-answer="faux">
+                <option value="">—</option>
+                <option value="vrai">Vrai</option>
+                <option value="faux">Faux</option>
+              </select>
+            </li>
+            <li>
+              La vaporisation correspond au passage liquide → gaz.
+              <select data-answer="vrai">
+                <option value="">—</option>
+                <option value="vrai">Vrai</option>
+                <option value="faux">Faux</option>
+              </select>
+            </li>
+            <li>
+              Le plasma est moins énergétique qu’un gaz.
+              <select data-answer="faux">
+                <option value="">—</option>
+                <option value="vrai">Vrai</option>
+                <option value="faux">Faux</option>
+              </select>
+            </li>
+          </ul>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE B : CHAÎNES ALIMENTAIRES -->
+      <section class="exam-section" id="partie-chaines">
+        <h2>Partie B — Les chaînes alimentaires</h2>
+
+        <!-- B1: Ordonner une chaîne -->
+        <div class="exercise" data-section="chaines-ordre">
+          <h3>B1. Remets dans l’ordre (du producteur au super-prédateur)</h3>
+          <ol class="sortable" id="ordre-chaine">
+            <li class="sortable-item" data-order="1">
+              <span class="badge">—</span> Herbe
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="2">
+              <span class="badge">—</span> Sauterelle
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="3">
+              <span class="badge">—</span> Grenouille
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="4">
+              <span class="badge">—</span> Couleuvre
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="5">
+              <span class="badge">—</span> Buse
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir l’ordre</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- B2: Classer organismes -->
+        <div class="exercise" data-section="chaines-classer">
+          <h3>
+            B2. Classe chaque organisme (producteur, consommateur
+            primaire/secondaire, décomposeur)
+          </h3>
+          <table class="assoc">
+            <tr>
+              <th>Organisme</th>
+              <th>Catégorie</th>
+            </tr>
+            <tr>
+              <td>Chêne</td>
+              <td>
+                <select data-answer="producteur">
+                  <option value="">— Choisir —</option>
+                  <option value="producteur">Producteur</option>
+                  <option value="consommateur primaire">
+                    Consommateur primaire
+                  </option>
+                  <option value="consommateur secondaire">
+                    Consommateur secondaire
+                  </option>
+                  <option value="décomposeur">Décomposeur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Lapin</td>
+              <td>
+                <select data-answer="consommateur primaire">
+                  <option value="">— Choisir —</option>
+                  <option value="producteur">Producteur</option>
+                  <option value="consommateur primaire">
+                    Consommateur primaire
+                  </option>
+                  <option value="consommateur secondaire">
+                    Consommateur secondaire
+                  </option>
+                  <option value="décomposeur">Décomposeur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Renard</td>
+              <td>
+                <select data-answer="consommateur secondaire">
+                  <option value="">— Choisir —</option>
+                  <option value="producteur">Producteur</option>
+                  <option value="consommateur primaire">
+                    Consommateur primaire
+                  </option>
+                  <option value="consommateur secondaire">
+                    Consommateur secondaire
+                  </option>
+                  <option value="décomposeur">Décomposeur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Algue</td>
+              <td>
+                <select data-answer="producteur">
+                  <option value="">— Choisir —</option>
+                  <option value="producteur">Producteur</option>
+                  <option value="consommateur primaire">
+                    Consommateur primaire
+                  </option>
+                  <option value="consommateur secondaire">
+                    Consommateur secondaire
+                  </option>
+                  <option value="décomposeur">Décomposeur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Hibou</td>
+              <td>
+                <select data-answer="consommateur secondaire">
+                  <option value="">— Choisir —</option>
+                  <option value="producteur">Producteur</option>
+                  <option value="consommateur primaire">
+                    Consommateur primaire
+                  </option>
+                  <option value="consommateur secondaire">
+                    Consommateur secondaire
+                  </option>
+                  <option value="décomposeur">Décomposeur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Champignon</td>
+              <td>
+                <select data-answer="décomposeur">
+                  <option value="">— Choisir —</option>
+                  <option value="producteur">Producteur</option>
+                  <option value="consommateur primaire">
+                    Consommateur primaire
+                  </option>
+                  <option value="consommateur secondaire">
+                    Consommateur secondaire
+                  </option>
+                  <option value="décomposeur">Décomposeur</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- B3: QCM -->
+        <div class="exercise" data-section="chaines-qcm">
+          <h3>B3. QCM</h3>
+          <ol class="qcm">
+            <li>
+              L’énergie circule dans une chaîne alimentaire principalement…
+              <div
+                class="qcm-group"
+                data-answer="du soleil aux producteurs puis aux consommateurs"
+              >
+                <label
+                  ><input
+                    type="radio"
+                    name="b3q1"
+                    value="des prédateurs vers les proies"
+                  />
+                  des prédateurs vers les proies</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="b3q1"
+                    value="du soleil aux producteurs puis aux consommateurs"
+                  />
+                  du soleil aux producteurs puis aux consommateurs</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="b3q1"
+                    value="des décomposeurs vers les producteurs"
+                  />
+                  des décomposeurs vers les producteurs</label
+                >
+              </div>
+            </li>
+            <li>
+              Un omnivore est un animal qui mange…
+              <div class="qcm-group" data-answer="des plantes et des animaux">
+                <label
+                  ><input
+                    type="radio"
+                    name="b3q2"
+                    value="uniquement des plantes"
+                  />
+                  uniquement des plantes</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="b3q2"
+                    value="des plantes et des animaux"
+                  />
+                  des plantes et des animaux</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="b3q2"
+                    value="uniquement des animaux"
+                  />
+                  uniquement des animaux</label
+                >
+              </div>
+            </li>
+            <li>
+              Si les herbivores d’un écosystème disparaissent, on s’attend à…
+              <div
+                class="qcm-group"
+                data-answer="une augmentation des plantes et une baisse des carnivores"
+              >
+                <label
+                  ><input type="radio" name="b3q3" value="aucun effet" /> aucun
+                  effet</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="b3q3"
+                    value="une augmentation des plantes et une baisse des carnivores"
+                  />
+                  une augmentation des plantes et une baisse des
+                  carnivores</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="b3q3"
+                    value="des carnivores qui deviennent producteurs"
+                  />
+                  des carnivores qui deviennent producteurs</label
+                >
+              </div>
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE C : SYSTÈME SOLAIRE -->
+      <section class="exam-section" id="partie-solaire">
+        <h2>Partie C — Le système solaire</h2>
+
+        <!-- C1: Ordonner les planètes par distance au Soleil -->
+        <div class="exercise" data-section="solaire-ordre">
+          <h3>
+            C1. Ordonne les planètes de la plus proche à la plus éloignée du
+            Soleil
+          </h3>
+          <ol class="sortable" id="ordre-planetes">
+            <li class="sortable-item" data-order="1">
+              <span class="badge">—</span> Mercure
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="2">
+              <span class="badge">—</span> Vénus
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="3">
+              <span class="badge">—</span> Terre
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="4">
+              <span class="badge">—</span> Mars
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="5">
+              <span class="badge">—</span> Jupiter
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="6">
+              <span class="badge">—</span> Saturne
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="7">
+              <span class="badge">—</span> Uranus
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+            <li class="sortable-item" data-order="8">
+              <span class="badge">—</span> Neptune
+              <div class="move-btns">
+                <button class="mini up">▲</button
+                ><button class="mini down">▼</button>
+              </div>
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir l’ordre</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C2: Associer planète ↔ caractéristique -->
+        <div class="exercise" data-section="solaire-assoc">
+          <h3>C2. Associe chaque caractéristique à la planète</h3>
+          <table class="assoc assoc-wide">
+            <tr>
+              <th>Caractéristique</th>
+              <th>Planète</th>
+            </tr>
+            <tr>
+              <td>Grande Tache Rouge</td>
+              <td>
+                <select data-answer="jupiter">
+                  <option value="">— Choisir —</option>
+                  <option value="mercure">Mercure</option>
+                  <option value="venus">Vénus</option>
+                  <option value="terre">Terre</option>
+                  <option value="mars">Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturne">Saturne</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Anneaux spectaculaires bien visibles</td>
+              <td>
+                <select data-answer="saturne">
+                  <option value="">— Choisir —</option>
+                  <option value="mercure">Mercure</option>
+                  <option value="venus">Vénus</option>
+                  <option value="terre">Terre</option>
+                  <option value="mars">Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturne">Saturne</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>« Planète rouge »</td>
+              <td>
+                <select data-answer="mars">
+                  <option value="">— Choisir —</option>
+                  <option value="mercure">Mercure</option>
+                  <option value="venus">Vénus</option>
+                  <option value="terre">Terre</option>
+                  <option value="mars">Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturne">Saturne</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Rotation « couchée » (axe très incliné)</td>
+              <td>
+                <select data-answer="uranus">
+                  <option value="">— Choisir —</option>
+                  <option value="mercure">Mercure</option>
+                  <option value="venus">Vénus</option>
+                  <option value="terre">Terre</option>
+                  <option value="mars">Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturne">Saturne</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Vents les plus rapides du système solaire</td>
+              <td>
+                <select data-answer="neptune">
+                  <option value="">— Choisir —</option>
+                  <option value="mercure">Mercure</option>
+                  <option value="venus">Vénus</option>
+                  <option value="terre">Terre</option>
+                  <option value="mars">Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturne">Saturne</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>La plus chaude (effet de serre extrême)</td>
+              <td>
+                <select data-answer="venus">
+                  <option value="">— Choisir —</option>
+                  <option value="mercure">Mercure</option>
+                  <option value="venus">Vénus</option>
+                  <option value="terre">Terre</option>
+                  <option value="mars">Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturne">Saturne</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>La plus proche du Soleil</td>
+              <td>
+                <select data-answer="mercure">
+                  <option value="">— Choisir —</option>
+                  <option value="mercure">Mercure</option>
+                  <option value="venus">Vénus</option>
+                  <option value="terre">Terre</option>
+                  <option value="mars">Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturne">Saturne</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Eau liquide en surface et vie connue</td>
+              <td>
+                <select data-answer="terre">
+                  <option value="">— Choisir —</option>
+                  <option value="mercure">Mercure</option>
+                  <option value="venus">Vénus</option>
+                  <option value="terre">Terre</option>
+                  <option value="mars">Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturne">Saturne</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C3: QCM -->
+        <div class="exercise" data-section="solaire-qcm">
+          <h3>C3. QCM</h3>
+          <ol class="qcm">
+            <li>
+              Combien de planètes <em>telluriques</em> y a-t-il ?
+              <div class="qcm-group" data-answer="4">
+                <label><input type="radio" name="c3q1" value="3" /> 3</label>
+                <label><input type="radio" name="c3q1" value="4" /> 4</label>
+                <label><input type="radio" name="c3q1" value="5" /> 5</label>
+              </div>
+            </li>
+            <li>
+              Quelle planète possède la Grande Tache Rouge ?
+              <div class="qcm-group" data-answer="jupiter">
+                <label
+                  ><input type="radio" name="c3q2" value="mars" /> Mars</label
+                >
+                <label
+                  ><input type="radio" name="c3q2" value="jupiter" />
+                  Jupiter</label
+                >
+                <label
+                  ><input type="radio" name="c3q2" value="saturne" />
+                  Saturne</label
+                >
+              </div>
+            </li>
+            <li>
+              Quel objet n’est plus classé « planète » depuis 2006 ?
+              <div class="qcm-group" data-answer="pluton">
+                <label
+                  ><input type="radio" name="c3q3" value="ceres" /> Cérès</label
+                >
+                <label
+                  ><input type="radio" name="c3q3" value="pluton" />
+                  Pluton</label
+                >
+                <label
+                  ><input type="radio" name="c3q3" value="eris" /> Éris</label
+                >
+              </div>
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>© 2025 - Examen de sciences (Niveau 2)</p>
+    </footer>
+
+    <script>
+      // ==== Utils ====
+      const stripAcc = (s) =>
+        (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const norm = (s) =>
+        stripAcc(String(s).trim().toLowerCase().replace(/\s+/g, " "));
+      function markEl(el, state) {
+        el.classList.remove("correct", "incorrect", "empty");
+        el.classList.add(state);
+      }
+      function updateBadgesOrder(list) {
+        list.querySelectorAll(".sortable-item").forEach((li, i) => {
+          const b = li.querySelector(".badge");
+          if (b) b.textContent = i + 1;
+        });
+      }
+
+      // ==== Vérifs génériques ====
+      function verifyOrder(section, listSelector) {
+        const list = section.querySelector(listSelector);
+        let ok = 0,
+          tot = 0;
+        Array.from(list.querySelectorAll(".sortable-item")).forEach(
+          (li, idx) => {
+            tot++;
+            const should = Number(li.dataset.order);
+            if (idx + 1 === should) {
+              ok++;
+              markEl(li, "correct");
+            } else markEl(li, "incorrect");
+          }
+        );
+        const res = section.querySelector(".resultat");
+        res.style.display = "block";
+        res.textContent = `Score : ${ok}/${tot}`;
+        res.className = "resultat " + (ok === tot ? "correct" : "incorrect");
+        updateGlobalScore();
+      }
+      function showOrder(section, listSelector) {
+        const list = section.querySelector(listSelector);
+        const items = Array.from(list.querySelectorAll(".sortable-item"));
+        items.sort((a, b) => Number(a.dataset.order) - Number(b.dataset.order));
+        items.forEach((el) => {
+          list.appendChild(el);
+          markEl(el, "correct");
+        });
+        updateBadgesOrder(list);
+        const res = section.querySelector(".resultat");
+        res.style.display = "block";
+        res.textContent = "Voici l’ordre correct.";
+        res.className = "resultat correct";
+        updateGlobalScore();
+      }
+      function resetOrder(section, listSelector) {
+        const list = section.querySelector(listSelector);
+        const items = Array.from(list.querySelectorAll(".sortable-item"));
+        for (let i = items.length - 1; i > 0; i--) {
+          const j = (Math.random() * (i + 1)) | 0;
+          [items[i], items[j]] = [items[j], items[i]];
+        }
+        items.forEach((el) => {
+          el.classList.remove("correct", "incorrect", "empty");
+          list.appendChild(el);
+        });
+        updateBadgesOrder(list);
+        const res = section.querySelector(".resultat");
+        res.style.display = "none";
+        res.textContent = "";
+        res.className = "resultat";
+        updateGlobalScore();
+      }
+
+      function verifyQCM(section) {
+        let ok = 0,
+          tot = 0;
+        section.querySelectorAll(".qcm-group").forEach((group) => {
+          tot++;
+          const ans = group.dataset.answer;
+          const checked = group.querySelector("input[type=radio]:checked");
+          if (!checked) {
+            markEl(group, "empty");
+            return;
+          }
+          if (norm(checked.value) === norm(ans)) {
+            ok++;
+            markEl(group, "correct");
+          } else markEl(group, "incorrect");
+        });
+        const res = section.querySelector(".resultat");
+        res.style.display = "block";
+        res.textContent = `Score : ${ok}/${tot}`;
+        res.className = "resultat " + (ok === tot ? "correct" : "incorrect");
+        updateGlobalScore();
+      }
+      function showQCM(section) {
+        section.querySelectorAll(".qcm-group").forEach((group) => {
+          const ans = group.dataset.answer;
+          const input = group.querySelector(
+            `input[value="${CSS.escape(ans)}"]`
+          );
+          if (input) input.checked = true;
+          markEl(group, "correct");
+        });
+        const res = section.querySelector(".resultat");
+        res.style.display = "block";
+        res.textContent = "Réponses affichées.";
+        res.className = "resultat correct";
+        updateGlobalScore();
+      }
+      function resetQCM(section) {
+        section
+          .querySelectorAll("input[type=radio]")
+          .forEach((i) => (i.checked = false));
+        section
+          .querySelectorAll(".qcm-group")
+          .forEach((g) => g.classList.remove("correct", "incorrect", "empty"));
+        const res = section.querySelector(".resultat");
+        res.style.display = "none";
+        res.textContent = "";
+        res.className = "resultat";
+        updateGlobalScore();
+      }
+
+      function verifySelects(section) {
+        let ok = 0,
+          tot = 0;
+        section.querySelectorAll("select[data-answer]").forEach((sel) => {
+          tot++;
+          if (sel.value === "") {
+            markEl(sel, "empty");
+            return;
+          }
+          if (norm(sel.value) === norm(sel.dataset.answer)) {
+            ok++;
+            markEl(sel, "correct");
+          } else markEl(sel, "incorrect");
+        });
+        const res = section.querySelector(".resultat");
+        res.style.display = "block";
+        res.textContent = `Score : ${ok}/${tot}`;
+        res.className = "resultat " + (ok === tot ? "correct" : "incorrect");
+        updateGlobalScore();
+      }
+      function showSelects(section) {
+        section.querySelectorAll("select[data-answer]").forEach((sel) => {
+          sel.value = sel.dataset.answer;
+          markEl(sel, "correct");
+        });
+        const res = section.querySelector(".resultat");
+        res.style.display = "block";
+        res.textContent = "Réponses affichées.";
+        res.className = "resultat correct";
+        updateGlobalScore();
+      }
+      function resetSelects(section) {
+        section.querySelectorAll("select[data-answer]").forEach((sel) => {
+          sel.value = "";
+          sel.classList.remove("correct", "incorrect", "empty");
+        });
+        const res = section.querySelector(".resultat");
+        res.style.display = "none";
+        res.textContent = "";
+        res.className = "resultat";
+        updateGlobalScore();
+      }
+
+      // ==== Global score ====
+      function countAll() {
+        let total = 0,
+          ok = 0;
+        document.querySelectorAll(".sortable-item").forEach((li) => {
+          total++;
+          if (li.classList.contains("correct")) ok++;
+        });
+        document.querySelectorAll(".qcm-group").forEach((g) => {
+          total++;
+          if (g.classList.contains("correct")) ok++;
+        });
+        document.querySelectorAll("select[data-answer]").forEach((sel) => {
+          total++;
+          if (sel.classList.contains("correct")) ok++;
+        });
+        return { total, ok };
+      }
+      function updateGlobalScore() {
+        const { total, ok } = countAll();
+        const label = document.getElementById("score-value");
+        label.textContent = `${ok} / ${total}`;
+        label.style.background =
+          ok === total ? "var(--ok-bg)" : "var(--hint-bg)";
+      }
+
+      // ==== Wiring ====
+      // Move buttons for order lists
+      function wireMoveButtons(listId) {
+        const list = document.getElementById(listId);
+        list.querySelectorAll(".mini.up").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const li = btn.closest(".sortable-item");
+            const prev = li.previousElementSibling;
+            if (prev) li.parentElement.insertBefore(li, prev);
+            updateBadgesOrder(list);
+          });
+        });
+        list.querySelectorAll(".mini.down").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const li = btn.closest(".sortable-item");
+            const next = li.nextElementSibling;
+            if (next) li.parentElement.insertBefore(next, li);
+            updateBadgesOrder(list);
+          });
+        });
+        updateBadgesOrder(list);
+      }
+      wireMoveButtons("ordre-chaine");
+      wireMoveButtons("ordre-planetes");
+
+      // Buttons per exercise
+      document.querySelectorAll(".exercise").forEach((sec) => {
+        const id = sec.dataset.section || "";
+        sec.querySelector(".verifier")?.addEventListener("click", () => {
+          if (id === "chaines-ordre") verifyOrder(sec, "#ordre-chaine");
+          else if (id === "solaire-ordre") verifyOrder(sec, "#ordre-planetes");
+          else if (id.endsWith("qcm")) verifyQCM(sec);
+          else verifySelects(sec);
+        });
+        sec.querySelector(".montrer")?.addEventListener("click", () => {
+          if (id === "chaines-ordre") showOrder(sec, "#ordre-chaine");
+          else if (id === "solaire-ordre") showOrder(sec, "#ordre-planetes");
+          else if (id.endsWith("qcm")) showQCM(sec);
+          else showSelects(sec);
+        });
+        sec.querySelector(".reinitialiser")?.addEventListener("click", () => {
+          if (id === "chaines-ordre") resetOrder(sec, "#ordre-chaine");
+          else if (id === "solaire-ordre") resetOrder(sec, "#ordre-planetes");
+          else if (id.endsWith("qcm")) resetQCM(sec);
+          else resetSelects(sec);
+        });
+      });
+
+      document
+        .getElementById("btn-recalc")
+        ?.addEventListener("click", updateGlobalScore);
+      document.addEventListener("change", (e) => {
+        if (e.target.matches("input, select")) updateGlobalScore();
+      });
+      updateGlobalScore();
+    </script>
+  </body>
+</html>

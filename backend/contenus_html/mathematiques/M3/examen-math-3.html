@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen 3 – Mathématiques (Niveau 3)</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/mathematiques/M3/examen-math-3.css"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Examen 3 – Mathématiques (Niveau 3)</h1>
+      <p class="subtitle">
+        Équations à deux inconnues · Pourcentages · Puissances & racines
+      </p>
+      <nav class="top-nav">
+        <a href="/mathematiques/M3/les-equations-a-deux-inconnues.html"
+          >Cours : Équations à deux inconnues</a
+        >
+        <a href="/mathematiques/M3/les-pourcentages.html"
+          >Cours : Pourcentages</a
+        >
+        <a href="/mathematiques/M3/les-puissances-et-racines.html"
+          >Cours : Puissances & racines</a
+        >
+      </nav>
+    </header>
+
+    <!-- SCORE GLOBAL -->
+    <section id="score-global" class="score-wrapper" aria-live="polite">
+      <div class="score-card">
+        <div>
+          <div class="score-title">Score total</div>
+          <div class="score-subtitle">Somme de toutes les parties</div>
+        </div>
+        <div class="score-right">
+          <span id="score-value">0 / 0</span>
+          <button id="btn-recalc" class="btn">Recalculer</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- PARTIE A : SYSTÈMES À DEUX INCONNUES -->
+      <section class="exam-section" id="partie-systemes">
+        <h2>Partie A — Systèmes d’équations à deux inconnues</h2>
+
+        <!-- A1: Résolution directe -->
+        <div class="exercise" data-section="sys-direct">
+          <h3>A1. Résoudre les systèmes (donnez x et y)</h3>
+          <ol class="grid-1">
+            <li>
+              { 2x + y = 5 ; x − y = 1 } → x =
+              <input class="pair-x" data-x="2" /> , y =
+              <input class="pair-y" data-y="1" />
+            </li>
+            <li>
+              { 3x + 2y = 7 ; x − y = 2 } → x =
+              <input class="pair-x" data-x="2.2" data-x-alt="11/5" /> , y =
+              <input class="pair-y" data-y="0.2" data-y-alt="1/5" />
+            </li>
+            <li>
+              { 4x + 5y = 13 ; 2x − 3y = −5 } → x =
+              <input class="pair-x" data-x="0.6363636364" data-x-alt="7/11" /> ,
+              y =
+              <input class="pair-y" data-y="2.0909090909" data-y-alt="23/11" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- A2: Application concrète -->
+        <div class="exercise" data-section="sys-application">
+          <h3>A2. Application</h3>
+          <p>
+            Un cinéma vend 200 billets pour 1650€. Plein tarif : 9€, réduit :
+            6€.
+          </p>
+          <p>Nombre de billets plein tarif et réduits ?</p>
+          <ol class="grid-1">
+            <li>
+              x (plein tarif) = <input class="pair-x" data-x="150" /> , y
+              (réduit) = <input class="pair-y" data-y="50" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- A3: Nature du système -->
+        <div class="exercise" data-section="sys-nature">
+          <h3>
+            A3. Nature du système (répondez : <em>unique</em>,
+            <em>infinité</em> ou <em>aucune</em>)
+          </h3>
+          <ol class="grid-2">
+            <li>
+              { 2x + 3y = 6 ; 4x + 6y = 12 } →
+              <input
+                class="txt"
+                data-answer-text="infinité"
+                placeholder="nature"
+              />
+            </li>
+            <li>
+              { 2x + 3y = 6 ; 4x + 6y = 8 } →
+              <input
+                class="txt"
+                data-answer-text="aucune"
+                placeholder="nature"
+              />
+            </li>
+            <li>
+              { x + 2y = 7 ; 3x − y = 4 } →
+              <input
+                class="txt"
+                data-answer-text="unique"
+                placeholder="nature"
+              />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE B : POURCENTAGES -->
+      <section class="exam-section" id="partie-pourcentages">
+        <h2>Partie B — Pourcentages</h2>
+
+        <div class="exercise" data-section="pct-base">
+          <h3>B1. Calculs de base</h3>
+          <ol class="grid-2">
+            <li>
+              45% de 200 =
+              <input class="txt" data-answer="90" data-mode="number" />
+            </li>
+            <li>
+              Si 12% de x = 36, alors x =
+              <input class="txt" data-answer="300" data-mode="number" />
+            </li>
+            <li>
+              75€ augmente de 8% → nouveau prix =
+              <input class="txt" data-answer="81" data-mode="number" />
+            </li>
+            <li>
+              65€ → 48,75€ : réduction (%) =
+              <input
+                class="txt"
+                data-answer="25"
+                data-mode="percent-or-number"
+                placeholder="ex: 25 ou 25%"
+              />
+            </li>
+            <li>
+              +20% puis −10% → évolution globale (%) =
+              <input
+                class="txt"
+                data-answer="8"
+                data-mode="percent-or-number"
+              />
+            </li>
+            <li>
+              80€ HT, TVA 20% → TTC =
+              <input class="txt" data-answer="96" data-mode="number" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE C : PUISSANCES & RACINES -->
+      <section class="exam-section" id="partie-puissances">
+        <h2>Partie C — Puissances et racines</h2>
+
+        <!-- C1: Calculs -->
+        <div class="exercise" data-section="pow-calc">
+          <h3>C1. Calculs</h3>
+          <ol class="grid-2">
+            <li>
+              3<sup>4</sup> =
+              <input class="txt" data-answer="81" data-mode="number" />
+            </li>
+            <li>
+              2<sup>5</sup> =
+              <input class="txt" data-answer="32" data-mode="number" />
+            </li>
+            <li>
+              5<sup>3</sup> =
+              <input class="txt" data-answer="125" data-mode="number" />
+            </li>
+            <li>
+              10<sup>-2</sup> =
+              <input class="txt" data-answer="0.01" data-mode="number" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C2: Simplifications exactes (surds) -->
+        <div class="exercise" data-section="rad-simplify">
+          <h3>
+            C2. Simplifications (réponse exacte acceptée: 6√2, 3∛2…) ou valeur
+            numérique équivalente
+          </h3>
+          <ol class="grid-2">
+            <li>
+              √72 =
+              <input class="txt" data-answer="6√2" data-mode="surd-or-number" />
+            </li>
+            <li>
+              √50 =
+              <input class="txt" data-answer="5√2" data-mode="surd-or-number" />
+            </li>
+            <li>
+              <sup>3</sup>√54 =
+              <input class="txt" data-answer="3∛2" data-mode="surd-or-number" />
+            </li>
+            <li>
+              √48 =
+              <input class="txt" data-answer="4√3" data-mode="surd-or-number" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C3: Notation scientifique -->
+        <div class="exercise" data-section="sci-notation">
+          <h3>
+            C3. Notation scientifique (accepte 5.3e6 ou 5,3e6 ou 5.3×10^6)
+          </h3>
+          <ol class="grid-2">
+            <li>
+              5 300 000 =
+              <input class="txt" data-answer="5300000" data-mode="scientific" />
+            </li>
+            <li>
+              0,000072 =
+              <input
+                class="txt"
+                data-answer="0.000072"
+                data-mode="scientific"
+              />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C4: Problème d’intérêts composés -->
+        <div class="exercise" data-section="compound">
+          <h3>C4. Intérêts composés</h3>
+          <p>
+            2 000 € à 5% annuel pendant 10 ans (intérêts composés). Montant
+            final ?
+          </p>
+          <ol class="grid-1">
+            <li>
+              A =
+              <input
+                class="txt"
+                data-answer="3257.789"
+                data-mode="number"
+                data-tol="0.05"
+              />
+              €
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir la réponse</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>© 2025 - Examen de mathématiques (Niveau 3)</p>
+    </footer>
+
+    <script>
+      // ===== Helpers =====
+      const DEFAULT_TOL = 1e-6;
+      const toNum = (s) =>
+        Number((s ?? "").toString().trim().replace(",", "."));
+      const clampTol = (inp) => {
+        const a = Number(inp?.dataset?.tol);
+        return Number.isFinite(a) ? Math.max(1e-12, a) : DEFAULT_TOL;
+      };
+      const approxEqual = (a, b, tol = DEFAULT_TOL) => Math.abs(a - b) <= tol;
+
+      function gcd(a, b) {
+        a = Math.abs(a);
+        b = Math.abs(b);
+        while (b) {
+          [a, b] = [b, a % b];
+        }
+        return a || 1;
+      }
+
+      function parseNumberOrFraction(raw) {
+        if (!raw) return { ok: false };
+        let s = raw.trim().replace(/[，]/g, ",");
+        // strip percent suffix if present
+        if (/%$/.test(s)) s = s.slice(0, -1);
+        // mixed number "a b/c"
+        let m = s.match(/^([+-]?\d+)\s+(\d+)\s*\/\s*(\d+)$/);
+        if (m) {
+          const A = parseInt(m[1], 10),
+            B = parseInt(m[2], 10),
+            C = parseInt(m[3], 10);
+          if (C === 0) return { ok: false };
+          const sign = A < 0 ? -1 : 1;
+          return { ok: true, val: A + sign * (B / C) };
+        }
+        // fraction "a/b"
+        m = s.match(/^([+-]?\d+)\s*\/\s*([+-]?\d+)$/);
+        if (m) {
+          const a = parseInt(m[1], 10),
+            b = parseInt(m[2], 10);
+          if (b === 0) return { ok: false };
+          return { ok: true, val: a / b };
+        }
+        // plain number (e or .)
+        const v = Number(s.replace(",", "."));
+        if (Number.isFinite(v)) return { ok: true, val: v };
+        return { ok: false };
+      }
+
+      // Evaluate simple surd expressions like "6√2", "3∛2", "5√(18)", also handles "×10^"
+      function evalLike(raw) {
+        if (!raw) return { ok: false };
+        let s = raw.trim().replace(/\s+/g, "");
+        s = s.replace(",", ".").replace(/·|×/g, "*");
+        if (/%$/.test(s)) s = s.slice(0, -1); // drop trailing %
+        // try direct number
+        const direct = Number(s);
+        if (Number.isFinite(direct)) return { ok: true, val: direct };
+
+        // scientific like "5.3*10^6"
+        const sci = s.match(/^([+-]?\d+(?:\.\d+)?)\*?10\^([+-]?\d+)$/i);
+        if (sci) {
+          return {
+            ok: true,
+            val: Number(sci[1]) * Math.pow(10, Number(sci[2])),
+          };
+        }
+
+        // fraction overall
+        const frac = parseNumberOrFraction(s);
+        if (frac.ok) return frac;
+
+        // "k√n" (square root)
+        let m = s.match(
+          /^([+-]?\d*(?:\.\d+)?)?\u221A\(?([+-]?\d+(?:\.\d+)?)\)?$/
+        ); // √
+        if (m) {
+          const k = m[1] === "" || m[1] == null ? 1 : Number(m[1]);
+          const n = Number(m[2]);
+          if (Number.isFinite(k) && Number.isFinite(n))
+            return { ok: true, val: k * Math.sqrt(n) };
+        }
+        // "k∛n" (cube root)
+        m = s.match(/^([+-]?\d*(?:\.\d+)?)?\u221B\(?([+-]?\d+(?:\.\d+)?)\)?$/); // ∛
+        if (m) {
+          const k = m[1] === "" || m[1] == null ? 1 : Number(m[1]);
+          const n = Number(m[2]);
+          if (Number.isFinite(k) && Number.isFinite(n))
+            return { ok: true, val: k * Math.cbrt(n) };
+        }
+        // sqrt(...) / cbrt(...) forms
+        try {
+          const js = s
+            .replace(/sqrt\(/gi, "Math.sqrt(")
+            .replace(/cbrt\(/gi, "Math.cbrt(")
+            .replace(/\^/g, "**");
+          // eslint-disable-next-line no-new-func
+          const v = Function(`"use strict"; return (${js});`)();
+          if (Number.isFinite(v)) return { ok: true, val: v };
+        } catch (_) {}
+
+        return { ok: false };
+      }
+
+      function mark(input, state, msg) {
+        input.classList.remove("correct", "incorrect", "empty");
+        input.classList.add(state);
+        let fb = input.nextElementSibling;
+        if (!fb || !fb.classList.contains("feedback-message")) {
+          fb = document.createElement("span");
+          fb.className = "feedback-message";
+          input.insertAdjacentElement("afterend", fb);
+        }
+        fb.textContent = msg || "";
+        fb.className =
+          "feedback-message " +
+          (state === "correct"
+            ? "correct-message"
+            : state === "empty"
+            ? "empty-message"
+            : "incorrect-message");
+      }
+
+      // ===== Vérifs par section =====
+      function verifyPairsXY(section) {
+        let ok = 0,
+          tot = 0;
+        section.querySelectorAll("li").forEach((li) => {
+          const xinp = li.querySelector("input.pair-x");
+          const yinp = li.querySelector("input.pair-y");
+          if (!xinp || !yinp) return;
+          tot += 2;
+          const tolx = clampTol(xinp),
+            toly = clampTol(yinp);
+
+          // expected
+          const expX = evalLike(xinp.dataset.x)?.val ?? toNum(xinp.dataset.x);
+          const expY = evalLike(yinp.dataset.y)?.val ?? toNum(yinp.dataset.y);
+
+          // alts (fractions possible)
+          const altX = xinp.dataset.xAlt
+            ? evalLike(xinp.dataset.xAlt).val
+            : null;
+          const altY = yinp.dataset.yAlt
+            ? evalLike(yinp.dataset.yAlt).val
+            : null;
+
+          const ux = xinp.value.trim();
+          const uy = yinp.value.trim();
+
+          if (ux === "") {
+            mark(xinp, "empty", "⛔");
+          } else {
+            const vx = evalLike(ux).ok
+              ? evalLike(ux).val
+              : parseNumberOrFraction(ux).val;
+            if (
+              Number.isFinite(vx) &&
+              (approxEqual(vx, expX, tolx) ||
+                (altX != null && approxEqual(vx, altX, tolx)))
+            ) {
+              ok++;
+              mark(xinp, "correct", "✅");
+            } else mark(xinp, "incorrect", "❌");
+          }
+
+          if (uy === "") {
+            mark(yinp, "empty", "⛔");
+          } else {
+            const vy = evalLike(uy).ok
+              ? evalLike(uy).val
+              : parseNumberOrFraction(uy).val;
+            if (
+              Number.isFinite(vy) &&
+              (approxEqual(vy, expY, toly) ||
+                (altY != null && approxEqual(vy, altY, toly)))
+            ) {
+              ok++;
+              mark(yinp, "correct", "✅");
+            } else mark(yinp, "incorrect", "❌");
+          }
+        });
+        return { ok, tot };
+      }
+
+      function verifyNature(section) {
+        let ok = 0,
+          tot = 0;
+        section
+          .querySelectorAll("input.txt[data-answer-text]")
+          .forEach((inp) => {
+            tot++;
+            const exp = (inp.dataset.answerText || "").toLowerCase();
+            const user = (inp.value || "").toLowerCase().trim();
+            if (!user) {
+              mark(inp, "empty", "⛔");
+            } else if (user === exp) {
+              ok++;
+              mark(inp, "correct", "✅");
+            } else {
+              mark(inp, "incorrect", "❌");
+            }
+          });
+        return { ok, tot };
+      }
+
+      function verifyNumbers(section) {
+        let ok = 0,
+          tot = 0;
+        section.querySelectorAll("input.txt[data-mode]").forEach((inp) => {
+          const mode = inp.dataset.mode;
+          const raw = (inp.value || "").trim();
+          const tol = clampTol(inp);
+          const expRaw = inp.dataset.answer;
+          if (expRaw == null) return;
+
+          tot++;
+
+          if (raw === "") {
+            mark(inp, "empty", "⛔");
+            return;
+          }
+
+          // expected numeric
+          let exp = evalLike(expRaw);
+          if (!exp.ok) exp = parseNumberOrFraction(expRaw);
+          const expected = exp.val;
+
+          // user numeric according to mode
+          let u;
+          if (mode === "percent-or-number") {
+            const s = raw.replace(/\s+/g, "");
+            const stripped = /%$/.test(s) ? s.slice(0, -1) : s;
+            u = evalLike(stripped);
+            if (!u.ok) u = parseNumberOrFraction(stripped);
+          } else if (
+            mode === "surd-or-number" ||
+            mode === "scientific" ||
+            mode === "number"
+          ) {
+            u = evalLike(raw);
+            if (!u.ok) u = parseNumberOrFraction(raw);
+          } else {
+            u = parseNumberOrFraction(raw);
+          }
+
+          if (
+            u.ok &&
+            Number.isFinite(u.val) &&
+            Number.isFinite(expected) &&
+            approxEqual(u.val, expected, tol)
+          ) {
+            ok++;
+            mark(inp, "correct", "✅");
+          } else {
+            mark(inp, "incorrect", "❌");
+          }
+        });
+        return { ok, tot };
+      }
+
+      function verifySection(section) {
+        const res = section.querySelector(".resultat");
+        let total = 0,
+          success = 0;
+
+        if (section.dataset.section?.startsWith("sys-")) {
+          const r1 = verifyPairsXY(section);
+          success += r1.ok;
+          total += r1.tot;
+          if (section.dataset.section === "sys-nature") {
+            const r2 = verifyNature(section);
+            success += r2.ok;
+            total += r2.tot;
+          }
+        } else {
+          const r = verifyNumbers(section);
+          success += r.ok;
+          total += r.tot;
+        }
+
+        if (res) {
+          res.style.display = "block";
+          res.textContent = `Score : ${success}/${total}`;
+          res.className =
+            "resultat " + (success === total ? "correct" : "incorrect");
+        }
+        updateGlobalScore();
+      }
+
+      function showAnswers(section) {
+        // pairs
+        section.querySelectorAll("input.pair-x[data-x]").forEach((inp) => {
+          inp.value = inp.dataset.xAlt || inp.dataset.x;
+          mark(inp, "correct", "✔");
+        });
+        section.querySelectorAll("input.pair-y[data-y]").forEach((inp) => {
+          inp.value = inp.dataset.yAlt || inp.dataset.y;
+          mark(inp, "correct", "✔");
+        });
+
+        // text-nature
+        section
+          .querySelectorAll("input.txt[data-answer-text]")
+          .forEach((inp) => {
+            inp.value = inp.dataset.answerText;
+            mark(inp, "correct", "✔");
+          });
+
+        // generics
+        section.querySelectorAll("input.txt[data-answer]").forEach((inp) => {
+          const ans = inp.dataset.answer;
+          // prefer friendly display
+          if (/e[+-]?\d+$/i.test(ans)) inp.value = ans.replace(".", ",");
+          else inp.value = ans.replace(".", ",");
+          mark(inp, "correct", "✔");
+        });
+
+        const res = section.querySelector(".resultat");
+        if (res) {
+          res.style.display = "block";
+          res.textContent = "Voici les réponses.";
+          res.className = "resultat correct";
+        }
+        updateGlobalScore();
+      }
+
+      function resetSection(section) {
+        section.querySelectorAll("input").forEach((inp) => {
+          inp.value = "";
+          inp.classList.remove("correct", "incorrect", "empty");
+          const fb = inp.nextElementSibling;
+          if (fb && fb.classList.contains("feedback-message"))
+            fb.textContent = "";
+        });
+        const res = section.querySelector(".resultat");
+        if (res) {
+          res.style.display = "none";
+          res.textContent = "";
+          res.className = "resultat";
+        }
+        updateGlobalScore();
+      }
+
+      // Global score
+      function countAll() {
+        let total = 0,
+          ok = 0;
+        document.querySelectorAll("input").forEach((inp) => {
+          const isCountable =
+            inp.hasAttribute("data-x") ||
+            inp.hasAttribute("data-y") ||
+            inp.hasAttribute("data-answer") ||
+            inp.hasAttribute("data-answer-text");
+          if (!isCountable) return;
+          total++;
+          if (inp.classList.contains("correct")) ok++;
+        });
+        return { total, ok };
+      }
+      function updateGlobalScore() {
+        const { total, ok } = countAll();
+        const label = document.getElementById("score-value");
+        label.textContent = `${ok} / ${total}`;
+        label.style.background =
+          ok === total ? "var(--success-100)" : "var(--primary-100)";
+      }
+
+      // Wiring
+      document.querySelectorAll(".exercise").forEach((sec) => {
+        sec
+          .querySelector(".verifier")
+          ?.addEventListener("click", () => verifySection(sec));
+        sec
+          .querySelector(".montrer")
+          ?.addEventListener("click", () => showAnswers(sec));
+        sec
+          .querySelector(".reinitialiser")
+          ?.addEventListener("click", () => resetSection(sec));
+      });
+      document
+        .getElementById("btn-recalc")
+        ?.addEventListener("click", updateGlobalScore);
+      document.addEventListener("input", (e) => {
+        if (e.target.matches("input")) updateGlobalScore();
+      });
+      updateGlobalScore();
+    </script>
+  </body>
+</html>

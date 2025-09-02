@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen 3 – Sciences (Niveau 3)</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/sciences/S3/examen-science-3.css"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Examen 3 – Sciences (Niveau 3)</h1>
+      <p class="subtitle">
+        Le corps humain · L’électricité · L’environnement & pollution
+      </p>
+      <nav class="top-nav">
+        <a href="/sciences/S3/le-corps-humain.html">Cours : Corps humain</a>
+        <a href="/sciences/S3/lelectricite.html">Cours : Électricité</a>
+        <a href="/sciences/S3/lenvironnement-et-pollution.html"
+          >Cours : Environnement & pollution</a
+        >
+      </nav>
+    </header>
+
+    <!-- SCORE GLOBAL -->
+    <section id="score-global" class="score-wrapper" aria-live="polite">
+      <div class="score-card">
+        <div>
+          <div class="score-title">Score total</div>
+          <div class="score-subtitle">Somme de toutes les questions notées</div>
+        </div>
+        <div class="score-right">
+          <span id="score-value">0 / 0</span>
+          <button id="btn-recalc" class="btn">Recalculer</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- PARTIE A : CORPS HUMAIN -->
+      <section class="exam-section" id="partie-corps">
+        <h2>Partie A — Le corps humain</h2>
+
+        <!-- A1: Identification d’organes (réponses libres) -->
+        <div class="exercise" data-section="corps-orga">
+          <h3>
+            A1. Identifiez les organes (orthographe tolérante, accents ignorés)
+          </h3>
+          <p>Entrez le nom de l’organe associé à chaque fonction :</p>
+          <table class="free-grid">
+            <tr>
+              <th>Fonction</th>
+              <th>Réponse</th>
+            </tr>
+            <tr>
+              <td>Centre de contrôle, pensées et sensations</td>
+              <td>
+                <input
+                  type="text"
+                  data-answer="cerveau"
+                  placeholder="Ex. cerveau"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Pompe le sang dans tout le corps</td>
+              <td>
+                <input
+                  type="text"
+                  data-answer="coeur|cœur"
+                  placeholder="Ex. cœur"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Échanges O₂/CO₂ avec le sang</td>
+              <td>
+                <input
+                  type="text"
+                  data-answer="poumon|poumons"
+                  placeholder="Ex. poumons"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Production de bile, détoxification</td>
+              <td>
+                <input type="text" data-answer="foie" placeholder="Ex. foie" />
+              </td>
+            </tr>
+            <tr>
+              <td>Filtrent le sang, fabriquent l’urine</td>
+              <td>
+                <input
+                  type="text"
+                  data-answer="rein|reins"
+                  placeholder="Ex. reins"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Début de l’absorption des nutriments</td>
+              <td>
+                <input
+                  type="text"
+                  data-answer="intestin grele|intestin grêle|intestin"
+                  placeholder="Ex. intestin grêle"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Muscle principal de la respiration</td>
+              <td>
+                <input
+                  type="text"
+                  data-answer="diaphragme"
+                  placeholder="Ex. diaphragme"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Protection, thermorégulation, première barrière</td>
+              <td>
+                <input type="text" data-answer="peau" placeholder="Ex. peau" />
+              </td>
+            </tr>
+          </table>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- A2: Associer système ↔ fonction -->
+        <div class="exercise" data-section="corps-sys">
+          <h3>A2. Associez chaque fonction au système correspondant</h3>
+          <table class="assoc assoc-wide">
+            <tr>
+              <th>Fonction</th>
+              <th>Système</th>
+            </tr>
+            <tr>
+              <td>Transport O₂, nutriments, déchets</td>
+              <td>
+                <select data-answer="circulatoire">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Contrôle, perception, coordination</td>
+              <td>
+                <select data-answer="nerveux">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Mouvements volontaires et posture</td>
+              <td>
+                <select data-answer="musculaire">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Support, protection, hématopoïèse</td>
+              <td>
+                <select data-answer="squelettique">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Production et régulation d’hormones</td>
+              <td>
+                <select data-answer="endocrinien">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Défense contre les agents pathogènes</td>
+              <td>
+                <select data-answer="immunitaire">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Échanges gazeux avec l’environnement</td>
+              <td>
+                <select data-answer="respiratoire">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Transformation des aliments en nutriments</td>
+              <td>
+                <select data-answer="digestif">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Élimination des déchets azotés, équilibre hydrique</td>
+              <td>
+                <select data-answer="urinaire">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Production de gamètes et reproduction</td>
+              <td>
+                <select data-answer="reproducteur">
+                  <option value="">— Choisir —</option>
+                  <option>nerveux</option>
+                  <option>circulatoire</option>
+                  <option>respiratoire</option>
+                  <option>digestif</option>
+                  <option>urinaire</option>
+                  <option>musculaire</option>
+                  <option>squelettique</option>
+                  <option>endocrinien</option>
+                  <option>immunitaire</option>
+                  <option>reproducteur</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- A3: Vrai/Faux -->
+        <div class="exercise" data-section="corps-vf">
+          <h3>A3. Vrai / Faux</h3>
+          <ul class="vf">
+            <li>
+              Les artères transportent toujours du sang oxygéné.
+              <select data-answer="faux">
+                <option value="">—</option>
+                <option>vrai</option>
+                <option>faux</option>
+              </select>
+            </li>
+            <li>
+              Le diaphragme est un muscle impliqué dans l’inspiration.
+              <select data-answer="vrai">
+                <option value="">—</option>
+                <option>vrai</option>
+                <option>faux</option>
+              </select>
+            </li>
+            <li>
+              Le système endocrinien utilise des hormones comme messagers.
+              <select data-answer="vrai">
+                <option value="">—</option>
+                <option>vrai</option>
+                <option>faux</option>
+              </select>
+            </li>
+            <li>
+              Les reins produisent de la bile.
+              <select data-answer="faux">
+                <option value="">—</option>
+                <option>vrai</option>
+                <option>faux</option>
+              </select>
+            </li>
+          </ul>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE B : ÉLECTRICITÉ -->
+      <section class="exam-section" id="partie-elec">
+        <h2>Partie B — L’électricité</h2>
+
+        <!-- B1: Calculs d’intensité (loi d’Ohm) -->
+        <div class="exercise" data-section="elec-ohm">
+          <h3>B1. Loi d’Ohm — calculez l’intensité I (en ampères)</h3>
+          <p>Indiquez la valeur numérique (tolérance absolue ±0,02) :</p>
+          <table class="num-grid">
+            <tr>
+              <th>U (V)</th>
+              <th>R (Ω)</th>
+              <th>I (A)</th>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>6</td>
+              <td>
+                <input
+                  type="number"
+                  step="0.01"
+                  data-answer="2"
+                  data-tol="0.02"
+                  placeholder="2.00"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>3</td>
+              <td>
+                <input
+                  type="number"
+                  step="0.01"
+                  data-answer="3"
+                  data-tol="0.02"
+                  placeholder="3.00"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>2.5</td>
+              <td>
+                <input
+                  type="number"
+                  step="0.01"
+                  data-answer="2"
+                  data-tol="0.02"
+                  placeholder="2.00"
+                />
+              </td>
+            </tr>
+          </table>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- B2: Série vs parallèle (sélection) -->
+        <div class="exercise" data-section="elec-serpar">
+          <h3>B2. Série ou parallèle ?</h3>
+          <table class="assoc">
+            <tr>
+              <th>Propriété</th>
+              <th>Type de circuit</th>
+            </tr>
+            <tr>
+              <td>L’intensité est la même partout</td>
+              <td>
+                <select data-answer="serie">
+                  <option value="">— Choisir —</option>
+                  <option>serie</option>
+                  <option>parallele</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>La tension est identique aux bornes de chaque branche</td>
+              <td>
+                <select data-answer="parallele">
+                  <option value="">— Choisir —</option>
+                  <option>serie</option>
+                  <option>parallele</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>R<sub>eq</sub> = R₁ + R₂ + …</td>
+              <td>
+                <select data-answer="serie">
+                  <option value="">— Choisir —</option>
+                  <option>serie</option>
+                  <option>parallele</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>1/R<sub>eq</sub> = 1/R₁ + 1/R₂ + …</td>
+              <td>
+                <select data-answer="parallele">
+                  <option value="">— Choisir —</option>
+                  <option>serie</option>
+                  <option>parallele</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- B3: Problème multi-étapes (série) -->
+        <div class="exercise" data-section="elec-prob-serie">
+          <h3>B3. Problème — deux résistances en série</h3>
+          <p>
+            Un générateur U = 12 V alimente en série R₁ = 8 Ω et R₂ = 4 Ω.
+            Calculez :
+          </p>
+          <ol class="num-list">
+            <li>
+              La résistance équivalente R<sub>eq</sub> (Ω) :
+              <input
+                type="number"
+                step="0.01"
+                data-answer="12"
+                data-tol="0.02"
+                placeholder="12.00"
+              />
+            </li>
+            <li>
+              L’intensité du courant I (A) :
+              <input
+                type="number"
+                step="0.01"
+                data-answer="1"
+                data-tol="0.02"
+                placeholder="1.00"
+              />
+            </li>
+            <li>
+              La tension aux bornes de R₁ (V) :
+              <input
+                type="number"
+                step="0.01"
+                data-answer="8"
+                data-tol="0.05"
+                placeholder="8.00"
+              />
+            </li>
+            <li>
+              La tension aux bornes de R₂ (V) :
+              <input
+                type="number"
+                step="0.01"
+                data-answer="4"
+                data-tol="0.05"
+                placeholder="4.00"
+              />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- B4: Puissance et énergie -->
+        <div class="exercise" data-section="elec-puiss">
+          <h3>B4. Puissance et énergie</h3>
+          <p>
+            Un appareil fonctionne sous 230 V et consomme 3,5 A pendant 18
+            minutes.
+          </p>
+          <ol class="num-list">
+            <li>
+              Puissance P (W) :
+              <input
+                type="number"
+                step="1"
+                data-answer="805"
+                data-tol="5"
+                placeholder="≈ 805"
+              />
+            </li>
+            <li>
+              Énergie E (kWh) :
+              <input
+                type="number"
+                step="0.001"
+                data-answer="0.242"
+                data-tol="0.005"
+                placeholder="≈ 0.242"
+              />
+              <span class="hint">(Astuce : 18 min = 0,3 h)</span>
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE C : ENVIRONNEMENT & POLLUTION -->
+      <section class="exam-section" id="partie-env">
+        <h2>Partie C — Environnement & pollution</h2>
+
+        <!-- C1: Classer par type de pollution -->
+        <div class="exercise" data-section="env-class">
+          <h3>C1. Associez chaque situation au type de pollution</h3>
+          <table class="assoc assoc-wide">
+            <tr>
+              <th>Situation</th>
+              <th>Type</th>
+            </tr>
+            <tr>
+              <td>Smog urbain dû aux NOx et aux particules</td>
+              <td>
+                <select data-answer="air">
+                  <option value="">— Choisir —</option>
+                  <option>air</option>
+                  <option>eau</option>
+                  <option>sol</option>
+                  <option>sonore</option>
+                  <option>lumineuse</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Algues en excès après apports d’engrais</td>
+              <td>
+                <select data-answer="eau">
+                  <option value="">— Choisir —</option>
+                  <option>air</option>
+                  <option>eau</option>
+                  <option>sol</option>
+                  <option>sonore</option>
+                  <option>lumineuse</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Fuite d’hydrocarbures dans un champ</td>
+              <td>
+                <select data-answer="sol">
+                  <option value="">— Choisir —</option>
+                  <option>air</option>
+                  <option>eau</option>
+                  <option>sol</option>
+                  <option>sonore</option>
+                  <option>lumineuse</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Trafic aérien autour d’un aéroport</td>
+              <td>
+                <select data-answer="sonore">
+                  <option value="">— Choisir —</option>
+                  <option>air</option>
+                  <option>eau</option>
+                  <option>sol</option>
+                  <option>sonore</option>
+                  <option>lumineuse</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Éclairage nocturne perturbant les insectes</td>
+              <td>
+                <select data-answer="lumineuse">
+                  <option value="">— Choisir —</option>
+                  <option>air</option>
+                  <option>eau</option>
+                  <option>sol</option>
+                  <option>sonore</option>
+                  <option>lumineuse</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C2: QCM -->
+        <div class="exercise" data-section="env-qcm">
+          <h3>C2. QCM</h3>
+          <ol class="qcm">
+            <li>
+              Le principal gaz à effet de serre d’origine anthropique est…
+              <div class="qcm-group" data-answer="dioxyde de carbone">
+                <label
+                  ><input type="radio" name="c2q1" value="dioxyde de carbone" />
+                  CO₂</label
+                >
+                <label
+                  ><input type="radio" name="c2q1" value="ozone" /> O₃</label
+                >
+                <label
+                  ><input type="radio" name="c2q1" value="protoxyde d’azote" />
+                  N₂O</label
+                >
+              </div>
+            </li>
+            <li>
+              L’eutrophisation est causée principalement par…
+              <div
+                class="qcm-group"
+                data-answer="apports excessifs de nutriments"
+              >
+                <label
+                  ><input type="radio" name="c2q2" value="déforestation" /> la
+                  déforestation</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="c2q2"
+                    value="apports excessifs de nutriments"
+                  />
+                  apports excessifs de nutriments</label
+                >
+                <label
+                  ><input type="radio" name="c2q2" value="pollution sonore" />
+                  la pollution sonore</label
+                >
+              </div>
+            </li>
+            <li>
+              Quelle mesure réduit efficacement les émissions de CO₂ ?
+              <div
+                class="qcm-group"
+                data-answer="sobriété et énergies renouvelables"
+              >
+                <label
+                  ><input
+                    type="radio"
+                    name="c2q3"
+                    value="usage accru de charbon"
+                  />
+                  usage accru de charbon</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="c2q3"
+                    value="sobriété et énergies renouvelables"
+                  />
+                  sobriété et énergies renouvelables</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="c2q3"
+                    value="éclairage nocturne intensif"
+                  />
+                  éclairage nocturne intensif</label
+                >
+              </div>
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C3: Choix multiples (ensemble exact) -->
+        <div class="exercise" data-section="env-multi">
+          <h3>
+            C3. Sélectionnez <u>toutes</u> les actions pertinentes pour réduire
+            l’empreinte carbone d’un lycée
+          </h3>
+          <div
+            class="multi-group"
+            data-answers="isolation batiments;chauffage efficace;autopartage et mobilités douces;menus à base végétale;photovoltaïque sur le toit"
+          >
+            <label
+              ><input type="checkbox" value="isolation batiments" /> Isolation
+              des bâtiments</label
+            >
+            <label
+              ><input type="checkbox" value="chauffage efficace" /> Optimisation
+              du chauffage (pompes à chaleur, régulation)</label
+            >
+            <label
+              ><input type="checkbox" value="autopartage et mobilités douces" />
+              Mobilités douces / autopartage</label
+            >
+            <label
+              ><input type="checkbox" value="menus à base végétale" /> Menus à
+              base végétale plus fréquents</label
+            >
+            <label
+              ><input type="checkbox" value="photovoltaïque sur le toit" />
+              Panneaux photovoltaïques</label
+            >
+            <label
+              ><input type="checkbox" value="augmenter le gaspillage" />
+              Augmenter le gaspillage alimentaire</label
+            >
+            <label
+              ><input type="checkbox" value="chauffer les salles vides" />
+              Chauffer les salles vides</label
+            >
+          </div>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>© 2025 - Examen de sciences (Niveau 3)</p>
+    </footer>
+
+    <script>
+      // ====== Helpers ======
+      const stripAcc = (s) =>
+        (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const norm = (s) =>
+        stripAcc(String(s).trim().toLowerCase().replace(/\s+/g, " "));
+      function markEl(el, state) {
+        el.classList.remove("correct", "incorrect", "empty");
+        el.classList.add(state);
+      }
+
+      // ====== Vérifs génériques ======
+      function verifySelects(section) {
+        let ok = 0,
+          tot = 0;
+        section.querySelectorAll("select[data-answer]").forEach((sel) => {
+          tot++;
+          if (!sel.value) {
+            markEl(sel, "empty");
+            return;
+          }
+          if (norm(sel.value) === norm(sel.dataset.answer)) {
+            ok++;
+            markEl(sel, "correct");
+          } else markEl(sel, "incorrect");
+        });
+        showResult(section, ok, tot);
+      }
+      function showSelects(section) {
+        section.querySelectorAll("select[data-answer]").forEach((sel) => {
+          sel.value = sel.dataset.answer;
+          markEl(sel, "correct");
+        });
+        showNote(section, "Réponses affichées.", true);
+      }
+      function resetSelects(section) {
+        section.querySelectorAll("select[data-answer]").forEach((sel) => {
+          sel.value = "";
+          sel.classList.remove("correct", "incorrect", "empty");
+        });
+        hideResult(section);
+      }
+
+      function verifyInputsText(section) {
+        let ok = 0,
+          tot = 0;
+        section
+          .querySelectorAll("input[type=text][data-answer]")
+          .forEach((inp) => {
+            tot++;
+            const answers = inp.dataset.answer.split("|").map(norm);
+            const val = norm(inp.value);
+            if (!val) {
+              markEl(inp, "empty");
+              return;
+            }
+            if (answers.includes(val)) {
+              ok++;
+              markEl(inp, "correct");
+            } else markEl(inp, "incorrect");
+          });
+        showResult(section, ok, tot);
+      }
+      function showInputsText(section) {
+        section
+          .querySelectorAll("input[type=text][data-answer]")
+          .forEach((inp) => {
+            inp.value = inp.dataset.answer.split("|")[0];
+            markEl(inp, "correct");
+          });
+        showNote(section, "Réponses affichées.", true);
+      }
+      function resetInputsText(section) {
+        section
+          .querySelectorAll("input[type=text][data-answer]")
+          .forEach((inp) => {
+            inp.value = "";
+            inp.classList.remove("correct", "incorrect", "empty");
+          });
+        hideResult(section);
+      }
+
+      function verifyInputsNum(section) {
+        let ok = 0,
+          tot = 0;
+        section
+          .querySelectorAll("input[type=number][data-answer]")
+          .forEach((inp) => {
+            tot++;
+            const ans = Number(inp.dataset.answer);
+            const tol = Number(inp.dataset.tol || 0);
+            const val = inp.value === "" ? NaN : Number(inp.value);
+            if (isNaN(val)) {
+              markEl(inp, "empty");
+              return;
+            }
+            if (Math.abs(val - ans) <= tol) {
+              ok++;
+              markEl(inp, "correct");
+            } else markEl(inp, "incorrect");
+          });
+        showResult(section, ok, tot);
+      }
+      function showInputsNum(section) {
+        section
+          .querySelectorAll("input[type=number][data-answer]")
+          .forEach((inp) => {
+            inp.value = inp.dataset.answer;
+            markEl(inp, "correct");
+          });
+        showNote(section, "Réponses affichées.", true);
+      }
+      function resetInputsNum(section) {
+        section
+          .querySelectorAll("input[type=number][data-answer]")
+          .forEach((inp) => {
+            inp.value = "";
+            inp.classList.remove("correct", "incorrect", "empty");
+          });
+        hideResult(section);
+      }
+
+      function verifyQCM(section) {
+        let ok = 0,
+          tot = 0;
+        section.querySelectorAll(".qcm-group").forEach((group) => {
+          tot++;
+          const ans = norm(group.dataset.answer);
+          const checked = group.querySelector("input[type=radio]:checked");
+          if (!checked) {
+            markEl(group, "empty");
+            return;
+          }
+          if (norm(checked.value) === ans) {
+            ok++;
+            markEl(group, "correct");
+          } else markEl(group, "incorrect");
+        });
+        showResult(section, ok, tot);
+      }
+      function showQCM(section) {
+        section.querySelectorAll(".qcm-group").forEach((group) => {
+          const ans = group.dataset.answer;
+          const input = group.querySelector(
+            `input[value="${CSS.escape(ans)}"]`
+          );
+          if (input) {
+            input.checked = true;
+          }
+          markEl(group, "correct");
+        });
+        showNote(section, "Réponses affichées.", true);
+      }
+      function resetQCM(section) {
+        section
+          .querySelectorAll(".qcm-group input")
+          .forEach((i) => (i.checked = false));
+        section
+          .querySelectorAll(".qcm-group")
+          .forEach((g) => g.classList.remove("correct", "incorrect", "empty"));
+        hideResult(section);
+      }
+
+      function verifyMulti(section) {
+        let ok = 0,
+          tot = 1; // on compte un seul item global pour l’ensemble exact
+        const group = section.querySelector(".multi-group");
+        const expected = group.dataset.answers
+          .split(";")
+          .map(norm)
+          .filter(Boolean);
+        const selected = Array.from(
+          group.querySelectorAll("input[type=checkbox]:checked")
+        ).map((i) => norm(i.value));
+        const setEq =
+          expected.length === selected.length &&
+          expected.every((v) => selected.includes(v));
+        if (selected.length === 0) {
+          markEl(group, "empty");
+        } else if (setEq) {
+          ok = 1;
+          markEl(group, "correct");
+        } else markEl(group, "incorrect");
+        showResult(section, ok, tot);
+      }
+      function showMulti(section) {
+        const group = section.querySelector(".multi-group");
+        const expected = group.dataset.answers.split(";").map((s) => s.trim());
+        group.querySelectorAll("input[type=checkbox]").forEach((i) => {
+          i.checked = expected.map(norm).includes(norm(i.value));
+        });
+        markEl(group, "correct");
+        showNote(section, "Réponses affichées.", true);
+      }
+      function resetMulti(section) {
+        const group = section.querySelector(".multi-group");
+        group
+          .querySelectorAll("input[type=checkbox]")
+          .forEach((i) => (i.checked = false));
+        group.classList.remove("correct", "incorrect", "empty");
+        hideResult(section);
+      }
+
+      // ====== Résultats & score global ======
+      function showResult(section, ok, tot) {
+        const res = section.querySelector(".resultat");
+        res.style.display = "block";
+        res.textContent = `Score : ${ok}/${tot}`;
+        res.className = "resultat " + (ok === tot ? "correct" : "incorrect");
+        updateGlobalScore();
+      }
+      function showNote(section, note, good) {
+        const res = section.querySelector(".resultat");
+        res.style.display = "block";
+        res.textContent = note;
+        res.className = "resultat " + (good ? "correct" : "");
+        updateGlobalScore();
+      }
+      function hideResult(section) {
+        const res = section.querySelector(".resultat");
+        res.style.display = "none";
+        res.textContent = "";
+        res.className = "resultat";
+        updateGlobalScore();
+      }
+      function countAll() {
+        let total = 0,
+          ok = 0;
+        // text inputs
+        document
+          .querySelectorAll("input[type=text][data-answer]")
+          .forEach((inp) => {
+            total++;
+            if (inp.classList.contains("correct")) ok++;
+          });
+        // numeric
+        document
+          .querySelectorAll("input[type=number][data-answer]")
+          .forEach((inp) => {
+            total++;
+            if (inp.classList.contains("correct")) ok++;
+          });
+        // selects
+        document.querySelectorAll("select[data-answer]").forEach((sel) => {
+          total++;
+          if (sel.classList.contains("correct")) ok++;
+        });
+        // qcm groups (count as 1 chacun)
+        document.querySelectorAll(".qcm-group").forEach((g) => {
+          total++;
+          if (g.classList.contains("correct")) ok++;
+        });
+        // multi exact (count as 1)
+        document.querySelectorAll(".multi-group").forEach((g) => {
+          total++;
+          if (g.classList.contains("correct")) ok++;
+        });
+        return { total, ok };
+      }
+      function updateGlobalScore() {
+        const { total, ok } = countAll();
+        const label = document.getElementById("score-value");
+        label.textContent = `${ok} / ${total}`;
+        label.style.background =
+          ok === total ? "var(--ok-bg)" : "var(--hint-bg)";
+      }
+
+      // ====== Wiring ======
+      document.querySelectorAll(".exercise").forEach((sec) => {
+        const id = sec.dataset.section || "";
+        sec.querySelector(".verifier")?.addEventListener("click", () => {
+          if (id.startsWith("corps-")) {
+            if (id === "corps-orga") verifyInputsText(sec);
+            else if (id === "corps-sys") verifySelects(sec);
+            else if (id === "corps-vf") verifySelects(sec);
+          } else if (id.startsWith("elec-")) {
+            if (
+              id === "elec-ohm" ||
+              id === "elec-prob-serie" ||
+              id === "elec-puiss"
+            )
+              verifyInputsNum(sec);
+            else if (id === "elec-serpar") verifySelects(sec);
+          } else if (id.startsWith("env-")) {
+            if (id === "env-class") verifySelects(sec);
+            else if (id === "env-qcm") verifyQCM(sec);
+            else if (id === "env-multi") verifyMulti(sec);
+          }
+        });
+        sec.querySelector(".montrer")?.addEventListener("click", () => {
+          if (id === "corps-orga") showInputsText(sec);
+          else if (
+            id === "corps-sys" ||
+            id === "corps-vf" ||
+            id === "elec-serpar" ||
+            id === "env-class"
+          )
+            showSelects(sec);
+          else if (
+            id === "elec-ohm" ||
+            id === "elec-prob-serie" ||
+            id === "elec-puiss"
+          )
+            showInputsNum(sec);
+          else if (id === "env-qcm") showQCM(sec);
+          else if (id === "env-multi") showMulti(sec);
+        });
+        sec.querySelector(".reinitialiser")?.addEventListener("click", () => {
+          if (id === "corps-orga") resetInputsText(sec);
+          else if (
+            id === "corps-sys" ||
+            id === "corps-vf" ||
+            id === "elec-serpar" ||
+            id === "env-class"
+          )
+            resetSelects(sec);
+          else if (
+            id === "elec-ohm" ||
+            id === "elec-prob-serie" ||
+            id === "elec-puiss"
+          )
+            resetInputsNum(sec);
+          else if (id === "env-qcm") {
+            resetQCM(sec);
+          } else if (id === "env-multi") {
+            resetMulti(sec);
+          }
+        });
+      });
+      document
+        .getElementById("btn-recalc")
+        ?.addEventListener("click", updateGlobalScore);
+      document.addEventListener("change", (e) => {
+        if (e.target.matches("input, select")) updateGlobalScore();
+      });
+      updateGlobalScore();
+    </script>
+  </body>
+</html>

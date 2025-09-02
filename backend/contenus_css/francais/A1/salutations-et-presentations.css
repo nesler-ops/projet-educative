@@ -66,12 +66,6 @@ section {
   background-color: white;
 }
 
-h1,
-h2,
-h3 {
-  color: var(--primary-color);
-}
-
 h2 {
   border-bottom: 2px solid var(--light-accent);
   padding-bottom: 0.5rem;

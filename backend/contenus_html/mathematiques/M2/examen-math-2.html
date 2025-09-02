@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen 2 – Mathématiques (Niveau 2)</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/mathematiques/M2/examen-math-2.css"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Examen 2 – Mathématiques (Niveau 2)</h1>
+      <p class="subtitle">
+        Les divisions · Les fractions · Résolution d’équations
+      </p>
+      <nav class="top-nav">
+        <a href="/mathematiques/M2/les-divisions.html">Cours : Divisions</a>
+        <a href="/mathematiques/M2/les-fractions.html">Cours : Fractions</a>
+        <a href="/mathematiques/M2/resolution-dequations.html"
+          >Cours : Équations</a
+        >
+      </nav>
+    </header>
+
+    <!-- SCORE GLOBAL -->
+    <section id="score-global" class="score-wrapper" aria-live="polite">
+      <div class="score-card">
+        <div class="score-left">
+          <div class="score-title">Score total</div>
+          <div class="score-subtitle">Somme de toutes les parties</div>
+        </div>
+        <div class="score-right">
+          <span id="score-value">0 / 0</span>
+          <button
+            id="btn-recalc"
+            class="btn"
+            title="Recalculer le score global"
+          >
+            Recalculer
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- PARTIE A : DIVISIONS -->
+      <section class="exam-section" id="partie-divisions">
+        <h2>Partie A — Divisions</h2>
+
+        <!-- A1: Divisions euclidiennes -->
+        <div class="exercise" data-section="div-euclid">
+          <h3>
+            A1. Divisions euclidiennes (donnez <em>quotient</em> et
+            <em>reste</em>)
+          </h3>
+          <ol class="grid-1">
+            <li>
+              78 ÷ 6 =
+              <input class="num" data-qexp="13" placeholder="quotient" /> reste
+              <input class="num" data-rexp="0" placeholder="reste" />
+            </li>
+            <li>
+              125 ÷ 9 = <input class="num" data-qexp="13" /> reste
+              <input class="num" data-rexp="8" />
+            </li>
+            <li>
+              247 ÷ 12 = <input class="num" data-qexp="20" /> reste
+              <input class="num" data-rexp="7" />
+            </li>
+            <li>
+              515 ÷ 25 = <input class="num" data-qexp="20" /> reste
+              <input class="num" data-rexp="15" />
+            </li>
+            <li>
+              178 ÷ 9 = <input class="num" data-qexp="19" /> reste
+              <input class="num" data-rexp="7" />
+            </li>
+            <li>
+              362 ÷ 11 = <input class="num" data-qexp="32" /> reste
+              <input class="num" data-rexp="10" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- A2: Divisions décimales -->
+        <div class="exercise" data-section="div-dec">
+          <h3>A2. Divisions décimales (virgule <em>ou</em> point acceptés)</h3>
+          <ol class="grid-2">
+            <li>
+              45,6 ÷ 8 =
+              <input
+                class="txt"
+                data-answer="5.7"
+                data-mode="number"
+                placeholder="réponse"
+              />
+            </li>
+            <li>
+              123 ÷ 4 =
+              <input class="txt" data-answer="30.75" data-mode="number" />
+            </li>
+            <li>
+              7,5 ÷ 0,25 =
+              <input class="txt" data-answer="30" data-mode="number" />
+            </li>
+            <li>
+              12 ÷ 0,75 =
+              <input class="txt" data-answer="16" data-mode="number" />
+            </li>
+            <li>
+              5,04 ÷ 0,12 =
+              <input class="txt" data-answer="42" data-mode="number" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- A3: Division de fractions -->
+        <div class="exercise" data-section="div-frac">
+          <h3>A3. Division de fractions (accepte 0.8, 1/2, 1 1/4…)</h3>
+          <ol class="grid-2">
+            <li>
+              2/3 ÷ 5/6 =
+              <input
+                class="txt"
+                data-answer="0.8"
+                data-mode="number-or-fraction"
+              />
+            </li>
+            <li>
+              4/5 ÷ 2/15 =
+              <input
+                class="txt"
+                data-answer="6"
+                data-mode="number-or-fraction"
+              />
+            </li>
+            <li>
+              1/2 ÷ 1/4 =
+              <input
+                class="txt"
+                data-answer="2"
+                data-mode="number-or-fraction"
+              />
+            </li>
+            <li>
+              3/8 ÷ 3/4 =
+              <input
+                class="txt"
+                data-answer="0.5"
+                data-mode="number-or-fraction"
+              />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE B : FRACTIONS -->
+      <section class="exam-section" id="partie-fractions">
+        <h2>Partie B — Fractions</h2>
+
+        <!-- B1: Opérations -->
+        <div class="exercise" data-section="frac-op">
+          <h3>B1. Opérations (réponse en fraction <em>ou</em> décimal)</h3>
+          <ol class="grid-2">
+            <li>
+              2/5 + 3/10 =
+              <input
+                class="txt"
+                data-answer="0.7"
+                data-mode="number-or-fraction"
+              />
+            </li>
+            <li>
+              4/7 − 1/14 =
+              <input
+                class="txt"
+                data-answer="0.5"
+                data-mode="number-or-fraction"
+              />
+            </li>
+            <li>
+              3/8 × 4/9 =
+              <input
+                class="txt"
+                data-answer="0.1666666667"
+                data-mode="number-or-fraction"
+              />
+            </li>
+            <li>
+              5/6 ÷ 2/3 =
+              <input
+                class="txt"
+                data-answer="1.25"
+                data-mode="number-or-fraction"
+              />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- B2: Simplification (exiger fraction irréductible) -->
+        <div class="exercise" data-section="frac-simplify">
+          <h3>
+            B2. Simplification (répondez en <em>fraction irréductible</em>)
+          </h3>
+          <ol class="grid-2">
+            <li>
+              12/18 →
+              <input
+                class="txt"
+                data-frac="2/3"
+                data-mode="frac-simplify"
+                placeholder="a/b"
+              />
+            </li>
+            <li>
+              15/35 →
+              <input class="txt" data-frac="3/7" data-mode="frac-simplify" />
+            </li>
+            <li>
+              42/56 →
+              <input class="txt" data-frac="3/4" data-mode="frac-simplify" />
+            </li>
+            <li>
+              36/60 →
+              <input class="txt" data-frac="3/5" data-mode="frac-simplify" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- B3: Comparaison -->
+        <div class="exercise" data-section="frac-compare">
+          <h3>B3. Comparaison (saisir &lt;, &gt; ou =)</h3>
+          <ol class="grid-2">
+            <li>
+              3/4 __ 2/3 →
+              <input class="txt" data-answer=">" data-mode="symbol" />
+            </li>
+            <li>
+              5/12 __ 1/3 →
+              <input class="txt" data-answer=">" data-mode="symbol" />
+            </li>
+            <li>
+              7/10 __ 2/3 →
+              <input class="txt" data-answer=">" data-mode="symbol" />
+            </li>
+            <li>
+              4/9 __ 1/2 →
+              <input class="txt" data-answer="<" data-mode="symbol" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+
+      <!-- PARTIE C : ÉQUATIONS -->
+      <section class="exam-section" id="partie-equations">
+        <h2>Partie C — Résolution d’équations</h2>
+
+        <!-- C1: 1er degré -->
+        <div class="exercise" data-section="eq-lin">
+          <h3>C1. Équations du premier degré (donnez la valeur de x)</h3>
+          <ol class="grid-1">
+            <li>
+              5x + 3 = 18 → x =
+              <input
+                class="txt"
+                data-answer="3"
+                data-mode="number-or-fraction"
+              />
+            </li>
+            <li>
+              2x − 7 = 3x + 4 → x =
+              <input
+                class="txt"
+                data-answer="-11"
+                data-mode="number-or-fraction"
+              />
+            </li>
+            <li>
+              3(x + 2) = 5x − 4 → x =
+              <input
+                class="txt"
+                data-answer="5"
+                data-mode="number-or-fraction"
+              />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C2: Équations avec fractions -->
+        <div class="exercise" data-section="eq-frac">
+          <h3>C2. Équations avec fractions</h3>
+          <ol class="grid-1">
+            <li>
+              (x/2) + (x/3) = 5 → x =
+              <input
+                class="txt"
+                data-answer="6"
+                data-mode="number-or-fraction"
+              />
+            </li>
+            <li>
+              (1/x) + 1 = 3 → x =
+              <input
+                class="txt"
+                data-answer="0.5"
+                data-alt="1/2"
+                data-mode="number-or-fraction"
+              />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C3: 2nd degré (deux solutions) -->
+        <div class="exercise" data-section="eq-quad">
+          <h3>
+            C3. Équations du second degré (deux solutions, ordre indifférent)
+          </h3>
+          <ol class="grid-1">
+            <li>
+              x² − 4x + 3 = 0 → x₁ =
+              <input class="txt sol" data-set="1,3" placeholder="solution 1" />
+              , x₂ =
+              <input class="txt sol" data-set="1,3" placeholder="solution 2" />
+            </li>
+            <li>
+              2x² + 5x − 3 = 0 → x₁ =
+              <input
+                class="txt sol"
+                data-set="-3,0.5"
+                placeholder="solution 1"
+              />
+              , x₂ =
+              <input
+                class="txt sol"
+                data-set="-3,0.5"
+                placeholder="solution 2"
+              />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+
+        <!-- C4: Valeur absolue (deux solutions) -->
+        <div class="exercise" data-section="eq-abs">
+          <h3>C4. Équations avec valeur absolue (deux solutions)</h3>
+          <ol class="grid-1">
+            <li>
+              |x + 2| = 4 → x₁ =
+              <input class="txt sol" data-set="-6,2" placeholder="solution 1" />
+              , x₂ =
+              <input class="txt sol" data-set="-6,2" placeholder="solution 2" />
+            </li>
+          </ol>
+          <div class="btn-row">
+            <button class="btn verifier">Vérifier</button>
+            <button class="btn btn-secondary montrer">Voir les réponses</button>
+            <button class="btn btn-ghost reinitialiser">Réinitialiser</button>
+          </div>
+          <div class="resultat"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>© 2025 - Examen de mathématiques (Niveau 2)</p>
+    </footer>
+
+    <script>
+      // ===== Helpers généraux =====
+      const TOL = 1e-9;
+      const toNum = (s) =>
+        Number((s ?? "").toString().trim().replace(",", "."));
+      const gcd = (a, b) => {
+        a = Math.abs(a);
+        b = Math.abs(b);
+        while (b) {
+          [a, b] = [b, a % b];
+        }
+        return a || 1;
+      };
+
+      function parseNumberOrFraction(raw) {
+        if (!raw) return { ok: false };
+        let s = raw.trim().replace(/[，]/g, ","); // Chinese comma
+        // mixed number: a b/c
+        let m = s.match(/^([+-]?\d+)\s+(\d+)\s*\/\s*(\d+)$/);
+        if (m) {
+          const A = parseInt(m[1], 10),
+            B = parseInt(m[2], 10),
+            C = parseInt(m[3], 10);
+          if (C === 0) return { ok: false };
+          const sign = A < 0 ? -1 : 1;
+          return {
+            ok: true,
+            val: A + sign * (B / C),
+            num: sign * (Math.abs(A) * C + B),
+            den: C,
+          };
+        }
+        // simple fraction: a/b
+        m = s.match(/^([+-]?\d+)\s*\/\s*([+-]?\d+)$/);
+        if (m) {
+          const a = parseInt(m[1], 10),
+            b = parseInt(m[2], 10);
+          if (b === 0) return { ok: false };
+          const sign = Math.sign(a) * Math.sign(b) || 1;
+          const na = Math.abs(a),
+            nb = Math.abs(b);
+          return { ok: true, val: sign * (na / nb), num: sign * na, den: nb };
+        }
+        // decimal or integer (comma or dot)
+        const v = toNum(s);
+        if (!isFinite(v)) return { ok: false };
+        return { ok: true, val: v };
+      }
+
+      function approxEqual(a, b, tol = TOL) {
+        return Math.abs(a - b) <= tol;
+      }
+
+      function mark(input, state, msg) {
+        input.classList.remove("correct", "incorrect", "empty");
+        input.classList.add(state);
+        // feedback span
+        let fb = input.nextElementSibling;
+        if (
+          !fb ||
+          !fb.classList ||
+          !fb.classList.contains("feedback-message")
+        ) {
+          fb = document.createElement("span");
+          fb.className = "feedback-message";
+          input.insertAdjacentElement("afterend", fb);
+        }
+        fb.textContent = msg || "";
+        fb.className =
+          "feedback-message " +
+          (state === "correct"
+            ? "correct-message"
+            : state === "empty"
+            ? "empty-message"
+            : "incorrect-message");
+      }
+
+      // ===== Vérifs spécifiques =====
+      function verifyDivisionEuclid(section) {
+        let ok = 0,
+          tot = 0;
+        section.querySelectorAll("li").forEach((li) => {
+          const qs = li.querySelectorAll("input.num");
+          qs.forEach((inp) => {
+            const expectedQ = inp.dataset.qexp;
+            const expectedR = inp.dataset.rexp;
+            const v = inp.value.trim();
+            tot++;
+            if (v === "") {
+              mark(inp, "empty", "⛔");
+              return;
+            }
+            if (expectedQ !== undefined) {
+              if (toNum(v) === toNum(expectedQ)) {
+                ok++;
+                mark(inp, "correct", "✅");
+              } else {
+                mark(inp, "incorrect", "❌");
+              }
+            } else if (expectedR !== undefined) {
+              if (toNum(v) === toNum(expectedR)) {
+                ok++;
+                mark(inp, "correct", "✅");
+              } else {
+                mark(inp, "incorrect", "❌");
+              }
+            }
+          });
+        });
+        return { ok, tot };
+      }
+
+      function verifyNumberLike(section) {
+        let ok = 0,
+          tot = 0;
+        section
+          .querySelectorAll(
+            "input.txt[data-mode='number'], input.txt[data-mode='number-or-fraction']"
+          )
+          .forEach((inp) => {
+            const expected = toNum(inp.dataset.answer);
+            const alt = inp.dataset.alt;
+            tot++;
+            const raw = inp.value.trim();
+            if (raw === "") {
+              mark(inp, "empty", "⛔");
+              return;
+            }
+            const p = parseNumberOrFraction(raw);
+            if (!p.ok) {
+              mark(inp, "incorrect", "❌");
+              return;
+            }
+            let match = approxEqual(p.val, expected);
+            if (!match && alt) {
+              const p2 = parseNumberOrFraction(alt);
+              if (p2.ok) match = approxEqual(p.val, p2.val);
+            }
+            if (match) {
+              ok++;
+              mark(inp, "correct", "✅");
+            } else {
+              mark(inp, "incorrect", "❌");
+            }
+          });
+        return { ok, tot };
+      }
+
+      function verifyFracSimplify(section) {
+        let ok = 0,
+          tot = 0;
+        section
+          .querySelectorAll("input.txt[data-mode='frac-simplify']")
+          .forEach((inp) => {
+            const target = (inp.dataset.frac || "").trim(); // "a/b"
+            tot++;
+            const raw = inp.value.trim();
+            if (raw === "") {
+              mark(inp, "empty", "⛔");
+              return;
+            }
+            const p = parseNumberOrFraction(raw);
+            if (!p.ok || !(p.num && p.den)) {
+              mark(inp, "incorrect", "❌");
+              return;
+            }
+            // must be a fraction (no pure decimal allowed)
+            const targetMatch = target.match(/^([+-]?\d+)\s*\/\s*([+-]?\d+)$/);
+            if (!targetMatch) {
+              mark(inp, "incorrect", "❌");
+              return;
+            }
+            const tn = parseInt(targetMatch[1], 10),
+              td = parseInt(targetMatch[2], 10);
+            // equivalence
+            const eq = approxEqual(p.val, tn / td);
+            // irreducible ?
+            const irr = gcd(p.num, p.den) === 1;
+            if (eq && irr) {
+              ok++;
+              mark(inp, "correct", "✅");
+            } else {
+              mark(inp, "incorrect", eq ? "❌ (pas irréductible)" : "❌");
+            }
+          });
+        return { ok, tot };
+      }
+
+      function verifySymbols(section) {
+        let ok = 0,
+          tot = 0;
+        section
+          .querySelectorAll("input.txt[data-mode='symbol']")
+          .forEach((inp) => {
+            const exp = (inp.dataset.answer || "").trim();
+            tot++;
+            const raw = (inp.value || "").trim();
+            if (raw === "") {
+              mark(inp, "empty", "⛔");
+              return;
+            }
+            const norm = raw.replace(/\s+/g, "");
+            if (norm === exp) {
+              ok++;
+              mark(inp, "correct", "✅");
+            } else {
+              mark(inp, "incorrect", "❌");
+            }
+          });
+        return { ok, tot };
+      }
+
+      function verifySolutionSets(section) {
+        let ok = 0,
+          tot = 0;
+        // items with two inputs .sol and data-set="a,b"
+        section.querySelectorAll("li").forEach((li) => {
+          const inputs = li.querySelectorAll("input.sol");
+          if (inputs.length < 2) return;
+          tot++; // compte par exercice (paire)
+          const setStr = inputs[0].dataset.set || inputs[1].dataset.set || "";
+          const expVals = setStr
+            .split(",")
+            .map((s) => parseNumberOrFraction(s).val)
+            .filter((v) => isFinite(v));
+          const userVals = [];
+          let allFilled = true,
+            allOk = true;
+
+          inputs.forEach((inp) => {
+            const raw = inp.value.trim();
+            if (raw === "") {
+              allFilled = false;
+              mark(inp, "empty", "⛔");
+              return;
+            }
+            const p = parseNumberOrFraction(raw);
+            if (!p.ok) {
+              allOk = false;
+              mark(inp, "incorrect", "❌");
+              return;
+            }
+            userVals.push(p.val);
+          });
+
+          if (allFilled && allOk) {
+            // comparer ensembles sans ordre
+            let matched = 0;
+            const used = new Array(expVals.length).fill(false);
+            userVals.forEach((uv) => {
+              let hit = false;
+              for (let i = 0; i < expVals.length; i++) {
+                if (!used[i] && approxEqual(uv, expVals[i])) {
+                  used[i] = true;
+                  hit = true;
+                  break;
+                }
+              }
+              matched += hit ? 1 : 0;
+            });
+            if (matched === expVals.length) {
+              ok++;
+              inputs.forEach((inp) => mark(inp, "correct", "✅"));
+            } else {
+              inputs.forEach((inp) => mark(inp, "incorrect", "❌"));
+            }
+          }
+        });
+        return { ok, tot };
+      }
+
+      // ===== Orchestrateur par section =====
+      function verifySection(section) {
+        const res = section.querySelector(".resultat");
+        let total = 0,
+          success = 0;
+
+        if (section.dataset.section === "div-euclid") {
+          const r = verifyDivisionEuclid(section);
+          success += r.ok;
+          total += r.tot;
+        } else {
+          // génériques
+          const r1 = verifyNumberLike(section);
+          success += r1.ok;
+          total += r1.tot;
+          const r2 = verifyFracSimplify(section);
+          success += r2.ok;
+          total += r2.tot;
+          const r3 = verifySymbols(section);
+          success += r3.ok;
+          total += r3.tot;
+          const r4 = verifySolutionSets(section);
+          success += r4.ok;
+          total += r4.tot;
+        }
+
+        if (res) {
+          res.style.display = "block";
+          res.textContent = `Score : ${success}/${total}`;
+          res.className =
+            "resultat " + (success === total ? "correct" : "incorrect");
+        }
+        updateGlobalScore();
+      }
+
+      function showAnswers(section) {
+        // Remplir selon mode
+        section.querySelectorAll("input.num[data-qexp]").forEach((inp) => {
+          inp.value = inp.dataset.qexp;
+          mark(inp, "correct", "✔");
+        });
+        section.querySelectorAll("input.num[data-rexp]").forEach((inp) => {
+          inp.value = inp.dataset.rexp;
+          mark(inp, "correct", "✔");
+        });
+
+        section.querySelectorAll("input.txt[data-answer]").forEach((inp) => {
+          inp.value = inp.dataset.answer.replace(".", ","); // affichage friendly
+          mark(inp, "correct", "✔");
+        });
+        section.querySelectorAll("input.txt[data-frac]").forEach((inp) => {
+          inp.value = inp.dataset.frac;
+          mark(inp, "correct", "✔");
+        });
+        section
+          .querySelectorAll("input.sol[data-set]")
+          .forEach((inp, idx, arr) => {
+            const set = (inp.dataset.set || "").split(",");
+            // alterner la première et la seconde valeur
+            inp.value = set[idx % 2] || set[0] || "";
+            mark(inp, "correct", "✔");
+          });
+
+        const res = section.querySelector(".resultat");
+        if (res) {
+          res.style.display = "block";
+          res.textContent = "Voici les réponses.";
+          res.className = "resultat correct";
+        }
+        updateGlobalScore();
+      }
+
+      function resetSection(section) {
+        section.querySelectorAll("input").forEach((inp) => {
+          inp.value = "";
+          mark(inp, "empty", ""); // nettoie classes + message
+          const fb = inp.nextElementSibling;
+          if (fb && fb.classList.contains("feedback-message"))
+            fb.textContent = "";
+          inp.classList.remove("correct", "incorrect", "empty");
+        });
+        const res = section.querySelector(".resultat");
+        if (res) {
+          res.style.display = "none";
+          res.textContent = "";
+          res.className = "resultat";
+        }
+        updateGlobalScore();
+      }
+
+      // ===== Score global =====
+      function countAll() {
+        let total = 0,
+          ok = 0;
+        document.querySelectorAll("input").forEach((inp) => {
+          // re-évaluer selon metadata (éviter de recompter la paire des sets)
+          // On compte élément par élément (quotient, reste, chaque case…)
+          const val = (inp.value || "").trim();
+          if (inp.matches(".sol")) {
+            // Les sets seront comptés via affichage: si marqués correct, compter
+            total++;
+            if (inp.classList.contains("correct")) ok++;
+          } else {
+            if (
+              inp.hasAttribute("data-qexp") ||
+              inp.hasAttribute("data-rexp") ||
+              inp.hasAttribute("data-answer") ||
+              inp.hasAttribute("data-frac") ||
+              inp.hasAttribute("data-set")
+            ) {
+              total++;
+              if (inp.classList.contains("correct")) ok++;
+            }
+          }
+        });
+        return { total, ok };
+      }
+
+      function updateGlobalScore() {
+        const { total, ok } = countAll();
+        const label = document.getElementById("score-value");
+        label.textContent = `${ok} / ${total}`;
+        label.style.background =
+          ok === total ? "var(--success-100)" : "var(--primary-100)";
+      }
+
+      // ===== Wiring =====
+      document.querySelectorAll(".exercise").forEach((sec) => {
+        sec
+          .querySelector(".verifier")
+          ?.addEventListener("click", () => verifySection(sec));
+        sec
+          .querySelector(".montrer")
+          ?.addEventListener("click", () => showAnswers(sec));
+        sec
+          .querySelector(".reinitialiser")
+          ?.addEventListener("click", () => resetSection(sec));
+      });
+      document
+        .getElementById("btn-recalc")
+        ?.addEventListener("click", updateGlobalScore);
+      document.addEventListener("input", (e) => {
+        if (e.target.matches("input")) updateGlobalScore();
+      });
+      updateGlobalScore();
+    </script>
+  </body>
+</html>

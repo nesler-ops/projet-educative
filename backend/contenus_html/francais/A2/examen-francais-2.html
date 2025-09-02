@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen 2 — Niveau 2 (A2)</title>
+    <link
+      rel="stylesheet"
+      href="/contenus_css/francais/A2/examen-francais-2.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Examen 2 – Niveau 2 (A2)</h1>
+      <p class="subtitle">
+        Thèmes : La routine quotidienne · Les loisirs et passe-temps · La
+        nourriture et les repas
+      </p>
+    </header>
+
+    <!-- SCORE GLOBAL (collant) -->
+    <section id="score-global" class="score-wrapper" aria-live="polite">
+      <div class="score-card">
+        <div>
+          <div class="score-title">Score total</div>
+          <div class="score-subtitle">Somme de toutes les parties</div>
+        </div>
+        <div class="score-right">
+          <span id="score-value">0 / 0</span>
+          <button id="btn-recalc" class="btn" title="Recalculer le score">
+            Recalculer
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- CONSIGNES -->
+      <section class="section intro">
+        <h2>Consignes générales</h2>
+        <ul>
+          <li>Lisez attentivement chaque consigne.</li>
+          <li>
+            Écrivez vos réponses en minuscules (les accents seront normalisés
+            automatiquement).
+          </li>
+          <li>
+            Utilisez <strong>Vérifier</strong>,
+            <strong>Montrer les réponses</strong> et
+            <strong>Réinitialiser</strong> dans chaque partie.
+          </li>
+        </ul>
+      </section>
+
+      <!-- PARTIE 1 — ROUTINE QUOTIDIENNE -->
+      <section class="section exercise" id="partie1">
+        <h2>Partie 1 — Routine quotidienne (Grammaire + Vocabulaire)</h2>
+        <p class="text-card">
+          Complétez avec le verbe pronominal/lexique correct.
+        </p>
+
+        <p>
+          Chaque matin, je
+          <input class="fill" type="text" data-answer="me réveille" /> à 7h,
+          puis je <input class="fill" type="text" data-answer="me lève" /> et je
+          <input class="fill" type="text" data-answer="me brosse" /> les dents.
+          Ensuite, je <input class="fill" type="text" data-answer="pars" /> à 8h
+          pour aller au travail. Le soir, nous
+          <input class="fill" type="text" data-answer="nous détendons" /> en
+          regardant un film et je
+          <input class="fill" type="text" data-answer="me couche" /> vers 22h30.
+        </p>
+
+        <div class="controls">
+          <button class="btn verifier">Vérifier</button>
+          <button class="btn montrer">Montrer les réponses</button>
+          <button class="btn reinitialiser">Réinitialiser</button>
+        </div>
+        <div class="resultat"></div>
+      </section>
+
+      <!-- PARTIE 2 — LOISIRS ET PASSE-TEMPS -->
+      <section class="section exercise" id="partie2">
+        <h2>Partie 2 — Loisirs et passe-temps (Collocations + Fréquence)</h2>
+
+        <h3>A) Choisissez le bon verbe</h3>
+        <p>Sélectionnez le verbe adapté à chaque activité.</p>
+        <ul>
+          <li>
+            — Je
+            <select class="choice" data-correct="jouer de">
+              <option value="">--choisir--</option>
+              <option>faire</option>
+              <option>jouer à</option>
+              <option>jouer de</option>
+              <option>aller à</option>
+              <option>pratiquer</option>
+            </select>
+            la guitare.
+          </li>
+          <li>
+            — Nous
+            <select class="choice" data-correct="faire">
+              <option value="">--choisir--</option>
+              <option>faire</option>
+              <option>jouer à</option>
+              <option>jouer de</option>
+              <option>aller à</option>
+              <option>pratiquer</option>
+            </select>
+            de la natation.
+          </li>
+          <li>
+            — Ils
+            <select class="choice" data-correct="aller à">
+              <option value="">--choisir--</option>
+              <option>faire</option>
+              <option>jouer à</option>
+              <option>jouer de</option>
+              <option>aller à</option>
+              <option>pratiquer</option>
+            </select>
+            la bibliothèque le samedi.
+          </li>
+          <li>
+            — On
+            <select class="choice" data-correct="jouer à">
+              <option value="">--choisir--</option>
+              <option>faire</option>
+              <option>jouer à</option>
+              <option>jouer de</option>
+              <option>aller à</option>
+              <option>pratiquer</option>
+            </select>
+            au tennis deux fois par semaine.
+          </li>
+          <li>
+            — Elle
+            <select class="choice" data-correct="faire">
+              <option value="">--choisir--</option>
+              <option>faire</option>
+              <option>jouer à</option>
+              <option>jouer de</option>
+              <option>aller à</option>
+              <option>pratiquer</option>
+            </select>
+            du yoga le matin.
+          </li>
+          <li>
+            — Je
+            <select class="choice" data-correct="faire">
+              <option value="">--choisir--</option>
+              <option>faire</option>
+              <option>jouer à</option>
+              <option>jouer de</option>
+              <option>aller à</option>
+              <option>pratiquer</option>
+            </select>
+            de la photographie le week-end.
+          </li>
+        </ul>
+
+        <h3>B) Fréquence</h3>
+        <ul>
+          <li>
+            — Je vais au gymnase
+            <select class="choice" data-correct="deux fois par semaine">
+              <option value="">--choisir--</option>
+              <option>tous les jours</option>
+              <option>de temps en temps</option>
+              <option>deux fois par semaine</option>
+              <option>rarement</option></select
+            >.
+          </li>
+          <li>
+            — Nous sortons au cinéma
+            <select class="choice" data-correct="de temps en temps">
+              <option value="">--choisir--</option>
+              <option>tous les jours</option>
+              <option>de temps en temps</option>
+              <option>deux fois par semaine</option>
+              <option>rarement</option></select
+            >.
+          </li>
+          <li>
+            — Il lit avant de dormir
+            <select class="choice" data-correct="tous les jours">
+              <option value="">--choisir--</option>
+              <option>tous les jours</option>
+              <option>de temps en temps</option>
+              <option>deux fois par semaine</option>
+              <option>rarement</option></select
+            >.
+          </li>
+        </ul>
+
+        <div class="controls">
+          <button class="btn verifier">Vérifier</button>
+          <button class="btn montrer">Montrer les réponses</button>
+          <button class="btn reinitialiser">Réinitialiser</button>
+        </div>
+        <div class="resultat"></div>
+      </section>
+
+      <!-- PARTIE 3 — NOURRITURE ET REPAS -->
+      <section class="section exercise" id="partie3">
+        <h2>Partie 3 — Au restaurant (Lexique)</h2>
+        <p>
+          Complétez le dialogue avec les mots du banc :
+          <em
+            >réserver, terrasse, carte, menu, steak-frites, prendre, boisson,
+            addition</em
+          >.
+        </p>
+
+        <p>
+          — Bonjour, je voudrais
+          <input class="fill" type="text" data-answer="réserver" /> une table
+          pour ce soir.<br />
+          — Préférez-vous la
+          <input class="fill" type="text" data-answer="terrasse" /> ou
+          l'intérieur ?<br />
+          — La terrasse, s'il vous plaît. Est-ce que je peux voir la
+          <input class="fill" type="text" data-answer="carte" /> ?<br />
+          — Bien sûr, voici le
+          <input class="fill" type="text" data-answer="menu" />. Le plat du jour
+          est un
+          <input class="fill" type="text" data-answer="steak-frites" />.<br />
+          — Parfait, nous allons
+          <input class="fill" type="text" data-answer="prendre" /> ce plat.
+          Comme <input class="fill" type="text" data-answer="boisson" />, une
+          carafe d'eau, s'il vous plaît.<br />
+          — Très bien. Et à la fin, n'oubliez pas de demander l'
+          <input class="fill" type="text" data-answer="addition" />.
+        </p>
+
+        <div class="controls">
+          <button class="btn verifier">Vérifier</button>
+          <button class="btn montrer">Montrer les réponses</button>
+          <button class="btn reinitialiser">Réinitialiser</button>
+        </div>
+        <div class="resultat"></div>
+      </section>
+
+      <!-- PARTIE 4 — COMPRÉHENSION -->
+      <section class="section exercise" id="partie4">
+        <h2>Partie 4 — Compréhension écrite (Vrai/Faux)</h2>
+        <div class="text-card">
+          <p>
+            <strong>Texte :</strong> Paul se réveille à 6h45, prend une douche
+            et prépare un café. Il va au travail en vélo. À midi, il déjeune
+            avec ses collègues : souvent une salade et un yaourt. Après le
+            travail, il fait du yoga ou il va au cinéma avec des amis. Le soir,
+            il dîne vers 20h et se couche avant 23h.
+          </p>
+        </div>
+        <ol>
+          <li>
+            Paul va au travail en bus.
+            <select class="choice" data-correct="faux">
+              <option value="">--choisir--</option>
+              <option>vrai</option>
+              <option>faux</option>
+            </select>
+          </li>
+          <li>
+            Paul déjeune généralement une salade.
+            <select class="choice" data-correct="vrai">
+              <option value="">--choisir--</option>
+              <option>vrai</option>
+              <option>faux</option>
+            </select>
+          </li>
+          <li>
+            Après le travail, il joue souvent au tennis.
+            <select class="choice" data-correct="faux">
+              <option value="">--choisir--</option>
+              <option>vrai</option>
+              <option>faux</option>
+            </select>
+          </li>
+          <li>
+            Il dîne vers 20h.
+            <select class="choice" data-correct="vrai">
+              <option value="">--choisir--</option>
+              <option>vrai</option>
+              <option>faux</option>
+            </select>
+          </li>
+          <li>
+            Il se couche toujours après minuit.
+            <select class="choice" data-correct="faux">
+              <option value="">--choisir--</option>
+              <option>vrai</option>
+              <option>faux</option>
+            </select>
+          </li>
+        </ol>
+
+        <div class="controls">
+          <button class="btn verifier">Vérifier</button>
+          <button class="btn montrer">Montrer les réponses</button>
+          <button class="btn reinitialiser">Réinitialiser</button>
+        </div>
+        <div class="resultat"></div>
+      </section>
+
+      <!-- PARTIE 5 — PRODUCTION ÉCRITE -->
+      <section class="section exercise" id="partie5">
+        <h2>Partie 5 — Production écrite</h2>
+        <p>
+          Écrivez un paragraphe (80–120 mots) décrivant : votre routine
+          (matin/soir), deux loisirs, et ce que vous mangez au
+          petit-déjeuner/déjeuner/dîner. Utilisez au moins 3 connecteurs (ex.
+          <em>d'abord, ensuite, puis, après, enfin</em>).
+        </p>
+        <textarea id="prod-texte" placeholder="Écrivez ici..."></textarea>
+
+        <div class="controls">
+          <button class="btn verifier-texte">Vérifier mon texte</button>
+          <button class="btn reinitialiser">Effacer</button>
+        </div>
+        <div class="resultat"></div>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2025 · Examen de Français – Niveau A2</p>
+    </footer>
+
+    <script>
+      // ===== Utils: normaliser (sans accents, minuscules)
+      const norm = (s) =>
+        (s || "")
+          .toString()
+          .trim()
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "");
+
+      // ===== Listes pour la Partie 5
+      const LISTS = {
+        routine: [
+          "reveille",
+          "leve",
+          "douche",
+          "habille",
+          "travaille",
+          "dejeune",
+          "rentre",
+          "detend",
+          "couche",
+          "brosse",
+          "pars",
+          "arrive",
+        ],
+        loisirs: [
+          "football",
+          "natation",
+          "velo",
+          "tennis",
+          "yoga",
+          "randonnee",
+          "photographie",
+          "lire",
+          "cinema",
+          "musique",
+          "guitare",
+          "piscine",
+          "jeux",
+          "theatre",
+          "danse",
+        ],
+        nourriture: [
+          "petit-dejeuner",
+          "dejeuner",
+          "diner",
+          "salade",
+          "yaourt",
+          "pain",
+          "fromage",
+          "poisson",
+          "viande",
+          "fruits",
+          "legumes",
+          "cafe",
+          "the",
+          "steak",
+          "eau",
+          "vin",
+        ],
+        connecteurs: [
+          "d'abord",
+          "ensuite",
+          "puis",
+          "apres",
+          "après",
+          "enfin",
+          "plus tard",
+        ],
+      };
+
+      // ===== Score items auto (Parties 1–4)
+      function countFillSelectScore() {
+        const fills = document.querySelectorAll("input.fill");
+        const selects = document.querySelectorAll("select.choice");
+        let total = 0,
+          ok = 0;
+        fills.forEach((inp) => {
+          const ans = inp.dataset.answer;
+          if (!ans) return;
+          total++;
+          if (norm(inp.value) === norm(ans)) ok++;
+        });
+        selects.forEach((sel) => {
+          const cor = sel.dataset.correct;
+          if (!cor) return;
+          total++;
+          if (norm(sel.value) === norm(cor)) ok++;
+        });
+        return { total, ok };
+      }
+
+      // ===== Partie 5 (0–5)
+      function computeProductionScore() {
+        const ta = document.getElementById("prod-texte");
+        const txt = ta ? ta.value : "";
+        const T = norm(txt);
+        const words = (txt.trim().match(/\S+/g) || []).length;
+        const lenOK = words >= 80;
+        const hits = (arr) => arr.filter((k) => T.includes(k)).length;
+        const rOK = hits(LISTS.routine) >= 2;
+        const lOK = hits(LISTS.loisirs) >= 2;
+        const nOK = hits(LISTS.nourriture) >= 2;
+        const cOK = LISTS.connecteurs.some((k) => T.includes(norm(k)));
+        const criteria = [lenOK, rOK, lOK, nOK, cOK];
+        return { score: criteria.filter(Boolean).length, total: 5, words };
+      }
+
+      // ===== Banner score
+      function updateGlobalScore() {
+        const s1 = countFillSelectScore();
+        const s5 = computeProductionScore();
+        const globalOk = s1.ok + s5.score;
+        const globalTotal = s1.total + s5.total;
+        const label = document.getElementById("score-value");
+        if (label) {
+          label.textContent = `${globalOk} / ${globalTotal}`;
+          label.style.background =
+            globalOk === globalTotal
+              ? "var(--success-100)"
+              : "var(--primary-100)";
+        }
+      }
+
+      // ===== Wiring générique (Parties 1–4)
+      document.querySelectorAll(".section.exercise").forEach((sec) => {
+        const res = sec.querySelector(".resultat");
+        const btnV = sec.querySelector(".verifier");
+        const btnM = sec.querySelector(".montrer");
+        const btnR = sec.querySelector(".reinitialiser");
+
+        btnV?.addEventListener("click", () => {
+          let total = 0,
+            ok = 0;
+          sec.querySelectorAll("input.fill").forEach((inp) => {
+            const ans = inp.dataset.answer;
+            if (!ans) return;
+            total++;
+            if (norm(inp.value) === norm(ans)) {
+              ok++;
+              inp.classList.add("correct");
+              inp.classList.remove("incorrect");
+            } else {
+              inp.classList.add("incorrect");
+              inp.classList.remove("correct");
+            }
+          });
+          sec.querySelectorAll("select.choice").forEach((sel) => {
+            const cor = sel.dataset.correct;
+            if (!cor) return;
+            total++;
+            if (norm(sel.value) === norm(cor)) {
+              ok++;
+              sel.classList.add("correct");
+              sel.classList.remove("incorrect");
+            } else {
+              sel.classList.add("incorrect");
+              sel.classList.remove("correct");
+            }
+          });
+          if (res) {
+            res.style.display = "block";
+            res.textContent = `Score : ${ok}/${total}`;
+            res.className =
+              "resultat " + (ok === total ? "correct" : "incorrect");
+          }
+          updateGlobalScore();
+        });
+
+        btnM?.addEventListener("click", () => {
+          sec.querySelectorAll("input.fill").forEach((inp) => {
+            if (inp.dataset.answer) inp.value = inp.dataset.answer;
+            inp.classList.add("correct");
+            inp.classList.remove("incorrect");
+          });
+          sec.querySelectorAll("select.choice").forEach((sel) => {
+            const cor = sel.dataset.correct || "";
+            Array.from(sel.options).forEach((opt, i) => {
+              if (norm(opt.value) === norm(cor)) sel.selectedIndex = i;
+            });
+            sel.classList.add("correct");
+            sel.classList.remove("incorrect");
+          });
+          if (res) {
+            res.style.display = "block";
+            res.textContent = "Voici les réponses correctes.";
+            res.className = "resultat correct";
+          }
+          updateGlobalScore();
+        });
+
+        btnR?.addEventListener("click", () => {
+          sec.querySelectorAll("input.fill").forEach((inp) => {
+            inp.value = "";
+            inp.classList.remove("correct", "incorrect");
+          });
+          sec.querySelectorAll("select.choice").forEach((sel) => {
+            sel.selectedIndex = 0;
+            sel.classList.remove("correct", "incorrect");
+          });
+          if (res) {
+            res.style.display = "none";
+            res.textContent = "";
+            res.className = "resultat";
+          }
+          updateGlobalScore();
+        });
+      });
+
+      // ===== Partie 5 — Vérifier / Effacer
+      document
+        .querySelector("#partie5 .verifier-texte")
+        ?.addEventListener("click", () => {
+          const out = document.querySelector("#partie5 .resultat");
+          const { score, total, words } = computeProductionScore();
+          if (out) {
+            out.style.display = "block";
+            if (score === total) {
+              out.className = "resultat correct";
+              out.innerHTML = `✅ Texte suffisant et structuré. Score partie 5 : <strong>${score}/${total}</strong> (≈ ${words} mots).`;
+            } else {
+              out.className = "resultat incorrect";
+              out.innerHTML = `⛔ Critères non remplis. Score partie 5 : <strong>${score}/${total}</strong> (≈ ${words} mots). Assurez-vous d'avoir ≥80 mots, ≥2 éléments de routine, ≥2 de loisirs, ≥2 liés à la nourriture et des connecteurs (ex. « d'abord, ensuite, après »).`;
+            }
+          }
+          updateGlobalScore();
+        });
+
+      document
+        .querySelector("#partie5 .reinitialiser")
+        ?.addEventListener("click", () => {
+          const ta = document.getElementById("prod-texte");
+          const out = document.querySelector("#partie5 .resultat");
+          if (ta) ta.value = "";
+          if (out) {
+            out.style.display = "none";
+            out.textContent = "";
+            out.className = "resultat";
+          }
+          updateGlobalScore();
+        });
+
+      // ===== Recalcul et auto-update
+      document
+        .getElementById("btn-recalc")
+        ?.addEventListener("click", updateGlobalScore);
+      document.addEventListener("change", (e) => {
+        if (e.target.matches("input, select, textarea")) updateGlobalScore();
+      });
+      updateGlobalScore(); // init
+    </script>
+  </body>
+</html>
